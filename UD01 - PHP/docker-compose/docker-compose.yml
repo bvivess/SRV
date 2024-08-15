@@ -1,0 +1,32 @@
+#docker-compose up -d 
+#docker-compose down
+
+version: "3"
+ 
+services:
+  my_mysql:
+    image: mysql
+    container_name: gbd_mysql_A
+    environment:
+      - MYSQL_DATABASE=gbd
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    #volumes:
+      # Montamos un volumen para MySQL para no perder los datos de bd
+      #- ./mysql:/var/lib/mysql
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+   
+  my_php:
+    image: php:8-apache
+    container_name: gbd_apache_B
+    volumes:
+      # Montamos nuestra web desde fuera en el directorio web del contenedor
+      - ./myweb/:/var/www/html
+    expose:
+      - 80
+    ports:
+      - 80:80
+    links: 
+      - my_mysql

@@ -1,0 +1,7 @@
+﻿ID        FIRST_NAME	LAST_NAME    HOBBIES
+--------- ----------- ------------ ---------------------------------
+1         AINA        BENAVENTE    FUTBOL, ESCACS, BASKET
+2         MARIA       NAVARRO      FUTBOL, RUNNER  
+3         ALEJANDRO   RAMOS        ESCACS, FUTBOL, HOCKEY
+4         JOANA       ZUZAMA       BASKET, HOCKEY
+4         JOAN JOSEP  MARTINEZ     FUTBOL, BASKET, RUNNER
