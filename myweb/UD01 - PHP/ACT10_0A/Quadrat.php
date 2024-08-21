@@ -1,9 +1,13 @@
-<?php class Quadrat extends FiguraGeometrica {
+<?php 
+    require_once 'FiguraGeometrica.php';
+    class Quadrat{
+    use FiguraGeometrica;
     private $costat;
     
     // Constructor
     public function __construct(string $color, float $costat) {
-        parent::__construct($color);
+        // FiguraGeometrica::__construct($color);
+        $this->color = $color;
         $this->costat = $costat;
     }
 
