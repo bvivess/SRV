@@ -12,7 +12,7 @@ services:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     #volumes:
       # Montamos un volumen para MySQL para no perder los datos de bd
-      #- ./my_mysql:/var/lib/mysql
+      #- ./myMySQL:/var/lib/mysql
     expose:
       - 3306
     ports:
@@ -23,11 +23,11 @@ services:
     container_name: SRV_apache_B
     volumes:
       # Montamos nuestra web desde fuera en el directorio web del contenedor
-      - ./my_localhost:/var/www/html
+      - ./myLocalhost:/var/www/html
       # Montamos toda la configuración de Apache
       #- ./apache2/conf:/etc/apache2
       # Montamos toda la configuración de PHP
-      - ./my_php:/usr/local/etc/php
+      - ./myPHP:/usr/local/etc/php
     expose:
       - 80
     ports:
