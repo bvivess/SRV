@@ -6,13 +6,13 @@ version: "3"
 services:
   my_mysql:
     image: mysql
-    container_name: gbd_mysql_A
+    container_name: SRV_mysql_A
     environment:
       - MYSQL_DATABASE=gbd
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     #volumes:
       # Montamos un volumen para MySQL para no perder los datos de bd
-      #- ./mysql:/var/lib/mysql
+      #- ./my_mysql:/var/lib/mysql
     expose:
       - 3306
     ports:
@@ -20,10 +20,14 @@ services:
    
   my_php:
     image: php:8-apache
-    container_name: gbd_apache_B
+    container_name: SRV_apache_B
     volumes:
       # Montamos nuestra web desde fuera en el directorio web del contenedor
-      - ./myweb/:/var/www/html
+      - ./my_localhost:/var/www/html
+      # Montamos toda la configuración de Apache
+      #- ./apache2/conf:/etc/apache2
+      # Montamos toda la configuración de PHP
+      - ./my_php:/usr/local/etc/php
     expose:
       - 80
     ports:

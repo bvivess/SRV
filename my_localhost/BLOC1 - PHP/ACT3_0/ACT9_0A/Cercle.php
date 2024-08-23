@@ -15,4 +15,8 @@
         return 2 * pi() * $this->radi;
     }
 
+    public function calculaNCostats(): int {
+        return 0;
+    }
+
 } ?>

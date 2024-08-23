@@ -13,14 +13,14 @@
     public function getNom(): string { 
         return $this->nom; 
     }
-    public function setNom(string $nom): Persona { 
+    public function setNom(string $nom): self { // també 'Persona'
         $this->nom = $nom; 
         return $this;
     }
     public function getEdat(): string { 
         return $this->edat; 
     }
-    public function setEdat(string $edat): Persona { 
+    public function setEdat(string $edat): self { // també 'Persona' 
         $this->edat = $edat; 
         return $this;
     }
