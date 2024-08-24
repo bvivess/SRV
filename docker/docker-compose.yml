@@ -27,7 +27,7 @@ services:
       # Montamos nuestra web desde fuera en el directorio web del contenedor
       - ./my_Localhost:/var/www/html
       # Montamos toda la configuración de Apache
-      #- ./my_Apache2:/etc/apache2
+      - ./my_apache2/conf:/etc/apache2
       # Montamos toda la configuración de PHP
       - ./my_PHP:/usr/local/etc/php
     expose:
