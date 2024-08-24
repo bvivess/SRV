@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y \
     curl
 
 # Permisos accés globals
-RUN touch /etc/apache2/apache2.conf
-RUN chmod 777 /etc
+#RUN ln -s /etc/apache2 /usr/local/etc/apache2
+#RUN chmod 777 /etc
 RUN chmod 777 /etc/apache2 -R
 
 # Instalar Composer globalmente
