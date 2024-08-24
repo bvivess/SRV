@@ -25,7 +25,7 @@ services:
     container_name: SRV_apache_B
     volumes:
       # Montamos nuestra web desde fuera en el directorio web del contenedor
-      - ./my_Localhost:/var/www/html
+      - ./my_Web:/var/www/html
       # Montamos toda la configuración de Apache
       #- ./my_Apache2:/etc/apache2
       # Montamos toda la configuración de PHP
