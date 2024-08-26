@@ -6,7 +6,7 @@ version: "3"
 services:
   my_mysql:
     image: mysql
-    container_name: SRV_mysql_A
+    container_name: srv_mysql_A
     environment:
       - MYSQL_DATABASE=gbd
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
@@ -22,12 +22,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: SRV_apache_B
+    container_name: srv_apache_B
     volumes:
       # Montamos nuestra web desde fuera en el directorio web del contenedor
-      - ./my_Localhost:/var/www/html
+      - ./my_Web:/var/www/html
       # Montamos toda la configuración de Apache
-      - ./my_apache2/conf:/etc/apache2
+      #- ./my_Apache2:/etc/apache2
       # Montamos toda la configuración de PHP
       - ./my_PHP:/usr/local/etc/php
     expose:

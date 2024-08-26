@@ -1,6 +1,6 @@
 FROM php:8-apache
 
-# Instalar las dependencias necesarias
+# Instal·lar les dependencias necessàries
 RUN apt-get update && apt-get install -y \
     vim \
     nano \
@@ -8,11 +8,16 @@ RUN apt-get update && apt-get install -y \
     git \
     curl
 
-# Permisos accés globals
-RUN chmod 777 /etc/apache2
+# Permisos d'accés globals
+#RUN ln -s /etc/apache2 /usr/local/etc/apache2
+RUN docker-php-ext-install mysqli 
+RUN docker-php-ext-enable mysqli
+RUN apachectl restart
 
-# Instalar Composer globalmente
+RUN chmod 777 /etc/apache2 -R
+
+# Instalar Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Verificar la instalación
+# Verificar la instalació
 RUN composer --version
