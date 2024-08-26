@@ -15,6 +15,7 @@ RUN docker-php-ext-enable mysqli
 RUN apachectl restart
 
 RUN chmod 777 /etc/apache2 -R
+RUN chown www-data:www-data html -R
 
 # Instalar Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
