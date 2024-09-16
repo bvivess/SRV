@@ -1,34 +1,29 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CategoryController;
 
-// ruta normal
 Route::get('/', function () {
     return view('welcome');
 });
 
-// ruta a una 'uri'
-Route::get('/post', function () {
-    return "Es mostra un post concret";
+Route::resource('/post', PostController::class);
+Route::resource('/category', CategoryController::class);
+
+Route::get('/hola', function () {
+    return 'hola';
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-
-// ruta amb paràmetres opcionals i amb condicions
-Route::get('/post/{post}/{category?}', function ($post, $category=null) {
-    return "Es mostra el post " . " " .$post . " de la categoria " . $category;
-})->where('category', '[A-Za-z]+'); // equivalent a "->whereAlpha('category')"
-
-// ruta amb paràmetres
-Route::get('/post/{post}', function ($post) {
-    return "Es mostra el post " . " " .$post;
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// ruta amb 'nom'
-Route::get('/post/{post}}', function ($post) {
-    return "Es mostra el post " . " " .$post;
-})->where('post', '[A-Za-z]+')->name('post.profile');  
-               // <a href="{{ route('post.profile', ['post' => 'laravel']) }}">Post Profile</a>
-               // http://.../post/laravel
-               // return redirect()->route('post.profile', ['post' => 'laravel']);
+require __DIR__.'/auth.php';
