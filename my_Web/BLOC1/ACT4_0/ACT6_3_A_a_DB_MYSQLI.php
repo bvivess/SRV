@@ -37,9 +37,6 @@
            // echo $row['employee_id']." ".$row['last_name']." ".$row['first_name']."<br>";
            echo $row[0]." ".$row[1]." ".$row[2]."<br>";     // when mysqli_fetch_assoc
         }
-
-
-		
 	} catch (mysqli_sql_exception $e) {
 		echo  "</p>" . $e-> getMessage() . "</p>";
 	} catch (Exception $e) {
