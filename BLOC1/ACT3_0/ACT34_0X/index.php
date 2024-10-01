@@ -15,6 +15,6 @@
 
 	// Recorre les figures i mostra la seva àrea
 	foreach ($figures as $figura) {
-		echo $figura->__toString() . " Àrea: " . $figura->calculaArea() . "<br>";
+		echo $figura->__toString() . "<br>";
 	}
 ?>
