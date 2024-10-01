@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tags', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 250)->nullable();
+            $table->string('name', 250)->nullable()->unique();
             $table->string('url_clean', 500)->nullable();
             $table->timestamps();
         });

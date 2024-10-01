@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
+use App\Models\User;
+use App\Models\Category;
+use App\Models\PostImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\GuardarPostRequest;
-use App\Models\Post;
-use App\Models\User;
 
 
 class PostController extends Controller
@@ -16,7 +18,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::with(["user" , "image" ])->paginate(4);
         return view('post.index', ['posts' => $posts]);
     }
 
@@ -26,9 +28,9 @@ class PostController extends Controller
     public function create()
     {
 
-        //$users = DB::table('users')->where('role', 'admin')->get();
+        $categories = Category::pluck('id', 'title');
 
-        return view('post.create');
+        return view('post.create', ['categories'=>$categories]);
     }
 
     /**
@@ -41,10 +43,12 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->url_clean = $request->url_clean;
         $post->content = $request->content;
-        $post->user_id = User::all()->random()->id;
+        $post->category_id = $request->categories_id;
+        $post->posted = $request->posted;
+        $post->user_id = 1; // Auth::user()->id;
         $post->save();
 
-        return back();
+        return back()->with('status', '<h1>Creació categoria OK</h1>');
 
     }
 
@@ -81,4 +85,17 @@ class PostController extends Controller
         $post->delete();
         return back();
     }
+
+    public function image(Request $request, Post $post){
+        $request->validate([
+          'name' => 'required|max:10240',
+        ]);
+      
+        $filename = time().".".$request->name->extension();
+        $request->name->move(public_path('images'), $filename);
+        PostImage::create(['name' => $filename, 'post_id' => $post->id]);
+
+        return redirect('post')->with('status', 'Càrrega imatge OK');
+    }
+
 }

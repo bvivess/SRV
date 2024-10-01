@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests\GuardarCategoryRequest;
+use App\Models\Category;
+use App\Models\User;
+
 
 class CategoryController extends Controller
 {
@@ -12,8 +15,9 @@ class CategoryController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        $categories = Category::all();
+    {   
+        $categories = Category::paginate(4);
+        //$categories = Category::all();
         return view('category.index', ['categories' => $categories]);
     }
 
@@ -31,8 +35,7 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(GuardarCategoryRequest $request)
-                          
+    public function store(GuardarCategoryRequest $request)                    
     {
     
         $category = new Category;
@@ -40,8 +43,7 @@ class CategoryController extends Controller
         $category->url_clean = $request->url_clean;
         $category->save();
 
-        return back();
-
+        return back()->with('status', '<h1>Creació post OK</h1>');
     }
 
     /**
@@ -72,9 +74,9 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Category $category)
     {
-        $post->delete();
+        $category->delete();
         return back();
     }
 }

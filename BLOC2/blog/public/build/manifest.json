@@ -1,0 +1,19 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-Cky8PEnw.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DLXkxiZ3.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/ckeditor.js": {
+    "file": "assets/ckeditor-DY-3MafS.js",
+    "name": "ckeditor",
+    "src": "resources/js/ckeditor.js",
+    "isEntry": true
+  }
+}

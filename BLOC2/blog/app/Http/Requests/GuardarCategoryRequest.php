@@ -22,8 +22,16 @@ class GuardarCategoryRequest extends FormRequest
     public function rules(): array
     {
         return [
-           'title' => ['required','unique:posts','min:5','max:255'],
+           'title' => 'required|unique:posts|min:5|max:255',
            'url_clean' => 'required|unique:posts|min:5|max:255',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'title.required' => "Has d'informar un títol",
+            'url_clean.required' => "Has d'informar d'una url",
         ];
     }
 }
