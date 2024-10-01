@@ -1,13 +1,15 @@
 <?php class Quadrat extends FiguraGeometrica {
-    private $costat;
     
     // Constructor
-    public function __construct(string $color, float $costat) {
-        parent::__construct($color);
-        $this->costat = $costat;
+    public function __construct(string $color, private float $costat) {
+		parent::__construct($color);
     }
 
     public function calculaArea(): float {
         return pow($this->costat, 2);
     }
+	
+	public function __toString(): string {
+		return parent::__toString() . "; Àrea: " . $this->calculaArea();
+	}
 } ?>

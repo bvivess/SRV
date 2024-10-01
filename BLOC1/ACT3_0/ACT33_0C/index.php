@@ -4,9 +4,11 @@
     require_once('Quadrat.php');
     // Crear un objecte de la classe Cercle
     $cercle = new Cercle("Vermell", 5.0);
-    echo "Àrea del cercle: " . $cercle->calculaArea() . "<br>"; 
+    echo $cercle->__toString(); 
+
+	echo "<br>"; 
 
     $quadrat = new Quadrat("Verd", 10.0);
-    echo "Àrea del quadrat: " . $quadrat->calculaArea(); 
+    echo $quadrat->__toString();  
 
 ?>
