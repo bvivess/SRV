@@ -1,17 +1,24 @@
 <?php 
     require_once 'FiguraGeometrica.php';
-    class Quadrat{
-    use FiguraGeometrica;
-    private $costat;
-    
-    // Constructor
-    public function __construct(string $color, float $costat) {
-        // FiguraGeometrica::__construct($color);
-        $this->color = $color;
-        $this->costat = $costat;
-    }
+	require_once 'Coloreador.php';
+    class Quadrat {
+		use FiguraGeometrica;
+		use Coloreador;
 
-    public function calculaArea(): float {
-        return pow($this->costat, 2);
+		// Constructor
+		public function __construct(
+			?string $color=null, 
+			private float $costat=0) {
+
+		}
+	
+		public function getColor(): string {
+			return $this->color;
+		}
+		
+		public function calculaArea(): float {
+			return pow($this->costat, 2);
+		}
+
     }
-} ?>
+?>

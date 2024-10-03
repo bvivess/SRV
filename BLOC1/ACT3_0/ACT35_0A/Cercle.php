@@ -1,17 +1,24 @@
 <?php 
     require_once 'FiguraGeometrica.php';
+	require_once 'Coloreador.php';
     class Cercle {
-    use FiguraGeometrica;
-    private $radi;
+		use FiguraGeometrica;
+		use Coloreador;
 
-    // Constructor
-    public function __construct(string $color, float $radi) {
-        // FiguraGeometrica::__construct($color);
-        $this->color = $color;
-        $this->radi = $radi;
+		// Constructor
+		public function __construct(
+			?string $color=null, 
+			private float $radi=0) {
+
+		}
+	
+		public function getColor(): string {
+			return $this->color;
+		}
+		
+		public function calculaArea(): float {
+			return pi() * pow($this->radi, 2);
+		}
+		
     }
-    
-    public function calculaArea(): float {
-        return pi() * pow($this->radi, 2);
-    }
-} ?>
+?>
