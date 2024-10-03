@@ -6,6 +6,6 @@
         $this->edat = $edat;
     }
     public function mostraPersona(): void {
-        echo "Nom: " . $this->nom . " " . " Edat: " . $this->edat;
+        echo "Nom: " . $this->nom . " " . "; Edat: " . $this->edat;
     }
 } ?>

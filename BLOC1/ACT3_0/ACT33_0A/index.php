@@ -1,8 +1,12 @@
 <?php 
 	require_once('Persona.php');
 	require_once('Estudiant.php');
-    // Crea un objecte '$estudiant'
-    $estudiant = new Estudiant("Joan", 20, "Programació");
-    // Mostrar les dades d''$estudiant'
-    $estudiant->mostraEstudiant();
+	require_once('Professor.php');
+	// Crea un objecte '$estudiant'
+	$estudiant = new Estudiant("Joan", 20, "Programació");
+	$estudiant->mostraEstudiant();
+	echo "<br>";
+	// Crea un objecte '$professor'
+	$professor = new Professor("Pere", 36);
+	$professor->mostraProfessor();
 ?>
