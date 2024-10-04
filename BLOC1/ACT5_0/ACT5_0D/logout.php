@@ -1,6 +1,6 @@
 <?php
-    session_start(); // Inicia la sesión
-    session_destroy(); // Destruye la sesión actual
-    header("Location: index.php"); // Redirige al usuario al formulario de login
+    session_start();  // associa la sessió a l'actual
+    session_destroy(); // Elimina la sessió
+    header("Location: index.php");  // redirigeix a 'index'
     exit();
 ?>
