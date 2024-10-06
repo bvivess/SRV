@@ -1,14 +1,14 @@
 <?php
 
-    namespace config;
+    namespace Config;
 
     class Database {
-        public $host;
-        public $port;
-        public $database;
-        public $username;
-        public $password;
-        public $conn;
+        private $host;
+        private $port;
+        private $database;
+        private $username;
+        private $password;
+        private $conn;
 
         // Constructor que utilitza el mètode 'loadConfig' per carregar les dades de configuració
         public function __construct($host, $port, $database, $username, $password) {
@@ -22,7 +22,7 @@
         // Mètode per carregar la configuració des del fitxer
         public static function loadConfig($fitxer): array {
             $config = [];  // Inicialitzem un array buit per emmagatzemar les variables
-			
+
             // Verifiquem que el fitxer existeix
             if (file_exists($fitxer)) {
                 // Llegim el fitxer línia per línia
@@ -40,7 +40,7 @@
             } else {
                 die("El fitxer de configuració no existeix.");
             }
-			
+
             // Retornam l'array associatiu amb les variables del fitxer
             return $config;
         }
@@ -53,12 +53,14 @@
             if ($this->conn->connect_error) {
                 die("Error en la connexió: " . $this->conn->connect_error);
             }
+            echo "Connexió a la base de dades feta correctament.<br>";
         }
 
         // Mètode per tancar la connexió a la base de dades
         public function closeDB() {
             if ($this->conn) {
                 $this->conn->close();
+                echo "Connexió a la base de dades tancada correctament.<br>";
             }
         }
     }

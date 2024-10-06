@@ -1,14 +1,14 @@
 <?php
 
-    namespace Config;
+    namespace config;
 
     class Database {
-        private $host;
-        private $port;
-        private $database;
-        private $username;
-        private $password;
-        private $conn;
+        public $host;
+        public $port;
+        public $database;
+        public $username;
+        public $password;
+        public $conn;
 
         // Constructor que utilitza el mètode 'loadConfig' per carregar les dades de configuració
         public function __construct($host, $port, $database, $username, $password) {
@@ -53,14 +53,12 @@
             if ($this->conn->connect_error) {
                 die("Error en la connexió: " . $this->conn->connect_error);
             }
-            echo "Connexió a la base de dades feta correctament.<br>";
         }
 
         // Mètode per tancar la connexió a la base de dades
         public function closeDB() {
             if ($this->conn) {
                 $this->conn->close();
-                echo "Connexió a la base de dades tancada correctament.<br>";
             }
         }
     }

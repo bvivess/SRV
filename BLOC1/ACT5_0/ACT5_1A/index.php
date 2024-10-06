@@ -1,19 +1,17 @@
 <?php
 
-    // Incloure l'arxiu de configuració i carregar la classe 'Config'
+    // Incloure l'arxiu de configuració i carregar la classe 'Database'
     require_once __DIR__ . '/config/Database.php';
+    require_once __DIR__ . '/models/Model.php';
+    require_once __DIR__ . '/models/Employee.php';
 
     use Config\Database;
+    use Models\Employee;
 
-    // Definim la ruta del fitxer de configuració
-    const CONFIG_FILE = 'C:/temp/config.db';
-
-    // Carreguem les variables de configuració
-    $config = Database::loadConfig(CONFIG_FILE);
-
-    // Mostrem l'array de configuració
+    $employees = Employee::all();
     echo '<pre>';
-    print_r($config);  // en comptes d'un foreach, també 'var_dump'
+    print_r($employees);  // en comptes d'un foreach
     echo '</pre>';
 
 ?>
+

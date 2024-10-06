@@ -1,37 +1,39 @@
 <?php
 
     // Incloure l'arxiu de configuració i carregar la classe 'Database'
-    require_once __DIR__ . '/config/database.php';
+    //require_once __DIR__ . '/config/Database.php';
+    //require_once __DIR__ . '/models/Model.php';
+    //require_once __DIR__ . '/models/Employee.php';
+
+    spl_autoload_register( function($classe) {
+        if (file_exists(str_replace('\\','/',$classe) . '.php'))
+            require_once(str_replace('\\','/',$classe) . '.php');
+    } );
 
     use Config\Database;
+    use Models\Employee;
 
-    // Definim la ruta del fitxer de configuració
-    const CONFIG_FILE = 'C:/temp/config.db';
 
-    // Carreguem les variables de configuració
-    $config = Database::loadConfig(CONFIG_FILE);
+    // Crear una nova instància d'Employee i assignar valors
+    $employee = new Employee(  1003,
+                              "Tomeu",
+                              "Vives",
+                              "bvivess3@gmail.com",
+                              "123456789",
+                              "2024-01-01", 
+                              "AD_VP",
+                              60000.00,
+                              0.05,
+                              102,
+                              60 );
 
-    // Mostrem l'array de configuració
+    // Guardar l'empleat a la base de dades
+    $employee->save();
+
+    $employees = Employee::all();
     echo '<pre>';
-    print_r($config);  // en comptes d'un foreach, també 'var_dump'
+    print_r($employees);  // en comptes d'un foreach
     echo '</pre>';
-
-    // Crear una instància de la classe 'Database' amb els valors de configuració
-    $db = new Database(
-        $config['DB_HOST'], 
-        $config['DB_PORT'], 
-        $config['DB_DATABASE'], 
-        $config['DB_USERNAME'], 
-        $config['DB_PASSWORD']
-    );
-
-    // Realitzar la connexió a la base de dades
-    $db->connectDB();
-
-    // Operacions amb la base de dades...
-
-    // Tancar la connexió a la base de dades
-    $db->closeDB();
 
 ?>
 
