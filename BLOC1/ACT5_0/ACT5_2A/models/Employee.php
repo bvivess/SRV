@@ -1,13 +1,11 @@
 <?php
 
-namespace models;
+    namespace models;
 
-use config\Database;
+    class Employee extends Model {
+        // Definir la taula associada a la classe
+        protected static $table = 'employees';
 
-class Employee extends Model {
-    // Definir la taula associada a la classe
-    protected static $table = 'employees';
-
-}
+    }
 
 ?>
