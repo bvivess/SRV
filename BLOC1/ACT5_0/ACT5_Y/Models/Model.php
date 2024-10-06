@@ -1,8 +1,8 @@
 <?php
 
-    namespace models;
+    namespace Models;
 
-    use config\config;
+    use Config\config;
 
     class Model {
         protected static $table; // = __CLASS__;
@@ -17,8 +17,8 @@
             $password = $config['DB_PASSWORD'];
             $port = $config['DB_PORT'];
 
-            // Connexió amb mysqli (POO)
-            $conn = new \mysqli($host, $username, $password, $dbname, $port);
+            // Connexió amb mysqli
+            $conn = new mysqli($host, $username, $password, $dbname, $port);
 
             // Comprovar si hi ha errors en la connexió
             if ($conn->connect_error) {
