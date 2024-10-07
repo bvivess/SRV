@@ -53,14 +53,14 @@
             if ($this->conn->connect_error) {
                 die("Error en la connexió: " . $this->conn->connect_error);
             }
-            echo "Connexió a la base de dades feta correctament.<br>";
+            echo "Connexió a la base de dades correcta.<br>";
         }
 
         // Mètode per tancar la connexió a la base de dades
         public function closeDB() {
             if ($this->conn) {
                 $this->conn->close();
-                echo "Connexió a la base de dades tancada correctament.<br>";
+                echo "Connexió a la base de dades tancada.<br>";
             }
         }
     }

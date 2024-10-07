@@ -8,7 +8,7 @@
     use Config\Database;
     use Models\Employee;
 
-    $employees = Employee::all();
+    $employees = Employee::all();  // SELECT
     echo '<pre>';
     print_r($employees);  // en comptes d'un foreach
     echo '</pre>';
