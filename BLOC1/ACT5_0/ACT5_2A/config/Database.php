@@ -22,7 +22,7 @@
         // Mètode per carregar la configuració des del fitxer
         public static function loadConfig($fitxer): array {
             $config = [];  // Inicialitzem un array buit per emmagatzemar les variables
-			
+
             // Verifiquem que el fitxer existeix
             if (file_exists($fitxer)) {
                 // Llegim el fitxer línia per línia
@@ -40,7 +40,7 @@
             } else {
                 die("El fitxer de configuració no existeix.");
             }
-			
+
             // Retornam l'array associatiu amb les variables del fitxer
             return $config;
         }

@@ -6,7 +6,7 @@
 
     class Model {
             // Mètode per obtenir tots els registres de la taula
-        public static function all() {  // 'select()'
+        public static function all() {
             // Carregar la connexió a la base de dades
             $config = Database::loadConfig('C:/temp/config.db');
             $db = new Database(
