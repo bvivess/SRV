@@ -38,9 +38,12 @@ class Employee extends Model {
 
         // Connectar a la base de dades
         $db->connectDB();
+		
+		// Obtenir el nom de la taula de la classe filla
+		$table = static::$table; 
 
         // Preparar la consulta d'INSERT
-        $sql = "INSERT INTO " . static::$table . " (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
+        $sql = "INSERT INTO $table (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $db->conn->prepare($sql);

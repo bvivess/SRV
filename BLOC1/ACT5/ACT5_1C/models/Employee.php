@@ -46,7 +46,7 @@ class Employee extends Model {
 			$result = $db->conn->query($sql);
 
 			// Comprovar si hi ha resultats
-			if ($result->num_rows > 0) {
+			if ($result->num_rows == 1) {
 				$sql = "UPDATE $table 
 					   SET first_name = ?,
 						   last_name = ?,
@@ -83,7 +83,7 @@ class Employee extends Model {
 
 			} else {
 				// Preparar la consulta d'INSERT
-				$sql = "INSERT INTO " . static::$table . " (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
+				$sql = "INSERT INTO  $table (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
 						VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 				$stmt = $db->conn->prepare($sql);

@@ -15,10 +15,10 @@
 
 
     // Crear una nova instància d'Employee i assignar valors
-    $employee = new Employee(  null,
+    $employee = new Employee(  100,
                               "aaa",
                               "aaa",
-                              "bvivess0b1@gmail.com",
+                              "AAA@gmail.com",
                               "123456789",
                               "2024-01-01", 
                               "AD_VP",
