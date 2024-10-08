@@ -6,7 +6,7 @@
     // Crear un objecte de la classe Quadrat
     $quadrat = new Quadrat("Verd", 10.0);
 
-    echo  "Àrea del " . $cercle->nomFigura() . ": ". $cercle->calculaArea() . "<br>";
-    echo  "Àrea del " . $quadrat->nomFigura() . ": ". $quadrat->calculaArea();
+    echo  "L'àrea del " . $cercle->__toString() . " és ". $cercle->calculaArea() . "<br>";
+    echo  "L'àrea del " . $quadrat->__toString() . " és ". $quadrat->calculaArea();
 ?>
 

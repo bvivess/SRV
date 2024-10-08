@@ -1,10 +1,6 @@
 <?php trait Colorable {
     protected $color;
 
-    public function getColor(): string {
-        return $this->color;
-    }
-    public function setColor(string $color): void {
-        $this->color = $color;
-    }
+	// Mètode abstacte
+    abstract public function aplicaColor(string $color): void;    // declarar, no implementar
 } ?>
