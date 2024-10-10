@@ -24,12 +24,12 @@
 	try {
 		// Try a connection ...
 		echo '<p>Trying to connect to: '.USERNAME.'/'.PASSWD.'@'.DBNAME.' using MySQLi-OO Programing</p>';
-		$conn = new mysqli();
-		$conn->connect(HOST, USERNAME, PASSWD, DBNAME);
+		$conn = new mysqli(HOST, USERNAME, PASSWD, DBNAME);
 		$conn->set_charset('utf8');
 		
 		echo '<p>Connection OK</p>';
-		
+		$conn->autocommit(false);
+        $conn->begin_transaction();  // if necessary
 		// Show a result		
 		$table = $conn->query('SELECT employee_id, last_name, first_name FROM employees ORDER BY employee_id ASC');
 		while (null !== ($row = $table->fetch_assoc())){ // OR fetch_array()
@@ -38,20 +38,11 @@
 		}
 		$conn->commit();  // if necessary
 	} catch (mysqli_sql_exception $e) {
-		$conn->rollback();  // if necessary
-		echo "</p>" . $e-> getMessage() . "</p>";
-	} catch (Exception $e) {
-		echo "</p>" . $e-> getMessage() . "</p>";
- 	} catch (Error $e) {
-		echo "</p>" . $e-> getMessage() . "</p>";
+        if ($conn)
+            $conn->rollback();  // if necessary
+        echo "Error connecting to MySQL: " . $e->getMessage();
 	} finally {
-		try {
-			echo "Closing Database";
-			$conn->close();
-		} catch (Exception $e) {
-			// Nothing to do
-		} catch (Error $e) {
-			// Nothing to do
-		}
+        if ($conn)
+            $conn->close(); // DISCONNECTION PHASE
 	}
 ?>
