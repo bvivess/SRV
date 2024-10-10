@@ -13,10 +13,10 @@
 	});
 	
 	// Connection data
-	DEFINE('HOST', '192.168.210.1'); 
+	DEFINE('HOST', 'localhost'); 
 	DEFINE('DBNAME','HR');
-	DEFINE('USERNAME','HR');
-	DEFINE('PASSWD','Educacio123!');
+	DEFINE('USERNAME','root');
+	DEFINE('PASSWD','');
 	$conn = null;
 
 	// Set MySQLi to throw exceptions
@@ -32,12 +32,13 @@
 		
 		// Show a result		
 		$table = $conn->query('SELECT employee_id, last_name, first_name FROM employees ORDER BY employee_id ASC');
-		while (null !== ($row = $table->fetch_assoc( ... ))){ // OR fetch_array()
+		while (null !== ($row = $table->fetch_assoc())){ // OR fetch_array()
 			//echo $row[0]." ".$row[1]." ".$row[2]."<br>";
 			echo $row['employee_id']." ".$row['last_name']." ".$row['first_name']."<br>";
 		}
-
+		$conn->commit();  // if necessary
 	} catch (mysqli_sql_exception $e) {
+		$conn->rollback();  // if necessary
 		echo "</p>" . $e-> getMessage() . "</p>";
 	} catch (Exception $e) {
 		echo "</p>" . $e-> getMessage() . "</p>";
