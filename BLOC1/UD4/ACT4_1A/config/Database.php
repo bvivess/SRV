@@ -11,13 +11,13 @@
                 // Llegim el fitxer línia per línia
                 $linies = file($fitxer, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
                 
-                // Recorrer cada línia del fitxer
+                // Recórrer cada línia del fitxer
                 foreach ($linies as $linia) {
                     // Comprovam si la línia és un comentari
-                    $linia = trim($linia);
+                    $linia = trim($linia);  // netejam la línia d'espais
                     if (strpos(trim($linia), '#') !== 0) {
                         list($clau, $valor) = explode('=', $linia, 2);
-                        $config[trim($clau)] = trim($valor); // Emmagatzemem clau i valor a l'array associatiu
+                        $config[trim($clau)] = trim($valor); // Emmagatzemam un element 'clau' i 'valor' a l'array associatiu
                     }
                 }
             } else {

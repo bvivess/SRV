@@ -1,23 +1,21 @@
-<?php class Cercle extends Coloreador implements FiguraGeometrica {
-	
+<?php class Quadrat implements FiguraGeometrica, Coloreador {
     // Constructor
-    public function __construct(
+    public function __Construct(
         private ?string $color=null, 
-        private float $radi=0 ) {
-			parent::__Construct($color);
-		}
+        private float $costat=0 ) { }
 		
     // Implementació del mètode abstracte de 'FiguraGeometrica'
     public function calculaArea(): float {
-        return M_PI * pow($this->radi, 2);
+        return pow($this->costat, 2);
     }
+	
     // Implementació del mètode abstracte de 'Coloreador'
     public function aplicaColor(string $color): void {
         $this->color = $color;
     }
 	
     public function __toString(): string {
-        return "Color: " . $this->color . "; Radi: " . $this->radi . "; Àrea " . $this->calculaArea();
+        return "Color: " . $this->color . "; Costat: " . $this->costat . "; Àrea " . $this->calculaArea();
     }
 }
 
