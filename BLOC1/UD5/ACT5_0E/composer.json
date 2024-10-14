@@ -1,0 +1,20 @@
+{
+    "name": "winadmin/act5_4",
+    "description": "Prova composer",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Winadmin\\Act50E\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "T.Vives"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.8",
+        "fakerphp/faker": "^1.23"
+    }
+}
