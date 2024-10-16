@@ -28,43 +28,38 @@
             $result = $db->conn->query($sql);
 
             // Comprovar si hi ha resultats
+			$rows = [];
             if ($result->num_rows > 0) {
                 /*
-				$rows = [];
 				while ($row = $result->fetch_assoc()) {
                     $rows[] = $row;  // Guardar els registres en un array
                 }*/
-				$objects = [];
 				while ($row = $result->fetch_assoc()) {
-					$employee = new static(); // Crear un nou objecte de tipus Employee
-
-					// Assignar els valors de les columnes a les propietats de l'objecte
-					$employee->employee_id = $row['EMPLOYEE_ID'];
-					$employee->first_name = $row['FIRST_NAME'];
-					$employee->last_name = $row['LAST_NAME'];
-					$employee->email = $row['EMAIL'];
-					$employee->phone_number = $row['PHONE_NUMBER'];
-					$employee->hire_date = $row['HIRE_DATE'];
-					$employee->job_id = $row['JOB_ID'];
-					$employee->salary = $row['SALARY'];
-					$employee->commission_pct = $row['COMMISSION_PCT'];
-					$employee->manager_id = $row['MANAGER_ID'];
-					$employee->department_id = $row['DEPARTMENT_ID'];
+					// Crear un nou objecte de tipus 'Employee'
+					$employee = new static(  
+										$row['EMPLOYEE_ID'],
+										$row['FIRST_NAME'],
+										$row['LAST_NAME'],
+										$row['EMAIL'],
+										$row['PHONE_NUMBER'],
+										$row['HIRE_DATE'],
+										$row['JOB_ID'],
+										$row['SALARY'],
+										$row['COMMISSION_PCT'],
+										$row['MANAGER_ID'],
+										$row['DEPARTMENT_ID']
+									);
 
 					// Afegir l'objecte a l'array
-					$objects[] = $employee;
+					$rows[] = $employee;
 				}
-            } else {
-                //$rows = [];
-				$objects = [];
             }
 
             // Tancar la connexió
             $db->closeDB();
 
             // Retornar els registres obtinguts
-            //return $rows;
-			return $objects;
+            return $rows;
         }
     }
 

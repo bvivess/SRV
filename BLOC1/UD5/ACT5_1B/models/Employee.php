@@ -47,10 +47,6 @@ class Employee extends Model {
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $db->conn->prepare($sql);
-        var_dump($stmt);
-        echo "<br>";echo "<br>";echo "<br>";echo "<br>";
-        echo $sql;
-        echo "<br>";echo "<br>";echo "<br>";echo "<br>";
         // Vincular els valors
         $stmt->bind_param(
             "issssssdiis", 
