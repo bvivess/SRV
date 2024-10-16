@@ -154,7 +154,7 @@ public function delete() {
 			}
 
 		} else {
-			echo "L'empleat no existeix correctament.";
+			echo "L'empleat no existeix.";
 		}
 	} else {
 		echo "Error, ID no informat";
