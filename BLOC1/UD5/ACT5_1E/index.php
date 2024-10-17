@@ -15,10 +15,10 @@
 
     try {
         // Crear una nova instància d'Employee i assignar valors
-        $employee = new Employee(  1010,
+        $employee = new Employee( 1010,
                                 "Tomeu",
                                 "Vives",
-                                "bvives@iemilidaraaaader.com",
+                                "bvives@iemilidarder.com",
                                 "123456789",
                                 "2024-01-01", 
                                 "AD_VP",
@@ -33,7 +33,7 @@
     }
 
     // Eliminar l'empleat de la base de dades
-    $employee = new Employee(  1010 );
+    $employee = new Employee(  100 );
     $employee->destroy();
 
     $employees = Employee::all();  // SELECT
