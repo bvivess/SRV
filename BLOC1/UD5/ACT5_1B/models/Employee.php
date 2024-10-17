@@ -8,19 +8,20 @@ class Employee extends Model {
     // Definir la taula associada a la classe
     protected static $table = 'employees';
 
-    // Constructor opcional
-    public function __construct(    
-        public $employee_id,
-        public $first_name,
-        public $last_name,
-        public $email,
-        public $phone_number,
-        public $hire_date,
-        public $job_id,
-        public $salary,
-        public $commission_pct,
-        public $manager_id,
-        public $department_id ) { }
+	    // Constructor
+		public function __construct(    
+			public int $employee_id,
+			public ?string $first_name=null,
+			public ?string $last_name=null,
+			public ?string $email=null,
+			public ?string $phone_number=null,
+			public ?string $hire_date=null,
+			public ?string $job_id=null,
+			public ?float $salary=null,
+			public ?float $commission_pct=null,
+			public ?int $manager_id=null,
+			public ?int $department_id=null
+		) { }
 
     // Mètode per guardar l'empleat a la base de dades
     public function save() {
@@ -45,11 +46,10 @@ class Employee extends Model {
         // Preparar la consulta d'INSERT
         $sql = "INSERT INTO $table (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
         $stmt = $db->conn->prepare($sql);
         // Vincular els valors
         $stmt->bind_param(
-            "issssssdiis", 
+            "issssssddii", 
             $this->employee_id, 
             $this->first_name, 
             $this->last_name, 

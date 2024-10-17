@@ -18,7 +18,7 @@
     $employee = new Employee(  1010,
                               "Tomeu",
                               "Vives",
-                              "bvives1@iesemilidarder.com",
+                              "bvives@iemilidarder.com",
                               "123456789",
                               "2024-01-01", 
                               "AD_VP",
@@ -31,18 +31,8 @@
     $employee->save();  // INSERT / UPDATE
 
     // Eliminar l'empleat de la base de dades
-    $employee = new Employee(  1020,
-                              null,
-                              null,
-                              null,
-                              null,
-                              null, 
-                              null,
-                              null,
-                              null,
-                              null,
-                              null );
-    $employee->delete();
+    $employee = new Employee(  1010 );
+    $employee->destroy();
 
     $employees = Employee::all();  // SELECT
     echo '<pre>';

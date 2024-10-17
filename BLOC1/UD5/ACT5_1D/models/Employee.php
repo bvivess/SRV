@@ -8,19 +8,20 @@ class Employee extends Model {
     // Definir la taula associada a la classe
     protected static $table = 'employees';
 
-    // Constructor opcional
-    public function __construct(    
-        public $employee_id,
-        public $first_name=null,
-        public $last_name=null,
-        public $email=null,
-        public $phone_number=null,
-        public $hire_date=null,
-        public $job_id=null,
-        public $salary=null,
-        public $commission_pct=null,
-        public $manager_id=null,
-        public $department_id=null ) { }
+	    // Constructor
+		public function __construct(    
+			public int $employee_id,
+			public ?string $first_name=null,
+			public ?string $last_name=null,
+			public ?string $email=null,
+			public ?string $phone_number=null,
+			public ?string $hire_date=null,
+			public ?string $job_id=null,
+			public ?float $salary=null,
+			public ?float $commission_pct=null,
+			public ?int $manager_id=null,
+			public ?int $department_id=null
+		) { }
 
     // Mètode per guardar l'empleat a la base de dades
     public function save() {
@@ -116,53 +117,54 @@ class Employee extends Model {
         // Tancar la connexió
         $db->closeDB();
     }
-// Mètode per eliminar l'empleat a la base de dades
-public function delete() {
-	// Carregar la configuració de la base de dades
-	$config = Database::loadConfig('C:/temp/config.db');
-	$db = new Database(
-		$config['DB_HOST'], 
-		$config['DB_PORT'], 
-		$config['DB_DATABASE'], 
-		$config['DB_USERNAME'], 
-		$config['DB_PASSWORD']
-	);
+	
+	// Mètode per eliminar l'empleat a la base de dades
+	public function destroy() {
+		// Carregar la configuració de la base de dades
+		$config = Database::loadConfig('C:/temp/config.db');
+		$db = new Database(
+			$config['DB_HOST'], 
+			$config['DB_PORT'], 
+			$config['DB_DATABASE'], 
+			$config['DB_USERNAME'], 
+			$config['DB_PASSWORD']
+		);
 
-	// Connectar a la base de dades
-	$db->connectDB();
+		// Connectar a la base de dades
+		$db->connectDB();
 
-	// Obtenir el nom de la taula de la classe filla
-	$table = static::$table; 
+		// Obtenir el nom de la taula de la classe filla
+		$table = static::$table; 
 
-	// Connectar a la base de dades
-	if (isset($this->employee_id)) {
-		$sql = "SELECT * FROM $table WHERE employee_id = $this->employee_id";
-		$result = $db->conn->query($sql);
+		// Connectar a la base de dades
+		if (isset($this->employee_id)) {
+			$sql = "SELECT * FROM $table WHERE employee_id = $this->employee_id";
+			$result = $db->conn->query($sql);
 
-		// Comprovar si hi ha resultats
-		if ($result->num_rows == 1) {
-			$sql = "DELETE FROM $table 
-				    WHERE employee_id = ?";
-			$stmt = $db->conn->prepare($sql);
-			// Vincular els valors
-			$stmt->bind_param( "i", $this->employee_id );
-			// Executar la consulta
-			if ($stmt->execute()) {
-				echo "L'empleat s'ha eliminat correctament.";
+			// Comprovar si hi ha resultats
+			if ($result->num_rows == 1) {
+				$sql = "DELETE FROM $table 
+						WHERE employee_id = ?";
+				$stmt = $db->conn->prepare($sql);
+				// Vincular els valors
+				$stmt->bind_param( "i", $this->employee_id );
+				// Executar la consulta
+				if ($stmt->execute()) {
+					echo "L'empleat s'ha eliminat correctament.";
+				} else {
+					echo "Error eliminant l'empleat: " . $stmt->error;
+				}
+
 			} else {
-				echo "Error eliminant l'empleat: " . $stmt->error;
+				echo "L'empleat no existeix.";
 			}
-
 		} else {
-			echo "L'empleat no existeix.";
+			echo "Error, ID no informat";
 		}
-	} else {
-		echo "Error, ID no informat";
-	}
 
-	// Tancar la connexió
-	$db->closeDB();
-}
-}
+		// Tancar la connexió
+		$db->closeDB();
+	}
+	}
 
 ?>

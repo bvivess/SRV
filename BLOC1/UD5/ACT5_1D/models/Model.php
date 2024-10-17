@@ -30,25 +30,9 @@
             // Comprovar si hi ha resultats
 			$rows = [];
             if ($result->num_rows > 0) {
-                /*
 				while ($row = $result->fetch_assoc()) {
-                    $rows[] = $row;  // Guardar els registres en un array
-                }*/
-				while ($row = $result->fetch_assoc()) {
-					// Crear un nou objecte de tipus 'Employee'
-					$employee = new static(  
-										$row['EMPLOYEE_ID'],
-										$row['FIRST_NAME'],
-										$row['LAST_NAME'],
-										$row['EMAIL'],
-										$row['PHONE_NUMBER'],
-										$row['HIRE_DATE'],
-										$row['JOB_ID'],
-										$row['SALARY'],
-										$row['COMMISSION_PCT'],
-										$row['MANAGER_ID'],
-										$row['DEPARTMENT_ID']
-									);
+					// Crear un nou objecte de tipus 'Employee', 'Customer', ...
+					$employee = new static( ...array_values($row) );
 
 					// Afegir l'objecte a l'array
 					$rows[] = $employee;

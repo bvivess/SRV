@@ -18,13 +18,13 @@
     $employee = new Employee(  1010,
                               "Tomeu",
                               "Vives",
-                              "bvives1@iesemilidarder.com",
+                              "bvives@iesemilidarder.com",
                               "123456789",
                               "2024-01-01", 
                               "AD_VP",
                               60000.00,
                               0.05,
-                              102,
+                              null,
                               60 );
 
     // Guardar l'empleat a la base de dades

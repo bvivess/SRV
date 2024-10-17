@@ -23,7 +23,7 @@
                               "AD_VP",
                               60000.00,
                               0.05,
-                              102,
+                              null,
                               60 );
 
     // Guardar l'empleat a la base de dades

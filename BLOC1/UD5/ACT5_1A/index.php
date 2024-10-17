@@ -12,10 +12,18 @@
 
     use Config\Database;
     use Models\Employee;
+    use Models\Customer;
 
     $employees = Employee::all();  // SELECT
     echo '<pre>';
-    print_r($employees);  // en comptes d'un foreach
+    foreach ($employees as $employee) {
+        echo json_encode($employee, JSON_PRETTY_PRINT);
+    }
+    echo '</pre>';
+
+    $customers = Customer::all();  // SELECT
+    echo '<pre>';
+    print_r($customers);  // en comptes d'un foreach
     echo '</pre>';
 
 ?>

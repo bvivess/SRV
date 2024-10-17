@@ -6,19 +6,21 @@
         // Definir la taula associada a la classe
         protected static $table = 'employees';
 
-	    // Constructor opcional
+	    // Constructor
 		public function __construct(    
-			public $employee_id=null,
-			public $first_name=null,
-			public $last_name=null,
-			public $email=null,
-			public $phone_number=null,
-			public $hire_date=null,
-			public $job_id=null,
-			public $salary=null,
-			public $commission_pct=null,
-			public $manager_id=null,
-			public $department_id=null ) { }
-		}
+			public int $employee_id,
+			public ?string $first_name=null,
+			public ?string $last_name=null,
+			public ?string $email=null,
+			public ?string $phone_number=null,
+			public ?string $hire_date=null,
+			public ?string $job_id=null,
+			public ?float $salary=null,
+			public ?float $commission_pct=null,
+			public ?int $manager_id=null,
+			public ?int $department_id=null
+		) { }
+	
+	}
 
 ?>
