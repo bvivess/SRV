@@ -43,73 +43,44 @@ class Employee extends Model {
 
         // Connectar a la base de dades
 		if (isset($this->employee_id)) {
-			$sql = "SELECT * FROM $table WHERE employee_id = $this->employee_id";
-			$result = $db->conn->query($sql);
+			// Preparar l'INSERT / UPDATE
+			$sql = "INSERT INTO $table (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
+			VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+			ON DUPLICATE KEY UPDATE
+				first_name = VALUES(first_name),
+				last_name = VALUES(last_name),
+				email = VALUES(email),
+				phone_number = VALUES(phone_number),
+				hire_date = VALUES(hire_date),
+				job_id = VALUES(job_id),
+				salary = VALUES(salary),
+				commission_pct = VALUES(commission_pct),
+				manager_id = VALUES(manager_id),
+				department_id = VALUES(department_id)";
 
-			// Comprovar si hi ha resultats
-			if ($result->num_rows == 1) {
-				$sql = "UPDATE $table 
-					   SET first_name = ?,
-						   last_name = ?,
-         				   email = ?,
-						   phone_number = ?,
-						   hire_date = ?,
-						   job_id = ?,
-						   salary = ?,
-						   commission_pct = ?,
-						   manager_id = ?,
-						   department_id = ?
-						WHERE employee_id = ?";
-				$stmt = $db->conn->prepare($sql);
-				// Vincular els valors
-				$stmt->bind_param( "ssssssdiisi", 
-										$this->first_name, 
-										$this->last_name, 
-										$this->email, 
-										$this->phone_number, 
-										$this->hire_date, 
-										$this->job_id, 
-										$this->salary, 
-										$this->commission_pct, 
-										$this->manager_id, 
-										$this->department_id,
-										$this->employee_id
-								 );
-				// Executar la consulta
-				if ($stmt->execute()) {
-					echo "L'empleat s'ha modificat correctament.";
-				} else {
-					echo "Error modificant l'empleat: " . $stmt->error;
-				}
+			$stmt = $db->conn->prepare($sql);
+			// Vincular els valors
+			$stmt->bind_param( "issssssddii", 
+									$this->employee_id, 
+									$this->first_name, 
+									$this->last_name, 
+									$this->email, 
+									$this->phone_number, 
+									$this->hire_date, 
+									$this->job_id, 
+									$this->salary, 
+									$this->commission_pct, 
+									$this->manager_id, 
+									$this->department_id
+								);
 
+			// Executar la consulta
+			if ($stmt->execute()) {
+				echo "L'empleat s'ha afegit correctament.";
 			} else {
-				// Preparar la consulta d'INSERT
-				$sql = "INSERT INTO  $table (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
-						VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-				$stmt = $db->conn->prepare($sql);
-				// Vincular els valors
-				$stmt->bind_param( "issssssdiis", 
-										$this->employee_id, 
-										$this->first_name, 
-										$this->last_name, 
-										$this->email, 
-										$this->phone_number, 
-										$this->hire_date, 
-										$this->job_id, 
-										$this->salary, 
-										$this->commission_pct, 
-										$this->manager_id, 
-										$this->department_id
-								 );
-
-				// Executar la consulta
-				if ($stmt->execute()) {
-					echo "L'empleat s'ha afegit correctament.";
-				} else {
-					echo "Error en afegir l'empleat: " . $stmt->error;
-				}
+				echo "Error en afegir l'empleat: " . $stmt->error;
 			}
+			
 		} else {
 			echo "Error, ID no informat";
 		}

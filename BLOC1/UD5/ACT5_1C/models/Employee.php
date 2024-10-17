@@ -89,7 +89,7 @@ class Employee extends Model {
 
 				$stmt = $db->conn->prepare($sql);
 				// Vincular els valors
-				$stmt->bind_param( "issssssdiis", 
+				$stmt->bind_param( "issssssddii", 
 										$this->employee_id, 
 										$this->first_name, 
 										$this->last_name, 
