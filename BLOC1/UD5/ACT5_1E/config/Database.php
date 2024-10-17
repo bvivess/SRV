@@ -3,21 +3,7 @@
     namespace config;
 
     class Database {
-        public $host;
-        public $port;
-        public $database;
-        public $username;
-        public $password;
         public $conn;
-
-        // Constructor que utilitza el mètode 'loadConfig' per carregar les dades de configuració
-        public function __construct($host, $port, $database, $username, $password) {
-            $this->host = $host;
-            $this->port = $port;
-            $this->database = $database;
-            $this->username = $username;
-            $this->password = $password;
-        }
 
         // Mètode per carregar la configuració des del fitxer
         public static function loadConfig($fitxer): array {
@@ -46,8 +32,12 @@
         }
 
         // Mètode per connectar-se a la base de dades
-        public function connectDB() {
-            $this->conn = new \mysqli($this->host, $this->username, $this->password, $this->database, $this->port);
+        public function connectDB($configPath) {
+            // Cridar a l'arxiu
+            $config = self::loadConfig($configPath);
+
+            // Connectar a la base de dades
+            $this->conn = new \mysqli($config['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSWORD'], $config['DB_DATABASE'], $config['DB_PORT']);
 
             // Comprovem si hi ha errors en la connexió
             if ($this->conn->connect_error) {
