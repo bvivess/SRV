@@ -45,19 +45,19 @@ class Employee extends Model {
 		if (isset($this->employee_id)) {
 			// Preparar l'INSERT / UPDATE
 			$sql = "INSERT INTO $table (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id) 
-			VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-			ON DUPLICATE KEY UPDATE
-				first_name = VALUES(first_name),
-				last_name = VALUES(last_name),
-				email = VALUES(email),
-				phone_number = VALUES(phone_number),
-				hire_date = VALUES(hire_date),
-				job_id = VALUES(job_id),
-				salary = VALUES(salary),
-				commission_pct = VALUES(commission_pct),
-				manager_id = VALUES(manager_id),
-				department_id = VALUES(department_id)";
-
+					VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+					ON DUPLICATE KEY
+						UPDATE
+							first_name     = VALUES (first_name),
+							last_name      = VALUES (last_name),
+							email          = VALUES (email),
+							phone_number   = VALUES (phone_number),
+							hire_date      = VALUES (hire_date),
+							job_id         = VALUES (job_id),
+							salary         = VALUES (salary),
+							commission_pct = VALUES (commission_pct),
+							manager_id     = VALUES (manager_id),
+							department_id  = VALUES (department_id)";
 			$stmt = $db->conn->prepare($sql);
 			// Vincular els valors
 			$stmt->bind_param( "issssssddii", 
@@ -76,9 +76,9 @@ class Employee extends Model {
 
 			// Executar la consulta
 			if ($stmt->execute()) {
-				echo "L'empleat s'ha afegit correctament.";
+				echo "L'empleat s'ha afegit/modificat correctament.";
 			} else {
-				echo "Error en afegir l'empleat: " . $stmt->error;
+				echo "Error en afegir/modificar l'empleat: " . $stmt->error;
 			}
 			
 		} else {
