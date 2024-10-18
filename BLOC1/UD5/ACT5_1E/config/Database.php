@@ -38,6 +38,9 @@
 
             // Connectar a la base de dades
             $this->conn = new \mysqli($config['DB_HOST'], $config['DB_USERNAME'], $config['DB_PASSWORD'], $config['DB_DATABASE'], $config['DB_PORT']);
+            $this->conn->autocommit(false);
+            $this->conn->begin_transaction();
+
 
             // Comprovem si hi ha errors en la connexió
             if ($this->conn->connect_error) {
