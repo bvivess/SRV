@@ -4,6 +4,10 @@
 			require_once(str_replace('\\','/',$classe) . '.php');
 	});
 
+	function convertToNull($value) {
+		return $value === '' ? null : $value;
+	}
+
 	use Config\Database;
 	use Models\Employee;
 
@@ -26,14 +30,14 @@
 		$employee = new Employee( $employee_id, 
 								  $first_name,
 								  $last_name,
-								  $email,
-								  $phone_number,
-								  $hire_date,
+								  convertToNull($email),
+								  convertToNull($phone_number),
+								  convertToNull($hire_date),
 								  $job_id, 
-								  $salary, 
-								  $commission_pct, 
-								  $manager_id, 
-								  $department_id );
+								  convertToNull($salary), 
+								  convertToNull($commission_pct), 
+								  convertToNull($manager_id),
+								  convertToNull($department_id) );
 
 		// Guardar l'empleat a la base de dades
 		$employee->save();  // INSERT
