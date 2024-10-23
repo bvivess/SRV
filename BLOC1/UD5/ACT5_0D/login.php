@@ -1,5 +1,6 @@
 <?php
     session_start(); // associa la sessió a l'actual
+    ob_start();  // necessari per a la redirecció de 'header()': resetea el buffer de sortida
 
     // Array d'usuaris possibles
     $users = [ 'user1' => 'password1',
@@ -19,4 +20,6 @@
         // Credencials incorrectes
         echo "Credencials incorrectes.";
     }
+
+    ob_end_flush();  // necessari per a la redirecció de 'header()': envia la sortida enmagatzemada en el buffer
 ?>

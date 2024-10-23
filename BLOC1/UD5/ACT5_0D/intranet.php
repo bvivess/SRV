@@ -1,5 +1,6 @@
 <?php
     session_start(); // si ja existeix sessió, associa la sessió a l'actual
+    ob_start();  // necessari per a la redirecció de 'header()': resetea el buffer de salida
     
     // Comprova si l'usuari ha iniciat la sessió
     if (!isset($_SESSION['username'])) {  // si està definida amb un valor no null -> true
@@ -7,6 +8,8 @@
         header("Location: login.php");  // redirigeix a 'login'
         exit();  // garanteix que no s'executi més codi
     }
+
+    ob_end_flush();  // necessari per a la redirecció de 'header()': envia la sortida enmagatzemada en el buffer
 ?>
 
 <!DOCTYPE html>
