@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
+use App\Models\Tag;
 use App\Models\User;
 use App\Models\Comment;
 use App\Models\Category;
 use App\Models\PostImage;
-use App\Models\Tag;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Post extends Model
@@ -30,6 +31,15 @@ class Post extends Model
         'id'
     ];
 
+    // Mutador
+    protected function title(): Attribute
+    {
+        return Attribute::make(
+            get: function ($value) { return ucfirst($value);}, // Torna el títol amb la primera en maiúscules
+            set: function ($value) { return strtolower($value); }  // Guarda el títol en minúscules
+        );
+    }
+
     // Relacions entre taules
     public function category()
     {
@@ -45,7 +55,7 @@ class Post extends Model
         return $this->hasOne(PostImage::class);
     }
 
-    public function comments()
+    public function comment()
     {
         return $this->hasMany(Comment::class);
     }
@@ -56,7 +66,7 @@ class Post extends Model
         return $this->hasMany(Comment::class)->wherein('user_id', [4, 8 ,9]);  // per exemple
     }
 
-    public function tags()
+    public function tag()
     {
         return $this->belongsToMany(Tag::class);
     }

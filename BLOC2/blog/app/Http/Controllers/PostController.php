@@ -45,7 +45,7 @@ class PostController extends Controller
         $post->content = $request->content;
         $post->category_id = $request->categories_id;
         $post->posted = $request->posted;
-        $post->user_id = 1; // Auth::user()->id;
+        $post->user_id = 1; // Auth::user()->id; (si s'empra la verificació d'usuari)
         $post->save();
 
         return back()->with('status', '<h1>Creació categoria OK</h1>');

@@ -18,7 +18,7 @@ class PostController extends Controller
     {
         // $posts = Post::paginate(3);  // crea una sortida amb paginació
         $posts = Post::all();
-        // $posts = Post::with(["user", "category"])->get();  // post amb les taules relacionades
+        // $posts = Post::with(["user", "category", "image"])->get();  // post amb les taules relacionades, més óptima
         //return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
         return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
     }
@@ -39,7 +39,8 @@ class PostController extends Controller
     public function store(GuardarPostRequest $request)
     {
         $data = $request->all();
-        $data["user_id"] = User::all()->random()->id;  // cal modificar per l'usuari connectat
+        $data["user_id"] = User::all()->random()->id;  // cal modificar per l'usuari connectat 
+                                                       // Auth::user()->id; (si s'empra la verificació d'usuari)
         //dd($data);
         $post = Post::create($data);
 
