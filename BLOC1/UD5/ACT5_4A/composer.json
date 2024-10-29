@@ -1,0 +1,19 @@
+{
+    "name": "winadmin/prova",
+    "description": "Prova composer",
+    "type": "project",
+    "require": {
+        "nesbot/carbon": "^3.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bvives"
+        }
+    ]
+}
