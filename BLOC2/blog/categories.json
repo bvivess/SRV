@@ -1,0 +1,18 @@
+{
+  "categories": {
+    "category": [
+      {
+        "Nom": "Disseny personal",
+		"url": "disseny_personal"
+      },
+      {
+        "Nom": "Il·lustracions",
+		"url": "il_lustracions"
+      },
+      {
+        "Nom": "Art i cultura",
+		"url": "art_i_cultura"
+      }
+    ]
+  }
+}
