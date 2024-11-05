@@ -19,7 +19,8 @@ class PostResource extends JsonResource
         // sortida rònica de la taula:
         // return parent::toArray($request);
 
-        return [  // sortida del json de l'api tractada
+        // sortida personalitzada del json de l'api tractada
+        return [  
             'identificador' => $this->id,
             'titol' => Str::upper($this->title),
             'contingut' => $this->when(($this->posted == 'yes'), $this->content),
@@ -31,7 +32,7 @@ class PostResource extends JsonResource
     }
 
     public function with($request)
-    {
+    {   // permet afegir informació addicional al json
         return [
             'meta' => 'Post ' . $this->id,
         ];

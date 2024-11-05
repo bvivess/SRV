@@ -18,7 +18,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::with(["user" , "image" ])->paginate(4);
+        $posts = Post::with(["user" , "post_image" ])->paginate(4);
         return view('post.index', ['posts' => $posts]);
     }
 

@@ -31,7 +31,6 @@ Route::get('/usuaris/{user}', function (User $user) {
 });
 
 
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -49,10 +48,6 @@ Route::middleware('auth')->group(function () {  // middleware('auth') --> 'auth'
     Route::post('/post/{post}/edit/images',[PostController::class, 'image'])->name('post.image');
     Route::post('/post/{post}/edit/images',[PostController::class, 'image'])->name('post.image');
     Route::resource('/category', CategoryController::class)->middleware(CheckRoleAdmin::class);
-
-
-    
-
 });
 
 require __DIR__.'/auth.php';

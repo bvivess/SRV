@@ -41,7 +41,7 @@ class AuthController extends Controller
       
         if (!$user || !Hash::check($request->password, $user->password)) {
           throw ValidationException::withMessages([
-            'email' => ['Usuari o contressenya són incorrectes.'],
+            'email' => ['Usuari o contrassenya són incorrectes.'],
           ]);
         }
         
@@ -54,7 +54,7 @@ class AuthController extends Controller
 
 
     public function logout(Request $request){
-        dd($request->user());
+        //dd($request->user());
         $request->user()->tokens()->delete();
         return response()->json([
           'msg' => 'Logout correcte'

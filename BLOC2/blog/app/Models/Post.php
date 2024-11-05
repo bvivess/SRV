@@ -8,12 +8,13 @@ use App\Models\Comment;
 use App\Models\Category;
 use App\Models\PostImage;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Post extends Model
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
 
     // protected $table = 'NomTaula';  // Si la taula i el model no segueixen la convenció de Laravel
     // protected $primaryKey = 'id';
@@ -40,35 +41,35 @@ class Post extends Model
         );
     }
 
-    // Relacions entre taules
+    // Relacions entre taules: '->with()'
+    public function comment()
+    {
+        return $this->hasMany(Comment::class);  // 1:N
+    }
+
     public function category()
     {
-      return $this->belongsTo(Category::class);
+      return $this->belongsTo(Category::class);  // N:1
     }
 
     public function user()
     {
-      return $this->belongsTo(User::class);
+      return $this->belongsTo(User::class);  // N:1
     }
 
-    public function image(){
-        return $this->hasOne(PostImage::class);
+    public function image(){  // post_image
+        return $this->hasOne(PostImage::class);  // 1:1
     }
 
-    public function comment()
+    public function tags()
     {
-        return $this->hasMany(Comment::class);
+        return $this->belongsToMany(Tag::class);  // M:N
     }
 
-    // Exemple d'ús: per emprar amb ->with()
+    // Exemple d'ús: per emprar de manera alternativa
     public function commentsFamosos()
     {
         return $this->hasMany(Comment::class)->wherein('user_id', [4, 8 ,9]);  // per exemple
-    }
-
-    public function tag()
-    {
-        return $this->belongsToMany(Tag::class);
     }
 
 }
