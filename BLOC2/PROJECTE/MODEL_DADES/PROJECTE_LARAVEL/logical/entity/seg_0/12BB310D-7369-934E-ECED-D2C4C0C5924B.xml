@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12BB310D-7369-934E-ECED-D2C4C0C5924B" name="ESPAIS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12BB310D-7369-934E-ECED-D2C4C0C5924B" name="spaces">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:06:36 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Nom" id="DA9AC551-10DA-AD88-B337-A894CD6567B1">
+<Attribute name="name" id="DA9AC551-10DA-AD88-B337-A894CD6567B1">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:09:41 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -39,7 +39,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Registre" id="1B173D62-0325-4D19-86C6-7798F079388C">
+<Attribute name="regNumber" id="1B173D62-0325-4D19-86C6-7798F079388C">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:13:46 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -51,7 +51,7 @@
 <domain>894CA548-B983-7BF7-1EA9-0F796F643ABE</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcio_CA" id="DF46BDF2-F0F5-334C-AFAA-B50440A6723D">
+<Attribute name="description_CA" id="DF46BDF2-F0F5-334C-AFAA-B50440A6723D">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:14:27 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -63,7 +63,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcio_ES" id="31C22D57-DC9A-8730-FE60-02CFD6804C73">
+<Attribute name="description_ES" id="31C22D57-DC9A-8730-FE60-02CFD6804C73">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:14:56 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -75,7 +75,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcio_EN" id="0AD0F0E0-492D-43FC-91F9-A89F118C9A84">
+<Attribute name="description_EN" id="0AD0F0E0-492D-43FC-91F9-A89F118C9A84">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:15:15 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -85,7 +85,7 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="eMail" id="461ADA05-B38B-ECEB-8611-928E36499AF7">
+<Attribute name="email" id="461ADA05-B38B-ECEB-8611-928E36499AF7">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:15:36 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -97,7 +97,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Telefon" id="BD65A75B-A277-4450-4746-1C41183848F5">
+<Attribute name="phone" id="BD65A75B-A277-4450-4746-1C41183848F5">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:15:47 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -109,7 +109,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Web" id="C11FD2A9-C074-A4CE-526D-2A1C60D43492">
+<Attribute name="website" id="C11FD2A9-C074-A4CE-526D-2A1C60D43492">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:16:01 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -119,7 +119,7 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Acces (S/N/P)" id="FE036D10-BA9C-B9A7-0D82-9514FC3ED014">
+<Attribute name="accessType (y/n/p)" id="FE036D10-BA9C-B9A7-0D82-9514FC3ED014">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:16:21 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -172,6 +172,30 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="totalVotes" id="2816AB75-93FF-EB76-AB72-B168BD9DCBE0">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 08:31:33 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="totalScoring" id="53C2C8D0-C273-5CB2-6BD6-62D86B56167B">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 08:32:02 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

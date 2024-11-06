@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="188402DB-1D10-7BE7-5FA0-EF404B6F33E7" name="TRADUCCIONS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="188402DB-1D10-7BE7-5FA0-EF404B6F33E7" name="translations">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:03:38 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Descripcio_CA" id="E15ABC0A-F50F-44B7-4551-ECB016EE9E9E">
+<Attribute name="description_CA" id="E15ABC0A-F50F-44B7-4551-ECB016EE9E9E">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:04:12 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -27,7 +27,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcio_ES" id="7A411AC0-830F-DFEF-F2DD-433F2A8BDE12">
+<Attribute name="description_ES" id="7A411AC0-830F-DFEF-F2DD-433F2A8BDE12">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:04:24 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -39,7 +39,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcio_EN" id="184E86F8-EAA3-047A-D321-3BE9C35AD9D2">
+<Attribute name="description_EN" id="184E86F8-EAA3-047A-D321-3BE9C35AD9D2">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:04:33 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>

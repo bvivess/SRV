@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C3B2077-D749-A7B9-9E0D-2C923A7F2C6E" name="COMENTARIS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C3B2077-D749-A7B9-9E0D-2C923A7F2C6E" name="comments">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:32:27 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -29,21 +29,19 @@
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID1" id="7E081AA9-56F2-D739-28C9-614A6E0EB589">
+<Attribute name="comment" id="03E5F33E-923F-BD9F-D26F-0C3F1404CF1E">
 <createdBy>winadmin</createdBy>
-<createdTime>2024-11-06 07:32:56 UTC</createdTime>
-<generatorID>D78AAA00-6B15-8C6D-71C7-7E5919810157</generatorID>
+<createdTime>2024-11-06 07:35:08 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
-<referedAttribute>7B7E4593-0A56-8B9F-9725-537C1E3B7FA2</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT027</logicalDatatype>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Puntuacio" id="9FA5F0C6-D345-3AB5-3A8D-A37DC4A232D2">
+<Attribute name="scoring" id="9FA5F0C6-D345-3AB5-3A8D-A37DC4A232D2">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:33:18 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -61,19 +59,21 @@
 </rangeDef>
 </listOfRanges>
 </Attribute>
-<Attribute name="Comentari" id="03E5F33E-923F-BD9F-D26F-0C3F1404CF1E">
+<Attribute name="ID1" id="7E081AA9-56F2-D739-28C9-614A6E0EB589">
 <createdBy>winadmin</createdBy>
-<createdTime>2024-11-06 07:35:08 UTC</createdTime>
+<createdTime>2024-11-06 07:32:56 UTC</createdTime>
+<generatorID>D78AAA00-6B15-8C6D-71C7-7E5919810157</generatorID>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<referedAttribute>7B7E4593-0A56-8B9F-9725-537C1E3B7FA2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Validat (S/N)" id="8EDF4DDB-5EC1-1783-E38B-5EA99961B2EB">
+<Attribute name="validated (y/n)" id="8EDF4DDB-5EC1-1783-E38B-5EA99961B2EB">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:35:22 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
