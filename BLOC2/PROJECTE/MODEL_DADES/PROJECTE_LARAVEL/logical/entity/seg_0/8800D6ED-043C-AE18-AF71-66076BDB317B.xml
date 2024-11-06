@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8800D6ED-043C-AE18-AF71-66076BDB317B" name="MUNICIPIS">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 07:21:48 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="2920A0D7-3F6F-E33E-2950-EB0BF3E73E5B">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 07:22:00 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="71B9452B-0E41-C2AB-1F7C-CBF7E2680AF8">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 07:22:05 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="1D1B83FA-269A-2C0E-26B9-A22B4C11CEBD">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 07:24:37 UTC</createdTime>
+<generatorID>2B0CF9E5-EF47-7B40-0711-DECFE5A96F0C</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<referedAttribute>8DF42CA0-AD61-5DD1-078B-B08D3E2E7834</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="53891E0F-672E-41AF-A2F7-0DB2AA6A62D0" name="MUNICIPIS PK">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 07:22:16 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2920A0D7-3F6F-E33E-2950-EB0BF3E73E5B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

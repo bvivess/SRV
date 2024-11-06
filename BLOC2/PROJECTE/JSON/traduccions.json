@@ -1,0 +1,186 @@
+{
+  "traduccions": {
+    "terme": [
+      {
+        "cat": "inici",
+        "esp": "inicio",
+        "eng": "home"
+      },
+      {
+        "cat": "comentari",
+        "esp": "comentario",
+        "eng": "comment"
+      },
+      {
+        "cat": "cercar",
+        "esp": "buscar",
+        "eng": "search"
+      },
+      {
+        "cat": "paraules de cerca",
+        "esp": "palabras de búsqueda",
+        "eng": "search items"
+      },
+      {
+        "cat": "seleccionar",
+        "esp": "seleccionar",
+        "eng": "select"
+      },
+      {
+        "cat": "filtrar per",
+        "esp": "filtrar por",
+        "eng": "filter by"
+      },
+      {
+        "cat": "ordenar per",
+        "esp": "ordenar por",
+        "eng": "order by"
+      },
+      {
+        "cat": "pàgina",
+        "esp": "página",
+        "eng": "page"
+      },
+      {
+        "cat": "resultats",
+        "esp": "resultados",
+        "eng": "results"
+      },
+      {
+        "cat": "enviar",
+        "esp": "enviar",
+        "eng": "send"
+      },
+      {
+        "cat": "veure més",
+        "esp": "ver más",
+        "eng": "view more"
+      },
+      {
+        "cat": "guardar",
+        "esp": "guardar",
+        "eng": "save"
+      },
+      {
+        "cat": "editar",
+        "esp": "editar",
+        "eng": "edit"
+      },
+      {
+        "cat": "esborrar",
+        "esp": "borrar",
+        "eng": "delete"
+      },
+      {
+        "cat": "contacte",
+        "esp": "contacto",
+        "eng": "contact"
+      },
+      {
+        "cat": "assumpte",
+        "esp": "asunto",
+        "eng": "subject"
+      },
+      {
+        "cat": "art",
+        "esp": "arte",
+        "eng": "art"
+      },
+      {
+        "cat": "nom",
+        "esp": "nombre",
+        "eng": "name"
+      },
+      {
+        "cat": "descripció",
+        "esp": "descripción",
+        "eng": "description"
+      },
+      {
+        "cat": "adreça",
+        "esp": "dirección",
+        "eng": "address"
+      },
+      {
+        "cat": "telèfon",
+        "esp": "teléfono",
+        "eng": "telephone"
+      },
+      {
+        "cat": "correu",
+        "esp": "correo",
+        "eng": "email"
+      },
+      {
+        "cat": "municipi",
+        "esp": "municipio",
+        "eng": "town"
+      },
+      {
+        "cat": "illa",
+        "esp": "isla",
+        "eng": "island"
+      },
+      {
+        "cat": "espai",
+        "esp": "espacio",
+        "eng": "space"
+      },
+      {
+        "cat": "tipus",
+        "esp": "tipo",
+        "eng": "category"
+      },
+      {
+        "cat": "modalitat",
+        "esp": "modalidad",
+        "eng": "genre"
+      },
+      {
+        "cat": "servei",
+        "esp": "servicio",
+        "eng": "service"
+      },
+      {
+        "cat": "usuari",
+        "esp": "usuario",
+        "eng": "user"
+      },
+      {
+        "cat": "català",
+        "esp": "catalán",
+        "eng": "catalan"
+      },
+      {
+        "cat": "espanyol",
+        "esp": "español",
+        "eng": "spanish"
+      },
+      {
+        "cat": "anglès",
+        "esp": "inglés",
+        "eng": "english"
+      },
+      {
+        "cat": "zona",
+        "esp": "zona",
+        "eng": "zone"
+      },
+      {
+        "cat": "punt d'interés",
+        "esp": "punto de interés",
+        "eng": "point of interest"
+      },
+      {
+        "cat": "visites",
+        "esp": "visitas",
+        "eng": "visits"
+      },
+      {
+        "cat": "altres",
+        "esp": "otros",
+        "eng": "others"
+      }
+    ]
+  }
+}

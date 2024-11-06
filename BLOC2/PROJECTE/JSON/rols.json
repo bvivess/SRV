@@ -1,0 +1,15 @@
+{
+  "roles": {
+    "role": [
+      {
+        "Nom": "administrador"
+      },
+      {
+        "Nom": "gestor"
+      },
+      {
+        "Nom": "visitant"
+      }
+    ]
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "municipis": {
+    "municipi": [
+      {
+        "Nom": "Alaior",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Alaró",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Alcúdia",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Algaida",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Andratx",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Ariany",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Artà",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Banyalbufar",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Binissalem",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Búger",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Bunyola",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Calvià",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Campanet",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Campos",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Capdepera",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "es Castell",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Ciutadella de Menorca",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Consell",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Costitx",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Deià",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Eivissa",
+        "Illa": "Eivissa"
+      },
+      {
+        "Nom": "Escorca",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Esporles",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Estellencs",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Felanitx",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Ferreries",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Formentera",
+        "Illa": "Formentera"
+      },
+      {
+        "Nom": "Fornalutx",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Inca",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Lloret de Vistalegre",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Lloseta",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Llubí",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Llucmajor",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Maó",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Manacor",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Mancor de la Vall",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Maria de la Salut",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Marratxí",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Es Mercadal",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Es Migjorn Gran",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Montuïri",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Muro",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Palma",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Petra",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sa Pobla",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Pollença",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Porreres",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Puigpunyent",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Ses Salines",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sant Antoni de Portmany",
+        "Illa": "Eivissa"
+      },
+      {
+        "Nom": "Sant Joan",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sant Joan de Labritja",
+        "Illa": "Eivissa"
+      },
+      {
+        "Nom": "Sant Josep de sa Talaia",
+        "Illa": "Eivissa"
+      },
+      {
+        "Nom": "Sant Llorenç des Cardassar",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sant Lluís",
+        "Illa": "Menorca"
+      },
+      {
+        "Nom": "Santa Eugènia",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Santa Eulària des Riu",
+        "Illa": "Eivissa"
+      },
+      {
+        "Nom": "Santa Margalida",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Santa Maria del Camí",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Santanyí",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Selva",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sencelles",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sineu",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Sóller",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Son Servera",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Valldemossa",
+        "Illa": "Mallorca"
+      },
+      {
+        "Nom": "Vilafranca de Bonany",
+        "Illa": "Mallorca"
+      }
+    ]
+  }
+}

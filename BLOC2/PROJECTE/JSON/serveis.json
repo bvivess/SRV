@@ -1,0 +1,84 @@
+{
+  "serveis": {
+    "servei": [
+      {
+        "id": "1",
+        "cat": "Adaptat discapacitats",
+        "esp": "Adaptado discapacitados",
+        "eng": "Disabled facilities"
+      },
+      {
+        "id": "2",
+        "cat": "Admet mascotes",
+        "esp": "Admite mascotas",
+        "eng": "Pets allowed"
+      },
+      {
+        "id": "3",
+        "cat": "Aire condicionat",
+        "esp": "Aire acondicionado",
+        "eng": "Air conditioning"
+      },
+      {
+        "id": "4",
+        "cat": "Biblioteca",
+        "esp": "Biblioteca",
+        "eng": "Bibrary"
+      },
+      {
+        "id": "5",
+        "cat": "Arxiu",
+        "esp": "Archivo",
+        "eng": "Archive"
+      },
+      {
+        "id": "6",
+        "cat": "Tallers",
+        "esp": "Talleres",
+        "eng": "Workshops"
+      },
+      {
+        "id": "7",
+        "cat": "Cafeteria",
+        "esp": "Cafetería",
+        "eng": "Coffe shop"
+      },
+      {
+        "id": "8",
+        "cat": "Aparcament",
+        "esp": "Aparcamiento",
+        "eng": "Parking"
+      },
+      {
+        "id": "9",
+        "cat": "Concerts",
+        "esp": "Conciertos",
+        "eng": "Concerts"
+      },
+      {
+        "id": "10",
+        "cat": "Visites concertades",
+        "esp": "Visitas concertadas",
+        "eng": "Arranged visits"
+      },
+      {
+        "id": "11",
+        "cat": "Wifi",
+        "esp": "Wifi",
+        "eng": "Wifi"
+      },
+      {
+        "id": "12",
+        "cat": "Conferències",
+        "esp": "Conferencias",
+        "eng": "Conferences"
+      },
+      {
+        "id": "13",
+        "cat": "Teatre",
+        "esp": "Teatro",
+        "eng": "Theater"
+      }
+    ]
+  }
+}

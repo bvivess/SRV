@@ -1,0 +1,72 @@
+{
+  "modalitats": {
+    "modalitat": [
+      {
+        "id": "1",
+        "cat": "Pintura",
+        "esp": "Pintura",
+        "eng": "Painting"
+      },
+      {
+        "id": "2",
+        "cat": "Escultura",
+        "esp": "Escultura",
+        "eng": "Sculpture"
+      },
+      {
+        "id": "3",
+        "cat": "Fotografia",
+        "esp": "Fotografía",
+        "eng": "Photography"
+      },
+      {
+        "id": "4",
+        "cat": "Videoart",
+        "esp": "Videoarte",
+        "eng": "Videoart"
+      },
+      {
+        "id": "4",
+        "cat": "Videoart",
+        "esp": "Videoarte",
+        "eng": "Videoart"
+      },
+      {
+        "id": "5",
+        "cat": "Graffiti",
+        "esp": "Graffiti",
+        "eng": "Graffiti"
+      },
+      {
+        "id": "6",
+        "cat": "Instal·lació",
+        "esp": "Instalación",
+        "eng": "Installation"
+      },
+      {
+        "id": "7",
+        "cat": "Performance",
+        "esp": "Performance",
+        "eng": "Performance"
+      },
+      {
+        "id": "8",
+        "cat": "Teixits",
+        "esp": "Tejidos",
+        "eng": "Tapestry"
+      },
+      {
+        "id": "9",
+        "cat": "Joies",
+        "esp": "Joyas",
+        "eng": "Jewelry"
+      },
+      {
+        "id": "10",
+        "cat": "Il·lustració",
+        "esp": "Ilustración",
+        "eng": "Illustration"
+      }
+    ]
+  }
+}

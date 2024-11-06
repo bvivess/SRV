@@ -1,0 +1,21 @@
+{
+  "zones": {
+    "zona": [
+      {
+        "Nom": "Centre"
+      },
+      {
+        "Nom": "Ponent"
+      },
+      {
+        "Nom": "Nord"
+      },
+      {
+        "Nom": "Llevant"
+      },
+      {
+        "Nom": "Sud"
+      }
+    ]
+  }
+}
