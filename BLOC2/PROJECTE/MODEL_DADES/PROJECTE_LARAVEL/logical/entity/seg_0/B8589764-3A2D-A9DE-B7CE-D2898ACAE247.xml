@@ -39,6 +39,34 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID1" id="DFE7E7C3-99F2-9D7E-2520-E5EFBB355438">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-07 07:35:53 UTC</createdTime>
+<generatorID>1593F909-320D-EDB0-440A-7284FEAD8F40</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<referedAttribute>11CEBEEE-8F08-65D3-0D14-8F050E18C583</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID11" id="B9BE90BF-4A1D-A549-EE33-FC657AC2C06C">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-07 07:35:53 UTC</createdTime>
+<generatorID>1593F909-320D-EDB0-440A-7284FEAD8F40</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<referedAttribute>7E081AA9-56F2-D739-28C9-614A6E0EB589</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="23A6A361-0709-B71A-6233-E343961027C8" name="FOTOS PK">

@@ -41,7 +41,7 @@
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="scoring" id="9FA5F0C6-D345-3AB5-3A8D-A37DC4A232D2">
+<Attribute name="score" id="9FA5F0C6-D345-3AB5-3A8D-A37DC4A232D2">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:33:18 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -73,7 +73,7 @@
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="validated (y/n)" id="8EDF4DDB-5EC1-1783-E38B-5EA99961B2EB">
+<Attribute name="status (y/n)" id="8EDF4DDB-5EC1-1783-E38B-5EA99961B2EB">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:35:22 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>

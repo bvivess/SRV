@@ -25,7 +25,6 @@
         "esp": "Centro Cultural",
         "eng": "Cultural Center"
       },
-      ,
       {
         "id": "5",
         "cat": "Centre Cultural",
@@ -158,7 +157,6 @@
         "esp": "Faro",
         "eng": "Lighthouse"
       }
-
     ]
   }
 }

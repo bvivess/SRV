@@ -51,7 +51,7 @@
 <domain>894CA548-B983-7BF7-1EA9-0F796F643ABE</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="description_CA" id="DF46BDF2-F0F5-334C-AFAA-B50440A6723D">
+<Attribute name="observation_CA" id="DF46BDF2-F0F5-334C-AFAA-B50440A6723D">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:14:27 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -60,10 +60,10 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="description_ES" id="31C22D57-DC9A-8730-FE60-02CFD6804C73">
+<Attribute name="observation_ES" id="31C22D57-DC9A-8730-FE60-02CFD6804C73">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:14:56 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -72,10 +72,10 @@
 </engineerTo>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="description_EN" id="0AD0F0E0-492D-43FC-91F9-A89F118C9A84">
+<Attribute name="observation_EN" id="0AD0F0E0-492D-43FC-91F9-A89F118C9A84">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:15:15 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -83,6 +83,8 @@
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="email" id="461ADA05-B38B-ECEB-8611-928E36499AF7">
@@ -174,7 +176,7 @@
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="totalVotes" id="2816AB75-93FF-EB76-AB72-B168BD9DCBE0">
+<Attribute name="totalValuations" id="2816AB75-93FF-EB76-AB72-B168BD9DCBE0">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:31:33 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -186,7 +188,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="totalScoring" id="53C2C8D0-C273-5CB2-6BD6-62D86B56167B">
+<Attribute name="totalScore" id="53C2C8D0-C273-5CB2-6BD6-62D86B56167B">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:32:02 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
