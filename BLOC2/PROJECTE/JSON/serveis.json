@@ -78,6 +78,18 @@
         "cat": "Teatre",
         "esp": "Teatro",
         "eng": "Theater"
+      },
+      {
+        "id": "14",
+        "cat": "Banys",
+        "esp": "Baños",
+        "eng": "WC"
+      },
+      {
+        "id": "15",
+        "cat": "Guia",
+        "esp": "Guia",
+        "eng": "Guide"
       }
     ]
   }
