@@ -5,20 +5,39 @@
         "usuari": "mariaarbona45@gmail.com",
         "espai": "ECP12345",
         "text": "La galería de arte me encanta. Y sus obras son muy especiales. Muy recomendable.",
+		"puntuacio": 8,
         "data": "07-02-2021",
         "hora": "12:33:15"
       },
       {
-        "usuari": "korine.knoll@gmail.com",
+        "usuari": "mariaarbona45@gmail.com",
+        "espai": "ECP998320",
+        "text": "Vaig esperar molt a l'entrada. La resta va ser molt enriquidor.",
+		"puntuacio": 9,
+        "data": "11-03-2021",
+        "hora": "09:23:45"
+      },
+      {
+        "usuari": "bweil@gmail.com",
         "espai": "ECP42947",
         "text": "Very beautiful gallery. Amazing artworks.",
+		"puntuacio": 7,
         "data": "16-01-2021",
         "hora": "21:10:05"
+      },
+      {
+        "usuari": "bweil@gmail.com",
+        "espai": "ECP998320",
+        "text": "Lovely studio and museum.",
+		"puntuacio": 10,
+        "data": "22-03-2021",
+        "hora": "17:08:55"
       },
       {
         "usuari": "bielmesquida25@gmail.com",
         "espai": "ECP42947",
         "text": "Les obres d'art de la galeria són genials. Me va encantar l'exposició. Segur que tornaré a la pròxima.",
+		"puntuacio": 8,
         "data": "22-02-2021",
         "hora": "15:21:35"
       },
@@ -26,6 +45,7 @@
         "usuari": "bielmesquida25@gmail.com",
         "espai": "ECP12345",
         "text": "És un museu enorme. Calen més de 2 hores per visitar-ho tot bé.",
+		"puntuacio": 7,
         "data": "17-04-2021",
         "hora": "10:51:23"
       },
@@ -33,6 +53,7 @@
         "usuari": "fsoler@gmail.com",
         "espai": "ECP998326",
         "text": "Molt recomanable. Espai i obres són increibles.",
+		"puntuacio": 10,
         "data": "18-04-2021",
         "hora": "16:12:39"
       },
@@ -40,22 +61,9 @@
         "usuari": "fsoler@gmail.com",
         "espai": "ECP998320",
         "text": "Me va encantar la visita guiada a l'estudi de Joan Miró. El guia ho va explicar molt bé.",
+		"puntuacio": 6,
         "data": "05-02-2021",
         "hora": "19:29:19"
-      },
-      {
-        "usuari": "korine.knoll@gmail.com",
-        "espai": "ECP998320",
-        "text": "Lovely studio and museum.",
-        "data": "22-03-2021",
-        "hora": "17:08:55"
-      },
-      {
-        "usuari": "mariaarbona45@gmail.com",
-        "espai": "ECP998320",
-        "text": "Vaig esperar molt a l'entrada. La resta va ser molt enriquidor.",
-        "data": "11-03-2021",
-        "hora": "09:23:45"
       }
     ]
   }
