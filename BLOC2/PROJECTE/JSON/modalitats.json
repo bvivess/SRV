@@ -26,15 +26,9 @@
         "eng": "Videoart"
       },
       {
-        "id": "4",
-        "cat": "Videoart",
-        "esp": "Videoarte",
-        "eng": "Videoart"
-      },
-      {
         "id": "5",
-        "cat": "Graffiti",
-        "esp": "Graffiti",
+        "cat": "Grafiti",
+        "esp": "Grafiti",
         "eng": "Graffiti"
       },
       {
@@ -66,6 +60,30 @@
         "cat": "Il·lustració",
         "esp": "Ilustración",
         "eng": "Illustration"
+      },
+      {
+        "id": "11",
+        "cat": "Música",
+        "esp": "Música",
+        "eng": "Music"
+      },
+      {
+        "id": "12",
+        "cat": "Vídeo",
+        "esp": "Video",
+        "eng": "Video"
+      },
+      {
+        "id": "13",
+        "cat": "Estampació",
+        "esp": "Estampación",
+        "eng": "Stamping"
+      },
+      {
+        "id": "14",
+        "cat": "Vidre",
+        "esp": "Vidrio",
+        "eng": "Glass"
       }
     ]
   }
