@@ -27,6 +27,18 @@
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="name" id="CCE98DC4-9154-E1F3-B609-917B9A7349F2">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-09 08:59:25 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="description_CA" id="C68570CC-F9DA-FFD8-705A-84F80436FA77">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 07:44:13 UTC</createdTime>
@@ -34,6 +46,7 @@
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
@@ -46,6 +59,7 @@
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
@@ -58,6 +72,7 @@
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>

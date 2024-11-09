@@ -58,6 +58,7 @@
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
@@ -70,6 +71,7 @@
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
@@ -82,6 +84,7 @@
 <engineerTo>
 <item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
@@ -176,7 +179,7 @@
 <logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="totalValuations" id="2816AB75-93FF-EB76-AB72-B168BD9DCBE0">
+<Attribute name="totalScore" id="2816AB75-93FF-EB76-AB72-B168BD9DCBE0">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:31:33 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -188,7 +191,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="totalScore" id="53C2C8D0-C273-5CB2-6BD6-62D86B56167B">
+<Attribute name="countScore" id="53C2C8D0-C273-5CB2-6BD6-62D86B56167B">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:32:02 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
