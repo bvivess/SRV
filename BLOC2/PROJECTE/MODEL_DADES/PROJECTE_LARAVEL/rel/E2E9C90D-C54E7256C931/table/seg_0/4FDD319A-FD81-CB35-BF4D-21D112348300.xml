@@ -105,6 +105,8 @@
 <generatorID>C11FD2A9-C074-A4CE-526D-2A1C60D43492</generatorID>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
 <use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
