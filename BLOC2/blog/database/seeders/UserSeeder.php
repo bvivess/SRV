@@ -16,9 +16,10 @@ class UserSeeder extends Seeder
     {
         // Usuari d'inici
         $adminUser = new User();
-        $adminUser->name = "Tomeu V.";
-        $adminUser->email = "bvives@iesemilidarder.com";
+        $adminUser->name = "admin";
+        $adminUser->email = "admin@abc.com";
         $adminUser->password = Hash::make('12345678');
+        $adminUser->role = 'admin';  //$adminUser->role_id = Role::where('name', 'admin')->value('id');
         $adminUser->save();
     }
 }

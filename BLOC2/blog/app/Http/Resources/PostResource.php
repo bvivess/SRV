@@ -16,23 +16,34 @@ class PostResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        // sortida rònica de la taula:
-        // return parent::toArray($request);
+        // return parent::toArray($request);  // sortida rònica de la taula:
 
-        // sortida personalitzada del json de l'api tractada
+        // sortida personalitzada del JSON de l'API tractada:
         return [  
             'identificador' => $this->id,
             'titol' => Str::upper($this->title),
-            'contingut' => $this->when(($this->posted == 'yes'), $this->content),
+            'categoria' => $this->category->title,
+            //'contingut' => $this->when(($this->posted == 'yes'), $this->content),
             $this->mergeWhen(($this->posted == 'yes'), [
-                'data_creacio' => Carbon::parse($this->created_at)->format("d-m-Y"),
-                'categoria' => $this->category,
+                'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
+                'comentaris' => $this->comments->map(function ($comment) {
+                    return [
+                        'comentari' => $comment->pivot->comment,
+                        'creacio' => Carbon::parse($comment->created_at)->format("d-m-Y h:m:s"),
+                    ];
+                }),
+                'imatges' => $this->images->map(function ($image) {
+                    return [
+                        'url' => $image->name,
+                        'creacio' => Carbon::parse($image->created_at)->format("d-m-Y h:m:s"),
+                    ];
+                }),
             ]),
         ];
     }
 
     public function with($request)
-    {   // permet afegir informació addicional al json
+    {   // permet afegir informació addicional al JSON al 'PostController' amb '->additional(['meta' => ...')
         return [
             'meta' => 'Post ' . $this->id,
         ];

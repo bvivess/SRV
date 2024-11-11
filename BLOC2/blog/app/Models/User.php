@@ -3,10 +3,13 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Laravel\Sanctum\HasApiTokens;                                 // AFEGIR IMPORTANT !!!!!
+use App\Models\Post;
+use App\Models\Image;
+use App\Models\Comment;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;                                 // AFEGIR IMPORTANT !!!!!
 
 class User extends Authenticatable
 {
@@ -38,6 +41,18 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+
+    public function posts()
+    {
+      return $this->hasMany(Post::class);  // N:1
+    }
+    
+    public function comments()
+    {
+        return $this->belongsToMany(Post::class)->withPivot('comment');  // M:N (amb atributs)
+    }
+
+
     protected function casts(): array
     {
         return [

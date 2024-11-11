@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\PostController;
+use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\CategoryController;
 
 
@@ -14,18 +15,20 @@ Route::get('/user', function (Request $request) {
 // Noves rutes
 Route::apiResource('/post', PostController::class);  // Les tracta totes
 // Route::get('/post', [PostController::class, 'index']); // Mostrar tots els posts
-// Route::post('/post', [PostController::class, 'store']); // Crear un nou post
 // Route::get('/post/{post}', [PostController::class, 'show']); // Mostrar un post específic
+// Route::post('/post', [PostController::class, 'store']); // Crear un nou post
 // Route::put('/post/{post}', [PostController::class, 'update']); // Actualitzar un post
 // Route::patch('/post/{post}', [PostController::class, 'update']); // Actualitzar parcialment un post
 // Route::delete('/post/{post}', [PostController::class, 'destroy']); // Eliminar un post
 Route::get('/prova', [PostController::class, 'prova']);  // PER EXEMPLE
 
 Route::apiResource('/category', CategoryController::class);  // Les tracta totes
+Route::apiResource('/user', UserController::class);  // Les tracta totes
 
 Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sanctum'') --> 'aauth:sanctum'' és el middleware que prové de la instal·lació de 'Sanctum'
     //Route::apiResource('/post', PostController::class);  // Les tracta totes
     //Route::apiResource('/category', CategoryController::class);  // Les tracta totes
+    //Route::apiResource('/user', UserController::class);  // Les tracta totes
     Route::post('/logout', [AuthController::class, 'logout']);    
 });
 

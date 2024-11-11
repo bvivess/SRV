@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8EA977A3-4610-9587-0D62-938E37908222" containerWithKeyObject="6FAF1C63-560C-B5D9-6EE3-5ED3879A3102" localFKIndex="1D5B4A3A-FC34-795D-4B76-B85BEE9AA9CD" name="municipalities_islands_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>2B0CF9E5-EF47-7B40-0711-DECFE5A96F0C</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<referredTableLongName>islands</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>30BD6454-41B1-D2EC-0737-9F200B339A5E</referredTableID>
+<keyObject>E00B8EFF-B96B-2344-589F-615EE1DD77AD</keyObject>
+<referredKeyID>E00B8EFF-B96B-2344-589F-615EE1DD77AD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

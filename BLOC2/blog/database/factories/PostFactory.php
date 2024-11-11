@@ -24,6 +24,7 @@ class PostFactory extends Factory
             'title' => $title,
             'url_clean' => Str::slug($title),
             'content' => fake()->randomHtml(2,3),
+            'posted' => fake()->boolean ? 'yes' : 'not',
             'category_id' => Category::inRandomOrder()->first()->id,
             'user_id' => User::inRandomOrder()->first()->id,
         ];

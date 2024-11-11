@@ -17,7 +17,15 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return CategoryResource::collection($categories);
+        return CategoryResource::collection($categories)->additional(['meta' => 'Categoria mostrada correctament']);
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(Category $category)
+    {
+        return (new CategoryResource($category))->additional(['meta' => 'Categoria mostrada correctament']);
     }
 
     /**
@@ -29,14 +37,6 @@ class CategoryController extends Controller
         $category = Category::create($data);
 
         return new CategoryResource($category);
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Category $category)
-    {
-        return (new CategoryResource($category))->additional(['meta' => 'Categoria creada correctament']);
     }
 
     /**

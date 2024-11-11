@@ -3,6 +3,8 @@
 use App\Models\Tag;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Image;
+use App\Models\Comment;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Database\Seeders\UserSeeder;
@@ -17,8 +19,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
+        // Seeders
         $this->call(UserSeeder::class);  // Crea 1 seeder concret
+
+        // JSON
         $this->call(CategorySeeder::class);
         
         // Factories
@@ -26,6 +30,9 @@ class DatabaseSeeder extends Seeder
         Category::factory(5)->create();
         $posts = Post::factory(20)->create();
         $tags = Tag::factory(10)->create();
+        $comments = Comment::factory(100)->create();
+        $images = Image::factory(100)->create();
+
         //Post_Tag::factory(5)->create();
         $posts->each(function ($post) use ($tags) {
             $post->tags()->attach(

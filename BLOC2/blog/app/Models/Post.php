@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Tag;
 use App\Models\User;
+use App\Models\Image;
 use App\Models\Comment;
 use App\Models\Category;
 use App\Models\PostImage;
@@ -42,9 +43,9 @@ class Post extends Model
     }
 
     // Relacions entre taules: '->with()'
-    public function comment()
+    public function user()
     {
-        return $this->hasMany(Comment::class);  // 1:N
+      return $this->belongsTo(User::class);  // 1:N
     }
 
     public function category()
@@ -52,24 +53,25 @@ class Post extends Model
       return $this->belongsTo(Category::class);  // N:1
     }
 
-    public function user()
-    {
-      return $this->belongsTo(User::class);  // N:1
-    }
-
-    public function image(){  // post_image
-        return $this->hasOne(PostImage::class);  // 1:1
-    }
-
     public function tags()
     {
         return $this->belongsToMany(Tag::class);  // M:N
     }
 
+    public function comments()
+    {
+        return $this->belongsToMany(User::class)->withPivot('comment');  // M:N (amb atributs)
+    }
+   
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
+
     // Exemple d'ús: per emprar de manera alternativa
     public function commentsFamosos()
     {
-        return $this->hasMany(Comment::class)->wherein('user_id', [4, 8 ,9]);  // per exemple
+        return $this->hasMany(Comment::class)->wherein('user_id', [4, 8 ,9]);  // REVISAR !!
     }
 
 }

@@ -23,10 +23,10 @@ class CategorySeeder extends Seeder
         $categories = json_decode($jsonData, true);
 
         // Insertar cada registro en la tabla
-        foreach ($categories['categories']['category'] as $c) {
+        foreach ($categories['categories']['categoria'] as $category) {
             Category::create([
-                'title'     => $c['Nom'],
-                'url_clean' => $c['url'],
+                'title'     => $category['Nom'],
+                'url_clean' => $category['url'],
             ]);
         }
 

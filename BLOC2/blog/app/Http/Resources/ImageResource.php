@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CategoryResource extends JsonResource
+class ImageResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,17 +16,19 @@ class CategoryResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return [
+        // return parent::toArray($request);  // sortida rònica de la taula:
+
+        // sortida personalitzada del JSON de l'API tractada:
+        return [  
             'identificador' => $this->id,
-            'url' => Str::upper($this->url_clean),
-            'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
+            'url' => Str::upper($this->name),
         ];
     }
 
     public function with($request)
-    {
+    {   // permet afegir informació addicional al JSON al 'PostController' amb '->additional(['meta' => ...')
         return [
-            'meta' => 'Categoria ' . $this->id ,
+            'meta' => 'Post ' . $this->id,
         ];
     }
 
