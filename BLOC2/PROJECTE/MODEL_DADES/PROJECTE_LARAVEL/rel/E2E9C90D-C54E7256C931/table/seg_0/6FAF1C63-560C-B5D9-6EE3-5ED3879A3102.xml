@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="A7E533D7-9CD7-A0DE-FD5C-6866FF7B4A76">
+<Column name="id" id="A7E533D7-9CD7-A0DE-FD5C-6866FF7B4A76">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>2920A0D7-3F6F-E33E-2950-EB0BF3E73E5B</generatorID>
@@ -30,7 +30,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="islands_ID" id="8758A243-7410-BC59-A041-029937B25A00">
+<Column name="islands_id" id="8758A243-7410-BC59-A041-029937B25A00">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>1D1B83FA-269A-2C0E-26B9-A22B4C11CEBD</generatorID>

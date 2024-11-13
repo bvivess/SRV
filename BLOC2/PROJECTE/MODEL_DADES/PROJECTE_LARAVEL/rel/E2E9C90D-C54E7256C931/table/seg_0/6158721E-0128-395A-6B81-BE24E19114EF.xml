@@ -1,14 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6158721E-0128-395A-6B81-BE24E19114EF" name="adresses">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6158721E-0128-395A-6B81-BE24E19114EF" name="addresses">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>6E7451B6-7509-E03F-CDD5-1A9A4DA731D9</generatorID>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<ordsAlias>adresses</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="35341949-6581-DA2B-7C0F-752502F9D8AF">
+<Column name="id" id="35341949-6581-DA2B-7C0F-752502F9D8AF">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>562707F9-AD02-0B14-9EB4-9BA362D027EC</generatorID>
@@ -19,7 +20,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Nom" id="1A7F5658-0BB5-672F-AB19-EB925E04E036">
+<Column name="nom" id="1A7F5658-0BB5-672F-AB19-EB925E04E036">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>27E805F6-85E7-39D2-43C9-A0299A2778A8</generatorID>
@@ -30,7 +31,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="municipalities_ID" id="AFDDA542-41F4-6253-B9E2-53ADD6D3B03C">
+<Column name="municipalities_id" id="AFDDA542-41F4-6253-B9E2-53ADD6D3B03C">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>41ECF453-73C8-EF75-E64C-62A87AF06603</generatorID>
@@ -45,7 +46,7 @@
 <colAssociation fkAssociation="F572ABB1-DBE5-E5DC-D2E5-8705208B2709" referredColumn="A7E533D7-9CD7-A0DE-FD5C-6866FF7B4A76"/>
 </associations>
 </Column>
-<Column name="zones_ID" id="3D7C5135-D77E-B707-E610-C6A908096ED7">
+<Column name="zones_id" id="3D7C5135-D77E-B707-E610-C6A908096ED7">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>CA3C63F7-4889-CD1F-FAAB-B3B4062C8FB9</generatorID>
@@ -62,7 +63,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="CF552313-0B4A-D852-9535-E2C34326E936" name="adresses_PK">
+<ind_PK_UK id="CF552313-0B4A-D852-9535-E2C34326E936" name="addresses_PK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>87DA837B-8375-F90C-D319-FEAE38B80373</generatorID>
@@ -74,15 +75,7 @@
 <colUsage columnID="35341949-6581-DA2B-7C0F-752502F9D8AF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="109EDA27-DC98-89D2-E44E-A2218C89C006" name="adresses__IDX">
-<createdBy>winadmin</createdBy>
-<createdTime>2024-11-10 16:24:17 UTC</createdTime>
-<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>8E83107A-21F6-B76F-4C26-7A2A95A3F9D4</relationGeneratorID>
-</ind_PK_UK>
-<ind_PK_UK id="D240EED1-CE49-FF6E-3851-F526B797CB0E" name="adresses_municipalities_FK">
+<ind_PK_UK id="D240EED1-CE49-FF6E-3851-F526B797CB0E" name="addresses_municipalities_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>6C96AF74-04A1-6529-DFDD-2CC0DB7EE8BC</generatorID>
@@ -93,7 +86,7 @@
 <colUsage columnID="AFDDA542-41F4-6253-B9E2-53ADD6D3B03C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2B61FE2A-9045-CE39-D2FD-2C9376973F09" name="adresses_zones_FK">
+<ind_PK_UK id="2B61FE2A-9045-CE39-D2FD-2C9376973F09" name="addresses_zones_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>79E7580B-1125-2FE9-6E8D-9B4E6D0B908E</generatorID>

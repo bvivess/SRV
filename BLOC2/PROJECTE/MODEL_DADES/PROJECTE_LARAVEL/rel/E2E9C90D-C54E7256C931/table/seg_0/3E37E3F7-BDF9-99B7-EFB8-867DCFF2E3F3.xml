@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="77FB4D2F-F999-426C-8D2C-F5DEBE43A8FA">
+<Column name="id" id="77FB4D2F-F999-426C-8D2C-F5DEBE43A8FA">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:40:54 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -40,7 +40,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="status_(y/n)" id="E5804C6A-F773-DE58-CC6C-19127758E1E8">
+<Column name="status" id="E5804C6A-F773-DE58-CC6C-19127758E1E8">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>8EDF4DDB-5EC1-1783-E38B-5EA99961B2EB</generatorID>
@@ -53,7 +53,7 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="spaces_ID" id="CCEB045F-3DAE-22BF-0A7F-B570C3FD52E9">
+<Column name="spaces_id" id="CCEB045F-3DAE-22BF-0A7F-B570C3FD52E9">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>7E081AA9-56F2-D739-28C9-614A6E0EB589</generatorID>
@@ -68,7 +68,7 @@
 <colAssociation fkAssociation="7E568755-898E-4830-2DEA-8262F1CAAA7B" referredColumn="0D8DAEFE-FDB5-0125-2F43-268D8AE8A8B2"/>
 </associations>
 </Column>
-<Column name="users_ID" id="CC6E31C2-16A4-9569-B23C-C55B51C86B71">
+<Column name="users_id" id="CC6E31C2-16A4-9569-B23C-C55B51C86B71">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>11CEBEEE-8F08-65D3-0D14-8F050E18C583</generatorID>

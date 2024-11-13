@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="F9D51A20-255F-CCD8-CEF7-AE0DF0F2A35A">
+<Column name="id" id="F9D51A20-255F-CCD8-CEF7-AE0DF0F2A35A">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>FA45481F-B53D-3611-4135-07499F298150</generatorID>
@@ -74,7 +74,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Roles_ID" id="BC1EE44D-FACE-6B89-81AF-9D6088B0F2DF">
+<Column name="role_id" id="BC1EE44D-FACE-6B89-81AF-9D6088B0F2DF">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>F4ABA6D6-0261-C87F-6F4F-D681D499AD5D</generatorID>
@@ -114,7 +114,7 @@
 <colUsage columnID="80F04DE3-2BF8-985F-1938-8334C5C06D5B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C741235E-EED5-482D-6AC4-51ECD1277E4C" name="users_Roles_FK">
+<ind_PK_UK id="C741235E-EED5-482D-6AC4-51ECD1277E4C" name="users_roles_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>8E6FBCBE-88AC-81B6-73E7-AB01CCCE0078</generatorID>

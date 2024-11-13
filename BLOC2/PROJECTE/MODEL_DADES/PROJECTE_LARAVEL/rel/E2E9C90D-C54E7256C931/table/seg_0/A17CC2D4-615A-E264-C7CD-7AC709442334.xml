@@ -8,7 +8,17 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="services_ID" id="1BA85A23-83EB-A655-5A60-85E943A19825">
+<Column name="id" id="E3229C70-2C8A-2655-3249-8A7C85DA5948">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-13 05:15:16 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>70E27626-DEAB-A930-3443-0FFE229693FB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="services_id" id="1BA85A23-83EB-A655-5A60-85E943A19825">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -22,7 +32,7 @@
 <colAssociation fkAssociation="ECD27BB8-6509-0415-C18C-0E4EBD9FE488" referredColumn="9297DE62-2983-4B93-86B4-B1ADBE73BFEE"/>
 </associations>
 </Column>
-<Column name="spaces_ID" id="7259B08B-EE3C-40C6-50FB-B22F5FA5A7D9">
+<Column name="spaces_id" id="7259B08B-EE3C-40C6-50FB-B22F5FA5A7D9">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -46,8 +56,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1BA85A23-83EB-A655-5A60-85E943A19825"/>
-<colUsage columnID="7259B08B-EE3C-40C6-50FB-B22F5FA5A7D9"/>
+<colUsage columnID="E3229C70-2C8A-2655-3249-8A7C85DA5948"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="8D3AD7A2-5675-62F1-5207-2A366F9079EA" name="service_space_services_FK">

@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="6E399939-C4D1-78ED-20E4-5BCBCA5C2950">
+<Column name="id" id="6E399939-C4D1-78ED-20E4-5BCBCA5C2950">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>7CA381A2-B104-9A3F-F4EE-9972F47068ED</generatorID>
@@ -30,7 +30,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="space_user_ID" id="C574E92F-9A85-DED9-5FDC-5B0E84D8645E">
+<Column name="space_user_id" id="C574E92F-9A85-DED9-5FDC-5B0E84D8645E">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:42:43 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>

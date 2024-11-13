@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="89C9F923-BB8C-78D6-AF97-336129F506A6">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-13 05:06:42 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>70E27626-DEAB-A930-3443-0FFE229693FB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="description_CA" id="4C8F6284-54F2-6FDF-BA68-EDF50FC9DB52">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
@@ -52,7 +62,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4C8F6284-54F2-6FDF-BA68-EDF50FC9DB52"/>
+<colUsage columnID="89C9F923-BB8C-78D6-AF97-336129F506A6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

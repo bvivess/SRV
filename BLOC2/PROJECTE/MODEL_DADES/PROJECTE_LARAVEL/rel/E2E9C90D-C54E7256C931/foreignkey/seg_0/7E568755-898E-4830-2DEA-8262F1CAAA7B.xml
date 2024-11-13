@@ -10,7 +10,7 @@
 <keyObject>1052B791-F88A-B816-5D27-2CCD68E9C2DD</keyObject>
 <referredKeyID>1052B791-F88A-B816-5D27-2CCD68E9C2DD</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID</refColNames>
+<refColNames>id</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

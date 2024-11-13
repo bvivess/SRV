@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="5C81B15D-E12F-4868-21D0-CE2EB5480A3D">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-13 05:07:32 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>70E27626-DEAB-A930-3443-0FFE229693FB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="description_CA" id="E15ABC0A-F50F-44B7-4551-ECB016EE9E9E">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-06 08:04:12 UTC</createdTime>
@@ -62,7 +74,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E15ABC0A-F50F-44B7-4551-ECB016EE9E9E</attributeRef>
+<attributeRef>5C81B15D-E12F-4868-21D0-CE2EB5480A3D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

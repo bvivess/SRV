@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FEA735CE-AAC2-ABA4-CBCE-E5900FA8FC30" containerWithKeyObject="4FDD319A-FD81-CB35-BF4D-21D112348300" localFKIndex="A73C76B7-81D5-7FA3-2835-7FB2E19CF00B" name="spaces_adresses_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FEA735CE-AAC2-ABA4-CBCE-E5900FA8FC30" containerWithKeyObject="4FDD319A-FD81-CB35-BF4D-21D112348300" localFKIndex="A73C76B7-81D5-7FA3-2835-7FB2E19CF00B" name="spaces_addresses_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>8E83107A-21F6-B76F-4C26-7A2A95A3F9D4</generatorID>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
-<referredTableLongName>adresses</referredTableLongName>
+<referredTableLongName>addresses</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>6158721E-0128-395A-6B81-BE24E19114EF</referredTableID>
 <keyObject>CF552313-0B4A-D852-9535-E2C34326E936</keyObject>
 <referredKeyID>CF552313-0B4A-D852-9535-E2C34326E936</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID</refColNames>
+<refColNames>id</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
