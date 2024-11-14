@@ -21,7 +21,7 @@ class UserResource extends JsonResource
             'role' => $this->role,
             'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
             'posts' => PostResource::collection($this->whenLoaded('posts')), // utilitza 'PostResource' per a cada post
-            //'images' => ImageResource::collection($this->whenLoaded('images')), // utilitza 'PostResource' per a cada post
+            'images' => ImageResource::collection($this->whenLoaded('images')), // utilitza 'PostResource' per a cada post
         ];
     }
 }
