@@ -48,7 +48,7 @@ class Post extends Model
 
     public function images()
     {
-        return $this->hasMany(Image::class);
+        return $this->hasMany(Image::class);  // 1:N
     }
 
     public function tags()
