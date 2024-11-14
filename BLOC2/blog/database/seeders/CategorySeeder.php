@@ -19,7 +19,7 @@ class CategorySeeder extends Seeder
         $category->save();
 
         // Des d'un arxiu JSON
-        $jsonData = file_get_contents('c:\\temp\\categories.json');
+        $jsonData = file_get_contents('c:\\temp\\blog\\categories.json');
         $categories = json_decode($jsonData, true);
 
         // Insertar cada registro en la tabla
