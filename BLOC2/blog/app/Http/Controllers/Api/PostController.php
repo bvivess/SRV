@@ -18,12 +18,10 @@ class PostController extends Controller
     {
         // $posts = Post::all();
         // $posts = Post::paginate(3);  // crea una sortida amb paginació
-        //$posts = Post::all();  // post amb les taules relacionades, més óptima
+        $posts = Post::all();  // post amb les taules relacionades
         //$posts = Post::with([])->get();  // post amb les taules relacionades, més óptima
+        //$posts = Post::with(["category", "users",  "images"])->get();  // post amb les taules relacionades, més óptima
         //$posts = Post::with(["category", "users",  "images"])->paginate(3);  // post amb les taules relacionades, paginada
-        
-        
-        $posts = Post::with(["category", "users",  "images"])->get();  // post amb les taules relacionades, més óptima
         //return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
         return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
     }

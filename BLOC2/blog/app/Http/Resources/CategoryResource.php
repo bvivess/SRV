@@ -17,7 +17,8 @@ class CategoryResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            //'identificador' => $this->id,
+            'identificador' => $this->id,
+            'nom' => $this->title,
             'url' => Str::upper($this->url_clean),
             'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
         ];
