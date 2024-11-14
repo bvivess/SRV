@@ -22,8 +22,8 @@ class PostController extends Controller
         //$posts = Post::with([])->get();  // post amb les taules relacionades, més óptima
         //$posts = Post::with(["category", "users",  "images"])->get();  // post amb les taules relacionades, més óptima
         //$posts = Post::with(["category", "users",  "images"])->paginate(3);  // post amb les taules relacionades, paginada
-        //return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
-        return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
+        return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
+        //return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
     }
 
     /**
@@ -31,6 +31,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+
+        $post->load('category')->load('users')->load('images');
         //return response()->json($post);
         return (new PostResource($post))->additional(['meta' => 'Post mostrat correctament']);
     }

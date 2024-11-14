@@ -25,11 +25,11 @@ class PostResource extends JsonResource
         return [  
             'identificador' => $this->id,
             'titol' => Str::upper($this->title),
-            'categoria' => $this->category->title,
+            'categoria' => $this->category->title,  // al ser una relació 1:1, es pot fer servir la funció 'category i per tant no cal fer servir 'CategoryResource()'
             //'contingut' => $this->when(($this->posted == 'yes'), $this->content),
             'created_at' => $this->created_at->format('Y-m-d H:i:s'),
             $this->mergeWhen(($this->posted == 'yes'), [
-                'category' => new CategoryResource($this->whenLoaded('category')),  // al ser una relació 1:1, no cal fer servir 'CategoryResource::collection'
+                'category' => new CategoryResource($this->whenLoaded('category')),  // al ser una relació 1:1 cal fer 'new' i no cal fer servir 'CategoryResource::collection'
                 'users' => UserResource::collection($this->whenLoaded('users')),  // al ser una relació 1:N, cal fer servir 'UserResource::collection'
                 'images' => ImageResource::collection($this->whenLoaded('images')),  // al ser una relació 1:N, cal fer servir 'ImageResource::collection'
             ])
@@ -45,7 +45,7 @@ class PostResource extends JsonResource
 
 }
 
-/*
+/* CÀRREGA DE LES RELACIONS 1:1 I 1:N TOT I NO VENIR EN '$request' AMB 'with()' O 'load()':
 $this->mergeWhen(($this->posted == 'yes'), [
     'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
     'comentaris' => $this->users->map(function ($comment) {
