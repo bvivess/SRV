@@ -5,9 +5,7 @@ namespace App\Models;
 use App\Models\Tag;
 use App\Models\User;
 use App\Models\Image;
-use App\Models\Comment;
 use App\Models\Category;
-use App\Models\PostImage;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -42,15 +40,15 @@ class Post extends Model
         );
     }
 
-    // Relacions entre taules: '->with()'
-    public function user()
-    {
-      return $this->belongsTo(User::class);  // 1:N
-    }
-
+    // Relacions entre taules: 
     public function category()
     {
       return $this->belongsTo(Category::class);  // N:1
+    }
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
 
     public function tags()
@@ -58,20 +56,8 @@ class Post extends Model
         return $this->belongsToMany(Tag::class);  // M:N
     }
 
-    public function comments()
+    public function users()
     {
         return $this->belongsToMany(User::class)->withPivot('comment');  // M:N (amb atributs)
     }
-   
-    public function images()
-    {
-        return $this->hasMany(Image::class);
-    }
-
-    // Exemple d'ús: per emprar de manera alternativa
-    public function commentsFamosos()
-    {
-        return $this->hasMany(Comment::class)->wherein('user_id', [4, 8 ,9]);  // REVISAR !!
-    }
-
 }

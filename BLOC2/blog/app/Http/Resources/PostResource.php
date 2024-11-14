@@ -26,7 +26,7 @@ class PostResource extends JsonResource
             //'contingut' => $this->when(($this->posted == 'yes'), $this->content),
             $this->mergeWhen(($this->posted == 'yes'), [
                 'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
-                'comentaris' => $this->comments->map(function ($comment) {
+                'comentaris' => $this->users->map(function ($comment) {
                     return [
                         'comentari' => $comment->pivot->comment,
                         'creacio' => Carbon::parse($comment->created_at)->format("d-m-Y h:m:s"),

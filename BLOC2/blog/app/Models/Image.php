@@ -10,6 +10,7 @@ class Image extends Model
 {
     use HasFactory;
 
+    // Relacions entre taules:
     public function post()
     {
         return $this->belongsTo(Post::class);

@@ -18,11 +18,11 @@ return new class extends Migration
             $table->text('content')->nullable();
             $table->enum('posted', ['yes', 'not'])->default('not');
             $table->unsignedBigInteger('category_id')->nullable();
-			$table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-			//$table->foreignId('user_id')->constrained->onUpdate('restrict')->onDelete('restrict');;
-			$table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
+            //$table->foreignId('user_id')->constrained()->onUpdate('restrict')->onDelete('restrict');;
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            //$table->foreignId('category_id')->constrained->onUpdate('restrict')->onDelete('restrict');;
+            //$table->foreignId('category_id')->constrained()->onUpdate('restrict')->onDelete('restrict');;
             $table->timestamps();
         });
     }

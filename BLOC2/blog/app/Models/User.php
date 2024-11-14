@@ -42,6 +42,15 @@ class User extends Authenticatable
      * @return array<string, string>
      */
 
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+
+    // Relacions entre taules:
     public function posts()
     {
       return $this->hasMany(Post::class);  // N:1
@@ -53,11 +62,5 @@ class User extends Authenticatable
     }
 
 
-    protected function casts(): array
-    {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
-    }
+
 }

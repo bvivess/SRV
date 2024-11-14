@@ -19,6 +19,7 @@
             'id'
         ];
         
+        // Relacions entre taules:
         public function posts()
         {
             return $this->belongsToMany(Post::class);
