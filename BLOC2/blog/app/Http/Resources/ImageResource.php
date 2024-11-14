@@ -20,7 +20,7 @@ class ImageResource extends JsonResource
 
         // sortida personalitzada del JSON de l'API tractada:
         return [  
-            //'identificador' => $this->id,
+            'identificador' => $this->id,
             'url' => Str::upper($this->name),
         ];
     }

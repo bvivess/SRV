@@ -3,8 +3,9 @@
 namespace App\Models;
 
 use App\Models\Tag;
-use App\Models\Category;
+use App\Models\User;
 use App\Models\Comment;
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -48,6 +49,11 @@ class Post extends Model
     public function tags()
     {
         return $this->belongsToMany(Tag::class);  // M:N
+    }
+
+    public function user() 
+    {
+        return $this->belongsTo(User::class);   // N:1
     }
 
     public function comments()
