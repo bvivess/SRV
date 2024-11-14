@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Post;
+use App\Models\Comment;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -19,7 +19,7 @@ class ImageFactory extends Factory
     {
         return [
             'name' => $this->faker->imageUrl(),
-            'post_id' => Post::inRandomOrder()->first()->id,
+            'post_user_id' => Comment::inRandomOrder()->first()->id,
         ];
     }
 }

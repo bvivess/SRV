@@ -4,8 +4,6 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\Post;
-use App\Models\Image;
-use App\Models\Comment;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -52,11 +50,6 @@ class User extends Authenticatable
 
     // Relacions entre taules:
     public function posts()
-    {
-      return $this->hasMany(Post::class);  // N:1
-    }
-    
-    public function comments()
     {
         return $this->belongsToMany(Post::class)->withPivot('comment');  // M:N (amb atributs)
     }

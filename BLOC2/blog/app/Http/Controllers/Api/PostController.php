@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource;
@@ -18,10 +19,10 @@ class PostController extends Controller
     {
         // $posts = Post::all();
         // $posts = Post::paginate(3);  // crea una sortida amb paginació
-        $posts = Post::all();  // post amb les taules relacionades
+        $posts = Post::all();  // post sense les taules relacionades
         //$posts = Post::with([])->get();  // post amb les taules relacionades, més óptima
-        //$posts = Post::with(["category", "users",  "images"])->get();  // post amb les taules relacionades, més óptima
-        //$posts = Post::with(["category", "users",  "images"])->paginate(3);  // post amb les taules relacionades, paginada
+        //$posts = Post::with(["category", "users",  "comments.images"])->get();  // post amb les taules relacionades, més óptima
+        //$posts = Post::with(["category", "users",  "comments.images"])->paginate(3);  // post amb les taules relacionades, paginada
         return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
         //return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
     }
@@ -31,8 +32,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-
-        $post->load('category')->load('users')->load('images');
+        $post->load('category')->load('users')->load('comments.images');
         //return response()->json($post);
         return (new PostResource($post))->additional(['meta' => 'Post mostrat correctament']);
     }

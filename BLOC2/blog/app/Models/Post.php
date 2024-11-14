@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Models\Tag;
 use App\Models\User;
-use App\Models\Image;
+use App\Models\Comment;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
@@ -44,11 +44,6 @@ class Post extends Model
     public function category()
     {
       return $this->belongsTo(Category::class);  // N:1
-    }
-
-    public function images()
-    {
-        return $this->hasMany(Image::class);  // 1:N
     }
 
     public function tags()
