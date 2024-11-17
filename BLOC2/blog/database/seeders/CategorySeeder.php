@@ -29,6 +29,5 @@ class CategorySeeder extends Seeder
                 'url_clean' => $category['url'],
             ]);
         }
-
     }
 }

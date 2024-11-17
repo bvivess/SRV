@@ -15,11 +15,11 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         // Usuari d'inici
-        $adminUser = new User();
-        $adminUser->name = "admin";
-        $adminUser->email = "admin@abc.com";
-        $adminUser->password = Hash::make('12345678');
-        $adminUser->role = 'admin';  //$adminUser->role_id = Role::where('name', 'admin')->value('id');
-        $adminUser->save();
+        $user = new User();
+        $user->name = "admin";
+        $user->email = "admin@abc.com";
+        $user->password = Hash::make('12345678');
+        $user->role = 'admin';  //$user->role_id = Role::where('name', 'admin')->value('id');
+        $user->save();
     }
 }

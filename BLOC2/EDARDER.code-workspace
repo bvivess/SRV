@@ -4,7 +4,10 @@
 			"path": "blog"
 		},
 		{
-			"path": "../../../../laragon/www/blog2"
+			"path": "blog2"
+		},
+		{
+			"path": "baleart"
 		}
 	],
 	"settings": {}
