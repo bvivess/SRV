@@ -1,13 +1,15 @@
 {
 	"folders": [
 		{
+			"name": "baleart",
+			"path": "baleart"
+		},
+		{
+			"name": "blog",
 			"path": "blog"
 		},
 		{
 			"path": "blog2"
-		},
-		{
-			"path": "baleart"
 		}
 	],
 	"settings": {}
