@@ -21,9 +21,13 @@ class Post extends Model
     // Atributs que es poden emplenar de manera automàtica: associat al mètode 'Post::create()'
     protected $fillable = [ 
         'title',
-        'url_clean',
         'content',
         'user_id',
+    ];
+
+    // Atributs que no es volen mostrar amb 'response()->json($posts)'
+    protected $hidden = [
+        'url_clean',
     ];
 
     // Atributs que no es poden emplenar de manera automàtica

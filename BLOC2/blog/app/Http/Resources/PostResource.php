@@ -25,6 +25,7 @@ class PostResource extends JsonResource
         return [  
             'identificador' => $this->id,
             'titol' => Str::upper($this->title),
+            'url' => $this->url_clean,  // es decideix incloure manualment aquest atribut
             'categoria' => $this->category->title,  // al ser una relació 1:1, es pot fer servir la funció 'category i per tant no cal fer servir 'CategoryResource()'
             'usuari' => $this->user->name,  // al ser una relació 1:1, es pot fer servir la funció 'user' i per tant no cal fer servir 'UserResource()'
             //'contingut' => $this->when(($this->posted == 'yes'), $this->content),
