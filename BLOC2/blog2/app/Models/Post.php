@@ -26,6 +26,10 @@ class Post extends Model
         'user_id',
     ];
 
+    protected $hidden = [
+        'url_clean',
+    ];
+
     // Atributs que no es poden emplenar de manera automàtica
     protected $guarded = [
         'id'

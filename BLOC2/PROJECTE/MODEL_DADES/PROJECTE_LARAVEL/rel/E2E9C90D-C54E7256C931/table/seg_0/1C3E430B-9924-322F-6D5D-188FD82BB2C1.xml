@@ -58,7 +58,7 @@
 <colUsage columnID="6E399939-C4D1-78ED-20E4-5BCBCA5C2950"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="66FF6A5E-E418-B61E-0209-B13F4F658E8B" name="images_space_user_FK">
+<ind_PK_UK id="66FF6A5E-E418-B61E-0209-B13F4F658E8B" name="images_comments_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:42:43 UTC</createdTime>
 <generatorID>055B7007-E332-5881-EC43-0617FA418FBB</generatorID>

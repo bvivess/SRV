@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8BA0B926-C1BB-36ED-3B96-77354CA53CB5" containerWithKeyObject="1C3E430B-9924-322F-6D5D-188FD82BB2C1" localFKIndex="66FF6A5E-E418-B61E-0209-B13F4F658E8B" name="images_space_user_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8BA0B926-C1BB-36ED-3B96-77354CA53CB5" containerWithKeyObject="1C3E430B-9924-322F-6D5D-188FD82BB2C1" localFKIndex="66FF6A5E-E418-B61E-0209-B13F4F658E8B" name="images_comments_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:42:43 UTC</createdTime>
 <generatorID>055B7007-E332-5881-EC43-0617FA418FBB</generatorID>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
-<referredTableLongName>space_user</referredTableLongName>
+<referredTableLongName>comments</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>3E37E3F7-BDF9-99B7-EFB8-867DCFF2E3F3</referredTableID>
 <keyObject>8DE324E0-87C1-1E2E-3B1F-10B6FAC52723</keyObject>
 <referredKeyID>8DE324E0-87C1-1E2E-3B1F-10B6FAC52723</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>ID</refColNames>
+<refColNames>id</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

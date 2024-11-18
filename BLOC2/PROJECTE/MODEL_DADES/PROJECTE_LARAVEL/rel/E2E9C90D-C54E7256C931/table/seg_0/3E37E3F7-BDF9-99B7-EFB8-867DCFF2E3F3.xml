@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E37E3F7-BDF9-99B7-EFB8-867DCFF2E3F3" name="space_user">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E37E3F7-BDF9-99B7-EFB8-867DCFF2E3F3" name="comments">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>1C3B2077-D749-A7B9-9E0D-2C923A7F2C6E</generatorID>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<ordsAlias>space_user</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -85,7 +86,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8DE324E0-87C1-1E2E-3B1F-10B6FAC52723" name="space_user_PK">
+<ind_PK_UK id="8DE324E0-87C1-1E2E-3B1F-10B6FAC52723" name="comments_PK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>055B7007-E332-5881-EC43-0617FA418FBB</generatorID>
@@ -97,7 +98,7 @@
 <colUsage columnID="77FB4D2F-F999-426C-8D2C-F5DEBE43A8FA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="76E589BF-0BB5-DA65-C71B-E8D0A6C37FA9" name="space_user_users_FK">
+<ind_PK_UK id="76E589BF-0BB5-DA65-C71B-E8D0A6C37FA9" name="comments_users_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>6D76C98F-7DA2-735F-CD42-D70B334F79DC</generatorID>
@@ -108,7 +109,7 @@
 <colUsage columnID="CC6E31C2-16A4-9569-B23C-C55B51C86B71"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A983848D-434D-9D8A-0ACF-D2DACD47EF43" name="space_user_spaces_FK">
+<ind_PK_UK id="A983848D-434D-9D8A-0ACF-D2DACD47EF43" name="comments_spaces_FK">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>D78AAA00-6B15-8C6D-71C7-7E5919810157</generatorID>
