@@ -17,14 +17,14 @@ class PostController extends Controller
      */
     public function index()
     {
-        //$posts = Post::all();
+        $posts = Post::all();
         // $posts = Post::paginate(3);  // crea una sortida amb paginació
-        // $posts = Post::with([])->get();  // post amb les taules relacionades, més óptima
-        $posts = Post::with(["category", "user",  "comments"])->get();  // post amb les taules relacionades, més óptima
-        //$posts=Post::with(["user","category","comments","comments.images"])->get();
-        // $posts = Post::with(["category", "users",  "comments.images"])->paginate(3);  // post amb les taules relacionades, paginada
-        //return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
-        return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
+        // $posts = Post::with([])->get();  // no té sentit
+        // $posts = Post::with(["user", "category", "comments"])->get();  // post amb les taules relacionades, més óptima
+        // $posts = Post::with(["user", "category", "comments", "comments.images"])->get();
+        // $posts = Post::with(["user", "category", "comments", "comments.images"])->paginate(3);  // post amb les taules relacionades, paginada
+        return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
+        // return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
     }
 
     /**
@@ -39,8 +39,8 @@ class PostController extends Controller
 
         // amb 'load()'
         $post->load('user')->load('category')->load('comments')->load('comments.images');
-        // return response()->json($post);
-        return (new PostResource($post))->additional(['meta' => 'Post mostrat correctament']);
+        return response()->json($post);
+        // return (new PostResource($post))->additional(['meta' => 'Post mostrat correctament']);
     }
 
     /**

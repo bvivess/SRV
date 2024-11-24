@@ -144,7 +144,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="addresses_id" id="7061DA86-000E-C2CE-8563-43397C21F031">
+<Column name="address_id" id="7061DA86-000E-C2CE-8563-43397C21F031">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>28CED3E4-1A88-3E79-ACF2-A50C6D054F6F</generatorID>
@@ -159,7 +159,7 @@
 <colAssociation fkAssociation="FEA735CE-AAC2-ABA4-CBCE-E5900FA8FC30" referredColumn="35341949-6581-DA2B-7C0F-752502F9D8AF"/>
 </associations>
 </Column>
-<Column name="space_types_id" id="3E56AF6A-06CE-C94A-8ADB-FD88843752EE">
+<Column name="space_type_id" id="3E56AF6A-06CE-C94A-8ADB-FD88843752EE">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>A77B10E8-DCF4-1FDF-ED09-D01AF361B0C3</generatorID>
@@ -174,7 +174,7 @@
 <colAssociation fkAssociation="1648678A-2918-9D50-ED77-98F438F17A1E" referredColumn="782D509E-A34B-7670-7A24-35D83413DB25"/>
 </associations>
 </Column>
-<Column name="users_id" id="1FA9EE92-DCC7-CAEA-EAB6-74F279E686B4">
+<Column name="user_id" id="1FA9EE92-DCC7-CAEA-EAB6-74F279E686B4">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>A3FAA2D8-A5BC-63DD-2A94-D170177B844A</generatorID>

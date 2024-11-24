@@ -18,7 +18,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="services_id" id="1BA85A23-83EB-A655-5A60-85E943A19825">
+<Column name="service_id" id="1BA85A23-83EB-A655-5A60-85E943A19825">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
@@ -32,7 +32,7 @@
 <colAssociation fkAssociation="ECD27BB8-6509-0415-C18C-0E4EBD9FE488" referredColumn="9297DE62-2983-4B93-86B4-B1ADBE73BFEE"/>
 </associations>
 </Column>
-<Column name="spaces_id" id="7259B08B-EE3C-40C6-50FB-B22F5FA5A7D9">
+<Column name="space_id" id="7259B08B-EE3C-40C6-50FB-B22F5FA5A7D9">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>

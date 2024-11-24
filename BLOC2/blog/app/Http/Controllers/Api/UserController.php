@@ -19,7 +19,8 @@ class UserController extends Controller
     {
         //$users = User::all();
         $users = User::with(['posts'])->get();
-        return response()->json($users);
+        //return response()->json($users);
+        return (UserResource::collection($users))->additional(['meta' => 'Users mostrats correctament']);  // torna una resposta personalitzada
     }
 
     /**
@@ -31,7 +32,7 @@ class UserController extends Controller
         //return response()->json($userx);
         //return new UserResource($userx);
 
-        $user->load('posts')->load('comments')->load('posts.images');
+        $user->load('posts')->load('comments')->load('comments.images');
         //return response()->json($user);
         return new UserResource($user);
     }

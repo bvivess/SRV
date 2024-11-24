@@ -26,7 +26,7 @@
 <ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<domain>A28387F4-BF95-E8D5-A3BC-742C7473B5E6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -54,7 +54,7 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="spaces_id" id="CCEB045F-3DAE-22BF-0A7F-B570C3FD52E9">
+<Column name="space_id" id="CCEB045F-3DAE-22BF-0A7F-B570C3FD52E9">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>7E081AA9-56F2-D739-28C9-614A6E0EB589</generatorID>
@@ -69,7 +69,7 @@
 <colAssociation fkAssociation="7E568755-898E-4830-2DEA-8262F1CAAA7B" referredColumn="0D8DAEFE-FDB5-0125-2F43-268D8AE8A8B2"/>
 </associations>
 </Column>
-<Column name="users_id" id="CC6E31C2-16A4-9569-B23C-C55B51C86B71">
+<Column name="user_id" id="CC6E31C2-16A4-9569-B23C-C55B51C86B71">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>11CEBEEE-8F08-65D3-0D14-8F050E18C583</generatorID>

@@ -30,7 +30,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="islands_id" id="8758A243-7410-BC59-A041-029937B25A00">
+<Column name="island_id" id="8758A243-7410-BC59-A041-029937B25A00">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:17 UTC</createdTime>
 <generatorID>1D1B83FA-269A-2C0E-26B9-A22B4C11CEBD</generatorID>

@@ -31,7 +31,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="municipalities_id" id="AFDDA542-41F4-6253-B9E2-53ADD6D3B03C">
+<Column name="municipality_id" id="AFDDA542-41F4-6253-B9E2-53ADD6D3B03C">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>41ECF453-73C8-EF75-E64C-62A87AF06603</generatorID>
@@ -46,7 +46,7 @@
 <colAssociation fkAssociation="F572ABB1-DBE5-E5DC-D2E5-8705208B2709" referredColumn="A7E533D7-9CD7-A0DE-FD5C-6866FF7B4A76"/>
 </associations>
 </Column>
-<Column name="zones_id" id="3D7C5135-D77E-B707-E610-C6A908096ED7">
+<Column name="zone_id" id="3D7C5135-D77E-B707-E610-C6A908096ED7">
 <createdBy>winadmin</createdBy>
 <createdTime>2024-11-10 16:24:16 UTC</createdTime>
 <generatorID>CA3C63F7-4889-CD1F-FAAB-B3B4062C8FB9</generatorID>

@@ -26,12 +26,12 @@ class PostResource extends JsonResource
             'identificador' => $this->id,
             'titol' => Str::upper($this->title),
             'url' => $this->url_clean,  // es decideix incloure manualment aquest atribut
-            'categoria' => $this->category->title,  // al ser una relació 1:1, es pot fer servir la funció 'category i per tant no cal fer servir 'CategoryResource()'
-            'usuari' => $this->user->name,  // al ser una relació 1:1, es pot fer servir la funció 'user' i per tant no cal fer servir 'UserResource()'
+            'categoria' => $this->category->title,  // al ser una relació 1:1, es pot fer servir la funció 'category()' i per tant no cal fer servir 'CategoryResource()'
+            'usuari' => $this->user->name,  // al ser una relació 1:1, es pot fer servir la funció 'user()' i per tant no cal fer servir 'UserResource()'
             //'contingut' => $this->when(($this->posted == 'yes'), $this->content),
             'created_at' => $this->created_at->format('Y-m-d H:i:s'),
             $this->mergeWhen(($this->posted == 'yes'), [
-                'category' => new CategoryResource($this->whenLoaded('category')),  // al ser una relació 1:1 cal fer 'new' i no cal fer servir 'CategoryResource::collection'
+                'categoria' => new CategoryResource($this->whenLoaded('category')),  // al ser una relació 1:1 cal fer 'new' i no cal fer servir 'CategoryResource::collection'
                 'usuari' => new UserResource($this->whenLoaded('user')), // al ser una relació 1:1 cal fer 'new' i no cal fer servir 'UserResource::collection'
                 'comentaris' => CommentResource::collection($this->whenLoaded('comments')),  // al ser una relació 1:N cal fer servir 'CommentResource::collection'
             ])
