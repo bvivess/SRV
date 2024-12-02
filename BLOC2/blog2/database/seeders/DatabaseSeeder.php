@@ -26,6 +26,14 @@ class DatabaseSeeder extends Seeder
         $this->call(CategorySeeder::class);
         
         // Factories
+        $tag = new Tag();
+        $tag->name = "Prova1";
+        $tag->url_clean = "prova1";
+        $tag->save();
+        $tag = new Tag();
+        $tag->name = "Prova2";
+        $tag->url_clean = "prova2";
+        $tag->save();
         User::factory(5)->create();  // Crea 5 Factories aleatòris
         Category::factory(5)->create();
         $posts = Post::factory(20)->create();

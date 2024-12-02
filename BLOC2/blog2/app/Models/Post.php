@@ -20,9 +20,10 @@ class Post extends Model
     
     // Atributs que es poden emplenar de manera automàtica: associat al mètode 'Post::create()'
     protected $fillable = [ 
-        'title',
+        //'title',
         'content',
         'user_id',
+        'category_id',
     ];
 
     protected $hidden = [
