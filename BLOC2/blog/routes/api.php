@@ -25,7 +25,7 @@ Route::get('/prova', [PostController::class, 'prova']);  // PER EXEMPLE
 Route::apiResource('/category', CategoryController::class);  // Les tracta totes
 Route::apiResource('/user', UserController::class);  // Les tracta totes
 
-Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sanctum'') --> 'aauth:sanctum'' és el middleware que prové de la instal·lació de 'Sanctum'
+Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sanctum'') --> 'auth:sanctum'' és el middleware que prové de la instal·lació de 'Sanctum'
     //Route::apiResource('/post', PostController::class);  // Les tracta totes
     //Route::apiResource('/category', CategoryController::class);  // Les tracta totes
     //Route::apiResource('/user', UserController::class);  // Les tracta totes

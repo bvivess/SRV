@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Post;
+use App\Models\Tag;
 use App\Models\User;
 use App\Models\Comment;
 use Illuminate\Http\Request;
@@ -49,22 +50,30 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    // public function store(Request $request $request)
+    // public function store(Request $request)
     public function store(GuardarPostRequest $request)
     {
-        $data = $request->all();
-        $data["user_id"] = User::all()->random()->id;  // cal modificar per l'usuari connectat 
+        //$data = $request->all();
                                                        // Auth::user()->id; (si s'empra la verificació d'usuari)
-        //dd($data);
-        $post = Post::create($data);
+        $post = Post::create(   // crea un nou post
+            [
+                'title' => $request->title,
+                'content' => $request->content,
+                'url_clean' => $request->url_clean,
+                'user_id' => 1,
+                'category_id' => $request->category_id,
+            ]
+        );
+
+        foreach ( explode(',', $request->tags) as $tag) 
+            $post->tags()->attach(Tag::firstOrCreate(['name' => trim($tag)])->id);         
+
 
         // return response()->json(['meta' => 'Post creat correctament']);
         // return response()->json($post);
         // return response()->json([
-        //     'data' => $post, // Aquí incloem el post creat
-        //     'meta' => 'Post creat correctament', // Metadada personalitzada
-        // ], 201); // 201 indica que s'ha creat un nou recurs
-        return (new PostResource($post))->additional(['meta' => 'Post creat correctament']);
+        return response()->json($post);
+        //return new PostResource($post);
     }
 
     /**
