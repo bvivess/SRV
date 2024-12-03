@@ -32,13 +32,16 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+        // Post::find($id);  // no cal fer-ho, el model 'Post' ja ho fa de manera implícita
+
+        // amb 'load()'
+        // $post->load('user')->load('category')->load('comments')->load('comments.images');
+        
         // amb 'with()'
         // $newPost = Post::with(["user","category","comments","comments.images"])->find($post->id);
         // return response()->json($newPost);
         // return (new PostResource($newPost))->additional(['meta' => 'Post mostrat correctament']);
 
-        // amb 'load()'
-        $post->load('user')->load('category')->load('comments')->load('comments.images');
         return response()->json($post);
         // return (new PostResource($post))->additional(['meta' => 'Post mostrat correctament']);
     }
