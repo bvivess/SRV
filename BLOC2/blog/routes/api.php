@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
@@ -13,7 +14,14 @@ Route::get('/user', function (Request $request) {
 });
 
 // Noves rutes
+Route::bind('post', function ($value) {
+    return is_numeric($value)
+        ? Post::findOrFail($value) // Cerca pel camp `id`
+        : Post::where('title', $value)->firstOrFail(); // Cerca pel camp `title`
+});
 Route::apiResource('/post', PostController::class);  // Les tracta totes
+
+
 // Route::get('/post', [PostController::class, 'index']); // Mostrar tots els posts
 // Route::get('/post/{post}', [PostController::class, 'show']); // Mostrar un post específic
 // Route::post('/post', [PostController::class, 'store']); // Crear un nou post
