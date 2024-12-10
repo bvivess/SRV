@@ -95,7 +95,6 @@ class PostController extends Controller
         return (new PostResource($post))->additional(['msg' => 'Post eliminat correctament']);
     }
 
-
     public function prova()    // PER EXEMPLE
     {
         return response()->json(['data' => 'Això és una prova']);
