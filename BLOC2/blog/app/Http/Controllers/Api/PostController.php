@@ -51,8 +51,9 @@ class PostController extends Controller
     public function store(GuardarPostRequest $request)
     {
         // CREACIÓ DE LES DADES
-        $post = Post::create(   // crea un nou post
+        $post = Post::create(
             [
+                // Cal habilitar aquests atributs en Model->'$fillable'
                 'title' => $request->title,
                 'url_clean' => $request->url_clean,
                 'content' => $request->content,
@@ -60,6 +61,7 @@ class PostController extends Controller
                 'category_id' => $request->category_id,
             ]
         );
+        
         // Post M:N Tags
         foreach ( explode(',', $request->tags) as $tag) 
             $post->tags()->attach(Tag::firstOrCreate(['name' => trim($tag)])->id);  // Tag::where( …)->get()->id       

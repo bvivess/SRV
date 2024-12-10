@@ -50,21 +50,20 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //$data = $request->all();
-                                                       // Auth::user()->id; (si s'empra la verificació d'usuari)
         $post = Post::create(   // crea un nou post
             [
+                // Cal habilitar aquests atributs en Model->'$fillable'
                 'title' => $request->title,
                 'content' => $request->content,
                 'url_clean' => $request->url_clean,
-                'user_id' => 1,
+                'user_id' => $request->user_id,  // Auth::user()->id; (si s'empra la verificació d'usuari)
                 'category_id' => $request->category_id,
             ]
         );
-
+        
+        // Post M:N Tags
         foreach ( explode(',', $request->tags) as $tag) 
             $post->tags()->attach(Tag::firstOrCreate(['name' => trim($tag)])->id);         
-
 
         // return response()->json(['meta' => 'Post creat correctament']);
         // return response()->json($post);
