@@ -13,8 +13,14 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-
+/*
+Route::bind('post', function ($value) {
+    return is_numeric($value)
+        ? Post::findOrFail($value) // Cerca pel camp `id`
+        : Post::where('title', $value)->firstOrFail(); // Cerca pel camp `title`
+});
+Route::apiResource('/post', PostController::class);  // Les tracta totes
+*/
 // Route::get('/post', [PostController::class, 'index']); // Mostrar tots els posts
 // Route::get('/post/{post}', [PostController::class, 'show']); // Mostrar un post específic
 // Route::post('/post', [PostController::class, 'store']); // Crear un nou post
@@ -29,10 +35,8 @@ Route::apiResource('/user', UserController::class);  // Les tracta totes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
+/*
 Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sanctum'') 
-    //Route::apiResource('/post', PostController::class);  // Les tracta totes
-    //Route::apiResource('/category', CategoryController::class);  // Les tracta totes
-    //Route::apiResource('/user', UserController::class);  // Les tracta totes
     // Noves rutes
     Route::bind('post', function ($value) {
         return is_numeric($value)
@@ -40,7 +44,21 @@ Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sa
             : Post::where('title', $value)->firstOrFail(); // Cerca pel camp `title`
     });
     Route::apiResource('/post', PostController::class);  // Les tracta totes
-    Route::post('/logout', [AuthController::class, 'logout']);    
+
+    //Route::apiResource('/post', PostController::class);  // Les tracta totes
+    //Route::apiResource('/category', CategoryController::class);  // Les tracta totes
+    //Route::apiResource('/user', UserController::class);  // Les tracta totes
+
+    Route::post('/logout', [AuthController::class, 'logout']);
+}); */
+
+
+Route::middleware(['ApiKeyMiddleware'])->group(function () {
+    Route::get('/protected-route', function () {
+        return response()->json(['message' => 'Aquesta ruta està protegida per API Key']);
+    });
+
+    Route::apiResource('/post', PostController::class);  // Les tracta totes
 });
 
 
