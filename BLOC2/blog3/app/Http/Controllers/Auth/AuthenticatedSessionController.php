@@ -10,29 +10,35 @@ class AuthenticatedSessionController extends Controller
 {
     public function store(Request $request)
     {
-        $request->validate([
-            'email' => ['required', 'string', 'email'],
-            'password' => ['required', 'string'],
-        ]);
-
-        if (!Auth::attempt($request->only('email', 'password'))) {
-            return response()->json(['message' => 'Invalid login credentials'], 401);
+        $validator = Validator::make($request->all(), [
+            'email'     => 'required|string|max:255',
+            'password'  => 'required|string'
+          ]);
+        if ($validator->fails()) {
+            return response()->json($validator->errors());
         }
 
-        $user = Auth::user();
-        $token = $user->createToken('auth_token')->plainTextToken;
+        $credentials    =   $request->only('email', 'password');
+
+        if (! Auth::attempt($credentials)) {
+            return response()->json([
+                'message' => 'User not found'
+            ], 401);
+        }
+
+        $user   = User::where('email', $request->email)->get();
+        
+        $token  = $user->createToken('auth_token')->plainTextToken;
 
         return response()->json([
-            'access_token' => $token,
-            'token_type' => 'Bearer',
-            'user' => $user,
-            'status' => 'Login OK successful',
+            'message'       => 'Login success',
+            'access_token'  => $token,
+            'token_type'    => 'Bearer'
         ]);
     }
 
     public function destroy(Request $request)
     {
-
         $request->user()->currentAccessToken()->delete();
 
         return response()->json(['message' => 'Logout OK successful']);

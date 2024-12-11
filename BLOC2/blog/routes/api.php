@@ -21,7 +21,6 @@ Route::bind('post', function ($value) {
 });
 Route::apiResource('/post', PostController::class);  // Les tracta totes
 
-
 // Route::get('/post', [PostController::class, 'index']); // Mostrar tots els posts
 // Route::get('/post/{post}', [PostController::class, 'show']); // Mostrar un post específic
 // Route::post('/post', [PostController::class, 'store']); // Crear un nou post
@@ -33,20 +32,15 @@ Route::get('/prova', [PostController::class, 'prova']);  // PER EXEMPLE
 Route::apiResource('/category', CategoryController::class);  // Les tracta totes
 Route::apiResource('/user', UserController::class);  // Les tracta totes
 
-Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sanctum'') --> 'auth:sanctum'' és el middleware que prové de la instal·lació de 'Sanctum'
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+
+Route::middleware(['auth:sanctum'])->group(function () {  // middleware('auth:sanctum'') 
     //Route::apiResource('/post', PostController::class);  // Les tracta totes
     //Route::apiResource('/category', CategoryController::class);  // Les tracta totes
     //Route::apiResource('/user', UserController::class);  // Les tracta totes
     Route::post('/logout', [AuthController::class, 'logout']);    
 });
 
-
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
-
-
-/*Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');*/
 
 

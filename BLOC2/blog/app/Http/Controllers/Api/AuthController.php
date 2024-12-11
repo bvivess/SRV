@@ -10,55 +10,61 @@ use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
-    public function register(Request $request)
-    {
+    public function register(Request $request) {
         $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required',
+          'name'      => 'required|string|max:255',
+          'email'     => 'required|string|max:255|unique:users',
+          'password'  => 'required|string'
           ]);
         
-          $user = new User();
-          $user->name = $request->name;
-          $user->email = $request->email;
-          $user->role = 'peon';
-          $user->password = Hash::make($request->password);
-          $user->save();
-        
-          return response()->json([
-            'msg' => 'Usuari creat correctament'
-          ], 200);
-    }
-
-    public function login(Request $request){
-
-        $request->validate([
-          'email' => 'required|email',
-          'password' => 'required',
-        ]);
-      
-        $user = User::where('email', $request->email)->first();
-      
-        if (!$user || !Hash::check($request->password, $user->password)) {
-          throw ValidationException::withMessages([
-            'email' => ['Usuari o contrassenya són incorrectes.'],
-          ]);
+        if ($validator->fails()) {
+          return response()->json($validator->errors());
         }
         
-        $token = $user->createToken("paraula clau")->plainTextToken;
+        $user = User::create([
+          'name' => $request->name,
+          'email' => $request->email,
+          'email_verified_at' => now(),
+          'password' => Hash::make($request->password),
+          'role' => 'user',
+        ]);
+
+        event(new Registered($user));
+
+        $token = $user->createToken('auth_token')->plainTextToken;  // Crea el token en la taula 'personal_acces_tokens'
+        
         return response()->json([
-          'token' => $token,
-          'msg' => 'Login correcte'
+          'access_token' => $token,
+          'token_type' => 'Bearer',
+          'user' => $user
         ]);
     }
 
-
-    public function logout(Request $request){
-        //dd($request->user());
-        $request->user()->tokens()->delete();
-        return response()->json([
-          'msg' => 'Logout correcte'
+    public function login(Request $request) {
+        $request->validate([
+            'email' => ['required', 'string', 'email'],
+            'password' => ['required', 'string'],
         ]);
+
+        if (!Auth::attempt($request->only('email', 'password'))) {
+            return response()->json(['message' => 'Invalid login credentials'], 401);
+        }
+
+        $user = Auth::user();
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response()->json([
+            'access_token' => $token,
+            'token_type' => 'Bearer',
+            'user' => $user,
+            'status' => 'Login OK successful',
+        ]);
+    }
+
+    public function logout(Request $request) {
+        $request->user()->currentAccessToken()->delete();
+
+        return response()->json(['message' => 'Logout OK successful']);
     }
 
 }
