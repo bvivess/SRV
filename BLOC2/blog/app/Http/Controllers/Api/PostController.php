@@ -90,7 +90,7 @@ class PostController extends Controller
         $post->delete();
                 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
-        return (new PostResource($post))->additional(['msg' => 'Post eliminat correctament']);
+        return (new PostResource($post))->additional(['meta' => 'Post eliminat correctament']);
     }
 
     public function prova()    // PER EXEMPLE
