@@ -9,13 +9,7 @@
 			"path": "blog"
 		},
 		{
-			"path": "blog2"
-		},
-		{
-			"path": "blog3"
-		},
-		{
-			"path": "blog22"
+			"path": "../../EXAMENS/bloc2-laravel-projecte-ii-submissions"
 		}
 	],
 	"settings": {
