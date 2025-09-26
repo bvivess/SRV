@@ -25,7 +25,7 @@
     }
 
     public function __toString() {
-        return "Quadrat: " . $this.costat . "<br>" .
+        return "Quadrat: " . $this->costat . "<br>" .
 			   "Àrea quadrat: " . $this->area . "<br>" .
 		       "Perímetre quadrat: " . $this->perimetre . "<br>" .
 			   "N.Costats quadrat: " . $this->nCostats;

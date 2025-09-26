@@ -25,8 +25,15 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware(['multi_auth'])->group(function () {
+    //Route::get('/space', [SpaceController::class, 'index']);
+    //Route::get('/space/{space}', [SpaceController::class, 'show']);
+    ///Route::post('/space', [SpaceController::class, 'store']);
     Route::apiresource('/space', SpaceController::class)->only(['index','show','store']);
 
+
+    //Route::get('/user/{user}', [UserController::class, 'show']);
+    //Route::put('/user/{user}', [UserController::class, 'update']);
+    //Route::delete('/user/{user}', [UserController::class, 'destroy']);
     Route::apiresource('/user', SpaceController::class)->only(['show','update','destroy']);
 
     Route::post('/logout', [AuthController::class, 'logout']);
