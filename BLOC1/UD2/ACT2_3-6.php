@@ -12,6 +12,6 @@
 		return $contar;
 	}
 	
-	echo contarLA('abcdelasadksdjfkasknala', 'la');
+	echo contarLA('ABCDELASADKSDJFKASKNALA', 'LA');
 
 ?>
