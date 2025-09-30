@@ -311,7 +311,8 @@ INSERT INTO job_history (EMPLOYEE_ID,START_DATE,END_DATE,JOB_ID,DEPARTMENT_ID) V
 INSERT INTO job_history (EMPLOYEE_ID,START_DATE,END_DATE,JOB_ID,DEPARTMENT_ID) VALUES ('200',STR_TO_DATE('01/07/02','%d/%m/%y'),STR_TO_DATE('31/12/06','%d/%m/%y'),'AC_ACCOUNT','90');
 
 UPDATE employees
-SET email =  LOWER(CONCAT(SUBSTRING(first_name,1,1), REPLACE(last_name,' ', ''), '@abc.com'));
+SET email = LOWER(CONCAT(SUBSTRING(first_name,1,1), REPLACE(last_name,' ', ''), '@abc.com'))
+WHERE employee_id != 0;
 
 --------------------------------------------------------
 --  Ref Constraints for Table departments
