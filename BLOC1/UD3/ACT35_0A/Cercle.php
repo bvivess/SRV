@@ -6,19 +6,15 @@
 		use Coloreador;
 
 		// Constructor
-		public function __construct(
-			?string $color=null, 
-			private float $radi=0) {
-
-		}
-	
-		public function getColor(): string {
-			return $this->color;
+		public function __construct( private ?string $color=null, 
+									 private float $radi=0) {
 		}
 		
 		public function calculaArea(): float {
-			return pi() * pow($this->radi, 2);
+			return round(pi() * pow($this->radi, 2),2);
 		}
+
+
 		
     }
 ?>

@@ -1,10 +1,11 @@
 <?php trait Colorable {
-    protected $color;
+    private string $color;
 
-    public function getColor(): string {
-        return $this->color;
-    }
     public function setColor(string $color): void {
         $this->color = $color;
+    }
+
+    public function getColor(): string {  // en comptes de '__toString()'
+        return $this->color;
     }
 } ?>
