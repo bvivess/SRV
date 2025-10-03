@@ -7,8 +7,9 @@
 	}
 	
 	public function __toString(): string {
-      return $this->getClass() . "--> Color: " . 
-             $this->getColor() . ", Área: " . round($this->calculaArea(),2);
+      return $this->getClass() . "-->" .
+             " Color: " . $this->getColor() . 
+             ", Área: " . round($this->calculaArea(),2);
   }
 
 } ?>

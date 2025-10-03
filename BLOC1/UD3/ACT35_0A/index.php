@@ -7,7 +7,7 @@
     echo $cercle->__toString() . "<br>"; 
 
     $quadrat = new Quadrat(costat:10.0);
-	$quadrat->aplicaColor("Verd");
+	$quadrat->aplicaColor("Blau");
     echo $quadrat->__toString() . "<br>";
 
 ?>
