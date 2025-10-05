@@ -1,4 +1,5 @@
-<?php class Quadrat implements FiguraGeometrica1 {
+<?php
+    class Quadrat extends FiguraGeometrica {
     private $costat;
     // Constructor
     public function __construct(float $costat) {
@@ -18,8 +19,4 @@
         return 4;
     }
 	
-	public function __toString(): string {
-        return "Costat: " . $this->costat . "; Àrea " . $this->calculaArea();
-    }
-
 }

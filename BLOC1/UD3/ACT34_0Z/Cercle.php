@@ -1,6 +1,6 @@
-<?php class Cercle implements FiguraGeometrica1 {
+<?php
+    class Cercle extends FiguraGeometrica {
     private $radi;
-
     // Constructor
     public function __construct(float $radi) {
         $this->radi = $radi;
@@ -19,8 +19,4 @@
         return 0;
     }
 	
-	public function __toString(): string {
-        return "Radi: " . $this->radi . "; Àrea " . $this->calculaArea();
-    }
-
 } ?>
