@@ -1,5 +1,5 @@
 <?php
-	$host='192.168.210.1';
+	$host='localhost';
 	$dbname='HR';
 	$username='HR';
 	$passwd='Educacio123!';
@@ -13,7 +13,7 @@
 		
 		// set the PDO error mode to exception
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		echo "Connected successfully  using PDO-OO Programing<br>";
+		echo "Connected successfully using PDO-OO Programing<br>";
 
 		// use the connection here
 		$query = $conn->query('SELECT employee_id, last_name, first_name FROM employees');

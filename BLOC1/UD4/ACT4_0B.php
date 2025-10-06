@@ -13,7 +13,7 @@
 	});
 	
 	// Connection data
-	DEFINE('HOST', '192.168.210.1'); 
+	DEFINE('HOST', '192.168.1.12'); 
 	DEFINE('DBNAME','HR');
 	DEFINE('USERNAME','HR');
 	DEFINE('PASSWD','Educacio123!');
