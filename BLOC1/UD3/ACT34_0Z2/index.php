@@ -1,5 +1,9 @@
 <?php
-	function calculaArea(FiguraGeometrica $figura) {  // L'argument està tipat per lús de la classe abstracta 
+	function calculaArea($figura) {  // Si es vol emprar un 'trait' cal eliminar el tipat de l'argument 
+		echo "\$figura->";
+		var_dump($figura);
+		echo "<br>";
+
 		return $figura->calculaArea();  // Polimorfisme: s'executa el mètode específic de la classe concreta
 	}
 
@@ -9,7 +13,14 @@
 
 	// Crear i afegir el cercle
 	$figura1 = new Cercle(5.0);
+	echo "\$figura1->";
+	var_dump($figura1);
+	echo "<br>";
+
 	$figura2 = new Quadrat(5.0);
+	echo "\$figura2->";
+	var_dump($figura2);
+	echo "<br>";
 
 	echo $figura1->__toString() . "<br>";
 	echo "L'area de la figura1 és: " . calculaArea($figura1) . "<br>";
