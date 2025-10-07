@@ -1,9 +1,8 @@
 <?php
     class Cercle extends FiguraGeometrica {
-    private $radi;
+
     // Constructor
-    public function __construct(float $radi) {
-        $this->radi = $radi;
+    public function __construct(private string $color, private float $radi) {
     }
 
     // Implementació del mètode
@@ -19,4 +18,8 @@
         return 0;
     }
 	
+    public function getColor(): string {
+        return $this->color;
+    }   
+    
 } ?>

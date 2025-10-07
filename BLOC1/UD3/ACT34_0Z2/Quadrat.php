@@ -3,11 +3,8 @@
     class Quadrat {
         
         use FiguraGeometrica;
-    private $costat;
     // Constructor
-    public function __construct(float $costat) {
-        $this->costat = $costat;
-    }
+    public function __construct(private string $color, private float $costat) {  }   
 
     // Implementació dels mètodes
     public function calculaArea(): float {

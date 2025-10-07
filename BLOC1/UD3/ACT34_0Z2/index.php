@@ -12,18 +12,20 @@
 	require_once 'Quadrat.php';
 
 	// Crear i afegir el cercle
-	$figura1 = new Cercle(5.0);
+	$figura1 = new Cercle("vermell", 5.0);
 	echo "\$figura1->";
 	var_dump($figura1);
 	echo "<br>";
+	echo $figura1->__toString() . "<br>";
+	echo "L'area de la figura1 és: " . calculaArea($figura1) . "<br>";
 
-	$figura2 = new Quadrat(5.0);
+	echo "----------------------<br>";	
+	
+	// Crear i afegir el quadrat
+	$figura2 = new Quadrat("blau", 5.0);
 	echo "\$figura2->";
 	var_dump($figura2);
 	echo "<br>";
-
-	echo $figura1->__toString() . "<br>";
-	echo "L'area de la figura1 és: " . calculaArea($figura1) . "<br>";
 	echo $figura2->__toString() . "<br>";
 	echo "L'area de la figura2 és: " . calculaArea($figura2) . "<br>";
 ?>

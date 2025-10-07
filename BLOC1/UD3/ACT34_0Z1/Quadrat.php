@@ -1,8 +1,8 @@
 <?php
     class Quadrat extends FiguraGeometrica {
-    private $costat;
+
     // Constructor
-    public function __construct(float $costat) {
+    public function __construct(private string $color, private float $costat) {
         $this->costat = $costat;
     }
 
@@ -17,6 +17,10 @@
 
     public function calculaNCostats(): int {
         return 4;
+    }
+
+    public function getColor(): string {
+        return $this->color;
     }
 	
 }
