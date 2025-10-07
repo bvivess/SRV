@@ -14,12 +14,12 @@
 	$figures[] = $figura;  // afegeix a l'array
 
 	// Recorre les figures i mostra la seva àrea
-	foreach ($figures as $figura) {
+	foreach ($figures as $f) {
 		if ($figura instanceof Cercle)
 			echo "A continuació es mostrarà un Cercle: ";
-		elseif ($figura instanceof Quadrat)
+		elseif ($f instanceof Quadrat)
 			echo "A continuació es mostrarà un Quadrat: ";
 		
-		echo $figura->__toString() . "<br>";
+		echo $f->__toString() . "<br>";
 	}
 ?>

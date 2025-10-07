@@ -1,5 +1,5 @@
 <?php
-	function calculaArea(FiguraGeometrica $figura) {  // L'argument està tipat per lús de la classe abstracta 
+	function calculaArea($figura) {  // El tipat de l'argument s'ha eliminat si es vol emprar un 'trait'
 		return $figura->calculaArea();  // Polimorfisme: s'executa el mètode específic de la classe concreta
 	}
 

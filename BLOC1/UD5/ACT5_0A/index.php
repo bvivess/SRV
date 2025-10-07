@@ -23,7 +23,7 @@
     $quadrat = new Quadrat(4);
 
     // Calcular i mostrar l'àrea de cada figura
-    echo "Área del círculo: " . $cercle->calcularArea() . "<br>";
-    echo "Área del rectángulo: " . $rectangle->calcularArea() . "<br>";
-    echo "Área del triángulo: " . $quadrat->calcularArea() . "<br>";
+    echo "Àrea del cercle: " . $cercle->calcularArea() . "<br>";
+    echo "Àrea del rectagle: " . $rectangle->calcularArea() . "<br>";
+    echo "Àrea del triangle: " . $quadrat->calcularArea() . "<br>";
 ?>
