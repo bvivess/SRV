@@ -31,11 +31,8 @@
         // Guardem al fitxer de log
         error_log($missatge . PHP_EOL, 3, 'errors.log');
 
-        /* 
-        Retornar true indica a PHP que l'error ja ha estat gestionat,
-        i per tant no cal mostrar-lo amb el sistema d'errors per defecte.
-        */
-        return true; 
+        return true;  // 'true' --> l'error ja ha estat gestionat, 
+                      // 'false' --> cal gestionar l'error amb el sistema d'errors per defecte
     }
 
     // 2️⃣ Activem el gestor d'errors personalitzat
