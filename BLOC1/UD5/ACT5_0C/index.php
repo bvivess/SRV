@@ -35,11 +35,23 @@
                       // 'false' --> cal gestionar l'error amb el sistema d'errors per defecte
     }
 
+    var_dump(error_reporting());
+    echo ini_get('display_errors');
+
+    $dades = [
+        'nom' => 'Anna',
+        'edat' => 22
+    ];
+
+
+
     // 2️⃣ Activem el gestor d'errors personalitzat
     set_error_handler('gestorErrors');
 
     // 3️⃣ Definim el nivell d'errors que volem detectar
     error_reporting(E_ALL);
+
+    echo "El correu és: " . $dades['email']; // ❗ Genera E_NOTICE
 
     // 4️⃣ Provem diferents tipus d'errors
     echo $variableInexistent;                // E_NOTICE
