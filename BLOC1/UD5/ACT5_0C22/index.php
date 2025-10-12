@@ -74,9 +74,11 @@
     // 5.- Divisió per zero (PHP 8+ genera excepció fatal, la deixem per veure efecte)
     try { 
         try {
-            $valor = 10 / 0; // Genera DivisionByZeroError
+            //$valor = 10 / 0; // Genera DivisionByZeroError
+            //throw new DivisionByZeroError("Divisió per zero no permesa.");
+            trigger_error("Divisió per zero no permesa.", E_USER_WARNING); // Convertim l'error en un error gestionat
         } catch (DivisionByZeroError $e) {
-            throw new Exception("Excepció: Divisió per zero no permesa.");
+            throw new Exception("**************Excepció: Divisió per zero no permesa." . $e->getMessage());
         }
     } catch (Exception $e) {
         echo "<p style='color: darkred;'>❗ {$e->getMessage()}</p>"; // Convertim l'excepció en un error no gestionat
