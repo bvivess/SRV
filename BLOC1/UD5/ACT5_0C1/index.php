@@ -1,15 +1,21 @@
 <?php
 
-    // Incloure els arxius manualment (en la pràctica,emprar 'autoloader')
-    require_once('Figures/Base/FiguraGeometrica.php');
-    require_once('Figures/Concretes/Cercle.php');
-    require_once('Figures/Concretes/Rectangle.php');
-    require_once('Figures/Concretes/Quadrat.php');
+    // // Incloure els arxius manualment (en la pràctica,emprar 'autoloader')
+    //require_once('Figures/Base/FiguraGeometrica.php');
+    //require_once('Figures/Concretes/Circulo.php');
+    //require_once('Figures/Concretes/Rectangulo.php');
+    //require_once('Figures/Concretes/Triangulo.php');
 
     // Emprar les classes del 'namespace' 'Figures\Concretes'
     use Figures\Concretes\Cercle;
     use Figures\Concretes\Rectangle;
     use Figures\Concretes\Quadrat;
+
+    spl_autoload_register(function($classe) {
+        if (file_exists(str_replace('\\','/',$classe) . '.php'))
+            require_once (str_replace('\\','/',$classe) . '.php');
+
+    });
 
     // Crear instàncias de les figures geomètriques
     $cercle = new Cercle(5);

@@ -1,17 +1,18 @@
 <?php 
+    // Incloure els arxius manualment (en la pràctica,emprar 'autoloader')
+    require_once('Databases\MySQL\Database.php');
+    require_once('Databases\Oracle\Database.php');
+
+    // Emprar les classes del 'namespace' 'Databases\MySQL' i 'Databases\Oracle'
     use Databases\MySQL\Database as DBMySQL;
     use Databases\Oracle\Database as DBOracle;
-    
-    spl_autoload_register(function($classe) {
-        if (file_exists(str_replace('\\','/',$classe) . '.php'))
-            require_once (str_replace('\\','/',$classe) . '.php');
-
-    });
 
     // Instanciar y usar las clases
     $dbMySQL = new DBMySQL();
-    $dbMySQL->connectar(); 
+    $dbMySQL->connectar();
+    $dbMySQL->desconnectar();
 
     $dbOracle = new DBOracle();
     $dbOracle->connectar();
+    $dbOracle->desconnectar();
 ?>

@@ -3,7 +3,11 @@
 
     class Database {
         public function connectar() {
-            echo "Connexió a Oracle." . "<br>";
+            echo "Connexió a Oracle OK." . "<br>";
+        }
+
+        public function desconnectar() {
+            echo "Desconnexió a Oracle OK." . "<br>";
         }
     }
 ?>

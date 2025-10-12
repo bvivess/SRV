@@ -3,7 +3,11 @@
 
     class Database {
         public function connectar() {
-            echo "Connexió a MySQL." . "<br>";
+            echo "Connexió a MySQL OK." . "<br>";
+        }
+
+        public function desconnectar() {
+            echo "Desconnexió a MySQL OK." . "<br>";
         }
     }
 ?>
