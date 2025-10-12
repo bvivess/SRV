@@ -71,14 +71,25 @@
     // 4.- E_USER_NOTICE: notificació creada per l'usuari
     trigger_error("Notificació creat per usuari", E_USER_NOTICE);  // 'E_USER_NOTICE'
 
-    // 5.- Divisió per zero (PHP 8+ genera excepció fatal, la deixem per veure efecte)
+    // 5.- Divisió per zero tractat de diferents maneres
     try { 
         try {
-            //$valor = 10 / 0; // Genera DivisionByZeroError
-            //throw new DivisionByZeroError("Divisió per zero no permesa.");
-            trigger_error("Divisió per zero no permesa.", E_USER_WARNING); // Convertim l'error en un error gestionat
+            $divisor = 0;
+
+            // 5.1- Genera 'DivisionByZeroError'
+            $valor = 10 / $divisor; // Genera DivisionByZeroError
+            
+            // 5.2- Genera 'DivisionByZeroError'
+            if ($divisor == 0) {
+                throw new DivisionByZeroError("Divisió per zero no permesa.");  // Genera DivisionByZeroError
+            }
+            
+            // 5.3- Genera 'Exception' personalitzada
+            if ($divisor == 0) {
+                trigger_error("Divisió per zero no permesa.", E_USER_WARNING); // Convertim l'error en un error gestionat
+            }
         } catch (DivisionByZeroError $e) {
-            throw new Exception("**************Excepció: Divisió per zero no permesa." . $e->getMessage());
+            throw new Exception("************** Excepció: Divisió per zero no permesa." . $e->getMessage());
         }
     } catch (Exception $e) {
         echo "<p style='color: darkred;'>❗ {$e->getMessage()}</p>"; // Convertim l'excepció en un error no gestionat
