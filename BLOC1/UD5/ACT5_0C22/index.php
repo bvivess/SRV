@@ -35,7 +35,7 @@
 
         $missatge = "[" . date('Y-m-d H:i:s') . "] [$nivell:$errno] $errstr a $errfile (línia $errline)";
 
-        echo "<p style='color: darkred; font-family: monospace;'>$missatge</p>";
+        echo "<p style='color: darkred; font-family: monospace;'>$missatge</p>";  // també 'throw new ErrorException($missatge);'
 
         error_log($missatge . PHP_EOL, 3, 'errors.log');
 
