@@ -1,0 +1,8 @@
+[2025-10-11 15:45:05] ⚠️ [ADVERTIMENT] Undefined variable $variableInexistent a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 50)
+[2025-10-11 15:45:05] ⚠️ [ADVERTIMENT] include(fitxer_que_no_existeix.php): Failed to open stream: No such file or directory a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 51)
+[2025-10-11 15:45:05] ⚠️ [ADVERTIMENT] include(): Failed opening 'fitxer_que_no_existeix.php' for inclusion (include_path='.;C:/laragon/etc/php/pear') a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 51)
+[2025-10-11 15:45:05] ⚠️ [ADVERTIMENT] Error personalitzat! a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 52)
+[2025-10-11 15:50:08] ⚠️ [ADVERTIMENT] Undefined variable $variableInexistent a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 48)
+[2025-10-11 15:50:08] ⚠️ [ADVERTIMENT] include(fitxer_que_no_existeix.php): Failed to open stream: No such file or directory a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 49)
+[2025-10-11 15:50:08] ⚠️ [ADVERTIMENT] include(): Failed opening 'fitxer_que_no_existeix.php' for inclusion (include_path='.;C:/laragon/etc/php/pear') a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 49)
+[2025-10-11 15:50:08] ⚠️ [ADVERTIMENT] Error personalitzat! a C:\Users\bvives\SRV\BLOC1\UD5\ACT5_0C\index.php (línia 50)
