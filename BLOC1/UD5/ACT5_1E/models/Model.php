@@ -15,6 +15,12 @@
             $table = static::$table;  
 
             // Executar la consulta
+                // Es pot utilitzar aquesta consulta per obtenir informació de les columnes d'una taula
+                // és a dir, els noms dels camps, tipus de dades, si poden ser NULL, etc.
+                // Útil per fer tabmbé un mètode genèric de 'insert' o 'update' o 'delete'
+                // SELECT *  FROM information_schema.columns 
+                // WHERE table_schema = 'HR'
+                // AND   table_name = 'JOBS';
             $sql = "SELECT * FROM $table";
             $result = $db->conn->query($sql);
 
