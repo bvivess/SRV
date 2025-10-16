@@ -91,7 +91,7 @@
         } catch (DivisionByZeroError $e) {
             throw new Exception("************** Excepció: Divisió per zero no permesa." . $e->getMessage());
         }
-    } catch (Exception $e) {
+    } catch (Error | Exception $e) {
         echo "<p style='color: darkred;'>❗ {$e->getMessage()}</p>"; // Convertim l'excepció en un error no gestionat
         trigger_error($e->getMessage(), E_USER_WARNING); // Convertim l'excepció en un error gestionat
     }
