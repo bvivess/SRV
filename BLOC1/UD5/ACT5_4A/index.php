@@ -10,6 +10,15 @@
 		return $value === '' ? null : $value;
 	}
 
+	// Definim el gestor d’errors personalitzat
+	function gestorErrors($errno, $errstr, $errfile, $errline) {
+		// Convertim l’error en una excepció
+		throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
+	}
+
+	// Registrem el gestor d’errors
+	set_error_handler("gestorErrors");
+
 	use Config\Database;
 	use Models\Employee;
 
@@ -45,8 +54,16 @@
 			// Guardar l'empleat a la base de dades
 			$employee->save();  // INSERT / UPDATE
 		}
-	} catch(\Exception $e) {
-		echo "S'ha produït el següent error:" . "<br>" . $e->getMessage();
+	} catch (Error | Exception $e) {
+		// 🔹 Missatge amigable a l'usuari
+		echo "<strong>S'ha produït un error.</strong>";
+
+		// 🔹 Registre detallat a fitxer de log
+		$logMessage = "[" . date('Y-m-d H:i:s') . "] "
+			. $e->getMessage() 
+			. " arxiu: " . $e->getFile() 
+			. " línia: " . $e->getLine() . PHP_EOL;
+		error_log($logMessage, 3, __DIR__ . '/error_log.txt');
 	}
 ?>
 
