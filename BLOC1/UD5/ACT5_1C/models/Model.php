@@ -32,10 +32,10 @@
             if ($result->num_rows > 0) {
 				while ($row = $result->fetch_assoc()) {
 					// Crear un nou objecte de tipus 'Employee', 'Customer', ...
-					$employee = new static( ...array_values($row) );
+					$objecte = new static( ...array_values($row) );
 
 					// Afegir l'objecte a l'array
-					$rows[] = $employee;
+					$rows[] = $objecte;
 				}
             }
 

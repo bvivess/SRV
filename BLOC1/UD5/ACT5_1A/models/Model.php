@@ -6,6 +6,8 @@
 
     abstract class Model {
         // Mètode per obtenir totes les files de la taula
+
+
         public static function all() {
             // Carregar la connexió a la base de dades
             $config = Database::loadConfig('C:/temp/config.db');
@@ -35,10 +37,10 @@
                 //}
 				while ($row = $result->fetch_assoc()) {
 					// Crear un nou objecte de tipus 'Employee', 'Customer', ...
-					$employee = new static( ...array_values($row) );
+					$objecte = new static( ...array_values($row) );
 
 					// Afegir l'objecte a l'array
-					$rows[] = $employee;
+					$rows[] = $objecte;
 				}
             }
 
