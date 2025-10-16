@@ -1,9 +1,0 @@
-[2025-10-16 07:06:06] Division by zero in C:\Users\Administrador\SRV\BLOC1\a.php on line 7
-Division by zero[2025-10-16 07:09:32] topo in C:\Users\Administrador\SRV\BLOC1\a.php on line 9
-[2025-10-16 07:11:23] Division by zero in C:\Users\Administrador\SRV\BLOC1\a.php on line 9
-[2025-10-16 07:12:48] S'ha produït una excepció in C:\Users\Administrador\SRV\BLOC1\a.php on line 9
-[2025-10-16 07:13:11] S'ha produït un error in C:\Users\Administrador\SRV\BLOC1\a.php on line 10
-[2025-10-16 07:27:51] Division by zero in C:\Users\Administrador\SRV\BLOC1\a.php on line 11
-[2025-10-16 07:28:39] Division by zero in C:\Users\Administrador\SRV\BLOC1\a.php on line 11
-[2025-10-16 07:28:39] Division by zero in C:\Users\Administrador\SRV\BLOC1\a.php on line 11
-[2025-10-16 07:28:39] Division by zero in C:\Users\Administrador\SRV\BLOC1\a.php on line 11
