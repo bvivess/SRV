@@ -56,13 +56,13 @@
 		}
 	} catch (Error | Exception $e) {
 		// 🔹 Missatge amigable a l'usuari
-		echo "<strong>S'ha produït un error.</strong>";
+		echo "<strong>S'ha produït un error: " . $e->getMessage() . "</strong>";
 
 		// 🔹 Registre detallat a fitxer de log
 		$logMessage = "[" . date('Y-m-d H:i:s') . "] "
 			. $e->getMessage() 
-			. " arxiu: " . $e->getFile() 
-			. " línia: " . $e->getLine() . PHP_EOL;
+			. " ARXIU: " . $e->getFile() 
+			. " LÍNIA: " . $e->getLine() . PHP_EOL;
 		error_log($logMessage, 3, __DIR__ . '/error_log.txt');
 	}
 ?>

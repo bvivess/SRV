@@ -1,0 +1,2 @@
+[2025-10-16 06:30:42] Out of range value for column 'COMMISSION_PCT' at row 1 arxiu: C:\Users\Administrador\SRV\BLOC1\UD5\ACT5_4A\src\models\Employee.php línia: 80
+[2025-10-16 06:31:58] Cannot add or update a child row: a foreign key constraint fails (`hr`.`employees`, CONSTRAINT `EMP_JOB_FK` FOREIGN KEY (`JOB_ID`) REFERENCES `jobs` (`JOB_ID`)) arxiu: C:\Users\Administrador\SRV\BLOC1\UD5\ACT5_4A\src\models\Employee.php línia: 80
