@@ -8,6 +8,17 @@
     use Models\Employee;
 
     try {
+        $employees = Employee::all();  // SELECT
+        echo '<pre>';
+        foreach ($employees as $employee) {
+            echo json_encode($employee, JSON_PRETTY_PRINT);
+        }
+        echo '</pre>';
+    } catch(\Exception $e) {
+        echo "S'ha produït el següent error:" . "<br>" . $e->getMessage();
+    }
+/*
+    try {
         // Crear una nova instància d'Employee i assignar valors
         $employee = new Employee( 1010,
                                 "Tomeu",
@@ -42,6 +53,6 @@
         echo json_encode($employee, JSON_PRETTY_PRINT);
     }
     echo '</pre>';
-
+*/
 ?>
 

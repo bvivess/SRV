@@ -5,7 +5,7 @@
     use config\Database;
 
     class Model {
-            // Mètode per obtenir tots els registres de la taula
+        // Mètode per obtenir tots els registres de la taula
         public static function all() {
             // Connectar a la base de dades
             $db = new Database();
@@ -14,14 +14,12 @@
             // Obtenir el nom de la taula de la classe filla
             $table = static::$table;  
 
-            // Executar la consulta
-                // Es pot utilitzar aquesta consulta per obtenir informació de les columnes d'una taula
-                // és a dir, els noms dels camps, tipus de dades, si poden ser NULL, etc.
-                // Útil per fer tabmbé un mètode genèric de 'insert' o 'update' o 'delete'
-                // SELECT *  FROM information_schema.columns 
-                // WHERE table_schema = 'HR'
-                // AND   table_name = 'JOBS';
-            $sql = "SELECT * FROM $table";
+            // Obtenir els noms de les columnes de la taula
+            $columns = self::getTableColumns($db, $table);
+
+            // Construir la consulta amb els noms de les columnes
+            $columnList = implode(', ', $columns);
+            $sql = "SELECT $columnList FROM $table ORDER BY " . $columns[0]; // Ordenar pel primer camp (normalment la clau primària)
             $result = $db->conn->query($sql);
 
             // Comprovar si hi ha resultats
@@ -41,6 +39,30 @@
 
             // Retornar els registres obtinguts
             return $rows;
+        }
+
+        // Mètode per obtenir els noms de les columnes d'una taula
+        private static function getTableColumns($db, $table) {
+            // Obtenir el nom de la base de dades actual
+            $databaseName = $db->conn->query("SELECT DATABASE()")->fetch_row()[0];
+
+            // Consulta al diccionari de dades de MySQL
+            $sql = "SELECT column_name 
+                    FROM information_schema.columns 
+                    WHERE table_schema = '$databaseName' 
+                    AND table_name = '$table' 
+                    ORDER BY ordinal_position";
+
+            $result = $db->conn->query($sql);
+
+            $columns = [];
+            if ($result && $result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $columns[] = $row['COLUMN_NAME'];
+                }
+            }
+
+            return $columns;
         }
     }
 
