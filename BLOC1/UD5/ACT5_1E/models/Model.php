@@ -6,7 +6,7 @@
 
     class Model {
         // Mètode per obtenir tots els registres de la taula
-        public static function all() {
+        public static function all() : array {
             // Connectar a la base de dades
             $db = new Database();
             $db->connectDB('C:/temp/config.db');
@@ -15,11 +15,10 @@
             $table = static::$table;  
 
             // Obtenir els noms de les columnes de la taula
-            $columns = self::getTableColumns($db, $table);
+            $columns = implode(', ', self::getTableColumns($db, $table)); 
 
             // Construir la consulta amb els noms de les columnes
-            $columnList = implode(', ', $columns);
-            $sql = "SELECT $columnList FROM $table ORDER BY " . $columns[0]; // Ordenar pel primer camp (normalment la clau primària)
+            $sql = "SELECT $columns FROM $table ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
             $result = $db->conn->query($sql);
 
             // Comprovar si hi ha resultats
@@ -42,7 +41,7 @@
         }
 
         // Mètode per obtenir els noms de les columnes d'una taula
-        private static function getTableColumns($db, $table) {
+        private static function getTableColumns($db, $table) : array {
             // Obtenir el nom de la base de dades actual
             $databaseName = $db->conn->query("SELECT DATABASE()")->fetch_row()[0];
 
@@ -64,6 +63,34 @@
 
             return $columns;
         }
+
+        // --- Obtenir el nom de la primary key ---
+        private function getPrimaryKey($db, $table) {
+            // Obtenir el nom de la base de dades actual
+            $databaseName = $db->conn->query("SELECT DATABASE()")->fetch_row()[0];
+            // Consulta al diccionari de dades de MySQL
+            $sql = "SELECT column_name 
+                    FROM information_schema.key_column_usage 
+                    WHERE table_schema = '$databaseName' 
+                    AND table_name = '$table' 
+                    AND constraint_name = 'PRIMARY'";
+            $result = $db->conn->query($sql);
+            $row = $result->fetch_assoc();
+            
+            return $row['COLUMN_NAME'] ?? null;
+        }
+
+        // --- Determinar tipus de paràmetres per bind_param ---
+        private static function getParamTypes(array $values) : string {
+            $types = '';
+            foreach ($values as $v) {
+                if (is_int($v)) $types .= 'i';
+                elseif (is_float($v)) $types .= 'd';
+                else $types .= 's';
+            }
+            return $types;
+        }
+
     }
 
 ?>
