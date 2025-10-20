@@ -1,9 +1,5 @@
 <?php
-	/*spl_autoload_register(function($classe) {
-		if (file_exists(str_replace('\\','/',$classe) . '.php'))
-			require_once(str_replace('\\','/',$classe) . '.php');
-	});*/
-	
+
 	require 'vendor/autoload.php';
 
 	function convertToNull($value) {
