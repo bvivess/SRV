@@ -3,21 +3,12 @@
     namespace config;
 
     class Database {
-        public $host;
-        public $port;
-        public $database;
-        public $username;
-        public $password;
-        public $conn;
-
-        // Constructor que utilitza el mètode 'loadConfig' per carregar les dades de configuració
-        public function __construct($host, $port, $database, $username, $password) {
-            $this->host = $host;
-            $this->port = $port;
-            $this->database = $database;
-            $this->username = $username;
-            $this->password = $password;
-        }
+        // Construïdor de la classe
+        public function __construct( public ?string $host=null, 
+                                     public ?string $port=null,
+                                     public ?string $database=null, 
+                                     public ?string $username=null, 
+                                     public ?string $password=null ) { }
 
         // Mètode per carregar la configuració des del fitxer
         public static function loadConfig($fitxer): array {

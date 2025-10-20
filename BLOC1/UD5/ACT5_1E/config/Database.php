@@ -3,7 +3,7 @@
     namespace config;
 
     class Database {
-
+        // Construïdor de la classe
         public function __construct(public ?\mysqli $conn = null) {}
 
         // Mètode per carregar la configuració des del fitxer

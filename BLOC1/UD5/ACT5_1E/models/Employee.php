@@ -28,8 +28,8 @@
 			error_reporting(E_ALL);
 			try {
 				// Connectar a la base de dades
-				$db = new Database();
-				$db->connectDB('C:/temp/config.db');
+				$conn = new Database();
+				$conn->connectDB('C:/temp/config.db');
 				//$db->conn->autocommit(false);
 				//$db->conn->begin_transaction();
 
@@ -52,7 +52,7 @@
 								commission_pct = VALUES (commission_pct),
 								manager_id     = VALUES (manager_id),
 								department_id  = VALUES (department_id)";
-					$stmt = $db->conn->prepare($sql);
+					$stmt = $conn->conn->prepare($sql);
 					// Vincular els valors
 					$stmt->bind_param( "issssssddii", 
 											$this->employee_id, 
@@ -74,15 +74,15 @@
 					throw new \Exception ("ID empleat no informat.");
 				}
 
-				$db->conn->commit();
+				$conn->conn->commit();
 			} catch (\mysqli_sql_exception $e) {
-				if ($db->conn)
-					$db->conn->rollback(); 
+				if ($conn->conn)
+					$conn->conn->rollback(); 
 				throw new \mysqli_sql_exception($e->getMessage());
 			} finally {
-				if ($db->conn)
+				if ($conn->conn)
 					// Tancar la connexió
-					$db->closeDB();         				 
+					$conn->closeDB();
 			}
 		}
 		

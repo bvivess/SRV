@@ -8,18 +8,18 @@
         // Mètode per obtenir tots els registres de la taula
         public static function all() : array {
             // Connectar a la base de dades
-            $db = new Database();
-            $db->connectDB('C:/temp/config.db');
+            $conn = new Database();
+            $conn->connectDB('C:/temp/config.db');
 
             // Obtenir el nom de la taula de la classe filla
             $table = static::$table;  
 
             // Obtenir els noms de les columnes de la taula
-            $columns = implode(', ', self::getTableColumns($db, $table)); 
+            $columns = implode(', ', self::getTableColumns($conn, $table)); 
 
             // Construir la consulta amb els noms de les columnes
             $sql = "SELECT $columns FROM $table ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
-            $result = $db->conn->query($sql);
+            $result = $conn->conn->query($sql);
 
             // Comprovar si hi ha resultats
 			$rows = [];
@@ -34,7 +34,7 @@
             }
 
             // Tancar la connexió
-            $db->closeDB();
+            $conn->closeDB();
 
             // Retornar els registres obtinguts
             return $rows;

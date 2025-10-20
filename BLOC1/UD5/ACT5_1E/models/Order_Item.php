@@ -21,8 +21,8 @@
 			error_reporting(E_ALL);
 			try {
 				// Connectar a la base de dades
-				$db = new Database();
-				$db->connectDB('C:/temp/config.db');
+				$conn = new Database();
+				$conn->connectDB('C:/temp/config.db');
 				//$db->conn->autocommit(false);
 				//$db->conn->begin_transaction();
 
@@ -40,7 +40,7 @@
                                 line_item_id          = VALUES (line_item_id),
                                 unit_price   = VALUES (unit_price),
                                 quantity      = VALUES (quantity)";
-					$stmt = $db->conn->prepare($sql);
+					$stmt = $conn->conn->prepare($sql);
 					// Vincular els valors
 					$stmt->bind_param( "issdd", 
 											$this->order_id, 
@@ -56,15 +56,15 @@
 					throw new \Exception ("ID order no informat.");
 				}
 
-				$db->conn->commit();
+				$conn->conn->commit();
 			} catch (\mysqli_sql_exception $e) {
-				if ($db->conn)
-					$db->conn->rollback(); 
+				if ($conn->conn)
+					$conn->conn->rollback(); 
 				throw new \mysqli_sql_exception($e->getMessage());
 			} finally {
-				if ($db->conn)
+				if ($conn->conn)
 					// Tancar la connexió
-					$db->closeDB();         				 
+					$conn->closeDB();         				 
 			}
 		} 
 
