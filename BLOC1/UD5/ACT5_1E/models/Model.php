@@ -5,7 +5,11 @@
     use config\Database;
 
     abstract class Model {
-        // Mètode per obtenir tots els registres de la taula
+        // Mètodes abstractes per a les operacions(Create, Update, Delete) del CRUD
+        public abstract function save();
+        public abstract function destroy();
+
+        // Mètode concret per a l'operació Read (Select) del CRUD
         public static function all() : array {
             // Connectar a la base de dades
             $conn = new Database();

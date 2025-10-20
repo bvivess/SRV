@@ -20,6 +20,14 @@
 			public ?int $manager_id=null,
 			public ?int $department_id=null
 		) { }
+
+		public function save() {
+            // Implementació del mètode per guardar/actualitzar el client a la base de dades
+        }
+		
+        public function destroy() {
+            // Implementació del mètode per eliminar el client de la base de dades
+        }
 	
 	}
 

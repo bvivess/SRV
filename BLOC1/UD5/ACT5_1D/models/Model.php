@@ -4,8 +4,12 @@
 
     use config\Database;
 
-    class Model {
-            // Mètode per obtenir tots els registres de la taula
+    abstract class Model {
+        // Mètodes abstractes per a les operacions(Create, Update, Delete) del CRUD
+        public abstract function save();
+        public abstract function destroy();
+
+        // Mètode concret per a l'operació Read (Select) del CRUD
         public static function all() {
             // Carregar la connexió a la base de dades
             $config = Database::loadConfig('C:/temp/config.db');

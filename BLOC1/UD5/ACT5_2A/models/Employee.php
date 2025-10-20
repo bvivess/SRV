@@ -7,7 +7,6 @@
 	class Employee extends Model {
 		// Definir la taula associada a la classe
 		protected static $table = 'employees';
-
 			// Constructor
 			public function __construct(    
 				public ?int $employee_id=null,
@@ -17,10 +16,10 @@
 				public ?string $phone_number=null,
 				public ?string $hire_date=null,
 				public ?string $job_id=null,
-				public ?float $salary=null,
-				public ?float $commission_pct=null,
-				public ?int $manager_id=null,
-				public ?int $department_id=null
+				public ?float  $salary=null,
+				public ?float  $commission_pct=null,
+				public ?int    $manager_id=null,
+				public ?int    $department_id=null
 			) { }
 
 		// Mètode per guardar l'empleat a la base de dades

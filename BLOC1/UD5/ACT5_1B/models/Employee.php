@@ -74,6 +74,10 @@ class Employee extends Model {
         $db->closeDB();
       
     }
+
+    public function destroy() {
+        // Implementació del mètode per eliminar el client de la base de dades
+    }
 }
 
 ?>
