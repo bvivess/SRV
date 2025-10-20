@@ -35,19 +35,19 @@
 					<li><a href="index.php">Home</a></li>
 					<li>
 						<ul> HR
-							<li><a href="employeesList.php">Employees</a></li>
-							<li><a href="departmentsList.php">Departments</a></li>
-							<li><a href="jobsList.php">Jobs</a></li>
-							<li><a href="locationsList.php">Locations</a></li>
+							<li><a href="employees_List.php">Employees</a></li>
+							<li><a href="departments_List.php">Departments</a></li>
+							<li><a href="jobs_List.php">Jobs</a></li>
+							<li><a href="locations_List.php">Locations</a></li>
 						</ul>
 					</li>
 					<li>
 						<ul> OE
-							<li><a href="warehousesList.php">Warehouses</a></li>
-							<li><a href="categoriesList.php">Categories</a></li>
-							<li><a href="customersList.php">Customers</a></li>
-							<li><a href="productsList.php">Products</a></li>
-							<li><a href="ordersList.php">Orders</a></li>
+							<li><a href="warehouses_List.php">Warehouses</a></li>
+							<li><a href="categories_List.php">Categories</a></li>
+							<li><a href="customers_List.php">Customers</a></li>
+							<li><a href="products_List.php">Products</a></li>
+							<li><a href="orders_List.php">Orders</a></li>
 						</ul>
 					</li>
 				</ul>
