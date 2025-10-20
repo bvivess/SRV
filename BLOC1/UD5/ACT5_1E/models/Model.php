@@ -4,7 +4,7 @@
 
     use config\Database;
 
-    class Model {
+    abstract class Model {
         // Mètode per obtenir tots els registres de la taula
         public static function all() : array {
             // Connectar a la base de dades

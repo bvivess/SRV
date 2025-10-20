@@ -3,7 +3,8 @@
     namespace config;
 
     class Database {
-        public $conn;
+
+        public function __construct(public ?\mysqli $conn = null) {}
 
         // Mètode per carregar la configuració des del fitxer
         public static function loadConfig($fitxer): array {
