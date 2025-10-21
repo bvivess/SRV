@@ -20,10 +20,9 @@
 
             // Obtenir els noms de les columnes de la taula
             $columns = implode(', ', self::getTableColumns($db, $table)); 
-            $columnspk = implode(' AND ', self::getTableColumns($db, $table)); 
 
             // Construir la consulta amb els noms de les columnes
-            $sql = "DELETE FROM  $table WHERE $columnspk"; // Ordenar pel primer camp (normalment la clau primària)
+            $sql = "SELECT $columns FROM $table ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
             $result = $db->conn->query($sql);
 
             // Comprovar si hi ha resultats
