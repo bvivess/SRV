@@ -1,3 +1,3 @@
 <div id="footer">
-    <p>(c) IES Emili Darder - 2025</p>
+    <p>(c) IES Emili Darder - 202x</p>
 </div>

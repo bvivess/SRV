@@ -1,6 +1,6 @@
 <?php 
-	require_once __DIR__ . '/../includes/header.php';
-	require_once __DIR__ . '/../includes/nav.php';
+	require('../includes/header.php');
+	require('../includes/nav.php');
 
 	require '../../../vendor/autoload.php';
 	use Models\Employee;
@@ -38,10 +38,9 @@
 			?>
 		</tbody> 
 	</table>
-
-	<?php
-		require_once __DIR__ . '/../includes/footer.php';
-	?>
 </div>
+</div>
+<?php 	require_once __DIR__ . '/../includes/footer.php'; ?>
+</body>
 
 
