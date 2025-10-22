@@ -1,0 +1,21 @@
+{
+    "name": "sergi/www",
+    "description": "Projecte CRUD",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SergiQS",
+            "email": "squetglass@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.10",
+        "fakerphp/faker": "^1.24"
+    }
+}

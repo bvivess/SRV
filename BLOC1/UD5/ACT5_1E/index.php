@@ -9,6 +9,24 @@
     use Models\Order_Item;
 
     try {
+        $employees = Employee::all();  // SELECT
+        echo '<pre>';
+        foreach ($employees as $e) {
+            echo json_encode($e, JSON_PRETTY_PRINT);
+        }
+        echo '</pre>';
+        
+        $order_items = Order_Item::all();  // SELECT
+        echo '<pre>';
+        foreach ($order_items as $oi) {
+            echo json_encode($oi, JSON_PRETTY_PRINT);
+        }
+        echo '</pre>';
+    } catch(\Exception $e) {
+        echo "S'ha produït el següent error:" . "<br>" . $e->getMessage();
+    }
+
+    try {
         // Crear una nova instància d'Employee i assignar valors
         $oi = new Order_Item( 2354,
                               2289,
@@ -53,24 +71,6 @@
         $employee->destroy();
 
     } catch(\Error | \Exception $e) {
-        echo "S'ha produït el següent error:" . "<br>" . $e->getMessage();
-    }
-
-    try {
-        $employees = Employee::all();  // SELECT
-        echo '<pre>';
-        foreach ($employees as $e) {
-            echo json_encode($e, JSON_PRETTY_PRINT);
-        }
-        echo '</pre>';
-        
-        $order_items = Order_Item::all();  // SELECT
-        echo '<pre>';
-        foreach ($order_items as $oi) {
-            echo json_encode($oi, JSON_PRETTY_PRINT);
-        }
-        echo '</pre>';
-    } catch(\Exception $e) {
         echo "S'ha produït el següent error:" . "<br>" . $e->getMessage();
     }
 

@@ -1,5 +1,4 @@
 <?php
-
 	require 'vendor/autoload.php';
 
 	function convertToNull($value) {
