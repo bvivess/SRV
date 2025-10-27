@@ -3,7 +3,7 @@
         'name' => 'sergi/www',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'c8f260e08764a3eca5c00d0078c5be98a9c08560',
+        'reference' => '65c06e22940488a02fee54f0377dfdcbc741b1d0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -64,7 +64,7 @@
         'sergi/www' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'c8f260e08764a3eca5c00d0078c5be98a9c08560',
+            'reference' => '65c06e22940488a02fee54f0377dfdcbc741b1d0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

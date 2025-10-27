@@ -1,5 +1,5 @@
 {
-    "name": "sergi/www",
+    "name": "nom/www",
     "description": "Projecte CRUD",
     "type": "project",
     "license": "MIT",
@@ -10,7 +10,7 @@
     },
     "authors": [
         {
-            "name": "SergiQS",
+            "name": "nomAlume",
             "email": "squetglass@gmail.com"
         }
     ],
