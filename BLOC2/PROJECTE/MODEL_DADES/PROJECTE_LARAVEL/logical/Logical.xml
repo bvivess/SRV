@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0227EF33-45E2-9635-B8B9-51987E180A58" mainViewID="802A356E-9902-1676-149B-34466876B9D5">
-<createdBy>winadmin</createdBy>
-<createdTime>2024-11-06 07:06:12 UTC</createdTime>
-<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
