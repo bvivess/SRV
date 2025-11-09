@@ -1,0 +1,341 @@
+{
+  "municipis": {
+    "municipi": [
+      {
+        "Nom": "Alaior",
+        "Illa": "Menorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Alaró",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Alcúdia",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Algaida",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Andratx",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Ariany",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Artà",
+        "Illa": "Mallorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Banyalbufar",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Binissalem",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Búger",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Bunyola",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Calvià",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Campanet",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Campos",
+        "Illa": "Mallorca",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Capdepera",
+        "Illa": "Mallorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "es Castell",
+        "Illa": "Menorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Ciutadella de Menorca",
+        "Illa": "Menorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Consell",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Costitx",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Deià",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Eivissa",
+        "Illa": "Eivissa",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Escorca",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Esporles",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Estellencs",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Felanitx",
+        "Illa": "Mallorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Ferreries",
+        "Illa": "Menorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Formentera",
+        "Illa": "Formentera",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Fornalutx",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Inca",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Lloret de Vistalegre",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Lloseta",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Llubí",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Llucmajor",
+        "Illa": "Mallorca",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Maó",
+        "Illa": "Menorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Manacor",
+        "Illa": "Mallorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Mancor de la Vall",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Maria de la Salut",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Marratxí",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Es Mercadal",
+        "Illa": "Menorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Es Migjorn Gran",
+        "Illa": "Menorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Montuïri",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Muro",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Palma",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Petra",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Sa Pobla",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Pollença",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Porreres",
+        "Illa": "Mallorca",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Puigpunyent",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Ses Salines",
+        "Illa": "Mallorca",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Sant Antoni de Portmany",
+        "Illa": "Eivissa",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Sant Joan",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Sant Joan de Labritja",
+        "Illa": "Eivissa",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Sant Josep de sa Talaia",
+        "Illa": "Eivissa",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Sant Llorenç des Cardassar",
+        "Illa": "Mallorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Sant Lluís",
+        "Illa": "Menorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Santa Eugènia",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Santa Eulària des Riu",
+        "Illa": "Eivissa",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Santa Margalida",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Santa Maria del Camí",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Santanyí",
+        "Illa": "Mallorca",
+        "Zona": "Sud"
+      },
+      {
+        "Nom": "Selva",
+        "Illa": "Mallorca",
+        "Zona": "Nord"
+      },
+      {
+        "Nom": "Sencelles",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Sineu",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      },
+      {
+        "Nom": "Sóller",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Son Servera",
+        "Illa": "Mallorca",
+        "Zona": "Llevant"
+      },
+      {
+        "Nom": "Valldemossa",
+        "Illa": "Mallorca",
+        "Zona": "Ponent"
+      },
+      {
+        "Nom": "Vilafranca de Bonany",
+        "Illa": "Mallorca",
+        "Zona": "Centre"
+      }
+    ]
+  }
+}

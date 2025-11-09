@@ -1,0 +1,11 @@
+{
+  "illes": {
+    "illa": [
+      { "Nom": "Mallorca" },
+      { "Nom": "Menorca" },
+      { "Nom": "Eivissa" },
+      { "Nom": "Formentera" },
+      { "Nom": "Cabrera" }
+    ]
+  }
+}

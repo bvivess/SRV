@@ -1,0 +1,1114 @@
+[
+  {
+    "regNumber": "T01",
+    "name": "Serra de Tramuntana Central",
+    "municipality": "Alaró",
+    "meetings": [
+      {
+        "day": "2024-11-15",
+        "time": "09:00:00",
+        "DNI": "18224566K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "El punto de encuentro debe estar mejor señalado.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2024-11-15",
+        "time": "16:30:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Paisajes increíbles, aunque la subida de la tarde se hice un poco pesada con el sol.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2024-11-22",
+        "time": "08:30:00",
+        "DNI": "28452716G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Perfecto para principiantes, buena introducción a la zona.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2024-11-22",
+        "time": "15:00:00",
+        "DNI": "18364857W",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "La hora de inicio es ideal para evitar las horas pico. Altamente recomendado.",
+            "score": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T02",
+    "name": "Ruta Costera del Llevant",
+    "municipality": "Artà",
+    "meetings": [
+      {
+        "day": "2024-12-05",
+        "time": "09:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Vistas espectaculares al mar. Un poco de viento, pero nada grave.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2024-12-05",
+        "time": "17:00:00",
+        "DNI": "44264781X",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "El punto de encuentro fue difícil de encontrar. Sugiero un mapa más claro.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2024-12-12",
+        "time": "08:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Gran ambiente con el grupo y el guía fue muy informativo sobre la flora local.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2024-12-12",
+        "time": "14:30:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Volvería a hacer esta ruta sin dudarlo, es muy relajante.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2024-12-19",
+        "time": "09:00:00",
+        "DNI": "27183675G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Un poco embarrado en algunos tramos después de la lluvia, pero la naturaleza en invierno es preciosa.",
+            "score": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T03",
+    "name": "Ascenso al Puig Major",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-01-10",
+        "time": "07:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Desafío físico, pero la cima vale la pena el esfuerzo. Solo para experimentados.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-01-10",
+        "time": "14:00:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Demasiado frío en la mañana, llevar ropa adecuada. El paisaje con nieve es impresionante.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-01-17",
+        "time": "07:30:00",
+        "DNI": "18224566K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Excelente para amantes de la alta montaña. A ritmo constante y seguro.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-01-17",
+        "time": "13:30:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "La descripción de la dificultad es precisa. No apto para personas con vértigo.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T04",
+    "name": "Camí de Cavalls (Menorca)",
+    "municipality": "Maó",
+    "meetings": [
+      {
+        "day": "2025-02-01",
+        "time": "10:30:00",
+        "DNI": "18364857W",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta muy bien señalizada y cómoda. Se siente la historia del lugar.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-02-01",
+        "time": "16:00:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Hermosos faros a lo largo del camino. La puesta de sol fue mágica.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-02-08",
+        "time": "09:00:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ideal para hacer con niños o personas mayores, el terreno es muy manejable.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-02-08",
+        "time": "15:30:00",
+        "DNI": "44264781X",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "La parte final es un poco larga.",
+            "score": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T05",
+    "name": "Ruta del Torrent de Pareis",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-03-01",
+        "time": "08:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Camino espectacular pero exigente, requiere buen calzado.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-03-01",
+        "time": "14:00:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "La llegada al mar es impresionante, el paisaje vale la pena el esfuerzo.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-03-08",
+        "time": "07:30:00",
+        "DNI": "28452716G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Tramos estrechos y rocosos, no recomendado para principiantes.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-03-08",
+        "time": "15:00:00",
+        "DNI": "18364857W",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta exigente pero muy gratificante.",
+            "score": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T06",
+    "name": "Camí de Ses Fonts",
+    "municipality": "Artà",
+    "meetings": [
+      {
+        "day": "2025-03-15",
+        "time": "09:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Muy tranquila, ideal para familias.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-03-15",
+        "time": "16:00:00",
+        "DNI": "44264781X",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "El sendero está bien señalizado y es accesible.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-03-22",
+        "time": "08:30:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta relajante con bonitas fuentes.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-03-22",
+        "time": "14:30:00",
+        "DNI": "18224566K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Perfecto para una caminata de tarde.",
+            "score": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T07",
+    "name": "Ruta de Cala Figuera",
+    "municipality": "Santanyí",
+    "meetings": [
+      {
+        "day": "2025-03-29",
+        "time": "09:30:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Hermosas vistas al mar, camino fácil.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-03-29",
+        "time": "16:00:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Perfecta para principiantes, camino accesible y seguro.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-04-05",
+        "time": "08:00:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Tramo con algo de subida, pero no demasiado exigente.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2025-04-05",
+        "time": "14:30:00",
+        "DNI": "18364857W",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Excelente paseo, recomendable para toda la familia.",
+            "score": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T08",
+    "name": "Cala Varques",
+    "municipality": "Manacor",
+    "meetings": [
+      {
+        "day": "2025-04-12",
+        "time": "08:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta con tramos difíciles, requiere algo de experiencia.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-04-12",
+        "time": "14:00:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Camino rocoso en algunos puntos, llevar calzado adecuado.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-04-19",
+        "time": "09:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Excelente para senderistas con algo de experiencia.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-04-19",
+        "time": "15:30:00",
+        "DNI": "18224566K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Paisajes espectaculares, pero no apto para principiantes.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T09",
+    "name": "Torrent de Pareis Corto",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-04-26",
+        "time": "07:30:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Tramo corto pero intenso, recomendado para senderistas con experiencia.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-04-26",
+        "time": "13:30:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ideal para una mañana de aventura, vistas impresionantes.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-05-03",
+        "time": "08:00:00",
+        "DNI": "28452716G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta algo complicada para principiantes, recomendable guía.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-05-03",
+        "time": "14:00:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Paisajes muy bonitos, esfuerzo moderado.",
+            "score": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T10",
+    "name": "Ruta de la Trapa",
+    "municipality": "Andratx",
+    "meetings": [
+      {
+        "day": "2025-05-10",
+        "time": "09:00:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Subida exigente pero con vistas espectaculares.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-05-10",
+        "time": "15:30:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Camino largo, requiere buena condición física.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-05-17",
+        "time": "08:30:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta espectacular, algunos tramos difíciles.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-05-17",
+        "time": "14:00:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ideal para senderistas experimentados.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T11",
+    "name": "Camí de Sa Foradada",
+    "municipality": "Banyalbufar",
+    "meetings": [
+      {
+        "day": "2025-05-24",
+        "time": "09:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Tramo rocoso, requiere atención.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-05-24",
+        "time": "15:00:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Vista al mar espectacular, ruta moderada.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2025-05-31",
+        "time": "08:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Buen sendero, algo de pendiente.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-05-31",
+        "time": "14:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta muy pintoresca y agradable.",
+            "score": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T12",
+    "name": "Puig de Massanella",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-06-07",
+        "time": "07:00:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ascenso exigente, solo para experimentados.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-06-07",
+        "time": "13:30:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Vistas desde la cima impresionantes.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-06-14",
+        "time": "08:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta técnica, requiere buen calzado y condición.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-06-14",
+        "time": "14:00:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Sendero espectacular, recomendado para senderistas con experiencia.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T13",
+    "name": "Cala Tuent",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-06-21",
+        "time": "09:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta moderada con vistas al mar.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-06-21",
+        "time": "15:00:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Sendero agradable y bien marcado.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2025-06-28",
+        "time": "08:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Buen recorrido, algo exigente en la subida final.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-06-28",
+        "time": "14:00:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta recomendable para senderistas moderados.",
+            "score": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T14",
+    "name": "Sa Calobra",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-07-05",
+        "time": "07:30:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta muy exigente, requiere buena condición física.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-07-05",
+        "time": "14:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Tramos complicados con muchas piedras, no apto para principiantes.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-07-12",
+        "time": "08:00:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Impresionantes vistas, esfuerzo elevado.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-07-12",
+        "time": "13:30:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta inolvidable para senderistas experimentados.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T15",
+    "name": "Camí de Sa Calobra - Torrent de Pareis",
+    "municipality": "Escorca",
+    "meetings": [
+      {
+        "day": "2025-07-19",
+        "time": "08:00:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta exigente pero muy espectacular.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-07-19",
+        "time": "14:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Tramos complicados, requiere atención.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-07-26",
+        "time": "08:30:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Paisajes impresionantes, muy recomendable para expertos.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-07-26",
+        "time": "15:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta de aventura, exige buena preparación física.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T16",
+    "name": "Ruta de Cala Mondragó",
+    "municipality": "Santanyí",
+    "meetings": [
+      {
+        "day": "2025-08-02",
+        "time": "09:00:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta sencilla y muy bonita, ideal para familias.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-08-02",
+        "time": "15:30:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Camino fácil y agradable, vistas preciosas.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-08-09",
+        "time": "08:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta relajante, perfecta para la mañana.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-08-09",
+        "time": "14:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ideal para paseo tranquilo, sendero fácil.",
+            "score": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T17",
+    "name": "Ruta de Formentor",
+    "municipality": "Pollença",
+    "meetings": [
+      {
+        "day": "2025-08-16",
+        "time": "07:30:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta larga, algo exigente para principiantes.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-08-16",
+        "time": "14:00:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Vistas impresionantes, recorrido moderado.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-08-23",
+        "time": "08:00:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Buen recorrido con vistas al mar, pendiente moderada.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-08-23",
+        "time": "14:30:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Sendero agradable y panorámico.",
+            "score": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T18",
+    "name": "Ruta del Puig de l’Ofre",
+    "municipality": "Sóller",
+    "meetings": [
+      {
+        "day": "2025-08-30",
+        "time": "08:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Subida exigente pero vistas impresionantes.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-08-30",
+        "time": "14:00:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta técnica, requiere experiencia en montaña.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-09-06",
+        "time": "08:30:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Sendero difícil, recomendable para expertos.",
+            "score": 5
+          }
+        ]
+      },
+      {
+        "day": "2025-09-06",
+        "time": "14:30:00",
+        "DNI": "472248381H",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Excelente ruta para senderistas con experiencia.",
+            "score": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T19",
+    "name": "Ruta de Cala Deià",
+    "municipality": "Deià",
+    "meetings": [
+      {
+        "day": "2025-09-13",
+        "time": "09:00:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta moderada, buena para una mañana tranquila.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2025-09-13",
+        "time": "15:00:00",
+        "DNI": "18562438K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Sendero fácil con vistas al mar.",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "day": "2025-09-20",
+        "time": "08:30:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta agradable y panorámica.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "day": "2025-09-20",
+        "time": "14:30:00",
+        "DNI": "24183647K",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ideal para paseos de tarde, terreno cómodo.",
+            "score": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "regNumber": "T20",
+    "name": "Camí des Correu",
+    "municipality": "Valldemossa",
+    "meetings": [
+      {
+        "day": "2025-09-27",
+        "time": "08:00:00",
+        "DNI": "18452745P",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta con pendientes moderadas y vistas preciosas.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-09-27",
+        "time": "14:00:00",
+        "DNI": "19263547T",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Buen recorrido, algo de dificultad en la subida final.",
+            "score": 3
+          }
+        ]
+      },
+      {
+        "day": "2025-10-04",
+        "time": "08:30:00",
+        "DNI": "26351836G",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Ruta técnica, recomendable para senderistas con experiencia.",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "day": "2025-10-04",
+        "time": "14:30:00",
+        "DNI": "18452377S",
+        "comments": [
+          {
+            "DNI": "18224566K",
+            "comment": "Sendero agradable pero con tramos exigentes.",
+            "score": 3
+          }
+        ]
+      }
+    ]
+  }
+]
