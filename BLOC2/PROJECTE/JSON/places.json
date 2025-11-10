@@ -5,14 +5,15 @@
       { "name": "Puig Major", "type": "Cim" },
       { "name": "Mirador de Ses Barques", "type": "Mirador" },
       { "name": "Torrent de Pareis", "type": "Torrent" },
-      { "name": "Coll de sa Batalla", "type": "Coll" }
+      { "name": "Cala Tuent", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T02",
     "places_of_interest": [
       { "name": "Cala Varques", "type": "Platja" },
-      { "name": "Far de Capdepera", "type": "Mirador" }
+      { "name": "Far de Capdepera", "type": "Mirador" },
+      { "name": "Cala Mitjana", "type": "Platja" }
     ]
   },
   {
@@ -20,86 +21,89 @@
     "places_of_interest": [
       { "name": "Puig Major", "type": "Cim" },
       { "name": "Coll de Sa Coma", "type": "Coll" },
-      { "name": "Refugi de Tossals Verds", "type": "Refugi" }
+      { "name": "Mirador de Ses Barques", "type": "Mirador" },
+      { "name": "Santuari de Lluc", "type": "Lloc cultural" }
     ]
   },
   {
     "regNumber": "T04",
     "places_of_interest": [
-      { "name": "Platja de Binibeca", "type": "Platja" },
       { "name": "Torre de Fornells", "type": "Mirador" },
-      { "name": "Camí de Cavalls Est", "type": "Camí" },
-      { "name": "Platja de Punta Prima", "type": "Platja" }
+      { "name": "Cala en Porter", "type": "Platja" },
+      { "name": "Cova d’en Xoroi", "type": "Cova" },
+      { "name": "Far de Cavalleria", "type": "Mirador" },
+      { "name": "Cala Pregonda", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T05",
     "places_of_interest": [
       { "name": "Torrent de Pareis", "type": "Torrent" },
-      { "name": "Cala Tuent", "type": "Platja" },
-      { "name": "Mirador de Ses Barques", "type": "Mirador" },
-      { "name": "Coll de Sa Coma", "type": "Coll" }
+      { "name": "Sa Calobra", "type": "Platja" },
+      { "name": "Cala Tuent", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T06",
     "places_of_interest": [
-      { "name": "Fonts de Son Pou", "type": "Font" },
-      { "name": "Camí de Ses Fonts", "type": "Camí" }
+      { "name": "Font des Noguer", "type": "Font" },
+      { "name": "Puig de l’Ofre", "type": "Cim" }
     ]
   },
   {
     "regNumber": "T07",
     "places_of_interest": [
       { "name": "Cala Figuera", "type": "Platja" },
-      { "name": "Mirador de Cap de ses Salines", "type": "Mirador" }
+      { "name": "Far de Cap Blanc", "type": "Mirador" },
+      { "name": "Cala Santanyí", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T08",
     "places_of_interest": [
       { "name": "Cala Varques", "type": "Platja" },
-      { "name": "Torrent de Cala Varques", "type": "Torrent" },
-      { "name": "Far de Cala Figuera", "type": "Mirador" }
+      { "name": "Cova del Pirata", "type": "Cova" },
+      { "name": "Cova des Pont", "type": "Cova" },
+      { "name": "Cala Romàntica", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T09",
     "places_of_interest": [
-      { "name": "Torrent de Pareis Corto", "type": "Torrent" },
-      { "name": "Cala Tuent", "type": "Platja" }
+      { "name": "Torrent de Pareis", "type": "Torrent" },
+      { "name": "Sa Calobra", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T10",
     "places_of_interest": [
-      { "name": "Ruta de la Trapa", "type": "Camí" },
-      { "name": "Monestir de la Trapa", "type": "Monestir" },
-      { "name": "Mirador de la Trapa", "type": "Mirador" }
+      { "name": "La Trapa", "type": "Lloc natural" },
+      { "name": "Mirador d’en Josep Sastre", "type": "Mirador" },
+      { "name": "Torre des Cap Andritxol", "type": "Mirador" },
+      { "name": "Sant Elm", "type": "Poble" }
     ]
   },
   {
     "regNumber": "T11",
     "places_of_interest": [
-      { "name": "Camí de Sa Foradada", "type": "Camí" },
-      { "name": "Mirador Sa Foradada", "type": "Mirador" },
-      { "name": "Cala Deià", "type": "Platja" }
+      { "name": "Sa Foradada", "type": "Formació rocosa" },
+      { "name": "Mirador de Na Foradada", "type": "Mirador" }
     ]
   },
   {
     "regNumber": "T12",
     "places_of_interest": [
       { "name": "Puig de Massanella", "type": "Cim" },
-      { "name": "Coll de l'Ofre", "type": "Coll" },
-      { "name": "Mirador de Massanella", "type": "Mirador" },
-      { "name": "Torrent de l'Ofre", "type": "Torrent" }
+      { "name": "Coma de n’Arbona", "type": "Vall" },
+      { "name": "Santuari de Lluc", "type": "Lloc cultural" }
     ]
   },
   {
     "regNumber": "T13",
     "places_of_interest": [
       { "name": "Cala Tuent", "type": "Platja" },
-      { "name": "Torrent de Pareis", "type": "Torrent" }
+      { "name": "Torrent de Pareis", "type": "Torrent" },
+      { "name": "Puig Major", "type": "Cim" }
     ]
   },
   {
@@ -107,39 +111,42 @@
     "places_of_interest": [
       { "name": "Sa Calobra", "type": "Platja" },
       { "name": "Torrent de Pareis", "type": "Torrent" },
-      { "name": "Mirador de Sa Foradada", "type": "Mirador" },
-      { "name": "Camí de Sa Calobra", "type": "Camí" }
+      { "name": "Cala Tuent", "type": "Platja" }
     ]
   },
   {
     "regNumber": "T15",
     "places_of_interest": [
-      { "name": "Camí de Sa Calobra - Torrent de Pareis", "type": "Camí" },
+      { "name": "Sa Calobra", "type": "Platja" },
+      { "name": "Torrent de Pareis", "type": "Torrent" },
+      { "name": "Mirador de Ses Barques", "type": "Mirador" },
       { "name": "Cala Tuent", "type": "Platja" },
-      { "name": "Mirador del Torrent", "type": "Mirador" },
-      { "name": "Coll de Sa Coma", "type": "Coll" },
-      { "name": "Refugi de Tossals Verds", "type": "Refugi" }
+      { "name": "Puig Major", "type": "Cim" }
     ]
   },
   {
     "regNumber": "T16",
     "places_of_interest": [
       { "name": "Cala Mondragó", "type": "Platja" },
-      { "name": "Mirador de Cala Mondragó", "type": "Mirador" }
+      { "name": "S’Amarador", "type": "Platja" },
+      { "name": "Mirador de ses Fonts de n’Alis", "type": "Mirador" }
     ]
   },
   {
     "regNumber": "T17",
     "places_of_interest": [
-      { "name": "Formentor", "type": "Cim" },
       { "name": "Far de Formentor", "type": "Mirador" },
-      { "name": "Platja de Formentor", "type": "Platja" }
+      { "name": "Mirador des Colomer", "type": "Mirador" },
+      { "name": "Platja de Formentor", "type": "Platja" },
+      { "name": "Talaia d’Albercutx", "type": "Cim" }
     ]
   },
   {
     "regNumber": "T18",
     "places_of_interest": [
       { "name": "Puig de l’Ofre", "type": "Cim" },
+      { "name": "Font des Noguer", "type": "Font" },
+      { "name": "Embassament de Cúber", "type": "Pantà" },
       { "name": "Coll de l’Ofre", "type": "Coll" }
     ]
   },
@@ -147,16 +154,18 @@
     "regNumber": "T19",
     "places_of_interest": [
       { "name": "Cala Deià", "type": "Platja" },
-      { "name": "Mirador de Deià", "type": "Mirador" },
-      { "name": "Camí de Deià", "type": "Camí" },
-      { "name": "Torrent de Deià", "type": "Torrent" }
+      { "name": "Mirador de Son Marroig", "type": "Mirador" },
+      { "name": "Sa Foradada", "type": "Formació rocosa" },
+      { "name": "Puig de Son Rullan", "type": "Cim" }
     ]
   },
   {
     "regNumber": "T20",
     "places_of_interest": [
-      { "name": "Camí des Correu", "type": "Camí" },
-      { "name": "Coll de Sa Coma", "type": "Coll" }
+      { "name": "Camí des Correu", "type": "Camí històric" },
+      { "name": "Esporles", "type": "Poble" },
+      { "name": "Banyalbufar", "type": "Poble" },
+      { "name": "Mirador de Son Bunyola", "type": "Mirador" }
     ]
   }
 ]
