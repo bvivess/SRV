@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E963C05-4B0A-2138-E598-77FD0EE1E797" name="users">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:14:51 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B5487A8E-79BE-4FF7-F494-DD7EC9060618">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:24:27 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA388D02-6A42-4D08-354F-AA00D1BC8DC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="6FF8869D-D1C1-5501-6E67-BE51463D21AB">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:24:31 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24817382-342F-66B0-53D1-DE212A039D64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lastName" id="A279ED93-9D76-A49C-9DBD-3BD9EFC8DAC8">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:24:47 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24817382-342F-66B0-53D1-DE212A039D64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="04104DC4-350C-BEFD-C8C8-2C0DDEDF5996">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:25:06 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24817382-342F-66B0-53D1-DE212A039D64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_verified_at" id="BE002E3D-D3C2-C2A4-4757-9CCDF72099D9">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-08 12:42:49 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="124409F7-4373-BC45-06C3-CC1BEF7820C9">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:25:10 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F008AAA-F7A9-45E0-2039-E6ED01336C35</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passwd" id="798F4AB7-6155-6380-6158-545094F7E774">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:25:20 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24817382-342F-66B0-53D1-DE212A039D64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="9CB0411D-893C-05D4-6A25-885667A5FF57">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:29:32 UTC</createdTime>
+<generatorID>EEE50B5F-E34B-C2D2-197A-20414474712A</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<referedAttribute>0CA4B706-9573-3FAD-10FC-9C4BF441BDB9</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA388D02-6A42-4D08-354F-AA00D1BC8DC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E0D097E-A824-BA98-3229-820BE1BF4E2D" name="USERS PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:24:30 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5487A8E-79BE-4FF7-F494-DD7EC9060618</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2331593A-C483-CDCB-4ED0-A78B0BE1D640" name="email">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:25:45 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<newElementsIDs>04104DC4-350C-BEFD-C8C8-2C0DDEDF5996</newElementsIDs>
+<usedAttributes>
+<attributeRef>04104DC4-350C-BEFD-C8C8-2C0DDEDF5996</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

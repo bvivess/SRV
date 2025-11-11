@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BC4A419-B0E1-6921-E448-D5F82C992786" name="place_types">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:16:56 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="6FC2B359-0B92-65C9-E414-F33F0B24A83B">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:22:14 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA388D02-6A42-4D08-354F-AA00D1BC8DC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="E98911C5-47E4-B166-F3A6-BADCAE0FFAB9">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:22:19 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24817382-342F-66B0-53D1-DE212A039D64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6735453E-693E-A81B-975F-9C9F2F5798CF" name="TYPE OF PLACES PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:22:17 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6FC2B359-0B92-65C9-E414-F33F0B24A83B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

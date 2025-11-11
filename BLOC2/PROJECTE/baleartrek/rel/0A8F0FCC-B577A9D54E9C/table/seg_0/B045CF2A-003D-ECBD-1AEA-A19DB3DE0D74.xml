@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B045CF2A-003D-ECBD-1AEA-A19DB3DE0D74" name="treks">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>CFDC1C0A-EA51-BB94-896F-3C1D0680171D</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="ADCC3162-B809-C935-20D0-681422029EB8">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>2D9B08C7-CE4A-E178-35A9-8A83F23F15C3</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA388D02-6A42-4D08-354F-AA00D1BC8DC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regNumber" id="50C287C8-D05E-9F7C-6A9D-B73E8969569B">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-09 17:13:53 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA388D02-6A42-4D08-354F-AA00D1BC8DC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="197DC4FB-1408-2333-804E-173D0F686B6A">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>4511444B-ED52-1A14-926F-E9DE73AFC319</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>24817382-342F-66B0-53D1-DE212A039D64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="municipality_id" id="1B17C806-6B2B-E81A-707B-0AC9A5CBD569">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>357A8143-E5A0-857A-BEA1-F96A824BC274</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA388D02-6A42-4D08-354F-AA00D1BC8DC8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A05AC3E5-DA07-995C-D396-257A159099C6" referredColumn="430DD510-9B27-7826-9FB8-52CB5548F57D"/>
+</associations>
+</Column>
+<Column name="status" id="3DD3D960-9AFB-89ED-083D-D86F3C07CF58">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>9F277164-8AD9-4062-8138-1F05DF9C5D02</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0647ABCB-95EA-BEE7-5325-4286FBF37F07" name="treks_PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>CE4771F5-9276-23A9-969D-8511A151A74D</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADCC3162-B809-C935-20D0-681422029EB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E93B340-481E-D9C4-CEB5-2D9C6C8F4CE8" name="treks_UN">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-09 17:14:23 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50C287C8-D05E-9F7C-6A9D-B73E8969569B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7306718E-962F-167C-64CD-CC20203D45CB" name="treks_municipalities_FK">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>985D74C3-4851-7F28-6618-452EB73341C8</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B17C806-6B2B-E81A-707B-0AC9A5CBD569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="87C207CE-AB08-31A0-1727-706E19A92813" containerWithKeyObject="66ED9A8F-E042-0C98-51E4-B97D7C5A29A7" localFKIndex="045491FE-6041-0B6C-6A99-0985CE184502" name="images_comments_FK">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-07 10:36:25 UTC</createdTime>
+<generatorID>96C6170D-0CF6-F1C1-C017-5E0C43E027F8</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<referredTableLongName>comments</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>70EAE4D7-3D15-5237-1A82-587495336E03</referredTableID>
+<keyObject>83E25054-A5E7-BDC2-696C-E4104FFE661A</keyObject>
+<referredKeyID>83E25054-A5E7-BDC2-696C-E4104FFE661A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

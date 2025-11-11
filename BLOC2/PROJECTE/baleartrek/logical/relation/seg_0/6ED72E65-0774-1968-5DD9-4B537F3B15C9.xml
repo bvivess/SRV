@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_1" directorySegmentName="seg_0" id="6ED72E65-0774-1968-5DD9-4B537F3B15C9">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:17:14 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<sourcePk>CE4771F5-9276-23A9-969D-8511A151A74D</sourcePk>
+<targetPk>9ABB6F54-F94E-84DE-145F-3602765676F5</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>CFDC1C0A-EA51-BB94-896F-3C1D0680171D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D03262AF-06D1-CDCC-D094-9BDB6216F314</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="order" id="4FF7D3B1-FA3E-1091-3C4A-7CAA3ADDE35D">
+<createdBy>Administrador</createdBy>
+<createdTime>2025-11-06 10:17:20 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<engineerTo>
+<item key="0A8F0FCC-0F1A-7CC9-D44D-B577A9D54E9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>
