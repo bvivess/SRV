@@ -32,7 +32,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="6E963C05-4B0A-2138-E598-77FD0EE1E797" otype="Entity" vid="5D8F3748-72F4-852C-D656-9D2AD9B8D1EC">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="344" y="69" width="170" height="129"/>
+<bounds x="344" y="69" width="170" height="146"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="7BC4A419-B0E1-6921-E448-D5F82C992786" otype="Entity" vid="FA2796C2-E9BA-8D86-FEC9-58188F3119E0">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -65,7 +65,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="432" y="198"/>
+<point x="432" y="215"/>
 <point x="432" y="260"/>
 </points>
 </Connector>
@@ -140,8 +140,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="514" y="197"/>
-<point x="574" y="197"/>
+<point x="514" y="206"/>
+<point x="574" y="206"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="CD0086B8-524C-42DE-F699-CE2510524A31" otype="Relation" vid_source="3BAEC51C-3B06-AAFE-02A4-B932F30B53CA" vid_target="5D8F3748-72F4-852C-D656-9D2AD9B8D1EC">
@@ -150,7 +150,7 @@
 <lineWidth>1</lineWidth>
 <points>
 <point x="447" y="260"/>
-<point x="447" y="198"/>
+<point x="447" y="215"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="EEE50B5F-E34B-C2D2-197A-20414474712A" otype="Relation" vid_source="346362F8-61DF-301B-635A-CF92665ED20C" vid_target="5D8F3748-72F4-852C-D656-9D2AD9B8D1EC">
@@ -158,8 +158,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="598" y="119"/>
-<point x="514" y="119"/>
+<point x="598" y="104"/>
+<point x="514" y="104"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="F2ABB53A-A5A3-D2B7-BA64-EC8AA1122956" otype="Relation" vid_source="9BA416CC-3F9A-6F7E-5AF7-8179A8E1E553" vid_target="BA5E934F-19C8-F777-AA97-50215EDCA591">
