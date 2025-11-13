@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2840226-4D59-7084-F2D3-BE9ACBE8E503" name="meetings">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>6051EDA3-E8DA-1EB7-982C-7FB2F86650AC</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="treks_id" id="1AEADA5B-E920-8F0B-18D2-95031A21247C">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>2FA82072-C77A-3773-AFB7-8101A473297C</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC3CB3A1-0100-150A-0256-36EB0191F922" referredColumn="C01AD4EE-F265-5E52-53CD-4DE967EF6C60"/>
+</associations>
+</Column>
+<Column name="appDateIni" id="D3F7CFFC-223D-037D-241C-D34AC17B8E5D">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>A6A07DC2-0A55-CB39-62FE-D84685C638E1</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="appDateEnd" id="7CED0DAB-E155-BB52-6710-2E8991BD38BB">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>DB6C7F2E-0C0F-51DD-FF2B-6256A4B1E1D3</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="users_id" id="69021803-3F23-9B32-AEC1-B4074AA07C72">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>1960461B-5118-3EC3-831E-17858748E310</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C56FB86B-1120-B8E8-ADCE-65731F0D5401" referredColumn="8FEB57C7-3046-8094-B075-8BF581B74426"/>
+</associations>
+</Column>
+<Column name="day" id="71C006EF-B96D-0610-A838-41BB5A8DF091">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>C20161B2-47CE-74F1-3F47-40801EF452D5</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>DC3CB3A1-0100-150A-0256-36EB0191F922</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="hour" id="9CC7BEF2-B6A9-A6F8-FF0F-0B4CEEB4C826">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>7A8A2658-3CE2-3C90-5D4E-55C347DC4E49</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>DC3CB3A1-0100-150A-0256-36EB0191F922</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D4565AC-180D-90E9-57EA-411028A6A807" name="meetings_PK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>A09E11BC-0CB0-76AD-B2A9-204D62FF9808</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3F7CFFC-223D-037D-241C-D34AC17B8E5D"/>
+<colUsage columnID="1AEADA5B-E920-8F0B-18D2-95031A21247C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FC8968D-64C6-BFC8-53E2-959BC945FB47" name="meetings__IDX">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4F179B79-A261-C673-38BD-A6E0B903B6FE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="69021803-3F23-9B32-AEC1-B4074AA07C72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19277324-1027-D6F2-CDD1-B5500DDE812E" name="meetings_users_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>4F179B79-A261-C673-38BD-A6E0B903B6FE</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69021803-3F23-9B32-AEC1-B4074AA07C72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B0AE9AA-760E-0BA1-4D0D-CFEDC3E5114D" name="meetings_treks_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>83B12CE0-E9CB-E959-FE62-F9E631C49CD7</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AEADA5B-E920-8F0B-18D2-95031A21247C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

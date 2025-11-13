@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0A2CB588-4875-F2B9-8618-3852FC7C4E56" containerWithKeyObject="2F23C9C9-A36E-89E9-925A-41665AA408F5" localFKIndex="46B753A4-3452-2696-BE93-819222A01AE4" name="users_meetings_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>4F179B79-A261-C673-38BD-A6E0B903B6FE</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<referredTableLongName>meetings</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C2840226-4D59-7084-F2D3-BE9ACBE8E503</referredTableID>
+<keyObject>4D4565AC-180D-90E9-57EA-411028A6A807</keyObject>
+<referredKeyID>4D4565AC-180D-90E9-57EA-411028A6A807</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>appDateIni,treks_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

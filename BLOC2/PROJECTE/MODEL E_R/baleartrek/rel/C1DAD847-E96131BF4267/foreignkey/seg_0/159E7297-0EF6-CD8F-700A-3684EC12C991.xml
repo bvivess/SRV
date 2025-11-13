@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="159E7297-0EF6-CD8F-700A-3684EC12C991" containerWithKeyObject="C936D593-A146-24FD-7A94-403478A9F974" localFKIndex="98A9793D-2F3C-7259-4A3E-315A915AC64F" name="treks_municipalities_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>985D74C3-4851-7F28-6618-452EB73341C8</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<referredTableLongName>municipalities</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>533D0773-AD1D-7C19-0F47-E5994AA447BA</referredTableID>
+<keyObject>0A237799-6528-2B68-E9C0-B5FCF9228B82</keyObject>
+<referredKeyID>0A237799-6528-2B68-E9C0-B5FCF9228B82</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

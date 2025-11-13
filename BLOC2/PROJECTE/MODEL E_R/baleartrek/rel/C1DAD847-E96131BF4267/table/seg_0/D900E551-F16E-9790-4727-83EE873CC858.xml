@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D900E551-F16E-9790-4727-83EE873CC858" name="interesting_places">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>D03262AF-06D1-CDCC-D094-9BDB6216F314</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1C731DAC-575E-D519-6758-AAF71B0C9ACF">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>1BE6F4C8-E118-774B-B708-B36411FCB0B5</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gps" id="F2F0EC87-AB87-6E54-C02B-36EC1423B9DF">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>A3046DDE-3705-FEE8-FD87-67ADB7408875</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="C2629F9E-EBA4-36E6-B8A6-5B2F578C9FE1">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>B014FEC6-6AF0-3C09-D1DA-1984A4E64895</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="place_types_id" id="FB5E9B9C-DC06-E88D-4EBB-D2113F01FBC2">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>AB99EFF9-AD2E-AAFB-2F38-E51D691D97F8</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DC86D68-0683-B8AB-C2E1-B6A2861B41F6" referredColumn="A3013B96-36EF-F7A2-CA5D-1010C542579A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFFE7EE2-4C87-503D-A422-4C20FFF09C4B" name="interesting_places_PK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>9ABB6F54-F94E-84DE-145F-3602765676F5</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C731DAC-575E-D519-6758-AAF71B0C9ACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4DC1561-22E8-CE7B-D8E1-F51516FF7A85" name="interesting_places_gps_UN">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>C000E776-1C4A-3932-D5CB-32EB3FDAD2F1</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2F0EC87-AB87-6E54-C02B-36EC1423B9DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF83F253-D11C-DAAB-A1ED-D85994FDE5C3" name="interesting_places_place_types_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2025-11-11 15:25:13 UTC</createdTime>
+<generatorID>9B3A8A75-22C0-BE45-DA61-78D5FE9A86A8</generatorID>
+<ownerDesignName>baleartrek</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB5E9B9C-DC06-E88D-4EBB-D2113F01FBC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
