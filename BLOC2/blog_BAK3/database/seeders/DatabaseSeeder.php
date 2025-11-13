@@ -9,6 +9,8 @@ use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Database\Seeders\UserSeeder;
 use Database\Seeders\CategorySeeder;
+use Database\Seeders\TagSeeder;
+use Database\Seeders\PostSeeder;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
@@ -21,6 +23,8 @@ class DatabaseSeeder extends Seeder
     {
         // Seeders
         $this->call(UserSeeder::class);  // Crea 1 seeder concret
+        $this->call(TagSeeder::class);
+        $this->call(PostSeeder::class);
 
         // JSON
         $this->call(CategorySeeder::class);
