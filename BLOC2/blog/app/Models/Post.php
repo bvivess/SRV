@@ -40,7 +40,15 @@ class Post extends Model
     {
         return Attribute::make(
             get: function ($value) { return ucfirst($value);}, // Torna el títol amb la primera en maiúscules
-            set: function ($value) { return strtolower($value); }  // Guarda el títol en minúscules
+            set: function ($value) { return strtoupper($value); }  // Guarda el títol en minúscules
+        );
+    }
+
+    protected function urlClean(): Attribute
+    {
+        return Attribute::make(
+            get: function ($value) { return ucwords(str_replace('_', ' ', $value));}, // Torna l'url neta amb majúscules a l'inici de cada paraula i espais
+            set: function ($value) { return strtolower(str_replace(' ', '_', $value)); }  // Guarda l'url neta en minúscules i guions baixos
         );
     }
 
