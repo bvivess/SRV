@@ -35,6 +35,22 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function name(): Attribute
+    {
+        return Attribute::make(
+            get: function ($value) { return ucfirst($value); }, // Torna el títol amb la primera en maiúscules
+            set: function ($value) { return strtoupper($value); }  // Guarda el títol en minúscules
+        );
+    }
+
+    public function lastname(): Attribute
+    {
+        return Attribute::make(
+            get: function ($value) { return ucfirst($value); }, // Torna el títol amb la primera en maiúscules
+            set: function ($value) { return strtoupper($value); }  // Guarda el títol en minúscules
+        );
+    }
+
     /**
      * Get the attributes that should be cast.
      *

@@ -27,11 +27,10 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'lastname' => fake()->lastName(),
-            'dni' => fake()->unique()->regexify('[0-9]{8}[A-Z]'),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => Hash::make('12345678'),
-            'role_id' => 1, // Role::where('name', 'admin')->value('id'),
+            'role_id' => Role::where('name', 'admin')->value('id'),
         ];
     }
 

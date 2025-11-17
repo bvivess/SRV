@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
         Category::factory(5)->create();
         $posts = Post::factory(20)->create();
         $tags = Tag::factory(10)->create();
+        
         $comments = Comment::factory(100)->create();
         $images = Image::factory(100)->create();
 
