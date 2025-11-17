@@ -50,7 +50,7 @@ class PostSeeder extends Seeder
             $randomTags = collect($tags)->random(2);
             foreach ($randomTags as $tag) {
                 $tag = Tag::where('name', $tag)->first();
-                $post->tags()->attach($tag->id);
+                $post->tags()->attach($tag->id, ['created_at' => now(), 'updated_at' => now()]);  // 'syncWithoutDetaching()' evita duplicats
             }
         }
     }

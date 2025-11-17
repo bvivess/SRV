@@ -22,7 +22,7 @@
         // Relacions entre taules:
         public function posts()
         {
-            return $this->belongsToMany(Post::class);
+            return $this->belongsToMany(Post::class)->withPivot('created_at', 'updated_at');  // M:N
         }
 
     }

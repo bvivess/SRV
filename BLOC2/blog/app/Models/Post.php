@@ -60,7 +60,7 @@ class Post extends Model
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class);  // M:N
+        return $this->belongsToMany(Tag::class)->withPivot('created_at', 'updated_at');  // M:N
     }
 
     public function user() 
