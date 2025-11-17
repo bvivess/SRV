@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
         $user->lastname = "admin";
         $user->email = "admin@abc.com";
         $user->password = Hash::make('12345678');
-        $user->role_id = Role::where('name', 'admin')->value('id');
+        $user->role_id = Role::where('name', 'admin')->value('id');  // Role::inRandomOrder()->first()->id,
         $user->save();
     }
 }
