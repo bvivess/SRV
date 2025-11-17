@@ -23,6 +23,7 @@ class PostSeeder extends Seeder
             'Lifestyle',
             'Education',
             'Travel',
+            'Technology',
         ];
 
         $posts = [
@@ -33,7 +34,7 @@ class PostSeeder extends Seeder
 
         // Crear 'Tags'
         foreach ($tags as $tag) {
-            Tag::create(['name' => $tag]);
+            Tag::create(['name' => $tag]);  // firstOrCreate() per evitar duplicats
         }
 
         // Crear 'Posts' 
