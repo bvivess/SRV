@@ -17,8 +17,8 @@ class RoleSeeder extends Seeder
         $role->name = "admin";
         $role->save();
 
-        $role = new Role();
-        $role->name = "visitant";
-        $role->save();
+        Role::Create([
+            'name' => 'visitant'
+        ]);
     }
 }
