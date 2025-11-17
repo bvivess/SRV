@@ -30,7 +30,7 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => Hash::make('12345678'),
-            'role_id' => Role::where('name', 'admin')->value('id'),
+            'role_id' => Role::where('name', 'visitant')->value('id'), // Role::inRandomOrder()->first()->id,
         ];
     }
 

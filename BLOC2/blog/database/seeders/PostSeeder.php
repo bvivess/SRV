@@ -23,7 +23,7 @@ class PostSeeder extends Seeder
             'Lifestyle',
             'Education',
             'Travel',
-            'Technology',
+            //'Technology',
         ];
 
         $posts = [
