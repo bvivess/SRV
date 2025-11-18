@@ -43,8 +43,8 @@ class PostSeeder extends Seeder
                 'title'       => $post,
                 'url_clean'   => $post, // EXISTEIX UN MUTADOR: 'strtolower(str_replace(' ', '_', $post)),'
                 'content'     => fake()->paragraphs(3, true),
-                'user_id'     => User::inRandomOrder()->first()->id,  // assignar un usuari aleatori
-                'category_id' => Category::inRandomOrder()->first()->id,  // assignar una categoria aleatòria
+                'user_id'     => User::inRandomOrder()->value('id'),  // assignar un usuari aleatori
+                'category_id' => Category::inRandomOrder()->value('id'),  // assignar una categoria aleatòria
             ]);
 
             // Assignar etiquetes aleatòries al post
