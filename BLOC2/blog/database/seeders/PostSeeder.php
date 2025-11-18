@@ -48,7 +48,7 @@ class PostSeeder extends Seeder
             ]);
 
             // Assignar etiquetes aleatòries al post
-            $randomTags = collect($tags)->random(2);
+            $randomTags = collect($tags)->random(2);  // seleccionar 2 'tag' aleatoris-> passar a col·lection per utilitzar dels seus mètodes
             foreach ($randomTags as $tag) {
                 $tag = Tag::where('name', $tag)->first();
                 $post->tags()->attach($tag->id, ['created_at' => now(), 'updated_at' => now()]);  // 'syncWithoutDetaching()' evita duplicats
