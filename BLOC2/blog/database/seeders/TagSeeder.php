@@ -14,15 +14,22 @@ class TagSeeder extends Seeder
     public function run(): void
     {
         $tags = [
-            'Senderisme',
-            'Ciclisme',
-            'Cultura',
+            'Technology',
+            'Health',
+            'Lifestyle',
+            'Education',
+            'Travel',
+            'Food',
+            'Finance',
+            'Science',
+            'Sports',
+            'Entertainment',
+            // 'Technology', // duplicat per provar 'firstOrCreate()'
         ];
 
+        // Crear 'Tags'
         foreach ($tags as $tag) {
-            $newTag = new Tag();
-            $newTag->name = $tag;
-            $newTag->save();
+            Tag::create(['name' => $tag]);  // 'firstOrCreate()' per evitar duplicats
         }
     }
 }

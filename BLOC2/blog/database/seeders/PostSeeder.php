@@ -16,26 +16,15 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-
-        $tags = [
-            'Technology',
-            'Health',
-            'Lifestyle',
-            'Education',
-            'Travel',
-            //'Technology',
-        ];
-
+        // Obtenir tots posts
         $posts = [
             'What is Lorem Ipsum?',
             'Why do we use it?',
             'Where does it come from?',
         ];
 
-        // Crear 'Tags'
-        foreach ($tags as $tag) {
-            Tag::create(['name' => $tag]);  // 'firstOrCreate()' per evitar duplicats
-        }
+        // Obtenir tots els IDs de tags
+        $tagsId = Tag::all()->pluck('id');
 
         // Crear 'Posts' 
         foreach ($posts as $post) {
@@ -47,12 +36,9 @@ class PostSeeder extends Seeder
                 'category_id' => Category::inRandomOrder()->value('id'),  // assignar una categoria aleatòria
             ]);
 
-            // Assignar etiquetes aleatòries al post
-            $randomTags = collect($tags)->random(2);  // seleccionar 2 'tag' aleatoris-> passar a col·lection per utilitzar dels seus mètodes
-            foreach ($randomTags as $tag) {
-                $tag = Tag::where('name', $tag)->first();
-                $post->tags()->attach($tag->id, ['created_at' => now(), 'updated_at' => now()]);  // 'syncWithoutDetaching()' evita duplicats
-            }
+            // Assignar tags aleatoris al post
+            $randomTagsIds = $tagsId->random(rand(1, $tagsId->count()));  // entre 1 i el total de 'tags'
+            $post->tags()->attach($randomTagsIds);
         }
     }
 }
