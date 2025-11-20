@@ -16,7 +16,7 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        // Obtenir tots posts
+        // Obtenir tots 'posts'
         $posts = [
             'What is Lorem Ipsum?',
             'Why do we use it?',
@@ -36,7 +36,7 @@ class PostSeeder extends Seeder
                 'category_id' => Category::inRandomOrder()->value('id'),  // assignar una categoria aleatòria
             ]);
 
-            // Assignar tags aleatoris al post
+            // Assignar tags aleatoriament al post
             $randomTagsIds = $tagsId->random(rand(1, $tagsId->count()));  // entre 1 i el total de 'tags'
             $post->tags()->attach($randomTagsIds);
         }
