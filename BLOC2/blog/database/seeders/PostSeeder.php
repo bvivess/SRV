@@ -28,17 +28,22 @@ class PostSeeder extends Seeder
 
         // Crear 'Posts' 
         foreach ($posts as $post) {
-            $post = Post::create([
-                'title'       => $post,
-                'url_clean'   => $post, // EXISTEIX UN MUTADOR: 'strtolower(str_replace(' ', '_', $post)),'
-                'content'     => fake()->paragraphs(3, true),
-                'user_id'     => User::inRandomOrder()->value('id'),  // assignar un usuari aleatori
-                'category_id' => Category::inRandomOrder()->value('id'),  // assignar una categoria aleatòria
-            ]);
+            try {
+                $post = Post::create([
+                    'title'       => $post,
+                    'url_clean'   => $post, // EXISTEIX UN MUTADOR: 'strtolower(str_replace(' ', '_', $post)),'
+                    'content'     => fake()->paragraphs(3, true),
+                    'user_id'     => User::inRandomOrder()->value('id'),  // assignar un usuari aleatori
+                    'category_id' => Category::inRandomOrder()->value('id'),  // assignar una categoria aleatòria
+                ]);
 
-            // Assignar tags aleatoriament al post
-            $randomTagsIds = $tagsId->random(rand(1, $tagsId->count()));  // entre 1 i el total de 'tags'
-            $post->tags()->attach($randomTagsIds);
+                // Assignar tags aleatoriament al post
+                $randomTagsIds = $tagsId->random(rand(1, $tagsId->count()));  // entre 1 i el total de 'tags'
+                $post->tags()->attach($randomTagsIds);
+            } catch (\Exception $e) {
+                // Registrar l'error:
+                $this->command->info("Error al processar el post titulat '{$post}': " . $e->getMessage());
+            }
         }
     }
 }

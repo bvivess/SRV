@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="baleartrek" id="92DAF6E4-9DA7-3B7A-FDC1-89F097168337" version="3.5">
-<createdBy>Administrador</createdBy>
-<createdTime>2025-11-06 10:13:00 UTC</createdTime>
-<ownerDesignName>baleartrek</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>92DAF6E4-9DA7-3B7A-FDC1-89F097168337</designId>
-</OSDM_Design>

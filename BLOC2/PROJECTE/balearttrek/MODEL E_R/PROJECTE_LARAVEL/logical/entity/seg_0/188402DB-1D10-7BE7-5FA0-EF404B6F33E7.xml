@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="188402DB-1D10-7BE7-5FA0-EF404B6F33E7" name="translations">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 08:03:38 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="5C81B15D-E12F-4868-21D0-CE2EB5480A3D">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-13 05:07:32 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>70E27626-DEAB-A930-3443-0FFE229693FB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description_CA" id="E15ABC0A-F50F-44B7-4551-ECB016EE9E9E">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 08:04:12 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description_ES" id="7A411AC0-830F-DFEF-F2DD-433F2A8BDE12">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 08:04:24 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description_EN" id="184E86F8-EAA3-047A-D321-3BE9C35AD9D2">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-06 08:04:33 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D4545A0-647F-A316-8B7E-2ED73AE48DCC" name="translations PK">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-09 09:04:14 UTC</createdTime>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<engineerTo>
+<item key="E2E9C90D-6BAA-68FA-9EA0-C54E7256C931" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5C81B15D-E12F-4868-21D0-CE2EB5480A3D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

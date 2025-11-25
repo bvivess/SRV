@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="963D733D-356F-18DD-C5CF-B0193BCB8263" name="services">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>7151C067-32AF-ECDD-A25F-56AFBA521DBB</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9297DE62-2983-4B93-86B4-B1ADBE73BFEE">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>2AEBA1FE-40E2-9A92-F2B2-F1665E5229CE</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="27626B96-7332-45A3-D1ED-1D907AE382EC">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>CCE98DC4-9154-E1F3-B609-917B9A7349F2</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description_CA" id="AD02F052-DB9B-FE31-027A-714C91E3C702">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>C68570CC-F9DA-FFD8-705A-84F80436FA77</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description_ES" id="CA5758BC-26E0-5831-FAB2-1CB0DDDC072A">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>37C55C64-0EBB-062A-B828-68244C9D5ECA</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description_EN" id="8BABABBD-1407-F988-BECF-138033F964EC">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>D4BA5A4F-D50F-BAF4-F1C6-0328244FC5A7</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>658B3201-611A-E8EA-DAB2-140963C4CE0D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AB3853F-51F9-503C-D6FA-406860B4CAB4" name="services_PK">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>92F4185B-31CD-839B-6279-554DD29328B6</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9297DE62-2983-4B93-86B4-B1ADBE73BFEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

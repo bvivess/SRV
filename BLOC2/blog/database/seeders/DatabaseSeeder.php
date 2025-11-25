@@ -22,18 +22,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // Seeders / JSON
-        $this->command->info('Ejecutando Seeders ...');
-        $this->call(RoleSeeder::class);
-        $this->call(UserSeeder::class);
-        $this->call(TagSeeder::class);
-        $this->call(CategorySeeder::class);
-        $this->call(PostSeeder::class);
+        try {
+            // Seeders / JSON
+            $this->command->info('Executant Seeders ...');
+            $this->call(RoleSeeder::class);
+            $this->call(UserSeeder::class);
+            $this->call(TagSeeder::class);
+            $this->call(CategorySeeder::class);
+            $this->call(PostSeeder::class);
 
-        // Factories
-        $this->command->info('Ejecutando Factories ...');
-        User::factory(10)->create();
-        Comment::factory(100)->create();
-        Image::factory(100)->create();
+            // Factories
+            $this->command->info('Executant Factories ...');
+            User::factory(10)->create();
+            Comment::factory(100)->create();
+            Image::factory(100)->create();
+        } catch (\Exception $e) {
+            $this->command->error("Error durant l'execució dels seeders: " . $e->getMessage());
+        }
     }
 }

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1648678A-2918-9D50-ED77-98F438F17A1E" containerWithKeyObject="4FDD319A-FD81-CB35-BF4D-21D112348300" localFKIndex="C313ED53-A6F1-0F28-D9F0-3ACE690D4ADD" name="spaces_space_types_FK">
+<createdBy>winadmin</createdBy>
+<createdTime>2024-11-10 16:24:17 UTC</createdTime>
+<generatorID>E0EFD608-79EA-F4A2-961B-7106B84AA9FF</generatorID>
+<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
+<referredTableLongName>space_types</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB106A77-B33B-D090-EEF0-7472B71E4B8D</referredTableID>
+<keyObject>6A201856-E6CF-CA2B-264A-1F5651846C83</keyObject>
+<referredKeyID>6A201856-E6CF-CA2B-264A-1F5651846C83</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
