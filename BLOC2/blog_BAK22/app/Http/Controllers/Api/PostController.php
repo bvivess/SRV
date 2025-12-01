@@ -63,10 +63,10 @@ class PostController extends Controller
             $post->tags()->attach(Tag::firstOrCreate(['name' => trim($tag)])->id);         
 
 
-        // return response()->json(['meta' => 'Post creat correctament']);
+        return response()->json(['meta' => 'Post creat correctament']);
         // return response()->json($post);
         // return response()->json([
-        return response()->json($post);
+        // return response()->json($post);
         //return new PostResource($post);
     }
 

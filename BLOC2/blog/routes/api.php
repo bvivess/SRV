@@ -2,12 +2,14 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\PostController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+Route::apiResource('category', CategoryController::class); // contempla tots els mètodes a l'hora
 
 Route::get('/post', [PostController::class, 'index']); // Mostra tots els posts
 Route::post('/post', [PostController::class, 'store']); // Crea un nou post
