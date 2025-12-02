@@ -7,7 +7,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\CategoryResource;
-use App\Http\Requests\GuardarCategoryRequest;
+use App\Http\Requests\CategoryRequest;
 
 class CategoryController extends Controller
 {
@@ -32,7 +32,7 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(GuardarCategoryRequest $request, Category $category)
+    public function update(CategoryRequest $request, Category $category)
     {
         $category->update($request->all());
         return (new CategoryResource($category))->additional(['meta' => 'Categoria modificada correctament']);
@@ -41,7 +41,7 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(GuardarCategoryRequest $request)
+    public function store(CategoryRequest $request)
     {
         $data = $request->all();
         $category = Category::create($data);

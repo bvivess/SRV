@@ -6,9 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Tag;
-use App\Http\Requests\PostRequest;
 use App\Http\Resources\PostResource;
-use App\Http\Requests\GuardarPostRequest;
+use App\Http\Requests\PostRequest;
 
 class PostController extends Controller
 {
@@ -58,7 +57,7 @@ class PostController extends Controller
      * Store a newly created resource in storage.
      */
     // public function store(Request $request)
-    public function store(GuardarPostRequest $request)
+    public function store(PostRequest $request)
     {
         // CREACIÓ DE LES DADES
         $post = Post::create(
@@ -85,7 +84,7 @@ class PostController extends Controller
      */
     // public function update(Request $request, string $id)
     // public function update(Request $request, Post $post)
-    public function update(GuardarPostRequest $request, Post $post)
+    public function update(PostRequest $request, Post $post)
     {
         // MODIFICACIÓ DE LES DADES
         $post->update($request->all());
