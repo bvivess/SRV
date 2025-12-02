@@ -33,16 +33,16 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    //public function show(String $id)
+    // public function show(String $id)
     public function show(Post $post)
     {
         // SELECCIÓ DE LES DADES
         //$post = Post::find($id);  // no cal fer-ho, Laravel ja ho fa de manera implícita
        
-        // AFEGINT DADES AMB 'load()'
+        // AFEGINT DADES DE JOIN AMB 'load()'
         $post->load('user')->load('category')->load('comments')->load('comments.images');
 
-        // AFEGINT DADES AMB 'with()'
+        // AFEGINT DADES DE JOIN AMB 'with()'
         // $newPost = Post::with(["user","category","comments","comments.images"])->find($post->id);
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
@@ -57,8 +57,8 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    //public function store(GuardarPostRequest $request)
+    // public function store(Request $request)
+    public function store(GuardarPostRequest $request)
     {
         // CREACIÓ DE LES DADES
         $post = Post::create(
@@ -77,35 +77,36 @@ class PostController extends Controller
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
         // return response()->json(['meta' => 'Post creat correctament']);
         // return response()->json($post);
-        // return response()->json([
-        //return response()->json($post);
         return (new PostResource($post))->additional(['meta' => 'Post creat correctament']);
     }
-
-
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Post $post)
-    //public function update(GuardarPostRequest $request, Post $post)
+    // public function update(Request $request, string $id)
+    // public function update(Request $request, Post $post)
+    public function update(GuardarPostRequest $request, Post $post)
     {
         // MODIFICACIÓ DE LES DADES
         $post->update($request->all());
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
+        // return response()->json($post);
         return (new PostResource($post))->additional(['meta' => 'Post modificat correctament']);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    // public function destroy(string $id)
+    public function destroy(Post $post)
     {
         // ELIMINACIÓ DE LES DADES
+        $post->tags()->detach(); // elimina relacions M:N (si n'hi ha)
         $post->delete();
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
+        // return response()->json($post);
         return (new PostResource($post))->additional(['msg' => 'Post eliminat correctament']);
     }
 
