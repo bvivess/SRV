@@ -15,6 +15,7 @@ class CommentResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'identificador' => $this->id,
             'comentari' => $this->comment,
             'imatges' => ImageResource::collection($this->whenLoaded('images')),  // al ser una relació 1:N cal fer servir 'ImageResource::collection'
         ];

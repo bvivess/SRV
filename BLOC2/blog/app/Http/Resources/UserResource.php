@@ -18,10 +18,10 @@ class UserResource extends JsonResource
             'identificador' => $this->id,
             'nom' => $this->name,
             'email' => $this->email,
-            'role' => $this->role,
+            'role' => $this->role->name,
             'creacio' => Carbon::parse($this->created_at)->format("d-m-Y h:m:s"),
             'posts' => PostResource::collection($this->whenLoaded('posts')), // utilitza 'PostResource' per a cada post
-            'images' => CommentResource::collection($this->whenLoaded('comments')), // utilitza 'CommentResource' per a cada post
+            'comments' => CommentResource::collection($this->whenLoaded('comments')), // utilitza 'CommentResource' per a cada post
         ];
     }
 }

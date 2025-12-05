@@ -21,14 +21,7 @@ class ImageResource extends JsonResource
         // sortida personalitzada del JSON de l'API tractada:
         return [  
             'identificador' => $this->id,
-            'url' => Str::upper($this->name),
-        ];
-    }
-
-    public function with($request)
-    {   // permet afegir informació addicional al JSON al 'PostController' amb '->additional(['meta' => ...')
-        return [
-            'meta' => 'Post ' . $this->id,
+            'url' => $this->url,
         ];
     }
 

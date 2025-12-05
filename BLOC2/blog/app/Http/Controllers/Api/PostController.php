@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Tag;
+use App\Models\Category;
 use App\Http\Resources\PostResource;
 use App\Http\Requests\PostRequest;
 
@@ -14,13 +15,25 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $query = Post::query();  // Inicialitza una consulta, creant una instància nova 'Builder'
+        // Filtrar per 'title' si el paràmetre existeix a la consulta
+        if ($request->has('title')) {
+            $query->where('title', 'like', '%' . $request->title . '%');
+        }
+        // Filtrar per 'category.title' si el paràmetre existeix a la consulta
+        if ($request->has('category')) {
+            $categoryId = Category::where('title', 'like', '%' . $request->category . '%')->first()->id;
+            $query->where('category_id', $categoryId);
+        }
+        $posts = $query->get();  // Executa la consulta i obté els resultats
+
         // SELECCIÓ DE LES DADES
         //$posts = Post::all();
         // $posts = Post::paginate(3);  // crea una sortida amb paginació
         // $posts = Post::with([])->get();  // no té sentit
-        $posts = Post::with(["user", "category", "comments"])->get();  // post amb les taules relacionades, més óptima
+    //$posts = Post::with(["user", "category", "comments"])->get();  // post amb les taules relacionades, més óptima
         // $posts = Post::with(["user", "category", "comments", "comments.images"])->get();
         // $posts = Post::with(["user", "category", "comments", "comments.images"])->paginate(3);
 

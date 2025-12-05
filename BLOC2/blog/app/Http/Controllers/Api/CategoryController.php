@@ -57,5 +57,27 @@ class CategoryController extends Controller
         $category->delete();
         return (new CategoryResource($category))->additional(['meta' => 'Categoria eliminada correctament']);
     }
-  
+
+    // Cerca per 'agrupació de rutes'
+    public function search($value)
+    {
+        $category = is_numeric($value)
+            ? Category::findOrFail($value)  // Cerca per 'id'
+            : Category::where('title','like', "%".$value."%")->firstOrFail(); // Cerca per 'title'
+        return (new CategoryResource($category))->additional(['meta' => 'Categoria trobada correctament']);
+    }
+
+    // Cerca per 'Rutes separades'
+    public function findById($id)
+    {
+        $category = Category::findOrFail($id); // Cerca per id
+        return (new CategoryResource($category))->additional(['meta' => 'Categoria trobada per ID']);
+    }
+    public function findByTitle($value)
+    {
+        $category = Category::where('title','like', "%".$value."%")->firstOrFail(); // Cerca per 'title'    
+        return (new CategoryResource($category))->additional(['meta' => 'Categoria trobada correctament']);
+    }
+
+
 }
