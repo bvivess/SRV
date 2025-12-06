@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Models\Category;
@@ -15,27 +15,48 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
+    // public function index()
     public function index(Request $request)
     {
-        $query = Post::query();  // Inicialitza una consulta, creant una instància nova 'Builder'
+        // SELECCIÓ DE LES DADES
+        //$posts = Post::all();
+        // $posts = Post::paginate(3);  // crea una sortida amb paginació
+        // $posts = Post::with([])->get();  // no té sentit
+        //$posts = Post::with(["user", "category", "comments"])->get();  // post amb les taules relacionades, més óptima
+        // $posts = Post::with(["user", "category", "comments", "comments.images"])->get();
+        // $posts = Post::with(["user", "category", "comments", "comments.images"])->paginate(3);
+        
+        /*
+        // VERSIÓ I: Cerca per 'paràmetres de consulta': "localhost/blog/public/api/post?title=...?category=..."
+        $query = Post::query();  // Inicialitza una consulta 
         // Filtrar per 'title' si el paràmetre existeix a la consulta
         if ($request->has('title')) {
             $query->where('title', 'like', '%' . $request->title . '%');
         }
         // Filtrar per 'category.title' si el paràmetre existeix a la consulta
         if ($request->has('category')) {
-            $categoryId = Category::where('title', 'like', '%' . $request->category . '%')->first()->id;
-            $query->where('category_id', $categoryId);
+            $category = Category::where('title', 'like', '%' . $request->category . '%')
+                                ->first();
+            if ($category) { // si existeix la categoria
+                $query->where('category_id', $category->id);
+            }
         }
-        $posts = $query->get();  // Executa la consulta i obté els resultats
+        // Executar la consulta
+        $posts = $query->get();
+        */
 
-        // SELECCIÓ DE LES DADES
-        //$posts = Post::all();
-        // $posts = Post::paginate(3);  // crea una sortida amb paginació
-        // $posts = Post::with([])->get();  // no té sentit
-    //$posts = Post::with(["user", "category", "comments"])->get();  // post amb les taules relacionades, més óptima
-        // $posts = Post::with(["user", "category", "comments", "comments.images"])->get();
-        // $posts = Post::with(["user", "category", "comments", "comments.images"])->paginate(3);
+        // VERSIÓ II: Cerca per 'paràmetres de consulta': "localhost/blog/public/api/post?title=...?category=..."
+        $posts = Post::with(['user', 'category', 'comments'])
+                    ->when($request->title, fn ($q, $title) =>
+                                $q->where('title', 'like', "%$title%")
+                    )
+                    ->when($request->category, fn ($q, $category) =>
+                        $q->whereHas('category', fn ($q) =>  // 'whereHas' per a la relació 'category()'
+                            $q->where('title', 'like', "%$category%")
+                        )
+                    )
+                    ->get();
+
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
         // return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
