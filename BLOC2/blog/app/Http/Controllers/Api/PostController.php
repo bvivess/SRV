@@ -46,15 +46,15 @@ class PostController extends Controller
         */
 
         // VERSIÓ II: Cerca per 'paràmetres de consulta': "localhost/blog/public/api/post?title=...?category=..."
-        $posts = Post::with(['user', 'category', 'comments'])
+        $posts = Post::with(['user', 'category', 'comments'])  // Consulta inicial
                     ->when($request->title, fn ($q, $title) =>
                                 $q->where('title', 'like', "%$title%")
-                    )
+                    )  // Aplicar filtre 'title'
                     ->when($request->category, fn ($q, $category) =>
                         $q->whereHas('category', fn ($q) =>  // 'whereHas' per a la relació 'category()'
                             $q->where('title', 'like', "%$category%")
                         )
-                    )
+                    )  // Aplicar filtre 'category'
                     ->get();
 
 
