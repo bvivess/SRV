@@ -16,9 +16,9 @@ class RegisteredUserController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name'      => 'required|string|max:255',
+            'lastname'  => 'required|string|max:255',
             'email'     => 'required|string|max:255|unique:users',
             'password'  => 'required|string',
-            'lastname'  => 'required|string|max:255',
           ]);
         if ($validator->fails()) {
             return response()->json($validator->errors());

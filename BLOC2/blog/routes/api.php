@@ -9,16 +9,6 @@ use App\Models\User;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
-Route::post('/register', [RegisteredUserController::class, 'store']);
-Route::post('/login', [AuthenticatedSessionController::class, 'store']);
-
-// Protegida pel middleware 'auth:sanctum'
-Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/logout', [AuthenticatedSessionController::class, 'destroy']);
-});
-
-
-
 // Cerca per 'binding ajustat'
 Route::bind('user', function ($value) {
     return is_numeric($value)
@@ -26,16 +16,23 @@ Route::bind('user', function ($value) {
         : User::where('email', $value)->firstOrFail(); // Cerca per 'email'
 });
 
+Route::post('/register', [RegisteredUserController::class, 'store']);
+Route::post('/login', [AuthenticatedSessionController::class, 'store']);
+
+// Protegida pel middleware 'auth:sanctum'
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('/logout', [AuthenticatedSessionController::class, 'destroy']);
+
+    // Cerca per 'agrupació de rutes'
+    Route::apiResource('category', CategoryController::class); // contempla tots els mètodes a l'hora
+    Route::get('category/search/{value}', [CategoryController::class, 'search']);
+
+    // Cerca per 'Rutes separades'
+    Route::get('category/findById/{id}', [CategoryController::class, 'findById']);
+    Route::get('category/findByTitle/{value}', [CategoryController::class, 'findByTitle']);
+});
+
 Route::apiResource('user', UserController::class); // contempla tots els mètodes a l'hora
-
-// Cerca per 'agrupació de rutes'
-Route::apiResource('category', CategoryController::class); // contempla tots els mètodes a l'hora
-Route::get('category/search/{value}', [CategoryController::class, 'search']);
-
-// Cerca per 'Rutes separades'
-Route::get('category/findById/{id}', [CategoryController::class, 'findById']);
-Route::get('category/findByTitle/{value}', [CategoryController::class, 'findByTitle']);
-
 
 Route::get('/post', [PostController::class, 'index']); // Mostra tots els posts
 Route::post('/post', [PostController::class, 'store']); // Crea un nou post
