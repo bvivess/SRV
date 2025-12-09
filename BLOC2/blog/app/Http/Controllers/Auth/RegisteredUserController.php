@@ -20,6 +20,7 @@ class RegisteredUserController extends Controller
             'email'     => 'required|string|max:255|unique:users',
             'password'  => 'required|string',
           ]);
+
         if ($validator->fails()) {
             return response()->json($validator->errors());
         }
@@ -28,6 +29,7 @@ class RegisteredUserController extends Controller
                 'name' => $request->name,
                 'lastname' => $request->lastname,
                 'email' => $request->email,
+                'phone' => $request->phone,
                 'email_verified_at' => now(),
                 'password' => Hash::make($request->password),
                 'role_id' => Role::where('name', 'visitant')->value('id'),
