@@ -16,10 +16,21 @@ class CheckRoleAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::user()->role == 'admin') {
-            return $next($request);
+        // 1) Si no està autenticat -> 401
+        if (! Auth::check()) {
+            return response()->json(['message' => 'No autenticat'], 401);
         }
-        abort(401);
-        return redirect('/dashboard');        
+
+        // 2) Comprova el rol (si role és relació -> role->name)
+        $user = Auth::user();
+        $roleName = data_get($user, 'role.name'); // utilitza data_get per evitar errors si no existeix la relació
+
+        if ($roleName !== 'admin') {
+            return response()->json(['message' => 'Accés denegat: permisos insuficients'], 403);
+        }
+
+        // 3) Tot OK -> segueix la request
+        return $next($request);
     }
+
 }
