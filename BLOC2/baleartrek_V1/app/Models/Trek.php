@@ -18,10 +18,10 @@ class Trek extends Model
     {
         return $this->belongsTo(Municipality::class);
     }
-
+    
     public function interestingPlaces()
     {
-        return $this->belongsToMany(InterestingPlace::class);
+        return $this->belongsToMany(InterestingPlace::class)->withPivot('order')->withTimestamps();
     }
 
 }

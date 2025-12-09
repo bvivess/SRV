@@ -15,6 +15,6 @@ class InterestingPlace extends Model
 
     public function treks()
     {
-        return $this->belongsToMany(Trek::class);
+        return $this->belongsToMany(Trek::class)->withPivot('order')->withTimestamps();
     }
 }
