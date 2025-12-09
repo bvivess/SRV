@@ -24,8 +24,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthenticatedSessionController::class, 'destroy']);
 
     // Cerca per 'agrupació de rutes'
+    Route::get('category/find/{value}', [CategoryController::class, 'find']);
     Route::apiResource('category', CategoryController::class); // contempla tots els mètodes a l'hora
-    Route::get('category/search/{value}', [CategoryController::class, 'search']);
+
 
     // Cerca per 'Rutes separades'
     Route::get('category/findById/{id}', [CategoryController::class, 'findById']);
@@ -34,9 +35,10 @@ Route::middleware('auth:sanctum')->group(function () {
 
 Route::apiResource('user', UserController::class); // contempla tots els mètodes a l'hora
 
-Route::get('/post', [PostController::class, 'index']); // Mostra tots els posts
-Route::post('/post', [PostController::class, 'store']); // Crea un nou post
-Route::get('/post/{post}', [PostController::class, 'show']); // Mostra un post específic
-Route::put('/post/{post}', [PostController::class, 'update']); // Actualitza un post
-Route::patch('/post/{post}', [PostController::class, 'update']); // Actualitza parcialment un post
-Route::delete('/post/{post}', [PostController::class, 'destroy']); // Elimina un post
+Route::get('post/find/{value}', [PostController::class, 'find']);
+Route::get('post', [PostController::class, 'index']); // Mostra tots els posts
+Route::post('post', [PostController::class, 'store']); // Crea un nou post
+Route::get('post/{post}', [PostController::class, 'show']); // Mostra un post específic
+Route::put('post/{post}', [PostController::class, 'update']); // Actualitza un post
+Route::patch('post/{post}', [PostController::class, 'update']); // Actualitza parcialment un post
+Route::delete('post/{post}', [PostController::class, 'destroy']); // Elimina un post

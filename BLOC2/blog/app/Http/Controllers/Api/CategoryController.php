@@ -59,11 +59,15 @@ class CategoryController extends Controller
     }
 
     // Cerca per 'agrupació de rutes'
-    public function search($value)
+    public function find($value)
     {
-        $category = is_numeric($value)
-            ? Category::findOrFail($value)  // Cerca per 'id'
-            : Category::where('title','like', "%".$value."%")->firstOrFail(); // Cerca per 'title'
+       $query = Category::with('posts');
+
+       $category = is_numeric($value)
+            ? $query->findOrFail($value)  // Cerca per ID
+            : $query->where('title','like', "%".$value."%")  // Cerca per regNumber
+                    ->firstOrFail();
+
         return (new CategoryResource($category))->additional(['meta' => 'Categoria trobada correctament']);
     }
 
@@ -78,6 +82,5 @@ class CategoryController extends Controller
         $category = Category::where('title','like', "%".$value."%")->firstOrFail(); // Cerca per 'title'    
         return (new CategoryResource($category))->additional(['meta' => 'Categoria trobada correctament']);
     }
-
 
 }

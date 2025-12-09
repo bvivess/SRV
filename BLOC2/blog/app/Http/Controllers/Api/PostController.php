@@ -143,4 +143,18 @@ class PostController extends Controller
         return (new PostResource($post))->additional(['msg' => 'Post eliminat correctament']);
     }
 
+    // Cerca per 'agrupació de rutes'
+    public function find($value)
+    {
+       $query = Post::with(['user', 'category', 'comments']) ;  // Consulta inicial
+
+       $post = is_numeric($value)
+            ? $query->findOrFail($value)  // Cerca per 'ID'
+            : $query->where('title','like', "%".$value."%")  // Cerca per 'title'
+                    ->orWhere('content','like', "%".$value."%")  // Cerca per 'content'
+                    ->firstOrFail();
+
+        return (new PostResource($post))->additional(['meta' => 'Post trobat correctament']);
+    }
+
 }
