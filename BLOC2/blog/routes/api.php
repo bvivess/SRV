@@ -9,13 +9,6 @@ use App\Models\User;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
-// Cerca per 'binding ajustat'
-Route::bind('user', function ($value) {
-    return is_numeric($value)
-        ? User::findOrFail($value) // Cerca per 'id'
-        : User::where('email', $value)->firstOrFail(); // Cerca per 'email'
-});
-
 Route::post('/register', [RegisteredUserController::class, 'store']);
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 
@@ -33,6 +26,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('category/findByTitle/{value}', [CategoryController::class, 'findByTitle']);
 });
 
+// Cerca per 'binding ajustat'
+Route::bind('user', function ($value) {
+    return is_numeric($value)
+        ? User::findOrFail($value) // Cerca per 'id'
+        : User::where('email', 'like', "%".$value."%")->firstOrFail(); // Cerca per 'email'
+});
 Route::apiResource('user', UserController::class); // contempla tots els mètodes a l'hora
 
 Route::get('post/find/{value}', [PostController::class, 'find']);
