@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Http\Resources\UserResource;
+use Exception;
 
 
 class UserController extends Controller
@@ -33,7 +34,8 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $text = 'Usuari insertat correctament';
+        return response()->json($text);
     }
 
     /**
@@ -41,14 +43,29 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $text = 'Usuari actualitzat correctament';
+        return response()->json($text);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(User $user)
     {
-        //
+        try {
+            //$user->status = 'n';
+            //$user->save();
+            $user->delete();
+            
+            return (new UserResource($user))->additional(['meta' => 'Usuari eliminat correctament']);
+        } catch (Exception $e) {
+            // GESTIÓ DE L'ERROR
+            // Retorna un JSON amb un missatge d'error i un codi d'estat 500
+            return response()->json([
+                'message' => 'S\'ha produït un error al tractar les dades',
+                // El següent és opcional i només s'hauria de mostrar en entorns de desenvolupament (APP_DEBUG=true)
+                'error_details' => $e->getMessage(),
+            ], 200);
+        }
     }
 }

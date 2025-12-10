@@ -9,6 +9,7 @@ use App\Models\Tag;
 use App\Models\Category;
 use App\Http\Resources\PostResource;
 use App\Http\Requests\PostRequest;
+use Exception;
 
 class PostController extends Controller
 {
@@ -93,24 +94,34 @@ class PostController extends Controller
     // public function store(Request $request)
     public function store(PostRequest $request)
     {
-        // CREACIÓ DE LES DADES
-        $post = Post::create(
-            [   // Cal habilitar aquests atributs en Model->'$fillable'
-                'title' => $request->title,
-                'url_clean' => $request->url_clean,
-                'content' => $request->content,
-                'user_id' => $request->user_id,  // Auth::user()->id; (si s'empra la verificació d'usuari)
-                'category_id' => $request->category_id,
-            ]
-        );
-        // Post M:N Tags
-        foreach ( explode(',', $request->tags) as $tag)
-            $post->tags()->attach(Tag::firstOrCreate(['name' => trim($tag)])->id); // Tag::where( …)->get()->id       
+        try {
+            // CREACIÓ DE LES DADES
+            $post = Post::create(
+                [   // Cal habilitar aquests atributs en Model->'$fillable'
+                    'title' => $request->title,
+                    'url_clean' => $request->url_clean,
+                    'content' => $request->content,
+                    'user_id' => $request->user_id,  // Auth::user()->id; (si s'empra la verificació d'usuari)
+                    'category_id' => $request->category_id,
+                ]
+            );
+            // Post M:N Tags
+            foreach ( explode(',', $request->tags) as $tag)
+                $post->tags()->attach(Tag::firstOrCreate(['name' => trim($tag)])->id); // Tag::where( …)->get()->id       
 
-        // SELECCIÓ DEL FORMAT DE LA RESPOSTA
-        // return response()->json(['meta' => 'Post creat correctament']);
-        // return response()->json($post);
-        return (new PostResource($post))->additional(['meta' => 'Post creat correctament']);
+            // SELECCIÓ DEL FORMAT DE LA RESPOSTA
+            // return response()->json(['meta' => 'Post creat correctament']);
+            // return response()->json($post);
+            return (new PostResource($post))->additional(['meta' => 'Post creat correctament']);
+        } catch (Exception $e) {
+            // GESTIÓ DE L'ERROR
+            // Retorna un JSON amb un missatge d'error i un codi d'estat 500
+            return response()->json([
+                'message' => 'S\'ha produït un error al tractar les dades',
+                // El següent és opcional i només s'hauria de mostrar en entorns de desenvolupament (APP_DEBUG=true)
+                'error_details' => $e->getMessage(),
+            ], 200);
+        }
     }
 
     /**
@@ -120,12 +131,22 @@ class PostController extends Controller
     // public function update(Request $request, Post $post)
     public function update(PostRequest $request, Post $post)
     {
-        // MODIFICACIÓ DE LES DADES
-        $post->update($request->all());
+        try {
+            // MODIFICACIÓ DE LES DADES
+            $post->update($request->all());
 
-        // SELECCIÓ DEL FORMAT DE LA RESPOSTA
-        // return response()->json($post);
-        return (new PostResource($post))->additional(['meta' => 'Post modificat correctament']);
+            // SELECCIÓ DEL FORMAT DE LA RESPOSTA
+            // return response()->json($post);
+            return (new PostResource($post))->additional(['meta' => 'Post modificat correctament']);
+        } catch (Exception $e) {
+            // GESTIÓ DE L'ERROR
+            // Retorna un JSON amb un missatge d'error i un codi d'estat 500
+            return response()->json([
+                'message' => 'S\'ha produït un error al tractar les dades',
+                // El següent és opcional i només s'hauria de mostrar en entorns de desenvolupament (APP_DEBUG=true)
+                'error_details' => $e->getMessage(),
+            ], 200);
+        }
     }
 
     /**
@@ -134,13 +155,23 @@ class PostController extends Controller
     // public function destroy(string $id)
     public function destroy(Post $post)
     {
-        // ELIMINACIÓ DE LES DADES
-        $post->tags()->detach(); // elimina relacions M:N (si n'hi ha)
-        $post->delete();
+       
+        try {
+            $post->tags()->detach(); // elimina relacions M:N (si n'hi ha)
+            $post->delete();
 
-        // SELECCIÓ DEL FORMAT DE LA RESPOSTA
-        // return response()->json($post);
-        return (new PostResource($post))->additional(['msg' => 'Post eliminat correctament']);
+            // SELECCIÓ DEL FORMAT DE LA RESPOSTA
+            // return response()->json($post);
+            return (new PostResource($post))->additional(['msg' => 'Post eliminat correctament']);
+        } catch (Exception $e) {
+            // GESTIÓ DE L'ERROR
+            // Retorna un JSON amb un missatge d'error i un codi d'estat 500
+            return response()->json([
+                'message' => 'S\'ha produït un error al tractar les dades',
+                // El següent és opcional i només s'hauria de mostrar en entorns de desenvolupament (APP_DEBUG=true)
+                'error_details' => $e->getMessage(),
+            ], 200);
+        }
     }
 
     // Cerca per 'agrupació de rutes'

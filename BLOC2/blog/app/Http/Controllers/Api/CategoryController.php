@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\CategoryResource;
 use App\Http\Requests\CategoryRequest;
+use Exception;
 
 class CategoryController extends Controller
 {
@@ -34,8 +35,19 @@ class CategoryController extends Controller
      */
     public function update(CategoryRequest $request, Category $category)
     {
-        $category->update($request->all());
-        return (new CategoryResource($category))->additional(['meta' => 'Categoria modificada correctament']);
+        try {
+            // ACTUALITZACIÓ DE LES DADES
+            $category->update($request->all());
+            return (new CategoryResource($category))->additional(['meta' => 'Categoria modificada correctament']);
+        } catch (Exception $e) {
+            // GESTIÓ DE L'ERROR
+            // Retorna un JSON amb un missatge d'error i un codi d'estat 500
+            return response()->json([
+                'message' => 'S\'ha produït un error al tractar les dades',
+                // El següent és opcional i només s'hauria de mostrar en entorns de desenvolupament (APP_DEBUG=true)
+                'error_details' => $e->getMessage(),
+            ], 200);
+        }
     }
 
     /**
@@ -54,8 +66,18 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        $category->delete();
-        return (new CategoryResource($category))->additional(['meta' => 'Categoria eliminada correctament']);
+        try {
+            $category->delete();
+            return (new CategoryResource($category))->additional(['meta' => 'Categoria eliminada correctament']);
+        } catch (Exception $e) {
+            // GESTIÓ DE L'ERROR
+            // Retorna un JSON amb un missatge d'error i un codi d'estat 500
+            return response()->json([
+                'message' => 'S\'ha produït un error al tractar les dades',
+                // El següent és opcional i només s'hauria de mostrar en entorns de desenvolupament (APP_DEBUG=true)
+                'error_details' => $e->getMessage(),
+            ], 200);
+        }
     }
 
     // Cerca per 'agrupació de rutes'
