@@ -19,7 +19,7 @@ class CheckRoleAdmin
 
         // Comprovar si és admin
         if (!Auth::guard('sanctum')->user()->isAdmin()) {
-            return response()->json(['message' => Auth::guard('sanctum')->user()->isAdmin() . ' : Accés denegat: permisos insuficients'], 403);
+            return response()->json(['message' => 'Accés denegat: permisos insuficients'], 403);
         }
                  
         return $next($request);
