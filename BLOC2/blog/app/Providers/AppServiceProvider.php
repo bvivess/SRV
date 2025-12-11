@@ -23,9 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        RateLimiter::for('api', function ($request) {
-                return Limit::perMinute(20);
-        });
+        RateLimiter::for('api', function ($request) { return Limit::perMinute(20); } );
         Route::pattern('id', '[0-9]+');
     }
 }

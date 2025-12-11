@@ -13,9 +13,9 @@ Route::post('/register', [RegisteredUserController::class, 'store']);
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 
 // RUTES PROTEGIDES PER MÚLTIPLES MÈTODES D'AUTENTICACIÓ
-Route::middleware('multi-auth')->group(function () {  // Protegit per 'auth:sanctum' i per 'api-key'
+Route::middleware('MULTI-AUTH')->group(function () {  // Protegit per 'auth:sanctum' i per 'api-key'
 // Route::middleware('auth:sanctum')->group(function () {  // Protegit per 'auth:sanctum'
-// Route::middleware('api-key')->group(function () {  // Protegit per 'api-key'
+// Route::middleware('API-KEY')->group(function () {  // Protegit per 'api-key'
     Route::post('/logout', [AuthenticatedSessionController::class, 'destroy']);
 
     // RUTES 'category'
@@ -46,7 +46,7 @@ Route::middleware('multi-auth')->group(function () {  // Protegit per 'auth:sanc
     });
     Route::apiResource('user', UserController::class)->only('show');
     // RUTES PROTEGIDES NOMÉS PER 'ADMIN'
-    Route::middleware('CheckRoleAdmin')->group(function () {
+    Route::middleware('CHECK-ROLEADMIN')->group(function () {
         Route::apiResource('user', UserController::class)->except('show');
     });
 

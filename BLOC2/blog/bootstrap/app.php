@@ -19,9 +19,9 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         // Registrar middleware personalitzat
         $middleware->alias([
-            'CheckRoleAdmin' => \App\Http\Middleware\CheckRoleAdmin::class,  // 'CheckRoleAdmin' és l'alias del middleware
-            'api-key' => \App\Http\Middleware\ApiKeyMiddleware::class,  // 'api-key' és l'alias del middleware
-            'multi-auth' => \App\Http\Middleware\MultiAuthMiddleware::class,  // 'multi-auth' és l'alias del middleware
+            'CHECK-ROLEADMIN' => \App\Http\Middleware\CheckRoleAdmin::class,  // 'CHECK-ROLEADMIN' és l'alias del middleware
+            'API-KEY' => \App\Http\Middleware\ApiKeyMiddleware::class,  // 'API-KEY' és l'alias del middleware
+            'MULTI-AUTH' => \App\Http\Middleware\MultiAuthMiddleware::class,  // 'MULTI-AUTH' és l'alias del middleware
         ]);
 
         // Aplicar middleware específic per a API: "app/Providers/RouteServiceProvider.php"
