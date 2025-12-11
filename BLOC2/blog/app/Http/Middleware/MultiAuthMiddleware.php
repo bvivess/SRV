@@ -10,19 +10,13 @@ class MultiAuthMiddleware
 {
     public function handle(Request $request, Closure $next)
     {
-        // Intenta autenticar amb Sanctum
-        if (Auth::guard('sanctum')->check()) {
-            return $next($request);
-        }
+        $apiKey = $request->header('X-API-KEY');  // Obtenir la clau API de la capçalera
 
-        // Intenta validar amb API Key
-        $apiKey = $request->header('X-API-KEY');
-        if ($apiKey && $apiKey === env('APP_KEY')) {
+        if (Auth::guard('sanctum')->check() || ($apiKey && $apiKey === env('APP_KEY'))) {  // Comprovar autenticació amb Sanctum o clau API
             return $next($request);
+        } else {
+            return response()->json(['Error' => 'Usuari no autoritzat'], 401);
         }
-
-        // Si cap de les dues funciona, retorna no autoritzat
-        return response()->json(['Error' => 'Usuari no autoritzat'], 401);
     }
 }
 

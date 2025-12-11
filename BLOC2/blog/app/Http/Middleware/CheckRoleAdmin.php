@@ -14,12 +14,12 @@ class CheckRoleAdmin
     {
         // Comprovar si està autenticat
         if (!Auth::guard('sanctum')->check()) {
-            return response()->json(['message' => 'No autenticat'], 401);
+            return response()->json(['message' => 'Usuari no autenticat'], 401);
         }
 
         // Comprovar si és admin
         if (!Auth::guard('sanctum')->user()->isAdmin()) {
-            return response()->json(['message' => 'Accés denegat: permisos insuficients'], 403);
+            return response()->json(['message' => Auth::guard('sanctum')->user()->isAdmin() . ' : Accés denegat: permisos insuficients'], 403);
         }
                  
         return $next($request);

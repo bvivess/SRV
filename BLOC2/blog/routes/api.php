@@ -36,18 +36,16 @@ Route::middleware('multi_auth')->group(function () {
     Route::delete('post/{post}', [PostController::class, 'destroy']); // Elimina un post
 
     // Route::apiResource('user', UserController::class)->middleware('CheckRoleAdmin'); // contempla tots els mètodes a l'hora
-    Route::apiResource('user', UserController::class)->except(['store', 'update','destroy']);
+    // RUTES 'user'
+    // Cerca per 'binding ajustat'
+    Route::bind('user', function ($value) {
+        return is_numeric($value)
+        ? User::findOrFail($value) // Cerca per 'id'
+        : User::where('email', $value)->firstOrFail(); // Cerca per 'email'
+    });
+    Route::apiResource('user', UserController::class)->only('show');
     Route::middleware('CheckRoleAdmin')->group(function () {
-        // RUTES 'user'
-        // Cerca per 'binding ajustat'
-        Route::bind('user', function ($value) {
-            return is_numeric($value)
-                ? User::findOrFail($value) // Cerca per 'id'
-                : User::where('email', 'like', "%".$value."%")->firstOrFail(); // Cerca per 'email'
-        });
-        Route::post('user', [UserController::class, 'store']);
-        Route::put('user/{user}', [UserController::class, 'update']);
-        Route::delete('user/{user}', [UserController::class, 'destroy']);
+        Route::apiResource('user', UserController::class)->except('show');
     });
 
 });

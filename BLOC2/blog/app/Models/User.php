@@ -88,8 +88,7 @@ class User extends Authenticatable
     // Mètodes per comprovar rols
     public function isAdmin(): bool
     {
-        $roleAdmin = Role::where('name', 'admin')->first()->id;
-        return $this->role_id == $roleAdmin;
+        return $this->role_id == Role::where('name', 'admin')->first()->id;
     }
 
 }
