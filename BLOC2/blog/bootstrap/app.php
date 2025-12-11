@@ -19,13 +19,13 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         // Registrar middleware personalitzat
         $middleware->alias([
-            'CheckRoleAdmin' => \App\Http\Middleware\CheckRoleAdmin::class,
-            'ApiKeyMiddleware' => \App\Http\Middleware\ApiKeyMiddleware::class,
-            'multi_auth' => \App\Http\Middleware\MultiAuthMiddleware::class,
+            'CheckRoleAdmin' => \App\Http\Middleware\CheckRoleAdmin::class,  // 'CheckRoleAdmin' és l'alias del middleware
+            'api-key' => \App\Http\Middleware\ApiKeyMiddleware::class,  // 'api-key' és l'alias del middleware
+            'multi-auth' => \App\Http\Middleware\MultiAuthMiddleware::class,  // 'multi-auth' és l'alias del middleware
         ]);
 
-        // Aplicar middleware específic per a API
-        //$middleware->api("throttle:api");
+        // Aplicar middleware específic per a API: "app/Providers/RouteServiceProvider.php"
+        $middleware->api("throttle:api");  // aplica "rate limiting"
     })
     ->withExceptions(function (Exceptions $exceptions) {
         // Manejar excepcions per a rutes API
