@@ -15,9 +15,9 @@ class ApiKeyMiddleware
         $apiKey = $request->header('x-api-key'); // Obtenir la clau des de les capçaleres
        
         if ($apiKey !== env('APP_KEY')) {
-            return response()->json(['Error' => 'Unauthorized'], 401);
-        } else {
-            return $next($request); // Continuar si la clau és vàlida
+            return response()->json(['Error' => 'Clau invàlida'], 401);
         }
+        
+        return $next($request); // Continuar si la clau és vàlida
     }
 }

@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
             'email'     => 'admin@baleartrek.com',
             'email_verified_at' => now(),
             'phone'     => '971123456',
-            'password'  => Hash::make('12345678'),
+            'passwd'    => Hash::make('12345678'),
             'role_id'   => Role::where('name', 'admin')->value('id'),
         ]);
 
@@ -40,7 +40,7 @@ class UserSeeder extends Seeder
                 'email'     => $usuari['email'],
                 'email_verified_at' => now(),
                 'phone'     => $usuari['telefon'],
-                'password'  => Hash::make('12345678'),
+                'passwd'    => Hash::make('12345678'),
                 'role_id'   => $gestorRole,
             ]);
         }
