@@ -30,14 +30,16 @@ class PlaceSeeder extends Seeder
                         ['name' => $place['type']]);
 
                     // Crear o obtenir el lloc d'interès
-                    $newPlaceModel = InterestingPlace::firstOrCreate(
-                        ['gps' => $place['gpsPos']], // 'gps' com a identificador únic
-                        ['name' => $place['name'],
-                         'place_type_id' => $newPlaceType->id,
+                    $newInterestingPlace = InterestingPlace::firstOrCreate(
+                        [
+                          'gps' => $place['gpsPos']  // 'gps' com a identificador únic
+                        ],[
+                          'name' => $place['name'],
+                          'place_type_id' => $newPlaceType->id,
                         ]);
 
                     // Insertar en la taula pivot amb l'ordre
-                    $newTrek->interestingPlaces()->attach($newPlaceModel->id, [ 'order' => $order++, ]);
+                    $newTrek->interestingPlaces()->attach($newInterestingPlace->id, [ 'order' => $order++, ]);
                 }
             } catch (\Exception $e) {
                 // Registrar l'error:
