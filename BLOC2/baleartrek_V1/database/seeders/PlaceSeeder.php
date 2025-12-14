@@ -31,8 +31,8 @@ class PlaceSeeder extends Seeder
 
                     // Crear o obtenir el lloc d'interès
                     $newPlaceModel = InterestingPlace::firstOrCreate(
-                        ['name' => $place['name'], // Nom com a identificador únic
-                         'gps' => $place['gpsPos'],
+                        ['gps' => $place['gpsPos']], // 'gps' com a identificador únic
+                        ['name' => $place['name'],
                          'place_type_id' => $newPlaceType->id,
                         ]);
 
