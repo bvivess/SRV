@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Comment;
+use App\Models\Trek;
 
 class Meeting extends Model
 {
@@ -21,6 +22,11 @@ class Meeting extends Model
     public function users()
     {
       return $this->belongsToMany(User::class);
+    }
+
+    public function trek()
+    {
+      return $this->belongsTo(User::class);
     }
 
     public function calculaMitjana()
