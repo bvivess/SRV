@@ -6,7 +6,6 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
-
 use App\Models\User; 
 
 class CheckRoleAdmin
@@ -22,7 +21,7 @@ class CheckRoleAdmin
         if (!Auth::guard('sanctum')->user()->isAdmin()) {
             return response()->json(['message' => 'Accés denegat: permisos insuficients'], 403);
         }
-                 
+        
         return $next($request);
     }
 }

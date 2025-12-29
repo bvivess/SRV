@@ -1,1 +1,0 @@
-<h1>Tot correcte</h1>

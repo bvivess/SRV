@@ -23,7 +23,7 @@ class AuthenticatedSessionController extends Controller
             );
 
             // Intent d'inici de sessió
-            if (!Auth::attempt($request->only('email', 'password'))) {
+            if (!Auth::attempt($validated->only('email', 'password'))) {
                 return response()->json([
                     'message' => 'Credencials d\'accés invàlides'
                 ], 401);
