@@ -1,0 +1,654 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Baleartrek",
+        "description": "Documentació de l'API Baleartrek",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://my-default-host.com",
+            "description": "Servidor principal"
+        }
+    ],
+    "paths": {
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Autentica un usuari",
+                "operationId": "login",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "admin@baleartrek.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "12345678"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Login correcte",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "token": {
+                                            "type": "string",
+                                            "example": "eyJ0eXAiOiJKV1Qi..."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Credencials incorrectes"
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Tanca la sessió de l'usuari actual",
+                "operationId": "logout",
+                "responses": {
+                    "200": {
+                        "description": "Logout correcte",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Logout OK successful"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Usuari no autenticat"
+                    },
+                    "500": {
+                        "description": "Error al tancar la sessió"
+                    }
+                },
+                "security": [
+                    {
+                        "sanctum": []
+                    }
+                ]
+            }
+        },
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Registra un nou usuari",
+                "operationId": "register",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "name",
+                                    "lastname",
+                                    "email",
+                                    "dni",
+                                    "phone",
+                                    "password",
+                                    "password_confirmation"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "example": "prova"
+                                    },
+                                    "lastname": {
+                                        "type": "string",
+                                        "example": "prova"
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "prova@abc.com"
+                                    },
+                                    "dni": {
+                                        "type": "string",
+                                        "example": "43044380H"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "example": "600000001"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "12345678"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "12345678"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Usuari registrat correctament amb token",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "access_token": {
+                                            "type": "string"
+                                        },
+                                        "token_type": {
+                                            "type": "string",
+                                            "example": "Bearer"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error de validació"
+                    }
+                }
+            }
+        },
+        "/api/trek": {
+            "get": {
+                "tags": [
+                    "Treks"
+                ],
+                "summary": "Llista tots els treks",
+                "operationId": "listTreks",
+                "responses": {
+                    "200": {
+                        "description": "Llista de treks"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Treks"
+                ],
+                "summary": "Crear un nou trek",
+                "operationId": "storeTrek",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/TrekSchema"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Trek creat correctament"
+                    }
+                }
+            }
+        },
+        "/api/trek/{trek}": {
+            "get": {
+                "tags": [
+                    "Treks"
+                ],
+                "summary": "Mostra un trek concret - DESHABILITAT",
+                "operationId": "showTrek",
+                "parameters": [
+                    {
+                        "name": "trek",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Trek mostrat"
+                    }
+                }
+            }
+        },
+        "/api/trek/{id}": {
+            "put": {
+                "tags": [
+                    "Treks"
+                ],
+                "summary": "Actualitzar un trek - DESHABILITAT",
+                "operationId": "updateTrek",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID del trek",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Mètode no implementat"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Treks"
+                ],
+                "summary": "Eliminar un trek - DESHABILITAT",
+                "operationId": "deleteTrek",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID del trek",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Mètode no implementat"
+                    }
+                }
+            }
+        },
+        "/api/trek/find/{value}": {
+            "get": {
+                "tags": [
+                    "Treks"
+                ],
+                "summary": "Cerca un trek per ID, regNumber o municipi",
+                "description": "Si 'value' és numèric cerca per ID, si és text per regNumber o municipi",
+                "operationId": "findTrek",
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "path",
+                        "description": "Valor de cerca",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "1"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Trek trobat correctament"
+                    },
+                    "404": {
+                        "description": "Trek no trobat"
+                    }
+                }
+            }
+        },
+        "/api/user": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Llista tots els usuaris actius",
+                "operationId": "listUsers",
+                "responses": {
+                    "200": {
+                        "description": "Llista d'usuaris actius",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/UserSchema"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/user/{user}": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Mostra un usuari concret",
+                "operationId": "showUser",
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": "ID de l'usuari",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Usuari trobat",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserSchema"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Usuari no disponible"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Actualitza un usuari",
+                "operationId": "updateUser",
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": "ID de l'usuari",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "name",
+                                    "lastname",
+                                    "dni",
+                                    "phone"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "example": "prova"
+                                    },
+                                    "lastname": {
+                                        "type": "string",
+                                        "example": "prova"
+                                    },
+                                    "dni": {
+                                        "type": "string",
+                                        "example": "43044380H"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "example": "600000001"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Usuari modificat correctament",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserSchema"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Usuari no disponible"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Elimina un usuari",
+                "operationId": "deleteUser",
+                "parameters": [
+                    {
+                        "name": "user",
+                        "in": "path",
+                        "description": "ID de l'usuari",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Usuari eliminat correctament",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "meta": {
+                                            "type": "string",
+                                            "example": "Usuari eliminat correctament"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error en eliminar l'usuari"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "CommentSchema": {
+                "title": "Comment",
+                "description": "Comentari dins d'una reunió",
+                "required": [
+                    "DNI",
+                    "comment",
+                    "score"
+                ],
+                "properties": {
+                    "DNI": {
+                        "example": "18224566K"
+                    },
+                    "comment": {
+                        "example": "Ruta molt variada, especialment recomanable a la primavera."
+                    },
+                    "score": {
+                        "type": "integer",
+                        "example": 2
+                    }
+                },
+                "type": "object"
+            },
+            "MeetingSchema": {
+                "title": "Meeting",
+                "description": "Reunió associada a un Trek",
+                "required": [
+                    "day",
+                    "time",
+                    "DNI"
+                ],
+                "properties": {
+                    "day": {
+                        "format": "date",
+                        "example": "2024-12-01"
+                    },
+                    "time": {
+                        "example": "09:30:00"
+                    },
+                    "DNI": {
+                        "description": "DNI del responsable de la reunió",
+                        "example": "18224566K"
+                    },
+                    "comments": {
+                        "description": "Llista de comentaris associats",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CommentSchema"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "TrekSchema": {
+                "title": "Trek",
+                "description": "Model principal de Trek",
+                "required": [
+                    "regNumber",
+                    "name",
+                    "municipality"
+                ],
+                "properties": {
+                    "regNumber": {
+                        "example": "T99"
+                    },
+                    "name": {
+                        "example": "Parc Natural de Llevant"
+                    },
+                    "municipality": {
+                        "example": "Artà"
+                    },
+                    "meetings": {
+                        "description": "Llista de reunions programades per aquest trek",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/MeetingSchema"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "UserSchema": {
+                "title": "User",
+                "description": "Model d'usuari",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "type": "string",
+                        "example": "Joan"
+                    },
+                    "lastname": {
+                        "type": "string",
+                        "example": "Garcia"
+                    },
+                    "dni": {
+                        "type": "string",
+                        "example": "43044380H"
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email",
+                        "example": "joan@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "example": "600000001"
+                    },
+                    "status": {
+                        "type": "string",
+                        "example": "y"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2023-10-01T12:34:56Z"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2023-10-10T15:20:30Z"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "securitySchemes": {
+            "sanctum": {
+                "type": "http",
+                "description": "Introdueix el token en format: Bearer {token}",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Auth",
+            "description": "Auth"
+        },
+        {
+            "name": "Treks",
+            "description": "Treks"
+        },
+        {
+            "name": "Users",
+            "description": "Users"
+        }
+    ]
+}
