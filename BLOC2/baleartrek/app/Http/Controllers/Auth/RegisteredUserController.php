@@ -19,12 +19,14 @@ class RegisteredUserController extends Controller
                     'lastname'  => 'required|string|max:255',
                     'email'     => 'required|string|email|max:255|unique:users',
                     'password'  => 'required|string|min:8',
+                    'dni'       => 'required|string|max:20',
                 ], [
                     'name.required'      => 'El nom és obligatori.',
                     'lastname.required'  => 'El cognom és obligatori.',
                     'email.required'     => 'L\'email és obligatori.',
                     'email.email'        => 'L\'email no té un format correcte.',
                     'email.unique'       => 'Aquest email ja està registrat.',
+                    'dni.required'       => 'El DNI és obligatori.',
                     'password.required'  => 'La contrasenya és obligatòria.',
                     'password.min'       => 'La contrasenya ha de tenir almenys 8 caràcters.',
                 ]
@@ -35,6 +37,7 @@ class RegisteredUserController extends Controller
                 'name'               => $validated['name'],
                 'lastname'           => $validated['lastname'],
                 'email'              => $validated['email'],
+                'dni'                => $validated['dni'],
                 'email_verified_at'  => now(),
                 'password'           => Hash::make($validated['password']),
                 'role_id'            => Role::where('name', 'visitant')->value('id'),
