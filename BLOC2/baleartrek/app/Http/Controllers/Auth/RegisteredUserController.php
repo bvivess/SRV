@@ -19,7 +19,7 @@ class RegisteredUserController extends Controller
                     'lastname'  => 'required|string|max:255',
                     'email'     => 'required|string|email|max:255|unique:users',
                     'password'  => 'required|string|min:8',
-                    'dni'       => 'required|string|max:20',
+                    'dni'       => 'required|string|max:20|unique:users',
                 ], [
                     'name.required'      => 'El nom és obligatori.',
                     'lastname.required'  => 'El cognom és obligatori.',
@@ -27,6 +27,7 @@ class RegisteredUserController extends Controller
                     'email.email'        => 'L\'email no té un format correcte.',
                     'email.unique'       => 'Aquest email ja està registrat.',
                     'dni.required'       => 'El DNI és obligatori.',
+                    'dni.unique'         => 'Aquest DNI ja està registrat.',
                     'password.required'  => 'La contrasenya és obligatòria.',
                     'password.min'       => 'La contrasenya ha de tenir almenys 8 caràcters.',
                 ]
