@@ -1,8 +1,7 @@
 <?php class Cercle implements FiguraGeometrica, Coloreador {
     // Constructor
-    public function __Construct(
-        private ?string $color=null, 
-        private float $radi=0 ) { }
+    public function __Construct( private ?string $color=null, 
+                                 private float $radi=0 ) { }
 		
     // Implementació del mètode abstracte de 'FiguraGeometrica'
     public function calculaArea(): float {

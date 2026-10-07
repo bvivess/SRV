@@ -4,15 +4,14 @@
     require_once('Cercle.php');
 	require_once('Quadrat.php');
     // require_once('Quadrat.php');
-    // Crear un objecte de la classe Cercle i un de la classe Quadrat
+
+    // Crear un objecte de la classe Cercle
     $cercle = new Cercle(radi:5.0); 
     $cercle->aplicaColor("Blau");
     echo $cercle->__toString();
 
 	echo "<br>";
 
-    // Cal acabar aquesta part
-    $quadrat = new Quadrat(costat:5.0); 
-    $quadrat->aplicaColor("Verd");
-    echo $quadrat->__toString();
+    // Crear un objecte de la classe Quadrat
+    // ...
 ?>
