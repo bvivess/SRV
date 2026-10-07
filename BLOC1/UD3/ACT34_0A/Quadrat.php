@@ -1,9 +1,8 @@
 <?php class Quadrat implements FiguraGeometrica {
 
     // Constructor
-    public function __construct(
-		private string $color,
-		private float $costat ) {
+    public function __construct( private string $color,
+                                 private float $costat ) {
     }
 
     // Implementació dels mètodes
