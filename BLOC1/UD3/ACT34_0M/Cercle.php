@@ -1,6 +1,7 @@
 <?php 
     require_once 'FiguraGeometrica.php';
 	require_once 'Coloreador.php';
+	
     class Cercle {
 		use FiguraGeometrica;
 		use Coloreador;
@@ -14,7 +15,5 @@
 			return round(pi() * pow($this->radi, 2),2);
 		}
 
-
-		
     }
 ?>
