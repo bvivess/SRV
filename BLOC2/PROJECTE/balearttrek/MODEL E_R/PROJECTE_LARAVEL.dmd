@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="PROJECTE_LARAVEL" id="2157AD59-4EC0-439D-8CFF-E848BD74C3B2" version="3.5">
-<createdBy>winadmin</createdBy>
-<createdTime>2024-11-06 07:06:12 UTC</createdTime>
-<ownerDesignName>PROJECTE_LARAVEL</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>2157AD59-4EC0-439D-8CFF-E848BD74C3B2</designId>
-</OSDM_Design>
