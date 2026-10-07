@@ -1,14 +1,15 @@
-<?php class Calculadora {
-    public static $pi = 3.1416;
+<?php 
+    class Calculadora {
+        public static $pi = 3.1416;
 
-    public static function sumar($a, $b) {
-        return $a + $b;
-    }
+        public static function sumar($a, $b) {
+            return $a + $b;
+        }
 
-    public static function calcularAreaCercle($radi) {
-        return self::$pi * pow($radi,2);
-    }
-} 
+        public static function calcularAreaCercle($radi) {
+            return self::$pi * pow($radi,2);
+        }
+    } 
 
     // Accés a la funció estàtica
     echo Calculadora::sumar(5, 3) . "<br>";  
