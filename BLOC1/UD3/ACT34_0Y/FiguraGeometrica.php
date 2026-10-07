@@ -1,4 +1,6 @@
 <?php trait FiguraGeometrica {
+    private string $color;
+
     // Mètodes abstractes
     abstract public function calculaArea(): float;
     abstract public function calculaPerimetre(): float;
@@ -8,11 +10,16 @@
     public function getClass(): String {
         return get_class($this);
     }
+
+    public function getColor(): string {
+        return $this->color;
+    }
     
     public function __toString(): string {
         return $this->getClass() . "-->" .
-               " Costats: " . $this->calculaNCostats() . 
+               ", color: " . $this->getColor() .
+               ", Área: " . round($this->calculaArea(),2) .
                ", Perímetre: " . round($this->calculaPerimetre(),2) . 
-               ", Área: " . round($this->calculaArea(),2);
+               ", Costats: " . $this->calculaNCostats();
     }
 } ?>

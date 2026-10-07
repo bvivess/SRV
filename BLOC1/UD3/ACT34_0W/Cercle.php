@@ -1,10 +1,12 @@
 <?php
-    require_once 'FiguraGeometrica.php';
-    class Cercle {  
-        
+    require_once('FiguraGeometrica.php');
+    class Cercle {
         use FiguraGeometrica;
+    private $radi;
     // Constructor
-    public function __construct(private string $color, private float $radi) { }
+    public function __construct(float $radi) {
+        $this->radi = $radi;
+    }
 
     // Implementació del mètode
     public function calculaArea(): float {

@@ -1,25 +1,31 @@
 <?php
+	function calculaArea($figura) {  // Si es vol emprar un 'trait' cal eliminar el tipat de l'argument 
+		echo "\$figura->";
+		var_dump($figura);
+		echo "<br>";
+
+		return $figura->calculaArea();  // Polimorfisme: s'executa el mètode específic de la classe concreta
+	}
+
 	require_once 'FiguraGeometrica.php';
 	require_once 'Cercle.php';
 	require_once 'Quadrat.php';
 
-	$figures = [];
-
 	// Crear i afegir el cercle
-	$figura = new Cercle(5.0);
-	$figures[] = $figura;  // afegeix a l'array
+	$figura1 = new Cercle("vermell", 5.0);
+	echo "\$figura1->";
+	var_dump($figura1);
+	echo "<br>";
+	echo $figura1->__toString() . "<br>";
+	echo "L'area de la figura1 és: " . calculaArea($figura1) . "<br>";
 
+	echo "----------------------<br>";	
+	
 	// Crear i afegir el quadrat
-	$figura = new Quadrat(5.0);
-	$figures[] = $figura;  // afegeix a l'array
-
-	// Recorre les figures i mostra la seva àrea
-	foreach ($figures as $f) {
-		if ($figura instanceof Cercle)
-			echo "A continuació es mostrarà un Cercle: ";
-		elseif ($f instanceof Quadrat)
-			echo "A continuació es mostrarà un Quadrat: ";
-		
-		echo $f->__toString() . "<br>";
-	}
+	$figura2 = new Quadrat("blau", 5.0);
+	echo "\$figura2->";
+	var_dump($figura2);
+	echo "<br>";
+	echo $figura2->__toString() . "<br>";
+	echo "L'area de la figura2 és: " . calculaArea($figura2) . "<br>";
 ?>
