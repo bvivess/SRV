@@ -5,7 +5,7 @@
 		private string $color,
 		private float $radi ) { }
 
-    // Implementació del mètode
+    // Implementació dels mètodes
     public function calculaArea(): float {
         return pi() * pow($this->radi, 2);
     }

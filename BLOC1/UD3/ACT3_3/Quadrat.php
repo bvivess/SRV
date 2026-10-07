@@ -3,8 +3,7 @@
     // Constructor
     public function __construct(
 		private string $color,
-		private float $costat ) {
-    }
+		private float $costat ) { }
 
     // Implementació dels mètodes
     public function calculaArea(): float {
