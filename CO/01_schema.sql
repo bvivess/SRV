@@ -24,7 +24,11 @@ CREATE TABLE stores (
   store_id INT NOT NULL AUTO_INCREMENT,
   store_name VARCHAR(255) NOT NULL,
   web_address VARCHAR(100),
-  physical_address VARCHAR(512),
+  address_line1 VARCHAR(255) NULL,
+  city VARCHAR(100) NULL,
+  state_province VARCHAR(100) NULL,
+  postal_code VARCHAR(20) NULL,
+  country VARCHAR(100) NULL,
   latitude DECIMAL(10,7),
   longitude DECIMAL(10,7),
   logo LONGBLOB,
@@ -33,8 +37,7 @@ CREATE TABLE stores (
   logo_charset VARCHAR(512),
   logo_last_updated DATE,
   PRIMARY KEY (store_id),
-  UNIQUE KEY store_name_u (store_name),
-  CONSTRAINT store_at_least_one_address_c CHECK (web_address IS NOT NULL OR physical_address IS NOT NULL)
+  UNIQUE KEY store_name_u (store_name)
 ) ENGINE=InnoDB;
 
 CREATE TABLE products (
