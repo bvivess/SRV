@@ -3,6 +3,12 @@ CREATE DATABASE IF NOT EXISTS co
   CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 USE co;
 
+CREATE TABLE countries (
+    state_code CHAR(2) NOT NULL,
+    state_name VARCHAR(100) NOT NULL,
+    PRIMARY KEY (state_code)
+);
+
 CREATE TABLE customers (
   customer_id INT NOT NULL AUTO_INCREMENT,
   email_address VARCHAR(255) NOT NULL,
