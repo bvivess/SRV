@@ -15,21 +15,21 @@ GROUP BY o.order_id, o.order_datetime, o.order_status,
 
 CREATE OR REPLACE VIEW store_orders AS
 SELECT 'STORE TOTAL' AS total, s.store_name,
-       COALESCE(s.web_address, s.physical_address) AS address,
+       COALESCE(s.web_address, s.address_line1||city) AS address,
        s.latitude, s.longitude, NULL AS order_status,
        COUNT(DISTINCT o.order_id) AS order_count,
        SUM(oi.quantity * oi.unit_price) AS total_sales
 FROM stores s JOIN orders o ON s.store_id=o.store_id
 JOIN order_items oi ON o.order_id=oi.order_id
-GROUP BY s.store_name, COALESCE(s.web_address, s.physical_address), s.latitude, s.longitude
+GROUP BY s.store_name, COALESCE(s.web_address, s.address_line1||city), s.latitude, s.longitude
 UNION ALL
 SELECT 'STATUS TOTAL', s.store_name,
-       COALESCE(s.web_address, s.physical_address), s.latitude, s.longitude,
+       COALESCE(s.web_address, s.address_line1||city), s.latitude, s.longitude,
        o.order_status, COUNT(DISTINCT o.order_id),
        SUM(oi.quantity * oi.unit_price)
 FROM stores s JOIN orders o ON s.store_id=o.store_id
 JOIN order_items oi ON o.order_id=oi.order_id
-GROUP BY s.store_name, COALESCE(s.web_address, s.physical_address),
+GROUP BY s.store_name, COALESCE(s.web_address, s.address_line1||city),
          s.latitude, s.longitude, o.order_status
 UNION ALL
 SELECT 'ORDER STATUS TOTAL', NULL, NULL, NULL, NULL,
