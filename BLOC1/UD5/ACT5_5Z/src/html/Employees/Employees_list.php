@@ -1,8 +1,8 @@
 <?php 
-	require('../includes/header.php');
-	require('../includes/nav.php');
-
-	require '../../../vendor/autoload.php';
+	require_once dirname(__DIR__, 3) . '/config.php';
+	require_once BASE_PATH . '/src/html/includes/header.php';
+	require_once BASE_PATH . '/src/html/includes/nav.php';
+	require_once BASE_PATH . '/vendor/autoload.php';
 	use Models\Employee;
 
 	$employees = Employee::all();
@@ -40,7 +40,7 @@
 	</table>
 </div>
 </div>
-<?php 	require_once __DIR__ . '/../includes/footer.php'; ?>
+<?php 	require_once BASE_PATH . '/src/html/includes/footer.php'; ?>
 </body>
 
 
