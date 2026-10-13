@@ -1,8 +1,10 @@
 <?php
-	require('./src/html/includes/header.php');
-	require('./src/html/includes/nav.php');
+	define('BASE_PATH', __DIR__);
 	
-	require('./vendor/autoload.php');
+	require(BASE_PATH . '/src/html/includes/header.php');
+	require(BASE_PATH . '/src/html/includes/nav.php');
+	
+	require(BASE_PATH . '/vendor/autoload.php');
 ?>
 
 	<div id="section">
@@ -10,6 +12,6 @@
 		</div>
 	</div>
 
-		<?php require_once __DIR__ . '/src/html/includes/footer.php'; ?>
+		<?php require_once BASE_PATH . '/src/html/includes/footer.php'; ?>
 	</body>
 
