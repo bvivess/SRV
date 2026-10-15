@@ -19,7 +19,7 @@
             $table = static::$table;  
 
             // Obtenir els noms de les columnes de la taula
-            $columns = implode(', ', self::getTableColumns($db, $table)); 
+            $columns = implode(', ', self::getTableColumns($db, $table));  // COL1 COL2 COL3 --> COL1, COL2, COL3
 
             // Construir la consulta amb els noms de les columnes
             $sql = "SELECT $columns FROM $table ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)

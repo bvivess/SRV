@@ -74,6 +74,7 @@
     // 5.- Divisió per zero tractat de diferents maneres
     try { 
         try {
+            error_reporting(E_WARNING); // Reportem només 'warnings'
             $divisor = 0;
 
             // 5.1- Genera 'DivisionByZeroError'
