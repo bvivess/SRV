@@ -21,9 +21,9 @@
         <div id="content">
             <?php require_once BASE_PATH . '/src/html/includes/nav.php'; ?>
 
-        <main id="section">
-            <h3>Human Resource and Order Entries Management</h3>
-        </main>
+            <main id="section">
+                <h3>Human Resource and Order Entries Management</h3>
+            </main>
         </div>
         <?php require_once BASE_PATH . '/src/html/includes/footer.php'; ?>
     </body>
