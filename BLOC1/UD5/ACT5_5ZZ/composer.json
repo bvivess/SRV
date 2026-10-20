@@ -1,0 +1,21 @@
+{
+    "name": "nom/www",
+    "description": "Projecte CRUD",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nomAlume",
+            "email": "nom@elteucorreu.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.10",
+        "fakerphp/faker": "^1.24"
+    }
+}

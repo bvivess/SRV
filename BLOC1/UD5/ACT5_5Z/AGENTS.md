@@ -8,8 +8,10 @@ Aplicación web PHP para la gestión de recursos humanos, centrada en operacione
 
 - `index.php`: página principal y composición de la estructura común.
 - `src/config/`: configuración general de rutas y conexión a la base de datos.
-- `src/models/`: modelos y acceso a datos; `Employee` hereda de `Model`.
-- `src/html/Employees/`: páginas de la interfaz relacionadas con empleados.
+- `src/models/`: modelos y acceso a datos; 
+    - `Model`: clase abstracta que tiene la función `all()`: representa una `select` de SQL
+    - `Employee` hereda de `Model`. Implementa las funciones `save()` y `destroy()` representando `insert/update` y `delete` de SQL
+- `src/html/Employees/`: páginas de la interfaz relacionadas con el CRUD `employees`.
 - `src/html/includes/`: cabecera, navegación y pie compartidos.
 - `src/css/estils.css`: estilos propios.
 
