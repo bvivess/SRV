@@ -5,7 +5,7 @@
  * BASE_PATH: ruta absoluta del projecte al servidor.
  * BASE_URL: ruta relativa del projecte respecte del document root web.
  */
-define('BASE_PATH', __DIR__ );
+define('BASE_PATH', dirname(__DIR__, 2));
 
 $projectPath = realpath(BASE_PATH);
 $documentRoot = $_SERVER['DOCUMENT_ROOT'] ?? '';

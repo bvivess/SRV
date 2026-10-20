@@ -1,7 +1,7 @@
 <?php
 	use models\Employee;
 
-	require_once dirname(__DIR__, 3) . '/config.php';
+	require_once dirname(__DIR__, 3) . '/src/config/config.php';
 	require_once BASE_PATH . '/vendor/autoload.php';
 
 	$employees = Employee::all();
