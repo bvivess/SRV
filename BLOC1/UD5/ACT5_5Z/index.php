@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/src/config/config.php';
+    require 'vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
