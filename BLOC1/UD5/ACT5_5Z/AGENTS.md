@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Aplicación web PHP para la gestión de recursos humanos, centrada en operaciones CRUD de empleados. Usa MySQL mediante `mysqli`, Composer para el autoload y dependencias, y Bootstrap 4 para parte de la interfaz.
+Aplicación web PHP para la gestión de recursos humanos, centrada en operaciones CRUD de cada tabla. Usa MySQL mediante `mysqli`, Composer para el autoload y dependencias, y Bootstrap 4 para parte de la interfaz.
 
 ## Estructura
 
