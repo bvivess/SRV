@@ -39,13 +39,11 @@ $status = $_GET['status'] ?? '';
 <div id="content">
     <?php require_once BASE_PATH . '/src/html/includes/nav.php'; ?>
     <main id="section">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3 class="mb-0">Employees</h3>
-            <a href="<?= BASE_URL ?>/src/html/employees/employee_new.php" class="btn btn-primary">
-                <span class="fa fa-plus" aria-hidden="true"></span> New Employee
-            </a>
-        </div>
 
+        <h3 class="mb-0">Employees</h3>
+        <a href="<?= BASE_URL ?>/src/html/employees/employee_new.php" class="btn btn-primary">
+            <span class="fa fa-plus" aria-hidden="true"></span> New Employee
+        </a>
         <?php if (isset($statusMessages[$status])): ?>
             <div class="alert alert-success" role="status"><?= employeeEscape($statusMessages[$status]) ?></div>
         <?php endif; ?>

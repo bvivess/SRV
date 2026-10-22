@@ -46,29 +46,29 @@ $fields = $employee === null ? [] : [
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<?php require_once BASE_PATH . '/src/html/includes/header.php'; ?>
-<div id="content">
-    <?php require_once BASE_PATH . '/src/html/includes/nav.php'; ?>
-    <main id="section">
-        <h3>Employee Details</h3>
-        <?php if ($error !== null): ?>
-            <div class="alert alert-danger"><?= employeeEscape($error) ?></div>
-        <?php else: ?>
-            <table class="table table-bordered table-striped">
-                <tbody>
-                <?php foreach ($fields as $label => $value): ?>
-                    <tr>
-                        <th scope="row"><?= employeeEscape($label) ?></th>
-                        <td><?= employeeEscape($value === null ? '—' : $value) ?></td>
-                    </tr>
-                <?php endforeach; ?>
-                </tbody>
-            </table>
-            <a href="<?= BASE_URL ?>/src/html/employees/employee_update.php?id=<?= (int) $employee->employee_id ?>" class="btn btn-primary">Edit</a>
-        <?php endif; ?>
-        <a href="<?= BASE_URL ?>/src/html/employees/employees_list.php" class="btn btn-secondary ml-2">Back to employees</a>
-    </main>
-</div>
-<?php require_once BASE_PATH . '/src/html/includes/footer.php'; ?>
+    <?php require_once BASE_PATH . '/src/html/includes/header.php'; ?>
+    <div id="content">
+        <?php require_once BASE_PATH . '/src/html/includes/nav.php'; ?>
+        <main id="section">
+            <h3>Employee Details</h3>
+            <?php if ($error !== null): ?>
+                <div class="alert alert-danger"><?= employeeEscape($error) ?></div>
+            <?php else: ?>
+                <table class="table table-bordered table-striped">
+                    <tbody>
+                        <?php foreach ($fields as $label => $value): ?>
+                            <tr>
+                                <th scope="row"><?= employeeEscape($label) ?></th>
+                                <td><?= employeeEscape($value === null ? '—' : $value) ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+                <a href="<?= BASE_URL ?>/src/html/employees/employee_update.php?id=<?= (int) $employee->employee_id ?>" class="btn btn-primary">Edit</a>
+            <?php endif; ?>
+            <a href="<?= BASE_URL ?>/src/html/employees/employees_list.php" class="btn btn-secondary ml-2">Back to employees</a>
+        </main>
+    </div>
+    <?php require_once BASE_PATH . '/src/html/includes/footer.php'; ?>
 </body>
 </html>

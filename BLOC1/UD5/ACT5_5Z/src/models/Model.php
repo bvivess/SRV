@@ -45,7 +45,7 @@
         }
 
         // Mètode per obtenir els noms de les columnes d'una taula
-        private static function getTableColumns($db, $table) : array {
+        public static function getTableColumns($db, $table) : array {
             // Obtenir el nom de la base de dades actual
             $databaseName = $db->conn->query("SELECT DATABASE()")->fetch_row()[0];
 
@@ -69,9 +69,10 @@
         }
 
         // --- Obtenir el nom de la primary key ---
-        private function getPrimaryKey($db, $table) {
+        public static function getPrimaryKey($db, $table) {
             // Obtenir el nom de la base de dades actual
             $databaseName = $db->conn->query("SELECT DATABASE()")->fetch_row()[0];
+            
             // Consulta al diccionari de dades de MySQL
             $sql = "SELECT column_name 
                     FROM information_schema.key_column_usage 
@@ -85,13 +86,16 @@
         }
 
         // --- Determinar tipus de paràmetres per bind_param ---
-        private static function getParamTypes(array $values) : string {
+        public static function getParamTypes(array $values) : string {
             $types = '';
-            foreach ($values as $v) {
-                if (is_int($v)) $types .= 'i';
-                elseif (is_float($v)) $types .= 'd';
-                else $types .= 's';
-            }
+            foreach ($values as $v)
+                if (is_int($v))
+                    $types .= 'i';
+                elseif (is_float($v))
+                    $types .= 'd';
+                else
+                    $types .= 's';
+
             return $types;
         }
 

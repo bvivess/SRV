@@ -39,6 +39,10 @@
 			<?php require_once BASE_PATH . '/src/html/includes/nav.php'; ?>
 			<main id="section">
 				<h3>Employees</h3>
+				<a href="<?= BASE_URL ?>/src/html/employees/employee_new.php" class="btn btn-primary">
+					<span class="fa fa-plus" aria-hidden="true"></span> New Employee
+				</a>
+				
 				<table class="table table-bordered table-striped">
 					<thead>
 						<tr> <th>#</th>

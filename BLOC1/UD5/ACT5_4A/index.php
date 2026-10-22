@@ -50,10 +50,10 @@
 			$employee->save();  // INSERT / UPDATE
 		}
 	} catch (Error | Exception $e) {
-		// 🔹 Missatge amigable a l'usuari
+		// Missatge amigable a l'usuari
 		echo "<strong>S'ha produït un error: " . $e->getMessage() . "</strong>";
 
-		// 🔹 Registre detallat a fitxer de log
+		// Registre detallat a fitxer de log
 		$logMessage = "[" . date('Y-m-d H:i:s') . "] "
 			. $e->getMessage() 
 			. " ARXIU: " . $e->getFile() 
