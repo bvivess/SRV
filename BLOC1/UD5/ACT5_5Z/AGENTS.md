@@ -2,16 +2,22 @@
 
 ## Contexto
 
-Aplicación web PHP para la gestión de recursos humanos, centrada en operaciones CRUD de cada tabla. Usa MySQL mediante `mysqli`, Composer para el autoload y dependencias, y Bootstrap 4 para parte de la interfaz.
+Aplicación web PHP para la gestión de recursos humanos, centrada en operaciones CRUD de cada tabla. Usa MySQL mediante `mysqli`, Composer para el autoload y dependencias, y Bootstrap 4 para parte de la interfaz. 
 
 ## Estructura
 
 - `index.php`: página principal y composición de la estructura común.
-- `src/config/`: configuración general de rutas y conexión a la base de datos.
+- `src/config/`: conexión a la base de datos.
 - `src/models/`: modelos y acceso a datos; 
     - `Model`: clase abstracta que tiene la función `all()`: representa una `select` de SQL
     - `Employee` hereda de `Model`. Implementa las funciones `save()` y `destroy()` representando `insert/update` y `delete` de SQL
-- `src/html/Employees/`: páginas de la interfaz relacionadas con el CRUD `employees`.
+- `src/html/Employees/`: páginas de la interfaz relacionadas con el CRUD `employees`. Un CRUD requiere de varios archivos:
+    - `employees_list`: lista todos los employees, da acceso a cada funcionalidad de CRUD
+    - `employee_new`: permite crear un `employee`
+    - `employees_read`: permite ver los datos de un `employee`
+    - `employee_update`: permite modificr un `employee`
+    - `employee_delete`: permite eliminar un `employee`
+- `src/html/Xxxx`: idem que otra tabla, estructura similar a `src/html/Employees/`
 - `src/html/includes/`: cabecera, navegación y pie compartidos.
 - `src/css/estils.css`: estilos propios.
 

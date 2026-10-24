@@ -2,13 +2,13 @@
 
 <nav id="menu" aria-label="Main navigation">
 	<ul>
-		<!-- 'href' no abreviado -->
+		<!-- 'href' no abreviat -->
 		<li><a href="<?php echo BASE_URL; ?>/index.php">Home</a></li>
 		<li>
 			HR
 			<ul>
-				<!-- 'href' abreviado -->
-				<li><a href="<?= BASE_URL ?>/src/html/Employees/Employees_list.php">Employees</a></li>
+				<!-- 'href' abreviat -->
+				<li><a href="<?= BASE_URL ?>/src/html/Employees/employees_list.php">Employees</a></li>
 			</ul>
 		</li>
 	</ul>

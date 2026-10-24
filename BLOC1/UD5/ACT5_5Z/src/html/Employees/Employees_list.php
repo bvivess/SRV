@@ -62,9 +62,9 @@
 										"<td>" . $row->first_name      . "</td>" .
 										"<td>" . $row->department_id   . "</td>" .
 										"<td>" .
-											'<a href="employee_read.php?id='   . $row->employee_id . '" class="mr-2" title="View File" data-toggle="tooltip"><span class="fa fa-eye"></span></a>'      . 
-											'<a href="employee_update.php?id=' . $row->employee_id . '" class="mr-2" title="Update File" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>' .
-											'<a href="employee_delete.php?id=' . $row->employee_id . '" class="mr-2" title="Delete File" data-toggle="tooltip"><span class="fa fa-trash"></span></a>'               .
+											'<a href="employee_read.php?employee_id='   . $row->employee_id . '" class="mr-2" title="View File" data-toggle="tooltip"><span class="fa fa-eye"></span></a>' . 
+											'<a href="employee_update.php?employee_id=' . $row->employee_id . '" class="mr-2" title="Update File" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>' .
+											'<a href="employee_delete.php?employee_id=' . $row->employee_id . '" class="mr-2" title="Delete File" data-toggle="tooltip"><span class="fa fa-trash"></span></a>' .
 										"</td>" .
 									"</tr>";
 							}
