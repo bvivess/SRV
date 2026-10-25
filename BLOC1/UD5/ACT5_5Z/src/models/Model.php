@@ -9,39 +9,78 @@
         public abstract function save();
         public abstract function destroy();
 
+        // Mètode concret per a l'operació Read (Select ... where id = $id) del CRUD
+        public static function find(int $id): array|null {
+            $db = new Database();
+
+            try {
+                $db->connectDB('C:/temp/config.db');
+                // Obtenir el nom de la taula de la classe filla 
+                $table = static::$table;
+                $primaryKey = self::getPrimaryKey($db, $table);
+                if ($primaryKey === null) {
+                    throw new \RuntimeException("No s'ha pogut trobar la clau primària de la taula $table.");
+                }
+
+                // Obtenir els noms de les columnes de la taula
+                $columns = implode(', ', self::getTableColumns($db, $table));  // COL1 COL2 COL3 --> COL1, COL2, COL3
+
+                // Construir la consulta amb els noms de les columnes
+                $sql = "SELECT $columns FROM $table WHERE $primaryKey = ? ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
+                $stmt = $db->conn->prepare($sql);
+                $stmt->bind_param('i', $id);
+                $stmt->execute();
+                $row = $stmt->get_result()->fetch_assoc();
+                
+                return $row === null ? null : [new static(...array_values($row))];
+            } catch (\mysqli_sql_exception $e) {
+                throw new \mysqli_sql_exception($e->getMessage());
+            } finally {
+                if ($db->conn)
+                    // Tancar la connexió
+                    $db->closeDB();
+            }
+        }
+
         // Mètode concret per a l'operació Read (Select) del CRUD
         public static function all() : array {
             // Connectar a la base de dades
             $db = new Database();
-            $db->connectDB('C:/temp/config.db');
 
-            // Obtenir el nom de la taula de la classe filla
-            $table = static::$table;  
+            try {
+                $db->connectDB('C:/temp/config.db');
 
-            // Obtenir els noms de les columnes de la taula
-            $columns = implode(', ', self::getTableColumns($db, $table));  // COL1 COL2 COL3 --> COL1, COL2, COL3
+                // Obtenir el nom de la taula de la classe filla
+                $table = static::$table;  
 
-            // Construir la consulta amb els noms de les columnes
-            $sql = "SELECT $columns FROM $table ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
-            $result = $db->conn->query($sql);
+                // Obtenir els noms de les columnes de la taula
+                $columns = implode(', ', self::getTableColumns($db, $table));  // COL1 COL2 COL3 --> COL1, COL2, COL3
 
-            // Comprovar si hi ha resultats
-			$rows = [];
-            if ($result->num_rows > 0) {
-				while ($row = $result->fetch_assoc()) {
-					// Crear un nou objecte de tipus 'Employee', 'Customer', ...
-					$objecte = new static( ...array_values($row) );
+                // Construir la consulta amb els noms de les columnes
+                $sql = "SELECT $columns FROM $table ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
+                $result = $db->conn->query($sql);
 
-					// Afegir l'objecte a l'array
-					$rows[] = $objecte;
-				}
-            }
+                // Comprovar si hi ha resultats
+                $rows = [];
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        // Crear un nou objecte de tipus 'Employee', 'Customer', ...
+                        $objecte = new static( ...array_values($row) );
 
-            // Tancar la connexió
-            $db->closeDB();
+                        // Afegir l'objecte a l'array
+                        $rows[] = $objecte;
+                    }
+                }
 
-            // Retornar els registres obtinguts
-            return $rows;
+                // Retornar els registres obtinguts
+                return $rows;
+            } catch (\mysqli_sql_exception $e) {
+                throw new \mysqli_sql_exception($e->getMessage()); 
+            } finally {
+                if ($db->conn)
+                    // Tancar la connexió
+                    $db->closeDB(); 
+            } 
         }
 
         // Mètode per obtenir els noms de les columnes d'una taula
