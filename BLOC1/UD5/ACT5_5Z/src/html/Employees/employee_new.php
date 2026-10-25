@@ -109,6 +109,7 @@
 						<input class="form-control" type="number" id="department_id" name="department_id">
 					</div>
 					<button class="btn btn-primary" type="submit">Afegir Empleat</button>
+					
 					<a href="<?= BASE_URL ?>/src/html/Employees/Employees_list.php" class="btn btn-secondary">Tornar</a>
 				</form>
 
