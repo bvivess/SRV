@@ -15,28 +15,25 @@
 	}
 
 	function modificarEmpleat($employee): void {
-		if ($_SERVER['REQUEST_METHOD'] !== 'POST' || $employee === null) {
-			return;
-		}
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
+			try {
+				$employee->first_name = $_POST['first_name'] ?? '';
+				$employee->last_name = $_POST['last_name'] ?? '';
+				$employee->email = convertToNull($_POST['email'] ?? '');
+				$employee->phone_number = convertToNull($_POST['phone_number'] ?? '');
+				$employee->hire_date = convertToNull($_POST['hire_date'] ?? '');
+				$employee->job_id = $_POST['job_id'] ?? '';
+				$employee->salary = convertToNull($_POST['salary'] ?? '');
+				$employee->commission_pct = convertToNull($_POST['commission_pct'] ?? '');
+				$employee->manager_id = convertToNull($_POST['manager_id'] ?? '');
+				$employee->department_id = convertToNull($_POST['department_id'] ?? '');
 
-		try {
-			$employee->first_name = $_POST['first_name'] ?? '';
-			$employee->last_name = $_POST['last_name'] ?? '';
-			$employee->email = convertToNull($_POST['email'] ?? '');
-			$employee->phone_number = convertToNull($_POST['phone_number'] ?? '');
-			$employee->hire_date = convertToNull($_POST['hire_date'] ?? '');
-			$employee->job_id = $_POST['job_id'] ?? '';
-			$employee->salary = convertToNull($_POST['salary'] ?? '');
-			$employee->commission_pct = convertToNull($_POST['commission_pct'] ?? '');
-			$employee->manager_id = convertToNull($_POST['manager_id'] ?? '');
-			$employee->department_id = convertToNull($_POST['department_id'] ?? '');
+				$employee->save();
 
-			$employee->save();
-
-			echo '<p class="alert alert-success">Empleat modificat correctament.</p>';
-		} catch (Error | Exception $e) {
-			echo '<p class="alert alert-danger">Error en modificar l\'empleat: '
-				. htmlspecialchars($e->getMessage()) . '</p>';
+				echo '<p class="alert alert-success">Empleat modificat correctament.</p>';
+			} catch (Error | Exception $e) {
+				echo '<p class="alert alert-danger">Error en modificar l\'empleat: '. $e->getMessage() . '</p>';
+			}
 		}
 	}
 
