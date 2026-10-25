@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F29CF4A6-A90E-01A5-BA8A-F411AC3E4089" name="matches">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:40:20 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F9CC47E1-46EB-69A1-5C48-DE5ECA73A6DA">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:42:23 UTC</createdTime>
+<generatorID>222B4D74-86BC-E5E5-B3D3-4C71461D151C</generatorID>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<referedAttribute>E6C49631-055E-5A3C-E387-E46CCEC8836F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="A103EC3A-6C1E-AC7E-E96E-AA4C2FA14B6A">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:42:43 UTC</createdTime>
+<generatorID>D945A01D-D121-F310-0FC8-CB63FB03BF44</generatorID>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<referedAttribute>E6C49631-055E-5A3C-E387-E46CCEC8836F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="day_of_match" id="D93998E6-E36A-A85A-7CD3-EB222A22256F">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:46:09 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hour" id="5C29965F-5A8A-08CA-998E-73AB026F1656">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:46:35 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="B40D43EF-3791-74D0-0C5A-CB6223222DEE">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:48:29 UTC</createdTime>
+<generatorID>8959622D-9671-6830-86F5-022D310F1F70</generatorID>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<referedAttribute>690CD2D2-7055-61E4-65F5-917C3B743F0B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="055760F2-1035-C8FE-8418-715AE476EDD5" name="matches PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:42:29 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9CC47E1-46EB-69A1-5C48-DE5ECA73A6DA</attributeRef>
+<attributeRef>A103EC3A-6C1E-AC7E-E96E-AA4C2FA14B6A</attributeRef>
+<attributeRef>B40D43EF-3791-74D0-0C5A-CB6223222DEE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

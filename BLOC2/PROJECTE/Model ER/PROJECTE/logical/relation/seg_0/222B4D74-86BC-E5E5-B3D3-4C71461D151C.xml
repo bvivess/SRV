@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="222B4D74-86BC-E5E5-B3D3-4C71461D151C">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:42:23 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<sourcePk>7CFD2522-DFD0-98B1-1390-A13C7D01DFD3</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2C024EFF-588C-03AF-066D-A45AFFEC18E6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F29CF4A6-A90E-01A5-BA8A-F411AC3E4089</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="goals" id="76AB33BD-C1E9-FC12-D545-3E2E28478946">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:43:14 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

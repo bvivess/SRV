@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B21C34C-6C7B-6B9B-8B1F-75F8E5E8A627" name="People">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:21:46 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F5529EA9-35CA-42D5-8150-AE997739F842">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:22:36 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="A67207B6-FF5D-6692-DA48-FEC43F5E8C76">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:25:09 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<domain>0D478AFF-99F2-0D45-798F-CE7C00725A1E</domain>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="B32DD86D-5783-72A1-A71D-443D01DF2FF5">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:28:16 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0D478AFF-99F2-0D45-798F-CE7C00725A1E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="EB6E7731-0676-A50B-D557-D386FC5FB2D5">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:30:03 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0D478AFF-99F2-0D45-798F-CE7C00725A1E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="B5276FAD-7DD2-7428-79F0-274083425ACD">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:35:40 UTC</createdTime>
+<generatorID>3A2B2D07-520E-5A52-503A-132B7FD11A1F</generatorID>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<referedAttribute>5347DF55-87B2-8996-3B3A-525237A2EFDC</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="37016413-1ED6-85D2-B2F5-1E688583850C" name="People PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:23:10 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F5529EA9-35CA-42D5-8150-AE997739F842</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

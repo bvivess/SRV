@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DAEC7629-8000-7FD8-4C05-B3CDEB54F898" name="stadiums">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:50:43 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="D4388C85-FBBD-0792-BD6B-11A7B1306D7D">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:50:43 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="4408E8CC-6682-CFC9-7F80-2B67DEC42E4B">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:50:43 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0D478AFF-99F2-0D45-798F-CE7C00725A1E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="DFA85493-DD55-D064-8828-3E134E8BAB92">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:51:07 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0D478AFF-99F2-0D45-798F-CE7C00725A1E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="978430C3-57B4-4A11-F36A-CFD61DD52878">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:51:32 UTC</createdTime>
+<generatorID>43EADE06-4493-09F9-1170-3305985E29AE</generatorID>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<referedAttribute>5347DF55-87B2-8996-3B3A-525237A2EFDC</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D2131F8-010E-8204-21DA-9E62E9BEBC32" name="provinces PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 16:50:43 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D4388C85-FBBD-0792-BD6B-11A7B1306D7D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
