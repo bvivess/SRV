@@ -5,16 +5,16 @@
 	require_once BASE_PATH . '/vendor/autoload.php';
 
 	$errorMessage = null;
-	$success = false;
+	$status = null;
 
 	if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 		try {
 			$employee = new Employee($_GET['employee_id']);
 			$employee->destroy();
-			$success = true;
-		} catch (\Exception $exception) {
-			$errorMessage = "L'empleat no es pot eliminar: " . $exception->getMessage();
-			$success = false;
+			$status = true;
+		} catch (Error | Exception $e) {
+			$errorMessage = "L'empleat no es pot eliminar: " . $e->getMessage();
+			$status = false;
 		}
 	}
 ?>
@@ -34,9 +34,9 @@
 			<main id="section">
 				<h3>Delete Employee</h3>
 
-				<?php if ($success): ?>
+				<?php if ($status): ?>
 					<p class="alert alert-success">Empleat eliminat correctament.</p>
-				<?php elseif ($errorMessage !== null): ?>
+				<?php else: ?>
 					<p class="alert alert-danger"><?= $errorMessage ?></p>
 				<?php endif; ?>
 

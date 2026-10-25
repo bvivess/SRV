@@ -17,6 +17,9 @@
 	// Registrem el gestor d’errors
 	set_error_handler("gestorErrors");
 
+	$errorMessage = null;
+	$status = null;
+
     try {
 		// Si el formulari ha estat enviat
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -48,17 +51,12 @@
 
 			// Guardar l'empleat a la base de dades
 			$employee->save();  // INSERT / UPDATE
+			$status = true;  // Indicar que l'operació ha estat exitosa
 		}
 	} catch (Error | Exception $e) {
 		// Missatge amigable a l'usuari
-		echo "<strong>S'ha produït un error: " . $e->getMessage() . "</strong>";
-
-		// Registre detallat a fitxer de log
-		$logMessage = "[" . date('Y-m-d H:i:s') . "] "
-			. $e->getMessage() 
-			. " ARXIU: " . $e->getFile() 
-			. " LÍNIA: " . $e->getLine() . PHP_EOL;
-		error_log($logMessage, 3, __DIR__ . '/error_log.txt');
+		$errorMessage = "L'empleat no es pot afegir: " . $e->getMessage();
+		$status = false;  // Indicar que hi ha hagut un error
 	}
 ?>
 
@@ -126,6 +124,14 @@
 					<button class="btn btn-primary" type="submit">Afegir Empleat</button>
 					<a href="<?= BASE_URL ?>/src/html/Employees/Employees_list.php" class="btn btn-secondary">Tornar</a>
 				</form>
+
+				<?php if ($status): ?>
+					<p class="alert alert-success">Empleat afegit correctament.</p>
+				<?php elseif ($errorMessage != null): ?>
+					<p class="alert alert-danger"><?= $errorMessage ?></p>
+				<?php endif; ?>
+			</main>
+
 			</main>
 		</div>
 		<?php require_once BASE_PATH . '/src/html/includes/footer.php'; ?>
