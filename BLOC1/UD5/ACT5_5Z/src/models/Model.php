@@ -69,7 +69,7 @@
                 $columns = implode(', ', self::getTableColumns($db, $table));  // COL1 COL2 COL3 --> COL1, COL2, COL3
 
                 // Construir la consulta amb els noms de les columnes
-                $sql = "SELECT $columns FROM $table WHERE $primaryKey = ? ORDER BY 1"; // Ordenar pel primer camp (normalment la clau primària)
+                $sql = "SELECT $columns FROM $table WHERE $primaryKey = ?"; // Ordenar pel primer camp (normalment la clau primària)
                 $stmt = $db->conn->prepare($sql);
                 $stmt->bind_param('i', $id);
                 $stmt->execute();

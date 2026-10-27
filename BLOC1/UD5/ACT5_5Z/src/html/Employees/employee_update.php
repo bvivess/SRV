@@ -8,8 +8,7 @@
 		try {
 			return Employee::find($employee_id);
 		} catch (Error | Exception $e) {
-			echo '<p class="alert alert-danger">Error al carregar l\'empleat: '
-				. $e->getMessage() . '</p>';
+			echo '<p class="alert alert-danger">Error al carregar l\'empleat: ' . $e->getMessage() . '</p>';
 			return null;
 		}
 	}

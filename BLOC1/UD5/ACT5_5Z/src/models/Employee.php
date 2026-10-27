@@ -7,20 +7,20 @@
 		// Definir la taula associada a la classe
 		protected static $table = 'employees';
 
-			// Constructor
-			public function __construct(    
-				public ?int    $employee_id=null,
-				public ?string $first_name=null,
-				public ?string $last_name=null,
-				public ?string $email=null,
-				public ?string $phone_number=null,
-				public ?string $hire_date=null,
-				public ?string $job_id=null,
-				public ?float  $salary=null,
-				public ?float  $commission_pct=null,
-				public ?int    $manager_id=null,
-				public ?int    $department_id=null
-			) { }
+		// Constructor
+		public function __construct(    
+			public ?int    $employee_id=null,
+			public ?string $first_name=null,
+			public ?string $last_name=null,
+			public ?string $email=null,
+			public ?string $phone_number=null,
+			public ?string $hire_date=null,
+			public ?string $job_id=null,
+			public ?float  $salary=null,
+			public ?float  $commission_pct=null,
+			public ?int    $manager_id=null,
+			public ?int    $department_id=null
+		) { }
 
 		// Mètode per guardar l'empleat a la base de dades
 		public function save() {
@@ -96,7 +96,7 @@
 				//$db->conn->begin_transaction();
 
 				// Obtenir el nom de la taula de la classe filla
-				$table = static::$table; 
+				$table = self::$table; 
 
 				if (isset($this->employee_id)) {
 					$sql = "SELECT * FROM $table WHERE employee_id = $this->employee_id";
