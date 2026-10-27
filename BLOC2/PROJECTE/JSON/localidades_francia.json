@@ -1,0 +1,812 @@
+[
+  {
+    "ID": "80001",
+    "DESCRIPCION": "Abbeville",
+    "PROVINCIA_ID": "Somme"
+  },
+  {
+    "ID": "34032",
+    "DESCRIPCION": "Agde",
+    "PROVINCIA_ID": "Hérault"
+  },
+  {
+    "ID": "13001",
+    "DESCRIPCION": "Aix-en-Provence",
+    "PROVINCIA_ID": "Bouches-du-Rhône"
+  },
+  {
+    "ID": "81004",
+    "DESCRIPCION": "Albi",
+    "PROVINCIA_ID": "Tarn"
+  },
+  {
+    "ID": "94069",
+    "DESCRIPCION": "Alfortville",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "30007",
+    "DESCRIPCION": "Alès",
+    "PROVINCIA_ID": "Gard"
+  },
+  {
+    "ID": "80021",
+    "DESCRIPCION": "Amiens",
+    "PROVINCIA_ID": "Somme"
+  },
+  {
+    "ID": "49007",
+    "DESCRIPCION": "Angers",
+    "PROVINCIA_ID": "Maine-et-Loire"
+  },
+  {
+    "ID": "16015",
+    "DESCRIPCION": "Angoulême",
+    "PROVINCIA_ID": "Charente"
+  },
+  {
+    "ID": "74010",
+    "DESCRIPCION": "Annecy",
+    "PROVINCIA_ID": "Haute-Savoie"
+  },
+  {
+    "ID": "06029",
+    "DESCRIPCION": "Antibes",
+    "PROVINCIA_ID": "Alpes-Maritimes"
+  },
+  {
+    "ID": "95018",
+    "DESCRIPCION": "Argenteuil",
+    "PROVINCIA_ID": "Val-d'Oise"
+  },
+  {
+    "ID": "13004",
+    "DESCRIPCION": "Arles",
+    "PROVINCIA_ID": "Bouches-du-Rhône"
+  },
+  {
+    "ID": "62041",
+    "DESCRIPCION": "Arras",
+    "PROVINCIA_ID": "Pas-de-Calais"
+  },
+  {
+    "ID": "92012",
+    "DESCRIPCION": "Asnières-sur-Seine",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "93008",
+    "DESCRIPCION": "Aubervilliers",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "93001",
+    "DESCRIPCION": "Aulnay-sous-Bois",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "84007",
+    "DESCRIPCION": "Avignon",
+    "PROVINCIA_ID": "Vaucluse"
+  },
+  {
+    "ID": "97101",
+    "DESCRIPCION": "Baie-Mahault",
+    "PROVINCIA_ID": "Guadeloupe"
+  },
+  {
+    "ID": "64102",
+    "DESCRIPCION": "Bayonne",
+    "PROVINCIA_ID": "Pyrénées-Atlantiques"
+  },
+  {
+    "ID": "60057",
+    "DESCRIPCION": "Beauvais",
+    "PROVINCIA_ID": "Oise"
+  },
+  {
+    "ID": "25056",
+    "DESCRIPCION": "Besançon",
+    "PROVINCIA_ID": "Doubs"
+  },
+  {
+    "ID": "64122",
+    "DESCRIPCION": "Biarritz",
+    "PROVINCIA_ID": "Pyrénées-Atlantiques"
+  },
+  {
+    "ID": "93005",
+    "DESCRIPCION": "Bobigny",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "93010",
+    "DESCRIPCION": "Bondy",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "33063",
+    "DESCRIPCION": "Bordeaux",
+    "PROVINCIA_ID": "Gironde"
+  },
+  {
+    "ID": "92026",
+    "DESCRIPCION": "Boulogne-Billancourt",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "62160",
+    "DESCRIPCION": "Boulogne-sur-Mer",
+    "PROVINCIA_ID": "Pas-de-Calais"
+  },
+  {
+    "ID": "01053",
+    "DESCRIPCION": "Bourg-en-Bresse",
+    "PROVINCIA_ID": "Ain"
+  },
+  {
+    "ID": "18033",
+    "DESCRIPCION": "Bourges",
+    "PROVINCIA_ID": "Cher"
+  },
+  {
+    "ID": "29260",
+    "DESCRIPCION": "Brest",
+    "PROVINCIA_ID": "Finistère"
+  },
+  {
+    "ID": "83023",
+    "DESCRIPCION": "Brignoles",
+    "PROVINCIA_ID": "Var"
+  },
+  {
+    "ID": "62193",
+    "DESCRIPCION": "Bruay-la-Buissière",
+    "PROVINCIA_ID": "Pas-de-Calais"
+  },
+  {
+    "ID": "35047",
+    "DESCRIPCION": "Bruz",
+    "PROVINCIA_ID": "Ille-et-Vilaine"
+  },
+  {
+    "ID": "34145",
+    "DESCRIPCION": "Béziers",
+    "PROVINCIA_ID": "Hérault"
+  },
+  {
+    "ID": "14118",
+    "DESCRIPCION": "Caen",
+    "PROVINCIA_ID": "Calvados"
+  },
+  {
+    "ID": "62765",
+    "DESCRIPCION": "Calais",
+    "PROVINCIA_ID": "Pas-de-Calais"
+  },
+  {
+    "ID": "66136",
+    "DESCRIPCION": "Canet-en-Roussillon",
+    "PROVINCIA_ID": "Pyrénées-Orientales"
+  },
+  {
+    "ID": "06069",
+    "DESCRIPCION": "Cannes",
+    "PROVINCIA_ID": "Alpes-Maritimes"
+  },
+  {
+    "ID": "84031",
+    "DESCRIPCION": "Carpentras",
+    "PROVINCIA_ID": "Vaucluse"
+  },
+  {
+    "ID": "97302",
+    "DESCRIPCION": "Cayenne",
+    "PROVINCIA_ID": "Guyane"
+  },
+  {
+    "ID": "95127",
+    "DESCRIPCION": "Cergy",
+    "PROVINCIA_ID": "Val-d'Oise"
+  },
+  {
+    "ID": "35288",
+    "DESCRIPCION": "Cesson-Sévigné",
+    "PROVINCIA_ID": "Ille-et-Vilaine"
+  },
+  {
+    "ID": "73065",
+    "DESCRIPCION": "Chambéry",
+    "PROVINCIA_ID": "Savoie"
+  },
+  {
+    "ID": "94017",
+    "DESCRIPCION": "Champigny-sur-Marne",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "28085",
+    "DESCRIPCION": "Chartres",
+    "PROVINCIA_ID": "Eure-et-Loir"
+  },
+  {
+    "ID": "49099",
+    "DESCRIPCION": "Cholet",
+    "PROVINCIA_ID": "Maine-et-Loire"
+  },
+  {
+    "ID": "86194",
+    "DESCRIPCION": "Châtellerault",
+    "PROVINCIA_ID": "Vienne"
+  },
+  {
+    "ID": "63113",
+    "DESCRIPCION": "Clermont-Ferrand",
+    "PROVINCIA_ID": "Puy-de-Dôme"
+  },
+  {
+    "ID": "93027",
+    "DESCRIPCION": "Clichy-sous-Bois",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "68066",
+    "DESCRIPCION": "Colmar",
+    "PROVINCIA_ID": "Haut-Rhin"
+  },
+  {
+    "ID": "92024",
+    "DESCRIPCION": "Colombes",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "60471",
+    "DESCRIPCION": "Compiègne",
+    "PROVINCIA_ID": "Oise"
+  },
+  {
+    "ID": "29019",
+    "DESCRIPCION": "Concarneau",
+    "PROVINCIA_ID": "Finistère"
+  },
+  {
+    "ID": "92025",
+    "DESCRIPCION": "Courbevoie",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "63300",
+    "DESCRIPCION": "Cournon-d'Auvergne",
+    "PROVINCIA_ID": "Puy-de-Dôme"
+  },
+  {
+    "ID": "94028",
+    "DESCRIPCION": "Créteil",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "21231",
+    "DESCRIPCION": "Dijon",
+    "PROVINCIA_ID": "Côte-d'Or"
+  },
+  {
+    "ID": "39013",
+    "DESCRIPCION": "Dole",
+    "PROVINCIA_ID": "Jura"
+  },
+  {
+    "ID": "83050",
+    "DESCRIPCION": "Draguignan",
+    "PROVINCIA_ID": "Var"
+  },
+  {
+    "ID": "93029",
+    "DESCRIPCION": "Drancy",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "59183",
+    "DESCRIPCION": "Dunkerque",
+    "PROVINCIA_ID": "Nord"
+  },
+  {
+    "ID": "94033",
+    "DESCRIPCION": "Fontenay-sous-Bois",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "57672",
+    "DESCRIPCION": "Forbach",
+    "PROVINCIA_ID": "Moselle"
+  },
+  {
+    "ID": "97209",
+    "DESCRIPCION": "Fort-de-France",
+    "PROVINCIA_ID": "Martinique"
+  },
+  {
+    "ID": "83126",
+    "DESCRIPCION": "Fréjus",
+    "PROVINCIA_ID": "Var"
+  },
+  {
+    "ID": "05061",
+    "DESCRIPCION": "Gap",
+    "PROVINCIA_ID": "Hautes-Alpes"
+  },
+  {
+    "ID": "38185",
+    "DESCRIPCION": "Grenoble",
+    "PROVINCIA_ID": "Isère"
+  },
+  {
+    "ID": "83061",
+    "DESCRIPCION": "Hyères",
+    "PROVINCIA_ID": "Var"
+  },
+  {
+    "ID": "67447",
+    "DESCRIPCION": "Illkirch-Graffenstaden",
+    "PROVINCIA_ID": "Bas-Rhin"
+  },
+  {
+    "ID": "92049",
+    "DESCRIPCION": "Issy-les-Moulineaux",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "94046",
+    "DESCRIPCION": "Ivry-sur-Seine",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "37122",
+    "DESCRIPCION": "Joué-lès-Tours",
+    "PROVINCIA_ID": "Indre-et-Loire"
+  },
+  {
+    "ID": "93031",
+    "DESCRIPCION": "La Courneuve",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "72154",
+    "DESCRIPCION": "La Flèche",
+    "PROVINCIA_ID": "Sarthe"
+  },
+  {
+    "ID": "17300",
+    "DESCRIPCION": "La Rochelle",
+    "PROVINCIA_ID": "Charente-Maritime"
+  },
+  {
+    "ID": "83069",
+    "DESCRIPCION": "La Seyne-sur-Mer",
+    "PROVINCIA_ID": "Var"
+  },
+  {
+    "ID": "53062",
+    "DESCRIPCION": "Laval",
+    "PROVINCIA_ID": "Mayenne"
+  },
+  {
+    "ID": "76540",
+    "DESCRIPCION": "Le Havre",
+    "PROVINCIA_ID": "Seine-Maritime"
+  },
+  {
+    "ID": "72181",
+    "DESCRIPCION": "Le Mans",
+    "PROVINCIA_ID": "Sarthe"
+  },
+  {
+    "ID": "97120",
+    "DESCRIPCION": "Les Abymes",
+    "PROVINCIA_ID": "Guadeloupe"
+  },
+  {
+    "ID": "92044",
+    "DESCRIPCION": "Levallois-Perret",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "59350",
+    "DESCRIPCION": "Lille",
+    "PROVINCIA_ID": "Nord"
+  },
+  {
+    "ID": "87085",
+    "DESCRIPCION": "Limoges",
+    "PROVINCIA_ID": "Haute-Vienne"
+  },
+  {
+    "ID": "56121",
+    "DESCRIPCION": "Lorient",
+    "PROVINCIA_ID": "Morbihan"
+  },
+  {
+    "ID": "69123",
+    "DESCRIPCION": "Lyon",
+    "PROVINCIA_ID": "Rhône"
+  },
+  {
+    "ID": "94041",
+    "DESCRIPCION": "Maisons-Alfort",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "97611",
+    "DESCRIPCION": "Mamoudzou",
+    "PROVINCIA_ID": "Mayotte"
+  },
+  {
+    "ID": "78621",
+    "DESCRIPCION": "Mantes-la-Jolie",
+    "PROVINCIA_ID": "Yvelines"
+  },
+  {
+    "ID": "13055",
+    "DESCRIPCION": "Marseille",
+    "PROVINCIA_ID": "Bouches-du-Rhône"
+  },
+  {
+    "ID": "77373",
+    "DESCRIPCION": "Meaux",
+    "PROVINCIA_ID": "Seine-et-Marne"
+  },
+  {
+    "ID": "77186",
+    "DESCRIPCION": "Melun",
+    "PROVINCIA_ID": "Seine-et-Marne"
+  },
+  {
+    "ID": "57463",
+    "DESCRIPCION": "Metz",
+    "PROVINCIA_ID": "Moselle"
+  },
+  {
+    "ID": "40192",
+    "DESCRIPCION": "Mont-de-Marsan",
+    "PROVINCIA_ID": "Landes"
+  },
+  {
+    "ID": "82033",
+    "DESCRIPCION": "Montauban",
+    "PROVINCIA_ID": "Tarn-et-Garonne"
+  },
+  {
+    "ID": "03185",
+    "DESCRIPCION": "Montluçon",
+    "PROVINCIA_ID": "Allier"
+  },
+  {
+    "ID": "34172",
+    "DESCRIPCION": "Montpellier",
+    "PROVINCIA_ID": "Hérault"
+  },
+  {
+    "ID": "93048",
+    "DESCRIPCION": "Montreuil",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "26058",
+    "DESCRIPCION": "Montélimar",
+    "PROVINCIA_ID": "Drôme"
+  },
+  {
+    "ID": "68224",
+    "DESCRIPCION": "Mulhouse",
+    "PROVINCIA_ID": "Haut-Rhin"
+  },
+  {
+    "ID": "54395",
+    "DESCRIPCION": "Nancy",
+    "PROVINCIA_ID": "Meurthe-et-Moselle"
+  },
+  {
+    "ID": "92050",
+    "DESCRIPCION": "Nanterre",
+    "PROVINCIA_ID": "Hauts-de-Seine"
+  },
+  {
+    "ID": "440109",
+    "DESCRIPCION": "Nantes",
+    "PROVINCIA_ID": "Loire-Atlantique"
+  },
+  {
+    "ID": "06088",
+    "DESCRIPCION": "Nice",
+    "PROVINCIA_ID": "Alpes-Maritimes"
+  },
+  {
+    "ID": "79049",
+    "DESCRIPCION": "Niort",
+    "PROVINCIA_ID": "Deux-Sèvres"
+  },
+  {
+    "ID": "86165",
+    "DESCRIPCION": "Niort",
+    "PROVINCIA_ID": "Deux-Sèvres"
+  },
+  {
+    "ID": "93070",
+    "DESCRIPCION": "Noisy-le-Grand",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "30189",
+    "DESCRIPCION": "Nîmes",
+    "PROVINCIA_ID": "Gard"
+  },
+  {
+    "ID": "45232",
+    "DESCRIPCION": "Olivet",
+    "PROVINCIA_ID": "Loiret"
+  },
+  {
+    "ID": "84089",
+    "DESCRIPCION": "Orange",
+    "PROVINCIA_ID": "Vaucluse"
+  },
+  {
+    "ID": "45234",
+    "DESCRIPCION": "Orléans",
+    "PROVINCIA_ID": "Loiret"
+  },
+  {
+    "ID": "93055",
+    "DESCRIPCION": "Pantin",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "75056",
+    "DESCRIPCION": "Paris",
+    "PROVINCIA_ID": "Paris"
+  },
+  {
+    "ID": "64545",
+    "DESCRIPCION": "Pau",
+    "PROVINCIA_ID": "Pyrénées-Atlantiques"
+  },
+  {
+    "ID": "66008",
+    "DESCRIPCION": "Perpignan",
+    "PROVINCIA_ID": "Pyrénées-Orientales"
+  },
+  {
+    "ID": "86066",
+    "DESCRIPCION": "Poitiers",
+    "PROVINCIA_ID": "Vienne"
+  },
+  {
+    "ID": "29232",
+    "DESCRIPCION": "Quimper",
+    "PROVINCIA_ID": "Finistère"
+  },
+  {
+    "ID": "51108",
+    "DESCRIPCION": "Reims",
+    "PROVINCIA_ID": "Marne"
+  },
+  {
+    "ID": "35238",
+    "DESCRIPCION": "Rennes",
+    "PROVINCIA_ID": "Ille-et-Vilaine"
+  },
+  {
+    "ID": "42207",
+    "DESCRIPCION": "Roanne",
+    "PROVINCIA_ID": "Loire"
+  },
+  {
+    "ID": "26362",
+    "DESCRIPCION": "Romans-sur-Isère",
+    "PROVINCIA_ID": "Drôme"
+  },
+  {
+    "ID": "59378",
+    "DESCRIPCION": "Roubaix",
+    "PROVINCIA_ID": "Nord"
+  },
+  {
+    "ID": "72264",
+    "DESCRIPCION": "Sablé-sur-Sarthe",
+    "PROVINCIA_ID": "Sarthe"
+  },
+  {
+    "ID": "22278",
+    "DESCRIPCION": "Saint-Brieuc",
+    "PROVINCIA_ID": "Côtes-d'Armor"
+  },
+  {
+    "ID": "42095",
+    "DESCRIPCION": "Saint-Chamond",
+    "PROVINCIA_ID": "Loire"
+  },
+  {
+    "ID": "93066",
+    "DESCRIPCION": "Saint-Denis",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "97411",
+    "DESCRIPCION": "Saint-Denis",
+    "PROVINCIA_ID": "La Réunion"
+  },
+  {
+    "ID": "44143",
+    "DESCRIPCION": "Saint-Herblain",
+    "PROVINCIA_ID": "Loire-Atlantique"
+  },
+  {
+    "ID": "35281",
+    "DESCRIPCION": "Saint-Malo",
+    "PROVINCIA_ID": "Ille-et-Vilaine"
+  },
+  {
+    "ID": "38317",
+    "DESCRIPCION": "Saint-Martin-d'Hères",
+    "PROVINCIA_ID": "Isère"
+  },
+  {
+    "ID": "94067",
+    "DESCRIPCION": "Saint-Maur-des-Fossés",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "44109",
+    "DESCRIPCION": "Saint-Nazaire",
+    "PROVINCIA_ID": "Loire-Atlantique"
+  },
+  {
+    "ID": "69383",
+    "DESCRIPCION": "Saint-Priest",
+    "PROVINCIA_ID": "Rhône"
+  },
+  {
+    "ID": "42218",
+    "DESCRIPCION": "Saint-Étienne",
+    "PROVINCIA_ID": "Loire"
+  },
+  {
+    "ID": "17415",
+    "DESCRIPCION": "Saintes",
+    "PROVINCIA_ID": "Charente-Maritime"
+  },
+  {
+    "ID": "95500",
+    "DESCRIPCION": "Sarcelles",
+    "PROVINCIA_ID": "Val-d'Oise"
+  },
+  {
+    "ID": "57631",
+    "DESCRIPCION": "Sarrebourg",
+    "PROVINCIA_ID": "Moselle"
+  },
+  {
+    "ID": "57606",
+    "DESCRIPCION": "Sarreguemines",
+    "PROVINCIA_ID": "Moselle"
+  },
+  {
+    "ID": "78586",
+    "DESCRIPCION": "Sartrouville",
+    "PROVINCIA_ID": "Yvelines"
+  },
+  {
+    "ID": "49149",
+    "DESCRIPCION": "Saumur",
+    "PROVINCIA_ID": "Maine-et-Loire"
+  },
+  {
+    "ID": "67462",
+    "DESCRIPCION": "Schiltigheim",
+    "PROVINCIA_ID": "Bas-Rhin"
+  },
+  {
+    "ID": "93061",
+    "DESCRIPCION": "Sevran",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "93062",
+    "DESCRIPCION": "Stains",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  },
+  {
+    "ID": "67482",
+    "DESCRIPCION": "Strasbourg",
+    "PROVINCIA_ID": "Bas-Rhin"
+  },
+  {
+    "ID": "57480",
+    "DESCRIPCION": "Thionville",
+    "PROVINCIA_ID": "Moselle"
+  },
+  {
+    "ID": "74243",
+    "DESCRIPCION": "Thonon-les-Bains",
+    "PROVINCIA_ID": "Haute-Savoie"
+  },
+  {
+    "ID": "83137",
+    "DESCRIPCION": "Toulon",
+    "PROVINCIA_ID": "Var"
+  },
+  {
+    "ID": "31555",
+    "DESCRIPCION": "Toulouse",
+    "PROVINCIA_ID": "Haute-Garonne"
+  },
+  {
+    "ID": "59512",
+    "DESCRIPCION": "Tourcoing",
+    "PROVINCIA_ID": "Nord"
+  },
+  {
+    "ID": "37261",
+    "DESCRIPCION": "Tours",
+    "PROVINCIA_ID": "Indre-et-Loire"
+  },
+  {
+    "ID": "26198",
+    "DESCRIPCION": "Valence",
+    "PROVINCIA_ID": "Drôme"
+  },
+  {
+    "ID": "56260",
+    "DESCRIPCION": "Vannes",
+    "PROVINCIA_ID": "Morbihan"
+  },
+  {
+    "ID": "69290",
+    "DESCRIPCION": "Vaulx-en-Velin",
+    "PROVINCIA_ID": "Rhône"
+  },
+  {
+    "ID": "78646",
+    "DESCRIPCION": "Versailles",
+    "PROVINCIA_ID": "Yvelines"
+  },
+  {
+    "ID": "38516",
+    "DESCRIPCION": "Vienne",
+    "PROVINCIA_ID": "Isère"
+  },
+  {
+    "ID": "94080",
+    "DESCRIPCION": "Villejuif",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "59606",
+    "DESCRIPCION": "Villeneuve-d'Ascq",
+    "PROVINCIA_ID": "Nord"
+  },
+  {
+    "ID": "69266",
+    "DESCRIPCION": "Villeurbanne",
+    "PROVINCIA_ID": "Rhône"
+  },
+  {
+    "ID": "94081",
+    "DESCRIPCION": "Vitry-sur-Seine",
+    "PROVINCIA_ID": "Val-de-Marne"
+  },
+  {
+    "ID": "69259",
+    "DESCRIPCION": "Vénissieux",
+    "PROVINCIA_ID": "Rhône"
+  },
+  {
+    "ID": "38151",
+    "DESCRIPCION": "Échirolles",
+    "PROVINCIA_ID": "Isère"
+  },
+  {
+    "ID": "93053",
+    "DESCRIPCION": "Épinay-sur-Seine",
+    "PROVINCIA_ID": "Seine-Saint-Denis"
+  }
+]

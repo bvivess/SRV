@@ -1,0 +1,202 @@
+[
+  {
+    "ID": "AL",
+    "DESCRIPCION": "Albania"
+  },
+  {
+    "ID": "DE",
+    "DESCRIPCION": "Alemania"
+  },
+  {
+    "ID": "AD",
+    "DESCRIPCION": "Andorra"
+  },
+  {
+    "ID": "AM",
+    "DESCRIPCION": "Armenia"
+  },
+  {
+    "ID": "AT",
+    "DESCRIPCION": "Austria"
+  },
+  {
+    "ID": "AZ",
+    "DESCRIPCION": "Azerbaiyán"
+  },
+  {
+    "ID": "BY",
+    "DESCRIPCION": "Bielorrusia"
+  },
+  {
+    "ID": "BA",
+    "DESCRIPCION": "Bosnia y Herzegovina"
+  },
+  {
+    "ID": "BG",
+    "DESCRIPCION": "Bulgaria"
+  },
+  {
+    "ID": "BE",
+    "DESCRIPCION": "Bélgica"
+  },
+  {
+    "ID": "CZ",
+    "DESCRIPCION": "Chequia"
+  },
+  {
+    "ID": "CY",
+    "DESCRIPCION": "Chipre"
+  },
+  {
+    "ID": "VA",
+    "DESCRIPCION": "Ciudad del Vaticano"
+  },
+  {
+    "ID": "HR",
+    "DESCRIPCION": "Croacia"
+  },
+  {
+    "ID": "DK",
+    "DESCRIPCION": "Dinamarca"
+  },
+  {
+    "ID": "SK",
+    "DESCRIPCION": "Eslovaquia"
+  },
+  {
+    "ID": "SI",
+    "DESCRIPCION": "Eslovenia"
+  },
+  {
+    "ID": "ES",
+    "DESCRIPCION": "España"
+  },
+  {
+    "ID": "EE",
+    "DESCRIPCION": "Estonia"
+  },
+  {
+    "ID": "FI",
+    "DESCRIPCION": "Finlandia"
+  },
+  {
+    "ID": "FR",
+    "DESCRIPCION": "Francia"
+  },
+  {
+    "ID": "GE",
+    "DESCRIPCION": "Georgia"
+  },
+  {
+    "ID": "GR",
+    "DESCRIPCION": "Grecia"
+  },
+  {
+    "ID": "HU",
+    "DESCRIPCION": "Hungría"
+  },
+  {
+    "ID": "IE",
+    "DESCRIPCION": "Irlanda"
+  },
+  {
+    "ID": "IS",
+    "DESCRIPCION": "Islandia"
+  },
+  {
+    "ID": "IT",
+    "DESCRIPCION": "Italia"
+  },
+  {
+    "ID": "XK",
+    "DESCRIPCION": "Kosovo"
+  },
+  {
+    "ID": "LV",
+    "DESCRIPCION": "Letonia"
+  },
+  {
+    "ID": "LI",
+    "DESCRIPCION": "Liechtenstein"
+  },
+  {
+    "ID": "LT",
+    "DESCRIPCION": "Lituania"
+  },
+  {
+    "ID": "LU",
+    "DESCRIPCION": "Luxemburgo"
+  },
+  {
+    "ID": "MK",
+    "DESCRIPCION": "Macedonia del Norte"
+  },
+  {
+    "ID": "MT",
+    "DESCRIPCION": "Malta"
+  },
+  {
+    "ID": "MD",
+    "DESCRIPCION": "Moldavia"
+  },
+  {
+    "ID": "ME",
+    "DESCRIPCION": "Montenegro"
+  },
+  {
+    "ID": "MC",
+    "DESCRIPCION": "Mónaco"
+  },
+  {
+    "ID": "NO",
+    "DESCRIPCION": "Noruega"
+  },
+  {
+    "ID": "NL",
+    "DESCRIPCION": "Países Bajos"
+  },
+  {
+    "ID": "PL",
+    "DESCRIPCION": "Polonia"
+  },
+  {
+    "ID": "PT",
+    "DESCRIPCION": "Portugal"
+  },
+  {
+    "ID": "GB",
+    "DESCRIPCION": "Reino Unido"
+  },
+  {
+    "ID": "RO",
+    "DESCRIPCION": "Rumanía"
+  },
+  {
+    "ID": "RU",
+    "DESCRIPCION": "Rusia"
+  },
+  {
+    "ID": "SM",
+    "DESCRIPCION": "San Marino"
+  },
+  {
+    "ID": "RS",
+    "DESCRIPCION": "Serbia"
+  },
+  {
+    "ID": "SE",
+    "DESCRIPCION": "Suecia"
+  },
+  {
+    "ID": "CH",
+    "DESCRIPCION": "Suiza"
+  },
+  {
+    "ID": "TR",
+    "DESCRIPCION": "Turquía"
+  },
+  {
+    "ID": "UA",
+    "DESCRIPCION": "Ucrania"
+  }
+]

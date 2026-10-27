@@ -1,0 +1,1412 @@
+[
+  {
+    "ID": "01002",
+    "DESCRIPCION": "Amurrio",
+    "PROVINCIA_ID": "Araba/Álava"
+  },
+  {
+    "ID": "01036",
+    "DESCRIPCION": "Laudio/Llodio",
+    "PROVINCIA_ID": "Araba/Álava"
+  },
+  {
+    "ID": "01059",
+    "DESCRIPCION": "Vitoria-Gasteiz",
+    "PROVINCIA_ID": "Araba/Álava"
+  },
+  {
+    "ID": "02003",
+    "DESCRIPCION": "Albacete",
+    "PROVINCIA_ID": "Albacete"
+  },
+  {
+    "ID": "02069",
+    "DESCRIPCION": "Hellín",
+    "PROVINCIA_ID": "Albacete"
+  },
+  {
+    "ID": "02081",
+    "DESCRIPCION": "La Roda",
+    "PROVINCIA_ID": "Albacete"
+  },
+  {
+    "ID": "02037",
+    "DESCRIPCION": "Villarrobledo",
+    "PROVINCIA_ID": "Albacete"
+  },
+  {
+    "ID": "03009",
+    "DESCRIPCION": "Alcoy/Alcoi",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03014",
+    "DESCRIPCION": "Alicante/Alacant",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03018",
+    "DESCRIPCION": "Altea",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03031",
+    "DESCRIPCION": "Benidorm",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03053",
+    "DESCRIPCION": "Calp",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03050",
+    "DESCRIPCION": "Crevillent",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03056",
+    "DESCRIPCION": "Crevillent",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03047",
+    "DESCRIPCION": "Dénia",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03048",
+    "DESCRIPCION": "El Campello",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03065",
+    "DESCRIPCION": "Elche/Elx",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03011",
+    "DESCRIPCION": "Elda",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03077",
+    "DESCRIPCION": "Guardamar del Segura",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03076",
+    "DESCRIPCION": "La Vila Joiosa/Villajoyosa",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03082",
+    "DESCRIPCION": "Mutxamel",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03083",
+    "DESCRIPCION": "Novelda",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03099",
+    "DESCRIPCION": "Orihuela",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03093",
+    "DESCRIPCION": "Petrer",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03121",
+    "DESCRIPCION": "San Juan de Alicante",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03122",
+    "DESCRIPCION": "San Vicente del Raspeig/Sant Vicent del Raspeig",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03133",
+    "DESCRIPCION": "Torrevieja",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "03140",
+    "DESCRIPCION": "Villena",
+    "PROVINCIA_ID": "Alicante/Alacant"
+  },
+  {
+    "ID": "04003",
+    "DESCRIPCION": "Adra",
+    "PROVINCIA_ID": "Almería"
+  },
+  {
+    "ID": "04079",
+    "DESCRIPCION": "El Ejido",
+    "PROVINCIA_ID": "Almería"
+  },
+  {
+    "ID": "04013",
+    "DESCRIPCION": "Roquetas de Mar",
+    "PROVINCIA_ID": "Almería"
+  },
+  {
+    "ID": "06011",
+    "DESCRIPCION": "Almendralejo",
+    "PROVINCIA_ID": "Badajoz"
+  },
+  {
+    "ID": "06015",
+    "DESCRIPCION": "Badajoz",
+    "PROVINCIA_ID": "Badajoz"
+  },
+  {
+    "ID": "06044",
+    "DESCRIPCION": "Don Benito",
+    "PROVINCIA_ID": "Badajoz"
+  },
+  {
+    "ID": "06083",
+    "DESCRIPCION": "Mérida",
+    "PROVINCIA_ID": "Badajoz"
+  },
+  {
+    "ID": "07011",
+    "DESCRIPCION": "Calvià",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07015",
+    "DESCRIPCION": "Ciutadella de Menorca",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07026",
+    "DESCRIPCION": "Eivissa",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07009",
+    "DESCRIPCION": "Inca",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07023",
+    "DESCRIPCION": "Llucmajor",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07014",
+    "DESCRIPCION": "Manacor",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07033",
+    "DESCRIPCION": "Marratxí",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07032",
+    "DESCRIPCION": "Maó",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07040",
+    "DESCRIPCION": "Palma",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07049",
+    "DESCRIPCION": "Sant Antoni de Portmany",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "07054",
+    "DESCRIPCION": "Santa Eulària des Riu",
+    "PROVINCIA_ID": "Illes Balears"
+  },
+  {
+    "ID": "08096",
+    "DESCRIPCION": "Badalona",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08019",
+    "DESCRIPCION": "Barcelona",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08114",
+    "DESCRIPCION": "Cerdanyola del Vallès",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08113",
+    "DESCRIPCION": "Cornellà de Llobregat",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08221",
+    "DESCRIPCION": "El Prat de Llobregat",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08105",
+    "DESCRIPCION": "Esplugues de Llobregat",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08110",
+    "DESCRIPCION": "Gavà",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08121",
+    "DESCRIPCION": "Granollers",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08102",
+    "DESCRIPCION": "Igualada",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08101",
+    "DESCRIPCION": "L'Hospitalet de Llobregat",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08205",
+    "DESCRIPCION": "Manresa",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08187",
+    "DESCRIPCION": "Mataró",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08125",
+    "DESCRIPCION": "Mollet del Vallès",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08169",
+    "DESCRIPCION": "Rubí",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08266",
+    "DESCRIPCION": "Sabadell",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08184",
+    "DESCRIPCION": "Sant Cugat del Vallès",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08279",
+    "DESCRIPCION": "Terrassa",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08196",
+    "DESCRIPCION": "Vic",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08200",
+    "DESCRIPCION": "Viladecans",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08120",
+    "DESCRIPCION": "Vilafranca del Penedès",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "08123",
+    "DESCRIPCION": "Vilanova i la Geltrú",
+    "PROVINCIA_ID": "Barcelona"
+  },
+  {
+    "ID": "09018",
+    "DESCRIPCION": "Aranda de Duero",
+    "PROVINCIA_ID": "Burgos"
+  },
+  {
+    "ID": "09059",
+    "DESCRIPCION": "Burgos",
+    "PROVINCIA_ID": "Burgos"
+  },
+  {
+    "ID": "09219",
+    "DESCRIPCION": "Miranda de Ebro",
+    "PROVINCIA_ID": "Burgos"
+  },
+  {
+    "ID": "10037",
+    "DESCRIPCION": "Cáceres",
+    "PROVINCIA_ID": "Cáceres"
+  },
+  {
+    "ID": "10021",
+    "DESCRIPCION": "Navalmoral de la Mata",
+    "PROVINCIA_ID": "Cáceres"
+  },
+  {
+    "ID": "10089",
+    "DESCRIPCION": "Plasencia",
+    "PROVINCIA_ID": "Cáceres"
+  },
+  {
+    "ID": "11027",
+    "DESCRIPCION": "Algeciras",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11004",
+    "DESCRIPCION": "Chiclana de la Frontera",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11012",
+    "DESCRIPCION": "Cádiz",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11015",
+    "DESCRIPCION": "El Puerto de Santa María",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11020",
+    "DESCRIPCION": "Jerez de la Frontera",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11031",
+    "DESCRIPCION": "La Línea de la Concepción",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11006",
+    "DESCRIPCION": "San Fernando",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11023",
+    "DESCRIPCION": "San Roque",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "11035",
+    "DESCRIPCION": "Sanlúcar de Barrameda",
+    "PROVINCIA_ID": "Cádiz"
+  },
+  {
+    "ID": "12027",
+    "DESCRIPCION": "Almassora",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12032",
+    "DESCRIPCION": "Benicarló",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12028",
+    "DESCRIPCION": "Burriana",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12040",
+    "DESCRIPCION": "Castelló de la Plana",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12011",
+    "DESCRIPCION": "Onda",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12085",
+    "DESCRIPCION": "Segorbe",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12009",
+    "DESCRIPCION": "Vila-real",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "12135",
+    "DESCRIPCION": "Vinaròs",
+    "PROVINCIA_ID": "Castelló/Castellón"
+  },
+  {
+    "ID": "13005",
+    "DESCRIPCION": "Alcázar de San Juan",
+    "PROVINCIA_ID": "Ciudad Real"
+  },
+  {
+    "ID": "13034",
+    "DESCRIPCION": "Ciudad Real",
+    "PROVINCIA_ID": "Ciudad Real"
+  },
+  {
+    "ID": "13082",
+    "DESCRIPCION": "Puertollano",
+    "PROVINCIA_ID": "Ciudad Real"
+  },
+  {
+    "ID": "13071",
+    "DESCRIPCION": "Tomelloso",
+    "PROVINCIA_ID": "Ciudad Real"
+  },
+  {
+    "ID": "13087",
+    "DESCRIPCION": "Valdepeñas",
+    "PROVINCIA_ID": "Ciudad Real"
+  },
+  {
+    "ID": "14021",
+    "DESCRIPCION": "Córdoba",
+    "PROVINCIA_ID": "Córdoba"
+  },
+  {
+    "ID": "14038",
+    "DESCRIPCION": "Lucena",
+    "PROVINCIA_ID": "Córdoba"
+  },
+  {
+    "ID": "14027",
+    "DESCRIPCION": "Puente Genil",
+    "PROVINCIA_ID": "Córdoba"
+  },
+  {
+    "ID": "15030",
+    "DESCRIPCION": "A Coruña",
+    "PROVINCIA_ID": "A Coruña"
+  },
+  {
+    "ID": "15017",
+    "DESCRIPCION": "Carballo",
+    "PROVINCIA_ID": "A Coruña"
+  },
+  {
+    "ID": "15036",
+    "DESCRIPCION": "Ferrol",
+    "PROVINCIA_ID": "A Coruña"
+  },
+  {
+    "ID": "15054",
+    "DESCRIPCION": "Narón",
+    "PROVINCIA_ID": "A Coruña"
+  },
+  {
+    "ID": "15058",
+    "DESCRIPCION": "Oleiros",
+    "PROVINCIA_ID": "A Coruña"
+  },
+  {
+    "ID": "15078",
+    "DESCRIPCION": "Santiago de Compostela",
+    "PROVINCIA_ID": "A Coruña"
+  },
+  {
+    "ID": "16078",
+    "DESCRIPCION": "Tarancón",
+    "PROVINCIA_ID": "Cuenca"
+  },
+  {
+    "ID": "17023",
+    "DESCRIPCION": "Blanes",
+    "PROVINCIA_ID": "Girona"
+  },
+  {
+    "ID": "17148",
+    "DESCRIPCION": "Figueres",
+    "PROVINCIA_ID": "Girona"
+  },
+  {
+    "ID": "17079",
+    "DESCRIPCION": "Girona",
+    "PROVINCIA_ID": "Girona"
+  },
+  {
+    "ID": "18021",
+    "DESCRIPCION": "Albolote",
+    "PROVINCIA_ID": "Granada"
+  },
+  {
+    "ID": "18022",
+    "DESCRIPCION": "Almuñécar",
+    "PROVINCIA_ID": "Granada"
+  },
+  {
+    "ID": "18062",
+    "DESCRIPCION": "Armilla",
+    "PROVINCIA_ID": "Granada"
+  },
+  {
+    "ID": "18087",
+    "DESCRIPCION": "Granada",
+    "PROVINCIA_ID": "Granada"
+  },
+  {
+    "ID": "20069",
+    "DESCRIPCION": "Donostia/San Sebastián",
+    "PROVINCIA_ID": "Gipuzkoa"
+  },
+  {
+    "ID": "20067",
+    "DESCRIPCION": "Eibar",
+    "PROVINCIA_ID": "Gipuzkoa"
+  },
+  {
+    "ID": "20055",
+    "DESCRIPCION": "Errenteria",
+    "PROVINCIA_ID": "Gipuzkoa"
+  },
+  {
+    "ID": "20045",
+    "DESCRIPCION": "Irun",
+    "PROVINCIA_ID": "Gipuzkoa"
+  },
+  {
+    "ID": "20071",
+    "DESCRIPCION": "Lasarte-Oria",
+    "PROVINCIA_ID": "Gipuzkoa"
+  },
+  {
+    "ID": "20063",
+    "DESCRIPCION": "Zarautz",
+    "PROVINCIA_ID": "Gipuzkoa"
+  },
+  {
+    "ID": "21002",
+    "DESCRIPCION": "Aljaraque",
+    "PROVINCIA_ID": "Huelva"
+  },
+  {
+    "ID": "21041",
+    "DESCRIPCION": "Huelva",
+    "PROVINCIA_ID": "Huelva"
+  },
+  {
+    "ID": "21021",
+    "DESCRIPCION": "Isla Cristina",
+    "PROVINCIA_ID": "Huelva"
+  },
+  {
+    "ID": "21050",
+    "DESCRIPCION": "Lepe",
+    "PROVINCIA_ID": "Huelva"
+  },
+  {
+    "ID": "22112",
+    "DESCRIPCION": "Barbastro",
+    "PROVINCIA_ID": "Huesca"
+  },
+  {
+    "ID": "22048",
+    "DESCRIPCION": "Fraga",
+    "PROVINCIA_ID": "Huesca"
+  },
+  {
+    "ID": "22125",
+    "DESCRIPCION": "Monzón",
+    "PROVINCIA_ID": "Huesca"
+  },
+  {
+    "ID": "23005",
+    "DESCRIPCION": "Andújar",
+    "PROVINCIA_ID": "Jaén"
+  },
+  {
+    "ID": "23050",
+    "DESCRIPCION": "Jaén",
+    "PROVINCIA_ID": "Jaén"
+  },
+  {
+    "ID": "23055",
+    "DESCRIPCION": "Linares",
+    "PROVINCIA_ID": "Jaén"
+  },
+  {
+    "ID": "23070",
+    "DESCRIPCION": "Martos",
+    "PROVINCIA_ID": "Jaén"
+  },
+  {
+    "ID": "23028",
+    "DESCRIPCION": "Úbeda",
+    "PROVINCIA_ID": "Jaén"
+  },
+  {
+    "ID": "24089",
+    "DESCRIPCION": "León",
+    "PROVINCIA_ID": "León"
+  },
+  {
+    "ID": "24115",
+    "DESCRIPCION": "Ponferrada",
+    "PROVINCIA_ID": "León"
+  },
+  {
+    "ID": "24222",
+    "DESCRIPCION": "San Andrés del Rabanedo",
+    "PROVINCIA_ID": "León"
+  },
+  {
+    "ID": "25019",
+    "DESCRIPCION": "Alcarràs",
+    "PROVINCIA_ID": "Lleida"
+  },
+  {
+    "ID": "25040",
+    "DESCRIPCION": "Balaguer",
+    "PROVINCIA_ID": "Lleida"
+  },
+  {
+    "ID": "25110",
+    "DESCRIPCION": "La Seu d'Urgell",
+    "PROVINCIA_ID": "Lleida"
+  },
+  {
+    "ID": "25137",
+    "DESCRIPCION": "Lleida",
+    "PROVINCIA_ID": "Lleida"
+  },
+  {
+    "ID": "25155",
+    "DESCRIPCION": "Mollerussa",
+    "PROVINCIA_ID": "Lleida"
+  },
+  {
+    "ID": "25120",
+    "DESCRIPCION": "Tàrrega",
+    "PROVINCIA_ID": "Lleida"
+  },
+  {
+    "ID": "26018",
+    "DESCRIPCION": "Arnedo",
+    "PROVINCIA_ID": "La Rioja"
+  },
+  {
+    "ID": "26036",
+    "DESCRIPCION": "Calahorra",
+    "PROVINCIA_ID": "La Rioja"
+  },
+  {
+    "ID": "26089",
+    "DESCRIPCION": "Logroño",
+    "PROVINCIA_ID": "La Rioja"
+  },
+  {
+    "ID": "27028",
+    "DESCRIPCION": "Lugo",
+    "PROVINCIA_ID": "Lugo"
+  },
+  {
+    "ID": "28007",
+    "DESCRIPCION": "Alcalá de Henares",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28006",
+    "DESCRIPCION": "Alcobendas",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28005",
+    "DESCRIPCION": "Alcorcón",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28013",
+    "DESCRIPCION": "Aranjuez",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28049",
+    "DESCRIPCION": "Collado Villalba",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28058",
+    "DESCRIPCION": "Coslada",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28092",
+    "DESCRIPCION": "Fuenlabrada",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28065",
+    "DESCRIPCION": "Getafe",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28074",
+    "DESCRIPCION": "Leganés",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28079",
+    "DESCRIPCION": "Madrid",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28106",
+    "DESCRIPCION": "Móstoles",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28080",
+    "DESCRIPCION": "Parla",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28127",
+    "DESCRIPCION": "Pozuelo de Alarcón",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28115",
+    "DESCRIPCION": "Rivas-Vaciamadrid",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28134",
+    "DESCRIPCION": "San Sebastián de los Reyes",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28148",
+    "DESCRIPCION": "Torrejón de Ardoz",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "28123",
+    "DESCRIPCION": "Valdemoro",
+    "PROVINCIA_ID": "Madrid"
+  },
+  {
+    "ID": "29015",
+    "DESCRIPCION": "Antequera",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29025",
+    "DESCRIPCION": "Benalmádena",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29082",
+    "DESCRIPCION": "Estepona",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29051",
+    "DESCRIPCION": "Fuengirola",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29054",
+    "DESCRIPCION": "Marbella",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29070",
+    "DESCRIPCION": "Mijas",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29067",
+    "DESCRIPCION": "Málaga",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29094",
+    "DESCRIPCION": "Torremolinos",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "29069",
+    "DESCRIPCION": "Vélez-Málaga",
+    "PROVINCIA_ID": "Málaga"
+  },
+  {
+    "ID": "30035",
+    "DESCRIPCION": "Alcantarilla",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30008",
+    "DESCRIPCION": "Caravaca de la Cruz",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30016",
+    "DESCRIPCION": "Cartagena",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30009",
+    "DESCRIPCION": "Cieza",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30024",
+    "DESCRIPCION": "Lorca",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30027",
+    "DESCRIPCION": "Molina de Segura",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30030",
+    "DESCRIPCION": "Murcia",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30022",
+    "DESCRIPCION": "San Javier",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30021",
+    "DESCRIPCION": "San Pedro del Pinatar",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30037",
+    "DESCRIPCION": "Torre-Pacheco",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "30019",
+    "DESCRIPCION": "Totana",
+    "PROVINCIA_ID": "Murcia"
+  },
+  {
+    "ID": "31086",
+    "DESCRIPCION": "Barañáin",
+    "PROVINCIA_ID": "Navarra"
+  },
+  {
+    "ID": "31076",
+    "DESCRIPCION": "Burlada/Burlata",
+    "PROVINCIA_ID": "Navarra"
+  },
+  {
+    "ID": "31201",
+    "DESCRIPCION": "Pamplona/Iruña",
+    "PROVINCIA_ID": "Navarra"
+  },
+  {
+    "ID": "31191",
+    "DESCRIPCION": "Tudela",
+    "PROVINCIA_ID": "Navarra"
+  },
+  {
+    "ID": "32054",
+    "DESCRIPCION": "Ourense",
+    "PROVINCIA_ID": "Ourense"
+  },
+  {
+    "ID": "33035",
+    "DESCRIPCION": "Avilés",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "33024",
+    "DESCRIPCION": "Gijón",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "33012",
+    "DESCRIPCION": "Langreo",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "33037",
+    "DESCRIPCION": "Mieres",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "33044",
+    "DESCRIPCION": "Oviedo",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "33066",
+    "DESCRIPCION": "Siero",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "33076",
+    "DESCRIPCION": "Villaviciosa",
+    "PROVINCIA_ID": "Asturias"
+  },
+  {
+    "ID": "35012",
+    "DESCRIPCION": "Arrecife",
+    "PROVINCIA_ID": "Las Palmas"
+  },
+  {
+    "ID": "35016",
+    "DESCRIPCION": "Las Palmas de Gran Canaria",
+    "PROVINCIA_ID": "Las Palmas"
+  },
+  {
+    "ID": "35018",
+    "DESCRIPCION": "Puerto del Rosario",
+    "PROVINCIA_ID": "Las Palmas"
+  },
+  {
+    "ID": "35026",
+    "DESCRIPCION": "Santa Lucía de Tirajana",
+    "PROVINCIA_ID": "Las Palmas"
+  },
+  {
+    "ID": "35022",
+    "DESCRIPCION": "Telde",
+    "PROVINCIA_ID": "Las Palmas"
+  },
+  {
+    "ID": "36006",
+    "DESCRIPCION": "Cangas",
+    "PROVINCIA_ID": "Pontevedra"
+  },
+  {
+    "ID": "36041",
+    "DESCRIPCION": "Marín",
+    "PROVINCIA_ID": "Pontevedra"
+  },
+  {
+    "ID": "36057",
+    "DESCRIPCION": "Pontevedra",
+    "PROVINCIA_ID": "Pontevedra"
+  },
+  {
+    "ID": "36024",
+    "DESCRIPCION": "Redondela",
+    "PROVINCIA_ID": "Pontevedra"
+  },
+  {
+    "ID": "36038",
+    "DESCRIPCION": "Vigo",
+    "PROVINCIA_ID": "Pontevedra"
+  },
+  {
+    "ID": "36045",
+    "DESCRIPCION": "Vilagarcía de Arousa",
+    "PROVINCIA_ID": "Pontevedra"
+  },
+  {
+    "ID": "37008",
+    "DESCRIPCION": "Béjar",
+    "PROVINCIA_ID": "Salamanca"
+  },
+  {
+    "ID": "37274",
+    "DESCRIPCION": "Salamanca",
+    "PROVINCIA_ID": "Salamanca"
+  },
+  {
+    "ID": "37294",
+    "DESCRIPCION": "Santa Marta de Tormes",
+    "PROVINCIA_ID": "Salamanca"
+  },
+  {
+    "ID": "38017",
+    "DESCRIPCION": "Adeje",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38006",
+    "DESCRIPCION": "Arona",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38028",
+    "DESCRIPCION": "Granadilla de Abona",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38023",
+    "DESCRIPCION": "La Laguna",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38011",
+    "DESCRIPCION": "Los Realejos",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38005",
+    "DESCRIPCION": "Puerto de la Cruz",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38031",
+    "DESCRIPCION": "San Miguel de Abona",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "38038",
+    "DESCRIPCION": "Santa Cruz de Tenerife",
+    "PROVINCIA_ID": "Santa Cruz de Tenerife"
+  },
+  {
+    "ID": "39016",
+    "DESCRIPCION": "Camargo",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "39035",
+    "DESCRIPCION": "Castro-Urdiales",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "39052",
+    "DESCRIPCION": "Laredo",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "39020",
+    "DESCRIPCION": "Piélagos",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "39075",
+    "DESCRIPCION": "Santander",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "39073",
+    "DESCRIPCION": "Santoña",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "39087",
+    "DESCRIPCION": "Torrelavega",
+    "PROVINCIA_ID": "Cantabria"
+  },
+  {
+    "ID": "40194",
+    "DESCRIPCION": "Segovia",
+    "PROVINCIA_ID": "Segovia"
+  },
+  {
+    "ID": "41004",
+    "DESCRIPCION": "Alcalá de Guadaíra",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "41024",
+    "DESCRIPCION": "Coria del Río",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "41038",
+    "DESCRIPCION": "Dos Hermanas",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "41059",
+    "DESCRIPCION": "Mairena del Aljarafe",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "41091",
+    "DESCRIPCION": "Sevilla",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "41095",
+    "DESCRIPCION": "Utrera",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "41047",
+    "DESCRIPCION": "Écija",
+    "PROVINCIA_ID": "Sevilla"
+  },
+  {
+    "ID": "42173",
+    "DESCRIPCION": "Soria",
+    "PROVINCIA_ID": "Soria"
+  },
+  {
+    "ID": "43037",
+    "DESCRIPCION": "Cambrils",
+    "PROVINCIA_ID": "Tarragona"
+  },
+  {
+    "ID": "43092",
+    "DESCRIPCION": "El Vendrell",
+    "PROVINCIA_ID": "Tarragona"
+  },
+  {
+    "ID": "43148",
+    "DESCRIPCION": "Reus",
+    "PROVINCIA_ID": "Tarragona"
+  },
+  {
+    "ID": "43038",
+    "DESCRIPCION": "Salou",
+    "PROVINCIA_ID": "Tarragona"
+  },
+  {
+    "ID": "43155",
+    "DESCRIPCION": "Tarragona",
+    "PROVINCIA_ID": "Tarragona"
+  },
+  {
+    "ID": "43047",
+    "DESCRIPCION": "Tortosa",
+    "PROVINCIA_ID": "Tarragona"
+  },
+  {
+    "ID": "44013",
+    "DESCRIPCION": "Teruel",
+    "PROVINCIA_ID": "Teruel"
+  },
+  {
+    "ID": "45014",
+    "DESCRIPCION": "Illescas",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "45173",
+    "DESCRIPCION": "Ocaña",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "45019",
+    "DESCRIPCION": "Seseña",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "45066",
+    "DESCRIPCION": "Sonseca",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "45168",
+    "DESCRIPCION": "Talavera de la Reina",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "45081",
+    "DESCRIPCION": "Toledo",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "45165",
+    "DESCRIPCION": "Yuncos",
+    "PROVINCIA_ID": "Toledo"
+  },
+  {
+    "ID": "46013",
+    "DESCRIPCION": "Alaquàs",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46005",
+    "DESCRIPCION": "Alaquàs",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46110",
+    "DESCRIPCION": "Alboraya",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46017",
+    "DESCRIPCION": "Aldaia",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46105",
+    "DESCRIPCION": "Alfafar",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46021",
+    "DESCRIPCION": "Algemesí",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46102",
+    "DESCRIPCION": "Alzira",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46078",
+    "DESCRIPCION": "Cullera",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46131",
+    "DESCRIPCION": "Gandia",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46147",
+    "DESCRIPCION": "Manises",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46159",
+    "DESCRIPCION": "Mislata",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46164",
+    "DESCRIPCION": "Oliva",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46169",
+    "DESCRIPCION": "Ontinyent",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46165",
+    "DESCRIPCION": "Paiporta",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46244",
+    "DESCRIPCION": "Paterna",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46214",
+    "DESCRIPCION": "Quart de Poblet",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46220",
+    "DESCRIPCION": "Sagunt/Sagunto",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46235",
+    "DESCRIPCION": "Sueca",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46190",
+    "DESCRIPCION": "Torrent",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46250",
+    "DESCRIPCION": "València",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46094",
+    "DESCRIPCION": "Xirivella",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "46257",
+    "DESCRIPCION": "Xàtiva",
+    "PROVINCIA_ID": "València/Valencia"
+  },
+  {
+    "ID": "47085",
+    "DESCRIPCION": "Laguna de Duero",
+    "PROVINCIA_ID": "Valladolid"
+  },
+  {
+    "ID": "47175",
+    "DESCRIPCION": "Medina del Campo",
+    "PROVINCIA_ID": "Valladolid"
+  },
+  {
+    "ID": "47186",
+    "DESCRIPCION": "Valladolid",
+    "PROVINCIA_ID": "Valladolid"
+  },
+  {
+    "ID": "48013",
+    "DESCRIPCION": "Barakaldo",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48015",
+    "DESCRIPCION": "Basauri",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48020",
+    "DESCRIPCION": "Bilbao",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48054",
+    "DESCRIPCION": "Galdakao",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48044",
+    "DESCRIPCION": "Getxo",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48069",
+    "DESCRIPCION": "Leioa",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48078",
+    "DESCRIPCION": "Portugalete",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48084",
+    "DESCRIPCION": "Santurtzi",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "48082",
+    "DESCRIPCION": "Sestao",
+    "PROVINCIA_ID": "Bizkaia"
+  },
+  {
+    "ID": "50067",
+    "DESCRIPCION": "Calatayud",
+    "PROVINCIA_ID": "Zaragoza"
+  },
+  {
+    "ID": "50251",
+    "DESCRIPCION": "Tarazona",
+    "PROVINCIA_ID": "Zaragoza"
+  },
+  {
+    "ID": "50272",
+    "DESCRIPCION": "Utebo",
+    "PROVINCIA_ID": "Zaragoza"
+  },
+  {
+    "ID": "50297",
+    "DESCRIPCION": "Zaragoza",
+    "PROVINCIA_ID": "Zaragoza"
+  }
+]

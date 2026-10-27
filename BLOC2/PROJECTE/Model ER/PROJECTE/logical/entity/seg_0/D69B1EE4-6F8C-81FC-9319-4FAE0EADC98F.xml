@@ -22,9 +22,9 @@
 <engineerTo>
 <item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="name" id="0DA9B74B-8172-0684-AF1E-C9BDBFB9FBF4">
@@ -34,9 +34,9 @@
 <engineerTo>
 <item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>0D478AFF-99F2-0D45-798F-CE7C00725A1E</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="id1" id="230412FF-5DCC-770C-7648-A88431AE0741">
@@ -48,9 +48,9 @@
 <item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
 </engineerTo>
 <referedAttribute>75E6B52C-A1CE-D669-8E1B-C2B84EFCCDD8</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<domain>AD717AC5-5B3B-D8AA-D4A3-1A277182DF84</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B5DFCF7-AC2B-3857-9486-B11F66F17ADC" name="roles">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 17:04:16 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="64B084B7-534D-4FCB-4DA3-DD9B70BC022B">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 17:04:16 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="59C2B517-398D-92B0-5F60-FF171D20A414">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 17:04:16 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="53C756FB-F10C-A7BF-D91C-B1C9CF7B9484" name="locations PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2026-10-25 17:04:16 UTC</createdTime>
+<ownerDesignName>PROJECTE</ownerDesignName>
+<engineerTo>
+<item key="8BF3EF81-539F-928E-E8F5-286EC03142EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>64B084B7-534D-4FCB-4DA3-DD9B70BC022B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

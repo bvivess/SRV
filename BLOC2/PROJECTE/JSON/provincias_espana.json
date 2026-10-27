@@ -1,0 +1,252 @@
+[
+  {
+    "ID": "01",
+    "DESCRIPCION": "Araba/Álava",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "02",
+    "DESCRIPCION": "Albacete",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "03",
+    "DESCRIPCION": "Alicante/Alacant",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "04",
+    "DESCRIPCION": "Almería",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "05",
+    "DESCRIPCION": "Ávila",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "06",
+    "DESCRIPCION": "Badajoz",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "07",
+    "DESCRIPCION": "Illes Balears",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "08",
+    "DESCRIPCION": "Barcelona",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "09",
+    "DESCRIPCION": "Burgos",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "10",
+    "DESCRIPCION": "Cáceres",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "11",
+    "DESCRIPCION": "Cádiz",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "12",
+    "DESCRIPCION": "Castelló/Castellón",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "13",
+    "DESCRIPCION": "Ciudad Real",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "14",
+    "DESCRIPCION": "Córdoba",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "15",
+    "DESCRIPCION": "A Coruña",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "16",
+    "DESCRIPCION": "Cuenca",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "17",
+    "DESCRIPCION": "Girona",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "18",
+    "DESCRIPCION": "Granada",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "19",
+    "DESCRIPCION": "Guadalajara",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "20",
+    "DESCRIPCION": "Gipuzkoa",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "21",
+    "DESCRIPCION": "Huelva",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "22",
+    "DESCRIPCION": "Huesca",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "23",
+    "DESCRIPCION": "Jaén",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "24",
+    "DESCRIPCION": "León",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "25",
+    "DESCRIPCION": "Lleida",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "26",
+    "DESCRIPCION": "La Rioja",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "27",
+    "DESCRIPCION": "Lugo",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "28",
+    "DESCRIPCION": "Madrid",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "29",
+    "DESCRIPCION": "Málaga",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "30",
+    "DESCRIPCION": "Murcia",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "31",
+    "DESCRIPCION": "Navarra",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "32",
+    "DESCRIPCION": "Ourense",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "33",
+    "DESCRIPCION": "Asturias",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "34",
+    "DESCRIPCION": "Palencia",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "35",
+    "DESCRIPCION": "Las Palmas",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "36",
+    "DESCRIPCION": "Pontevedra",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "37",
+    "DESCRIPCION": "Salamanca",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "38",
+    "DESCRIPCION": "Santa Cruz de Tenerife",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "39",
+    "DESCRIPCION": "Cantabria",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "40",
+    "DESCRIPCION": "Segovia",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "41",
+    "DESCRIPCION": "Sevilla",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "42",
+    "DESCRIPCION": "Soria",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "43",
+    "DESCRIPCION": "Tarragona",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "44",
+    "DESCRIPCION": "Teruel",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "45",
+    "DESCRIPCION": "Toledo",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "46",
+    "DESCRIPCION": "València/Valencia",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "47",
+    "DESCRIPCION": "Valladolid",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "48",
+    "DESCRIPCION": "Bizkaia",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "49",
+    "DESCRIPCION": "Zamora",
+    "PAIS_ID": "España"
+  },
+  {
+    "ID": "50",
+    "DESCRIPCION": "Zaragoza",
+    "PAIS_ID": "España"
+  }
+]

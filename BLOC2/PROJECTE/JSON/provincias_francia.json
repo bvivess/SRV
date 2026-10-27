@@ -1,0 +1,507 @@
+[
+  {
+    "ID": "01",
+    "DESCRIPCION": "Ain",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "02",
+    "DESCRIPCION": "Aisne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "03",
+    "DESCRIPCION": "Allier",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "04",
+    "DESCRIPCION": "Alpes-de-Haute-Provence",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "05",
+    "DESCRIPCION": "Hautes-Alpes",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "06",
+    "DESCRIPCION": "Alpes-Maritimes",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "07",
+    "DESCRIPCION": "Ardèche",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "08",
+    "DESCRIPCION": "Ardennes",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "09",
+    "DESCRIPCION": "Ariège",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "10",
+    "DESCRIPCION": "Aube",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "11",
+    "DESCRIPCION": "Aude",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "12",
+    "DESCRIPCION": "Aveyron",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "13",
+    "DESCRIPCION": "Bouches-du-Rhône",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "14",
+    "DESCRIPCION": "Calvados",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "15",
+    "DESCRIPCION": "Cantal",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "16",
+    "DESCRIPCION": "Charente",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "17",
+    "DESCRIPCION": "Charente-Maritime",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "18",
+    "DESCRIPCION": "Cher",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "19",
+    "DESCRIPCION": "Corrèze",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "2A",
+    "DESCRIPCION": "Corse-du-Sud",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "2B",
+    "DESCRIPCION": "Haute-Corse",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "21",
+    "DESCRIPCION": "Côte-d'Or",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "22",
+    "DESCRIPCION": "Côtes-d'Armor",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "23",
+    "DESCRIPCION": "Creuse",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "24",
+    "DESCRIPCION": "Dordogne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "25",
+    "DESCRIPCION": "Doubs",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "26",
+    "DESCRIPCION": "Drôme",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "27",
+    "DESCRIPCION": "Eure",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "28",
+    "DESCRIPCION": "Eure-et-Loir",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "29",
+    "DESCRIPCION": "Finistère",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "30",
+    "DESCRIPCION": "Gard",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "31",
+    "DESCRIPCION": "Haute-Garonne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "32",
+    "DESCRIPCION": "Gers",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "33",
+    "DESCRIPCION": "Gironde",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "34",
+    "DESCRIPCION": "Hérault",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "35",
+    "DESCRIPCION": "Ille-et-Vilaine",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "36",
+    "DESCRIPCION": "Indre",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "37",
+    "DESCRIPCION": "Indre-et-Loire",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "38",
+    "DESCRIPCION": "Isère",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "39",
+    "DESCRIPCION": "Jura",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "40",
+    "DESCRIPCION": "Landes",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "41",
+    "DESCRIPCION": "Loir-et-Cher",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "42",
+    "DESCRIPCION": "Loire",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "43",
+    "DESCRIPCION": "Haute-Loire",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "44",
+    "DESCRIPCION": "Loire-Atlantique",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "45",
+    "DESCRIPCION": "Loiret",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "46",
+    "DESCRIPCION": "Lot",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "47",
+    "DESCRIPCION": "Lot-et-Garonne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "48",
+    "DESCRIPCION": "Lozère",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "49",
+    "DESCRIPCION": "Maine-et-Loire",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "50",
+    "DESCRIPCION": "Manche",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "51",
+    "DESCRIPCION": "Marne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "52",
+    "DESCRIPCION": "Haute-Marne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "53",
+    "DESCRIPCION": "Mayenne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "54",
+    "DESCRIPCION": "Meurthe-et-Moselle",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "55",
+    "DESCRIPCION": "Meuse",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "56",
+    "DESCRIPCION": "Morbihan",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "57",
+    "DESCRIPCION": "Moselle",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "58",
+    "DESCRIPCION": "Nièvre",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "59",
+    "DESCRIPCION": "Nord",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "60",
+    "DESCRIPCION": "Oise",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "61",
+    "DESCRIPCION": "Orne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "62",
+    "DESCRIPCION": "Pas-de-Calais",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "63",
+    "DESCRIPCION": "Puy-de-Dôme",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "64",
+    "DESCRIPCION": "Pyrénées-Atlantiques",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "65",
+    "DESCRIPCION": "Hautes-Pyrénées",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "66",
+    "DESCRIPCION": "Pyrénées-Orientales",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "67",
+    "DESCRIPCION": "Bas-Rhin",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "68",
+    "DESCRIPCION": "Haut-Rhin",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "69",
+    "DESCRIPCION": "Rhône",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "70",
+    "DESCRIPCION": "Haute-Saône",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "71",
+    "DESCRIPCION": "Saône-et-Loire",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "72",
+    "DESCRIPCION": "Sarthe",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "73",
+    "DESCRIPCION": "Savoie",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "74",
+    "DESCRIPCION": "Haute-Savoie",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "75",
+    "DESCRIPCION": "Paris",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "76",
+    "DESCRIPCION": "Seine-Maritime",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "77",
+    "DESCRIPCION": "Seine-et-Marne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "78",
+    "DESCRIPCION": "Yvelines",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "79",
+    "DESCRIPCION": "Deux-Sèvres",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "80",
+    "DESCRIPCION": "Somme",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "81",
+    "DESCRIPCION": "Tarn",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "82",
+    "DESCRIPCION": "Tarn-et-Garonne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "83",
+    "DESCRIPCION": "Var",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "84",
+    "DESCRIPCION": "Vaucluse",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "85",
+    "DESCRIPCION": "Vendée",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "86",
+    "DESCRIPCION": "Vienne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "87",
+    "DESCRIPCION": "Haute-Vienne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "88",
+    "DESCRIPCION": "Vosges",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "89",
+    "DESCRIPCION": "Yonne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "90",
+    "DESCRIPCION": "Territoire de Belfort",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "91",
+    "DESCRIPCION": "Essonne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "92",
+    "DESCRIPCION": "Hauts-de-Seine",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "93",
+    "DESCRIPCION": "Seine-Saint-Denis",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "94",
+    "DESCRIPCION": "Val-de-Marne",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "95",
+    "DESCRIPCION": "Val-d'Oise",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "971",
+    "DESCRIPCION": "Guadeloupe",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "972",
+    "DESCRIPCION": "Martinique",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "973",
+    "DESCRIPCION": "Guyane",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "974",
+    "DESCRIPCION": "La Réunion",
+    "PAIS_ID": "Francia"
+  },
+  {
+    "ID": "976",
+    "DESCRIPCION": "Mayotte",
+    "PAIS_ID": "Francia"
+  }
+]
