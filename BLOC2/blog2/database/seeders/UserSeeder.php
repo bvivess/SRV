@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'name'      => 'admin',
             'lastname'  => 'admin',
             'dni'       => '00000000A',
-            'email'     => 'admin@baleartrek.com',
+            'email'     => 'admin@footbalIB.com',
             'email_verified_at' => now(),
             'phone'     => '971123456',
             'password'  => Hash::make('12345678'),
