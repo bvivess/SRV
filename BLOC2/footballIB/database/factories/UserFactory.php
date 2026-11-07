@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use App\Models\Role;
 
 /**
  * @extends Factory<User>
@@ -24,11 +25,26 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $password = Hash::make('12345678');
+        $role_id = Role::where('name', 'visitant')->value('id');
+        $firstName = fake()->firstName();
+        $lastName = fake()->lastName();
+        // email a partir del nom i llinatges, evitant duplicats
+        $emailBase = Str::ascii(strtolower($firstName . '.' . $lastName));
+        $email = $emailBase . '@abc.com';
+        $i = 1;
+        while (User::where('email', $email)->exists()) {
+            $email = $emailBase . $i++ . '@abc.com';
+        }
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
+            'name' => $firstName,
+            'lastname' => $lastName,
+            'dni' => fake()->unique()->regexify('[0-9]{8}[A-Z]'),
+            'email' => $email,
+            'phone' => fake()->phoneNumber(),
             'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'password' => $password,
+            'role_id' => $role_id,
             'remember_token' => Str::random(10),
         ];
     }
