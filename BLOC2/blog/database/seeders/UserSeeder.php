@@ -23,5 +23,23 @@ class UserSeeder extends Seeder
         $user->password = Hash::make('12345678');
         $user->role_id = Role::where('name', 'admin')->value('id');  // 'value('id')' retorna l’id del primer 'Role' que coincideixi amb la condició, o null si no existeix cap.
         $user->save();                                               // equivalent a 'Role::where('name', 'admin')->first()->id;'
+
+        // Des d'un arxiu JSON
+        $jsonData = file_get_contents(env('APP_TEMP') . "users.json");
+        $usuaris = json_decode($jsonData, true);
+
+        $gestorRole = Role::where('name', 'visitant')->value('id');
+        foreach ($usuaris['usuaris']['usuari'] as $usuari) {
+            User::create([
+                'name'      => $usuari['nom'],
+                'lastname'  => $usuari['llinatges'],
+                'dni'       => $usuari['dni'],
+                'email'     => $usuari['email'],
+                'email_verified_at' => now(),
+                'phone'     => $usuari['telefon'],
+                'password'  => Hash::make('12345678'),
+                'role_id'   => $gestorRole,
+            ]);
+        }
     }
 }

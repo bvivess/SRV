@@ -16,33 +16,32 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        // Obtenir tots 'posts'
-        $posts = [
-            'What is Lorem Ipsum?',
-            'Why do we use it?',
-            'Where does it come from?',
-        ];
+        // Carregar el fitxer JSON
+        $jsonData = file_get_contents('c:\\temp\\blog\\posts.json');
+        $posts = json_decode($jsonData, true);
 
-        // Obtenir tots els IDs de tags
-        $tagsId = Tag::all()->pluck('id');
-
-        // Crear 'Posts' 
-        foreach ($posts as $post) {
+        foreach ($posts['posts'] as $post) {
             try {
-                $post = Post::create([
-                    'title'       => $post,
-                    'url_clean'   => $post, // EXISTEIX UN MUTADOR: 'strtolower(str_replace(' ', '_', $post)),'
-                    'content'     => fake()->paragraphs(3, true),
-                    'user_id'     => User::inRandomOrder()->value('id'),  // assignar un usuari aleatori
-                    'category_id' => Category::inRandomOrder()->value('id'),  // assignar una categoria aleatòria
-                ]);
+                $newPost = Post::create([
+                                'title'       => $post['title'],
+                                'url_clean'   => $post['url_clean'],
+                                'content'     => $post['content'],
+                                'user_id'     => User::where('dni', $post['user_dni'])->value('id'),
+                                'category_id' => Category::where('Nom', $post['category'])->value('id'),
+                            ]);
 
-                // Assignar tags aleatoriament al post
-                $randomTagsIds = $tagsId->random(rand(1, $tagsId->count()));  // entre 1 i el total de 'tags'
-                $post->tags()->attach($randomTagsIds);
+                // Cercar o crear els tags i obtenir els seus IDs
+                $tagIds = [];
+                foreach ($post['tags'] as $tagName) {
+                    $tag = Tag::firstOrCreate(['name' => $tagName]);  // Tag::where('name', $tagName)->first() ?? Tag::create(['name' => $tagName]);
+                    $tagIds[] = $tag->id;
+                }
+
+                // Assignar els tags al post (relació molts a molts)
+                $newPost->tags()->attach($tagIds);
+
             } catch (\Exception $e) {
-                // Registrar l'error:
-                $this->command->info("Error al processar el post titulat '{$post}': " . $e->getMessage());
+                $this->command->info("Error al processar el post '{$post['title']}': " . $e->getMessage());
             }
         }
     }
