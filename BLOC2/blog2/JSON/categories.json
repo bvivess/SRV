@@ -1,0 +1,42 @@
+{
+    "categories": {
+        "categoria": [
+            {
+                "Nom": "Tecnologia",
+                "url": "tecnologia"
+            },
+            {
+                "Nom": "Salut",
+                "url": "salut"
+            },
+            {
+                "Nom": "Esports",
+                "url": "esports"
+            },
+            {
+                "Nom": "Cultura",
+                "url": "cultura"
+            },
+            {
+                "Nom": "Educació",
+                "url": "educacio"
+            },
+            {
+                "Nom": "Economia",
+                "url": "economia"
+            },
+            {
+                "Nom": "Ciència",
+                "url": "ciencia"
+            },
+            {
+                "Nom": "Art",
+                "url": "art"
+            },
+            {
+                "Nom": "Viatges",
+                "url": "viatges"
+            }
+        ]
+    }
+}

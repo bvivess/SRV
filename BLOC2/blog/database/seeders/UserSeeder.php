@@ -22,10 +22,12 @@ class UserSeeder extends Seeder
         $user->email = "admin@abc.com";
         $user->password = Hash::make('12345678');
         $user->role_id = Role::where('name', 'admin')->value('id');  // 'value('id')' retorna l’id del primer 'Role' que coincideixi amb la condició, o null si no existeix cap.
-        $user->save();                                               // equivalent a 'Role::where('name', 'admin')->first()->id;'
+        $user->dni = fake()->unique()->regexify('[0-9]{8}[A-Z]');    // equivalent a 'Role::where('name', 'admin')->first()->id;'
+        $user->phone = fake()->unique()->regexify('[0-9]{9}');
+        $user->save();                                               
 
         // Des d'un arxiu JSON
-        $jsonData = file_get_contents(env('APP_TEMP') . "users.json");
+        $jsonData = file_get_contents(env('APP_TEMP') . 'users.json');
         $usuaris = json_decode($jsonData, true);
 
         $gestorRole = Role::where('name', 'visitant')->value('id');

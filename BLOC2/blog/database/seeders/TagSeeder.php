@@ -31,5 +31,6 @@ class TagSeeder extends Seeder
         foreach ($tags as $tag) {
             Tag::create(['name' => $tag]);  // 'firstOrCreate()' per evitar duplicats
         }
+        
     }
 }

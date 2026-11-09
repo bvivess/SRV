@@ -1,0 +1,102 @@
+{
+"usuaris": {
+	"usuari": [
+		{
+		"nom": "Maria",
+		"llinatges": "Arbona Sureda",
+		"dni": "18224566K",
+		"telefon": "687542163",
+		"email": "marbonas@baleartrek.com",
+		"password": "12345678"
+		},
+		{
+		"nom": "Biel",
+		"llinatges": "Mesquida Soler",
+		"dni": "472248381H",
+		"telefon": "696234561",
+		"email": "bmesquidas@baleartrek.com",
+		"password": "qwerty123"
+		},
+		{
+		"nom": "Paula",
+		"llinatges": "Reyes Adrover",
+		"dni": "28452716G",
+		"telefon": "687542163",
+		"email": "preyesa@baleartrek.com",
+		"password": "12345678"
+		},
+		{
+		"nom": "Francesc",
+		"llinatges": "Reus García",
+		"dni": "18364857W",
+		"telefon": "693745612",
+		"email": "freusg@baleartrek.com",
+		"password": "qwerty123"
+		},
+		{
+		"nom": "Joan",
+		"llinatges": "Horrach Moyà",
+		"dni": "24183647K",
+		"telefon": "672645319",
+		"email": "jhorrachm@baleartrek.com",
+		"password": "admin1234"
+		},
+		{
+		"nom": "Josep",
+		"llinatges": "Marimon Pou",
+		"dni": "19263547T",
+		"telefon": "690351745",
+		"email": "jmarimonp@baleartrek.com",
+		"password": "12345"
+		},
+		{
+		"nom": "Francesc",
+		"llinatges": "Soler Mas",
+		"dni": "44264781X",
+		"telefon": "695243815",
+		"email": "fsolerm@baleartrek.com",
+		"password": "qwerty123"
+		},
+		{
+		"nom": "Bel",
+		"llinatges": "Weil Smith",
+		"dni": "26351836G",
+		"telefon": "684635122",
+		"email": "bweils@baleartrek.com",
+		"password": "12345"
+		},
+		{
+		"nom": "Domingo",
+		"llinatges": "Rigo Obrador",
+		"dni": "18452745P",
+		"telefon": "694725596",
+		"email": "drigoo@baleartrek.com",
+		"password": "rigo1234"
+		},
+		{
+		"nom": "Maria",
+		"llinatges": "Galmés Soler",
+		"dni": "27183675G",
+		"telefon": "675635123",
+		"email": "mgalmess@baleartrek.com",
+		"password": "asdfg123"
+		},
+		{
+		"nom": "Josep",
+		"llinatges": "Vanrell Suau",
+		"dni": "18562438K",
+		"telefon": "676897435",
+		"email": "jvanrells@baleartrek.com",
+		"password": "qwerty321"
+		},
+		{
+		"nom": "Albert",
+		"llinatges": "Soler Garcia",
+		"dni": "18452377S",
+		"telefon": "677564512",
+		"email": "asolerg@baleartrek.com",
+		"password": "soler75"
+		}
+	]
+}
+}

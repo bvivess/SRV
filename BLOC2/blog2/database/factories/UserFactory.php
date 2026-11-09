@@ -22,6 +22,8 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'lastname' => fake()->lastName(),
+            'dni' => fake()->unique()->regexify('[0-9]{8}[A-Z]'),
+            'phone' => fake()->unique()->regexify('[0-9]{9}'),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => Hash::make('12345678'),
