@@ -7,7 +7,6 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Tag;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class PostSeeder extends Seeder
 {
