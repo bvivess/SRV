@@ -7,7 +7,6 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Tag;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class PostSeeder extends Seeder
 {
@@ -17,7 +16,7 @@ class PostSeeder extends Seeder
     public function run(): void
     {
         // Carregar el fitxer JSON
-        $jsonData = file_get_contents('c:\\temp\\blog\\posts.json');
+        $jsonData = file_get_contents(env('APP_TEMP') . 'posts.json');
         $posts = json_decode($jsonData, true);
 
         foreach ($posts['posts'] as $post) {
