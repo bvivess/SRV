@@ -27,7 +27,7 @@ class PostSeeder extends Seeder
                                 'url_clean'   => $post['url_clean'],
                                 'content'     => $post['content'],
                                 'user_id'     => User::where('dni', $post['user_dni'])->value('id'),
-                                'category_id' => Category::where('Nom', $post['category'])->value('id'),
+                                'category_id' => Category::where('title', $post['category'])->value('id'),
                             ]);
 
                 // Cercar o crear els tags i obtenir els seus IDs
