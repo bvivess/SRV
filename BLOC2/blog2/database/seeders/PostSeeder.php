@@ -30,10 +30,10 @@ class PostSeeder extends Seeder
                             ]);
 
                 // Cercar o crear els tags i obtenir els seus IDs
-                $tagIds = [];
+                $tagIds = [];  // array per emmagatzemar tots els IDs de cada tag
                 foreach ($post['tags'] as $tagName) {
-                    $tag = Tag::firstOrCreate(['name' => $tagName]);  // Tag::where('name', $tagName)->first() ?? Tag::create(['name' => $tagName]);
-                    $tagIds[]  = $tag->id; // afegeixo l'id del tag a l'array
+                    $tag = Tag::firstOrCreate(['name' => $tagName]);  // també: Tag::where('name', $tagName)->first() ?? Tag::create(['name' => $tagName]);
+                    $tagIds[]  = $tag->id; // afegeix l'id del tag a l'array
                 }
 
                 // Assignar els tags al post (relació molts a molts)
