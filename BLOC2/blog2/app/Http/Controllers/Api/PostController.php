@@ -67,9 +67,9 @@ class PostController extends Controller
             ]
         );
         // Post M:N Tags
-        foreach ( explode(',', $request->tags) as $tag)
-            $newTag = Tag::firstOrCreate(['name' => $tag]);  // crea el tag si no existeix
-            $post->tags()->attach($newTag->id);  // $post->tags      
+        foreach ( explode(',', $request->tags) as $tag)  // converteix l'string '$request->tags'en array
+            $newTag = Tag::firstOrCreate(['name' => $tag]);  // crea el 'tag' si no existeix
+            $post->tags()->attach($newTag->id);  // crea el 'post_tag' segons '$post->id' i '$newTag->id'
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
         return response()->json($post);

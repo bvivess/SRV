@@ -37,7 +37,7 @@ class PostSeeder extends Seeder
                 }
 
                 // Assignar els tags al post (relació molts a molts)
-                $newPost->tags()->attach($tagIds);
+                $newPost->tags()->attach($tagIds);  // afegeix les combinacions '$newPost->id amb cada Id de $tagIds' a la taula 'post_tag'
 
             } catch (\Exception $e) {
                 $this->command->info("Error al processar el post '{$post['title']}': " . $e->getMessage());
