@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -13,11 +14,72 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->text('comment');            
+            $table->text('comment');
+            $table->unsignedTinyInteger('score')->default(1);
+            $table->enum('status', ['y', 'n'])->default('n');       
             $table->foreignId('post_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
+
+        DB::statement('ALTER TABLE comments ADD CONSTRAINT check_score CHECK (score BETWEEN 1 AND 5)');
+
+        DB::statement('
+            CREATE TRIGGER update_scores_after_insert_comments
+            AFTER INSERT ON comments
+            FOR EACH ROW
+            BEGIN
+                IF (NEW.status = "y") THEN
+                    UPDATE posts
+                    SET totalScore = totalScore + IFNULL(NEW.score, 0),
+                        countScore = countScore + 1,
+                        updated_at = NOW()
+                    WHERE id = NEW.post_id;
+                END IF;
+            END;
+        ');
+
+        DB::statement('
+            CREATE TRIGGER update_scores_after_update_comments
+            AFTER UPDATE ON comments
+            FOR EACH ROW
+            BEGIN
+                IF (NEW.score != OLD.score) THEN
+                    UPDATE posts
+                    SET totalScore = totalScore + IFNULL(NEW.score, 0) - IFNULL(OLD.score, 0),
+                        countScore = countScore,
+                        updated_at = NOW()
+                    WHERE id = NEW.post_id;
+                ELSEIF (OLD.status = "n") AND (NEW.status = "y") THEN
+                    UPDATE posts
+                    SET totalScore = totalScore + IFNULL(NEW.score, 0),
+                        countScore = countScore + 1,
+                        updated_at = NOW()
+                    WHERE id = NEW.post_id;
+                ELSEIF (OLD.status = "y") AND (NEW.status = "n")  THEN
+                    UPDATE posts
+                    SET totalScore = totalScore - IFNULL(NEW.score, 0),
+                        countScore = countScore - 1,
+                        updated_at = NOW()
+                    WHERE id = NEW.post_id;
+                END IF;
+            END;
+        ');
+
+        DB::statement('
+            CREATE TRIGGER update_scores_after_delete_comments
+            AFTER DELETE ON comments
+            FOR EACH ROW
+            BEGIN
+                IF (OLD.status = "y") THEN
+                    UPDATE posts
+                    SET totalScore = totalScore - IFNULL(OLD.score, 0),
+                        countScore = countScore - 1,
+                        updated_at = NOW()
+                    WHERE id = OLD.post_id;
+                END IF;
+            END;
+        ');
     }
 
     /**
@@ -25,6 +87,9 @@ return new class extends Migration
      */
     public function down(): void
     {
+        DB::statement('DROP TRIGGER IF EXISTS update_scores_after_insert_comments');
+        DB::statement('DROP TRIGGER IF EXISTS update_scores_after_update_comments');
+        DB::statement('DROP TRIGGER IF EXISTS update_scores_after_delete_comments');
         Schema::dropIfExists('comments');
     }
 };

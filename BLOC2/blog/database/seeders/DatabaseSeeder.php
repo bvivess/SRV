@@ -25,11 +25,11 @@ class DatabaseSeeder extends Seeder
         try {
             // Seeders / JSON
             $this->command->info('Executant Seeders ...');
-            $this->call(RoleSeeder::class);
-            $this->call(UserSeeder::class);
-            $this->call(TagSeeder::class);
-            $this->call(CategorySeeder::class);
-            $this->call(PostSeeder::class);
+            $this->call([RoleSeeder::class,
+                         UserSeeder::class,
+                         TagSeeder::class,
+                         CategorySeeder::class,
+                         PostSeeder::class]);
 
             // Factories
             $this->command->info('Executant Factories ...');
