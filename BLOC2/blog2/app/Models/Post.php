@@ -9,19 +9,11 @@ use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-<<<<<<< HEAD
-
-class Post extends Model
-{
-    use Notifiable;
-=======
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Post extends Model
 {
     use HasFactory, Notifiable;
->>>>>>> cc6c34e27980f064f485069f49a0f67c773daef4
-
     // protected $table = 'NomTaula';  // Si la taula i el model no segueixen la convenció de Laravel
     // protected $primaryKey = 'id';
     

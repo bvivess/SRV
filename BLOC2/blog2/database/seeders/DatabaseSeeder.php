@@ -12,10 +12,8 @@ use Database\Seeders\PostSeeder;
 use App\Models\User;
 use App\Models\Comment;
 use App\Models\Image;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
-=======
->>>>>>> cc6c34e27980f064f485069f49a0f67c773daef4
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,12 +24,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
+
         // Activar la protecció d'assignació massiva $fillable[] i $guarded[]
         Model::reguard(); 
 
-=======
->>>>>>> cc6c34e27980f064f485069f49a0f67c773daef4
         try {
             // Seeders / JSON
             $this->command->info('Executant Seeders ...');
