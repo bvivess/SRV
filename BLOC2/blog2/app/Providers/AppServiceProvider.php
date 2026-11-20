@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // En mode de producció, activar la protecció d'assignació massiva
-        Model::shouldBeStrict();
+        // Model::shouldBeStrict();
 
     }
 }
