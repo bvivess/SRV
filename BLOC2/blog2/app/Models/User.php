@@ -26,9 +26,12 @@ class User extends Authenticatable
         'lastname',
         'email',
         'password',
+<<<<<<< HEAD
         'dni',
         'phone',
         'email_verified_at',
+=======
+>>>>>>> cc6c34e27980f064f485069f49a0f67c773daef4
         'role_id',
     ];
 
@@ -38,7 +41,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
+<<<<<<< HEAD
         'id',
+=======
+>>>>>>> cc6c34e27980f064f485069f49a0f67c773daef4
         'password',
         'remember_token',
     ];
