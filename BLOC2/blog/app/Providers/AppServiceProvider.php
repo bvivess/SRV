@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // En mode de producció, activar la protecció d'assignació massiva
+        // Model::shouldBeStrict();
+
         RateLimiter::for('api', function ($request) { return Limit::perMinute(20); } );
         Route::pattern('id', '[0-9]+');
     }
