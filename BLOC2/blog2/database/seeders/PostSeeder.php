@@ -22,6 +22,7 @@ class PostSeeder extends Seeder
         foreach ($posts['posts'] as $post) {
             try {
                 $newPost = Post::create([
+                                'id'          => $post['id'],
                                 'title'       => $post['title'],
                                 'url_clean'   => $post['url_clean'],
                                 'content'     => $post['content'],

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Tag;
+use App\Http\Resources\PostResource;
 
 class PostController extends Controller
 {
@@ -23,14 +24,14 @@ class PostController extends Controller
         // $posts = Post::with(["user", "category", "comments", "comments.images"])->paginate(3);
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
-        return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
-        // return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
+        //return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
+        return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $title)
     {
         // SELECCIÓ DE LES DADES
         //$post = Post::find($id);  // no cal fer-ho, Laravel ja ho fa de manera implícita
@@ -39,7 +40,7 @@ class PostController extends Controller
         //$post->load('user')->load('category')->load('comments')->load('comments.images');
 
         // AFEGINT DADES DE JOIN AMB 'with()'
-        $newPost = Post::with(["user","category","comments","comments.images"])->find($id);
+        $newPost = Post::where('title', 'like', '%' . $title .'%' )->firstOrFail();
 
         // SELECCIÓ DEL FORMAT DE LA RESPOSTA
         return response()->json($newPost);
@@ -49,6 +50,7 @@ class PostController extends Controller
         // return (new PostResource($post))->additional(['meta' => 'Post mostrat correctament']);
 
     }
+
 
     /**
      * Store a newly created resource in storage.

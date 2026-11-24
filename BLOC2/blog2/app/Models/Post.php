@@ -39,7 +39,7 @@ class Post extends Model
     protected function title(): Attribute
     {
         return Attribute::make(
-            get: function ($value) { return ucfirst($value);}, // Torna el títol amb la primera en maiúscules
+            get: function ($value) { return ucfirst(strtolower($value)); },
             set: function ($value) { return strtoupper($value); }  // Guarda el títol en minúscules
         );
     }
@@ -72,4 +72,10 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);  // 1:N
     }
+
+    public function getRouteKeyName()
+    {
+        return 'title'; // cerca per 'email' (UK)
+    }
+
 }

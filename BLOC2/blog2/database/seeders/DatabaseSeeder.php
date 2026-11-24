@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
     {
 
         // Activar la protecció d'assignació massiva $fillable[] i $guarded[]
-        Model::reguard(); 
+        Model::reguard();    
 
         try {
             // Seeders / JSON
