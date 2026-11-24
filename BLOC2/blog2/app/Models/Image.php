@@ -9,6 +9,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Image extends Model
 {
     use HasFactory;
+    
+    protected $fillable = [
+        'url',
+        'comment_id'
+    ];    
+
+    protected $guarded = [
+        'id'
+    ];
+
 
     // Relacions entre taules:
     public function comment()

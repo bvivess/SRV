@@ -9,6 +9,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Comment extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'content',
+        'user_id',
+        'post_id'
+    ];    
+
+    protected $guarded = [
+        'id'
+    ];
     
     // Relación 1:N con Image
     public function images()
