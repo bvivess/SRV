@@ -21,21 +21,23 @@ class PostResource extends JsonResource
     {
         // return parent::toArray($request);  // sortida rònica de la taula:
         // sortida personalitzada del JSON de l'API tractada:
-        return [  
+        return [
             'identificador' => $this->id,
             'titol' => $this->title,
-            'url' => $this->url_clean,  // es decideix incloure manualment aquest atribut
-            'categoria' => $this->category->title,  // funció 'category()'
-            'usuari' => $this->user->name, // funció 'user()'
-            'contingut' => $this->when(($this->posted == 'yes'), $this->content),
+            'url' => $this->url_clean,  // S'inclou manualment aquest atribut
+            'contingut' => $this->when($this->posted == 'yes', $this->content),
+            'user' => $this->when($this->user, $this->user->name . ' ' . $this->user->lastname ),  // Nom i cognoms de l'usuari
+                'email' => $this->user->email,
             'created_at' => $this->created_at->format('Y-m-d H:i:s'),
-            $this->mergeWhen(($this->posted == 'yes'),  // Condició d'inclusió
-                [ 'categoria' => new CategoryResource($this->whenLoaded('category')),  // N:1 -> cal tornar un obj: 'new category()'
-                  'usuari' => new UserResource($this->whenLoaded('user')),  // N:1 -> -> cal tornar un obj: 'new user()'
-                  'comentaris' => CommentResource::collection($this->whenLoaded('comments')),  // 1:N -> cal tornar una col: collection[comments()]
-                ])
-        ];
 
+            $this->mergeWhen($this->posted == 'yes', [
+                'categoria' => new CategoryResource($this->whenLoaded('category')),  // N:1
+                'usuari' => new UserResource($this->whenLoaded('user')),             // N:1
+                'comentaris' => CommentResource::collection($this->whenLoaded('comments')                                    // 1:N
+                ),
+            ]),
+        ];
     }
 
 }
+

@@ -7,26 +7,29 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Http\Resources\PostResource;
+use App\Models\Category;
 
 class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        // SELECCIÓ DE LES DADES
-        //$posts = Post::all();
-        // $posts = Post::paginate(3);  // crea una sortida amb paginació
-        // $posts = Post::with([])->get();  // no té sentit
-        //$posts = Post::with(["user", "category", "comments"])->get();  // post amb les taules relacionades, més óptima
-        $posts = Post::with(["user", "category", "comments", "comments.images"])->get();
-        // $posts = Post::with(["user", "category", "comments", "comments.images"])->paginate(3);
+            $posts = Post::with([ 'category', 'comments'])  // Consulta inicial
+                        ->when($request->title, fn ($q, $title) =>
+                                    $q->where('title', 'like', "%$title%")
+                        )  // Aplicar filtre 'title'
+                        ->when($request->category, fn ($q, $category) =>
+                            $q->whereHas('category', fn ($q) =>  // 'whereHas' per a la relació 'category()'
+                                $q->where('title', 'like', "%$category%")
+                            )
+                        )  // Aplicar filtre 'category'
+                        ->get();
 
-        // SELECCIÓ DEL FORMAT DE LA RESPOSTA
-        //return response()->json($posts);  // --> torna una resposta serialitzada en format 'json'
-        return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);  // torna una resposta personalitzada
+        return (PostResource::collection($posts))->additional(['meta' => 'Posts mostrats correctament']);
     }
+
 
     /**
      * Display the specified resource.

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title', 500);
             $table->string('url_clean', 500)->nullable();
             $table->text('content')->nullable();
-            $table->enum('posted', ['yes', 'not'])->default('not');
+            $table->enum('posted', ['yes', 'not'])->default('yes');
             $table->foreignId('user_id')->constrained()->onUpdate('restrict')->onDelete('restrict');
             $table->foreignId('category_id')->constrained()->onUpdate('restrict')->onDelete('restrict');
             $table->timestamps();

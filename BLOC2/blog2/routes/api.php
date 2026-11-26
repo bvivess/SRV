@@ -27,6 +27,7 @@ Route::get('user/findbyemail/{email}', [UserController::class, 'findByEmail']);
 
 
 Route::get('/post/{title}', [PostController::class, 'show']);
+
 Route::apiResource('post', PostController::class)->except(['show']);
 
 
